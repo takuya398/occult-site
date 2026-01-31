@@ -2,12 +2,19 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { stories } from "@/data/stories";
 
+export function generateStaticParams() {
+  return stories.map((story) => ({ slug: story.slug }));
+}
+
 type StoriesDetailPageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default function StoriesDetailPage({ params }: StoriesDetailPageProps) {
-  const story = stories.find((item) => item.slug === params.slug);
+export default async function StoriesDetailPage({
+  params,
+}: StoriesDetailPageProps) {
+  const { slug } = await params;
+  const story = stories.find((item) => item.slug === slug);
 
   if (!story) {
     notFound();

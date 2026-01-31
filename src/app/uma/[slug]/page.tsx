@@ -2,12 +2,19 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { umas } from "@/data/uma";
 
+export function generateStaticParams() {
+  return umas.map((uma) => ({ slug: uma.slug }));
+}
+
 type UmaDetailPageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default function UmaDetailPage({ params }: UmaDetailPageProps) {
-  const uma = umas.find((item) => item.slug === params.slug);
+export default async function UmaDetailPage({
+  params,
+}: UmaDetailPageProps) {
+  const { slug } = await params;
+  const uma = umas.find((item) => item.slug === slug);
 
   if (!uma) {
     notFound();

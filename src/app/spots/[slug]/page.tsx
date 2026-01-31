@@ -3,11 +3,14 @@ import { notFound } from "next/navigation";
 import { spots } from "@/data/spots";
 
 type SpotsDetailPageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default function SpotsDetailPage({ params }: SpotsDetailPageProps) {
-  const spot = spots.find((item) => item.slug === params.slug);
+export default async function SpotsDetailPage({
+  params,
+}: SpotsDetailPageProps) {
+  const { slug } = await params;
+  const spot = spots.find((item) => item.slug === slug);
 
   if (!spot) {
     notFound();
