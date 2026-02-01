@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Card, CardLink, TagChip } from "@/components/ui";
 import { spots, stories, umas } from "@/data/loaders";
 
@@ -115,7 +116,29 @@ export default function Home() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-xl font-semibold">新着</h2>
+          <div className="flex items-center justify-between gap-4">
+            <h2 className="text-xl font-semibold">新着</h2>
+            <div className="flex flex-wrap items-center gap-3 text-sm">
+              <Link
+                href="/spots"
+                className="cursor-pointer text-gray-600 underline-offset-4 hover:underline hover:text-black"
+              >
+                心霊スポットへ
+              </Link>
+              <Link
+                href="/stories"
+                className="cursor-pointer text-gray-600 underline-offset-4 hover:underline hover:text-black"
+              >
+                怪談・都市伝説へ
+              </Link>
+              <Link
+                href="/uma"
+                className="cursor-pointer text-gray-600 underline-offset-4 hover:underline hover:text-black"
+              >
+                UMAへ
+              </Link>
+            </div>
+          </div>
           <div className="grid gap-3">
             {latestItems.length === 0 ? (
               <Card className="rounded-lg p-4 text-sm text-zinc-600">
