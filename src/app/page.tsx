@@ -2,38 +2,54 @@ import { Card, CardLink, TagChip } from "@/components/ui";
 import { spots, stories, umas } from "@/data/loaders";
 
 export default function Home() {
-  type RecentItem = {
-    label: string;
+  type LatestItem = {
     title: string;
     href: string;
-    updatedAt: string;
+    date: string;
+    category: string;
+    time: number;
   };
 
-  const recentItems: RecentItem[] = [
-    ...spots.map((spot) => ({
-      label: "心霊スポット",
-      title: spot.title,
-      href: `/spots/${spot.slug}`,
-      updatedAt: spot.updatedAt,
-    })),
-    ...stories.map((story) => ({
-      label: "怪談・都市伝説",
-      title: story.title,
-      href: `/stories/${story.slug}`,
-      updatedAt: story.updatedAt,
-    })),
-    ...umas.map((uma) => ({
-      label: "UMA",
-      title: uma.title,
-      href: `/uma/${uma.slug}`,
-      updatedAt: uma.updatedAt,
-    })),
+  const toTime = (date?: string) => {
+    if (!date) return 0;
+    const time = Date.parse(date);
+    return Number.isNaN(time) ? 0 : time;
+  };
+
+  const latestItems: LatestItem[] = [
+    ...spots.map((spot) => {
+      const date = spot.updatedAt ?? spot.createdAt ?? "";
+      return {
+        title: spot.title,
+        href: `/spots/${spot.slug}`,
+        date,
+        category: "心霊スポット",
+        time: toTime(date),
+      };
+    }),
+    ...stories.map((story) => {
+      const date = story.updatedAt ?? story.createdAt ?? "";
+      return {
+        title: story.title,
+        href: `/stories/${story.slug}`,
+        date,
+        category: "怪談・都市伝説",
+        time: toTime(date),
+      };
+    }),
+    ...umas.map((uma) => {
+      const date = uma.updatedAt ?? uma.createdAt ?? "";
+      return {
+        title: uma.title,
+        href: `/uma/${uma.slug}`,
+        date,
+        category: "UMA",
+        time: toTime(date),
+      };
+    }),
   ]
-    .sort(
-      (a, b) =>
-        new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime()
-    )
-    .slice(0, 3);
+    .sort((a, b) => b.time - a.time)
+    .slice(0, 6);
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900">
@@ -101,25 +117,25 @@ export default function Home() {
         <section className="space-y-4">
           <h2 className="text-xl font-semibold">新着</h2>
           <div className="grid gap-3">
-            {recentItems.length === 0 ? (
+            {latestItems.length === 0 ? (
               <Card className="rounded-lg p-4 text-sm text-zinc-600">
                 新着は準備中です
               </Card>
             ) : (
-              recentItems.map((item) => (
+              latestItems.map((item) => (
                 <CardLink
                   key={item.href}
                   href={item.href}
                   ariaLabel={`${item.title}の詳細へ`}
                   className="rounded-lg p-4"
                 >
-                  <div className="flex flex-wrap items-center gap-3 text-sm text-zinc-700">
-                    <TagChip>{item.label}</TagChip>
-                    <span className="font-medium text-zinc-900">
+                  <div className="grid grid-cols-[auto,1fr,auto] items-center gap-3 text-sm text-zinc-700">
+                    <TagChip>{item.category}</TagChip>
+                    <span className="font-medium text-zinc-900 text-center">
                       {item.title}
                     </span>
-                    <span className="text-xs text-zinc-500">
-                      {item.updatedAt}
+                    <span className="text-xs text-zinc-500 text-right">
+                      {item.date}
                     </span>
                   </div>
                 </CardLink>

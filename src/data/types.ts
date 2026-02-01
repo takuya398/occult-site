@@ -15,7 +15,8 @@ export type Spot = {
   body?: string;
   source?: SourceItem[];
   caution?: string[];
-  updatedAt: string;
+  updatedAt?: string;
+  createdAt?: string;
 };
 
 export type Story = {
@@ -29,7 +30,8 @@ export type Story = {
   body?: string;
   source?: SourceItem[];
   caution?: string[];
-  updatedAt: string;
+  updatedAt?: string;
+  createdAt?: string;
 };
 
 export type Uma = {
@@ -43,5 +45,6 @@ export type Uma = {
   body?: string;
   source?: SourceItem[];
   caution?: string[];
-  updatedAt: string;
+  updatedAt?: string;
+  createdAt?: string;
 };
