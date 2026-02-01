@@ -6,6 +6,10 @@ export type Story = {
   type?: string;
   credibility?: "S" | "A" | "B" | "C" | "D";
   danger?: 1 | 2 | 3 | 4 | 5;
+  body?: string;
+  source?: { title: string; url?: string }[];
+  caution?: string[];
+  updatedAt: string;
 };
 
 export const stories: Story[] = [
@@ -17,6 +21,10 @@ export const stories: Story[] = [
     type: "怪談",
     credibility: "B",
     danger: 2,
+    body: "終電後の学校でスピーカーから名前が呼ばれるという噂。返事をすると翌日から声が出なくなるとされる。",
+    caution: ["深夜の無断侵入は避ける"],
+    source: [{ title: "学内の口伝" }],
+    updatedAt: "2026-01-25",
   },
   {
     title: "赤い傘の合図",
@@ -26,6 +34,14 @@ export const stories: Story[] = [
     type: "都市伝説",
     credibility: "C",
     danger: 1,
+    body: "夜の交差点で赤い傘を差した人物に呼び止められると不運が続くという。",
+    source: [
+      {
+        title: "地域の噂集",
+        url: "https://example.com/red-umbrella",
+      },
+    ],
+    updatedAt: "2026-01-18",
   },
   {
     title: "階段の数を数えるな",
@@ -35,6 +51,7 @@ export const stories: Story[] = [
     type: "意味怖",
     credibility: "C",
     danger: 2,
+    updatedAt: "2026-01-14",
   },
   {
     title: "最後の車両",
@@ -44,6 +61,7 @@ export const stories: Story[] = [
     type: "怪談",
     credibility: "B",
     danger: 2,
+    updatedAt: "2026-01-13",
   },
   {
     title: "消える路地裏",
@@ -53,6 +71,7 @@ export const stories: Story[] = [
     type: "都市伝説",
     credibility: "D",
     danger: 3,
+    updatedAt: "2026-01-11",
   },
   {
     title: "笑う鏡",
@@ -62,5 +81,6 @@ export const stories: Story[] = [
     type: "怪談",
     credibility: "B",
     danger: 2,
+    updatedAt: "2026-01-10",
   },
 ];

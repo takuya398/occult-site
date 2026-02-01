@@ -6,6 +6,10 @@ export type Uma = {
   type?: string;
   credibility?: "S" | "A" | "B" | "C" | "D";
   danger?: 1 | 2 | 3 | 4 | 5;
+  body?: string;
+  source?: { title: string; url?: string }[];
+  caution?: string[];
+  updatedAt: string;
 };
 
 export const umas: Uma[] = [
@@ -17,6 +21,9 @@ export const umas: Uma[] = [
     type: "鳥型",
     credibility: "C",
     danger: 2,
+    body: "深い霧の日に山の稜線を横切る巨大な影が目撃される。鳴き声より風圧だけが残るという。",
+    source: [{ title: "山岳観測メモ" }],
+    updatedAt: "2026-01-22",
   },
   {
     title: "湖底の長首",
@@ -26,6 +33,13 @@ export const umas: Uma[] = [
     type: "水棲",
     credibility: "D",
     danger: 1,
+    body: "霧が出る朝に湖面へ首の長い影が浮かぶという複数の証言。",
+    caution: ["私有地側の桟橋に近づかない"],
+    source: [
+      { title: "写真投稿コミュニティ" },
+      { title: "地方紙の小記事" },
+    ],
+    updatedAt: "2026-01-12",
   },
   {
     title: "木陰の猿人",
@@ -35,6 +49,7 @@ export const umas: Uma[] = [
     type: "猿人",
     credibility: "B",
     danger: 3,
+    updatedAt: "2026-01-16",
   },
   {
     title: "白砂の甲羅",
@@ -44,5 +59,6 @@ export const umas: Uma[] = [
     type: "水棲",
     credibility: "C",
     danger: 2,
+    updatedAt: "2026-01-09",
   },
 ];

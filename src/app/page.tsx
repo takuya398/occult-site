@@ -1,6 +1,40 @@
-import Link from "next/link";
+import { Card, CardLink, TagChip } from "@/components/ui";
+import { spots, stories, umas } from "@/data/loaders";
 
 export default function Home() {
+  type RecentItem = {
+    label: string;
+    title: string;
+    href: string;
+    updatedAt: string;
+  };
+
+  const recentItems: RecentItem[] = [
+    ...spots.map((spot) => ({
+      label: "心霊スポット",
+      title: spot.title,
+      href: `/spots/${spot.slug}`,
+      updatedAt: spot.updatedAt,
+    })),
+    ...stories.map((story) => ({
+      label: "怪談・都市伝説",
+      title: story.title,
+      href: `/stories/${story.slug}`,
+      updatedAt: story.updatedAt,
+    })),
+    ...umas.map((uma) => ({
+      label: "UMA",
+      title: uma.title,
+      href: `/uma/${uma.slug}`,
+      updatedAt: uma.updatedAt,
+    })),
+  ]
+    .sort(
+      (a, b) =>
+        new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime()
+    )
+    .slice(0, 3);
+
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-10 px-6 py-12">
@@ -31,48 +65,66 @@ export default function Home() {
         <section className="space-y-4">
           <h2 className="text-xl font-semibold">カテゴリ</h2>
           <div className="grid gap-4 sm:grid-cols-3">
-            <Link
+            <CardLink
               href="/spots"
-              className="group rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-colors hover:border-zinc-300 hover:bg-zinc-100"
+              ariaLabel="心霊スポットの一覧へ"
+              className="group"
             >
               <p className="text-lg font-semibold text-zinc-900">心霊スポット</p>
               <p className="mt-2 text-sm text-zinc-600">
                 日本各地のスポット情報を地図感覚で探索。
               </p>
-            </Link>
-            <Link
+            </CardLink>
+            <CardLink
               href="/stories"
-              className="group rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-colors hover:border-zinc-300 hover:bg-zinc-100"
+              ariaLabel="怪談・都市伝説の一覧へ"
+              className="group"
             >
               <p className="text-lg font-semibold text-zinc-900">怪談・都市伝説</p>
               <p className="mt-2 text-sm text-zinc-600">
                 伝承や目撃談を読み物として整理。
               </p>
-            </Link>
-            <Link
+            </CardLink>
+            <CardLink
               href="/uma"
-              className="group rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-colors hover:border-zinc-300 hover:bg-zinc-100"
+              ariaLabel="UMAの一覧へ"
+              className="group"
             >
               <p className="text-lg font-semibold text-zinc-900">UMA</p>
               <p className="mt-2 text-sm text-zinc-600">
                 未確認生物の情報を一覧でまとめて参照。
               </p>
-            </Link>
+            </CardLink>
           </div>
         </section>
 
         <section className="space-y-4">
           <h2 className="text-xl font-semibold">新着</h2>
           <div className="grid gap-3">
-            <div className="rounded-lg border border-zinc-200 bg-white p-4 text-sm text-zinc-700 shadow-sm">
-              【ダミー】山間の廃集落で聞こえた声 — 2026/01/31
-            </div>
-            <div className="rounded-lg border border-zinc-200 bg-white p-4 text-sm text-zinc-700 shadow-sm">
-              【ダミー】深夜の旧道トンネルでの目撃談 — 2026/01/30
-            </div>
-            <div className="rounded-lg border border-zinc-200 bg-white p-4 text-sm text-zinc-700 shadow-sm">
-              【ダミー】湾岸で見られた謎の影 — 2026/01/29
-            </div>
+            {recentItems.length === 0 ? (
+              <Card className="rounded-lg p-4 text-sm text-zinc-600">
+                新着は準備中です
+              </Card>
+            ) : (
+              recentItems.map((item) => (
+                <CardLink
+                  key={item.href}
+                  href={item.href}
+                  ariaLabel={`${item.title}の詳細へ`}
+                  className="rounded-lg p-4"
+                >
+                  <div className="flex flex-wrap items-center gap-3 text-sm text-zinc-700">
+                    <TagChip>{item.label}</TagChip>
+                    <span className="font-medium text-zinc-900">
+                      {item.title}
+                    </span>
+                    <span className="text-xs text-zinc-500">
+                      {item.updatedAt}
+                    </span>
+                  </div>
+                </CardLink>
+              ))
+            )}
           </div>
         </section>
 

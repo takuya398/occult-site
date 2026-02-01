@@ -7,6 +7,10 @@ export type Spot = {
   type?: string;
   credibility?: "S" | "A" | "B" | "C" | "D";
   danger?: 1 | 2 | 3 | 4 | 5;
+  body?: string;
+  source?: { title: string; url?: string }[];
+  caution?: string[];
+  updatedAt: string;
 };
 
 export const spots: Spot[] = [
@@ -19,6 +23,15 @@ export const spots: Spot[] = [
     type: "トンネル",
     credibility: "B",
     danger: 3,
+    body: "山間部の旧道に残る短いトンネル。霧が濃い夜に音が反響し、背後から足音が近づくと語られる。",
+    caution: ["夜間の停車は避ける", "落石に注意"],
+    source: [
+      {
+        title: "地元掲示板の体験談まとめ",
+        url: "https://example.com/yogiri-report",
+      },
+    ],
+    updatedAt: "2026-01-31",
   },
   {
     title: "白砂浜の廃旅館",
@@ -29,6 +42,10 @@ export const spots: Spot[] = [
     type: "廃墟",
     credibility: "C",
     danger: 4,
+    body: "海辺に取り残された建物で、潮風の音に混じって人の声が聞こえるという。",
+    caution: ["立入禁止区域に入らない"],
+    source: [{ title: "個人ブログの記録" }],
+    updatedAt: "2026-01-29",
   },
   {
     title: "黒鏡ダム",
@@ -39,6 +56,7 @@ export const spots: Spot[] = [
     type: "ダム",
     credibility: "B",
     danger: 2,
+    updatedAt: "2026-01-20",
   },
   {
     title: "旧赤坂病院跡",
@@ -49,6 +67,7 @@ export const spots: Spot[] = [
     type: "廃墟",
     credibility: "A",
     danger: 4,
+    updatedAt: "2026-01-27",
   },
   {
     title: "三日月谷の吊り橋",
@@ -59,6 +78,7 @@ export const spots: Spot[] = [
     type: "橋",
     credibility: "C",
     danger: 3,
+    updatedAt: "2026-01-24",
   },
   {
     title: "蒼灯台の岬",
@@ -69,5 +89,6 @@ export const spots: Spot[] = [
     type: "岬",
     credibility: "D",
     danger: 2,
+    updatedAt: "2026-01-15",
   },
 ];
