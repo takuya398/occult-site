@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { stories } from "@/data/loaders";
+import { stories } from "@/loaders";
 import EntryLayout from "@/components/EntryLayout";
 import { Badge, CardLink, TagChip } from "@/components/ui";
 

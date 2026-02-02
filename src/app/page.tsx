@@ -1,61 +1,23 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import RecentList from "@/components/RecentList";
 import { CardLink } from "@/components/ui";
-import { spots, stories, umas } from "@/data/loaders";
+import { getAllLatest } from "@/loaders";
 
 export default function Home() {
-  type LatestItem = {
-    title: string;
-    href: string;
-    date: string;
-    category: string;
-    summary?: string;
-    time: number;
-  };
+  const categoryLabel = {
+    spots: "心霊スポット",
+    stories: "怪談・都市伝説",
+    uma: "UMA",
+  } as const;
 
-  const toTime = (date?: string) => {
-    if (!date) return 0;
-    const time = Date.parse(date);
-    return Number.isNaN(time) ? 0 : time;
-  };
-
-  const latestItems: LatestItem[] = [
-    ...spots.map((spot) => {
-      const date = spot.updatedAt ?? spot.createdAt ?? "";
-      return {
-        title: spot.title,
-        href: `/spots/${spot.slug}`,
-        date,
-        category: "心霊スポット",
-        summary: spot.summary,
-        time: toTime(date),
-      };
-    }),
-    ...stories.map((story) => {
-      const date = story.updatedAt ?? story.createdAt ?? "";
-      return {
-        title: story.title,
-        href: `/stories/${story.slug}`,
-        date,
-        category: "怪談・都市伝説",
-        summary: story.summary,
-        time: toTime(date),
-      };
-    }),
-    ...umas.map((uma) => {
-      const date = uma.updatedAt ?? uma.createdAt ?? "";
-      return {
-        title: uma.title,
-        href: `/uma/${uma.slug}`,
-        date,
-        category: "UMA",
-        summary: uma.summary,
-        time: toTime(date),
-      };
-    }),
-  ]
-    .sort((a, b) => b.time - a.time)
-    .slice(0, 6);
+  const latestItems = getAllLatest(6).map((item) => ({
+    title: item.title,
+    href: `/${item.category}/${item.slug}`,
+    date: item.publishedAt,
+    category: categoryLabel[item.category],
+    summary: item.summary,
+  }));
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
@@ -73,7 +35,7 @@ export default function Home() {
           </p>
         </header>
 
-        <section className="sticky top-4 z-10">
+        <section className="mt-2">
           <div className="rounded-xl border border-red-200 bg-red-50 px-5 py-4 text-red-900 shadow-sm dark:border-red-900/60 dark:bg-red-950/40 dark:text-red-200">
             <p className="text-sm font-semibold sm:text-base">注意事項</p>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-sm sm:text-base">
@@ -135,19 +97,40 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-3 text-sm shrink-0">
               <Link
                 href="/spots"
-                className="cursor-pointer rounded-md border border-zinc-200 px-2 py-1 text-zinc-600 transition-colors hover:bg-zinc-50 hover:text-black dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-white"
+                className="navPill inline-flex items-center rounded-full border px-3 py-1 text-sm whitespace-nowrap border-slate-200 text-slate-700 dark:border-slate-700 dark:text-slate-200"
+                style={
+                  {
+                    "--pill-bg": "rgba(59,130,246,0.12)",
+                    "--pill-border": "rgba(59,130,246,0.35)",
+                    "--pill-ring": "rgba(59,130,246,0.18)",
+                  } as CSSProperties
+                }
               >
                 心霊スポットへ
               </Link>
               <Link
                 href="/stories"
-                className="cursor-pointer rounded-md border border-zinc-200 px-2 py-1 text-zinc-600 transition-colors hover:bg-zinc-50 hover:text-black dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-white"
+                className="navPill inline-flex items-center rounded-full border px-3 py-1 text-sm whitespace-nowrap border-slate-200 text-slate-700 dark:border-slate-700 dark:text-slate-200"
+                style={
+                  {
+                    "--pill-bg": "rgba(239,68,68,0.12)",
+                    "--pill-border": "rgba(239,68,68,0.35)",
+                    "--pill-ring": "rgba(239,68,68,0.18)",
+                  } as CSSProperties
+                }
               >
                 怪談・都市伝説へ
               </Link>
               <Link
                 href="/uma"
-                className="cursor-pointer rounded-md border border-zinc-200 px-2 py-1 text-zinc-600 transition-colors hover:bg-zinc-50 hover:text-black dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-white"
+                className="navPill inline-flex items-center rounded-full border px-3 py-1 text-sm whitespace-nowrap border-slate-200 text-slate-700 dark:border-slate-700 dark:text-slate-200"
+                style={
+                  {
+                    "--pill-bg": "rgba(34,197,94,0.12)",
+                    "--pill-border": "rgba(34,197,94,0.35)",
+                    "--pill-ring": "rgba(34,197,94,0.18)",
+                  } as CSSProperties
+                }
               >
                 UMAへ
               </Link>

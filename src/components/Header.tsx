@@ -2,14 +2,47 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import type { CSSProperties } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import ThemeToggle from "@/components/ThemeToggle";
 
-const navLinks = [
-  { href: "/spots", label: "心霊スポット" },
-  { href: "/stories", label: "怪談・都市伝説" },
-  { href: "/uma", label: "UMA" },
+type NavVariant = "spot" | "story" | "uma";
+
+const navLinks: { href: string; label: string; variant: NavVariant }[] = [
+  { href: "/spots", label: "心霊スポット", variant: "spot" },
+  { href: "/stories", label: "怪談・都市伝説", variant: "story" },
+  { href: "/uma", label: "UMA", variant: "uma" },
 ];
+
+const navPill = (variant: NavVariant) => {
+  const colors = {
+    spot: {
+      bg: "rgba(59,130,246,0.12)",
+      border: "rgba(59,130,246,0.35)",
+      ring: "rgba(59,130,246,0.18)",
+    },
+    story: {
+      bg: "rgba(239,68,68,0.12)",
+      border: "rgba(239,68,68,0.35)",
+      ring: "rgba(239,68,68,0.18)",
+    },
+    uma: {
+      bg: "rgba(34,197,94,0.12)",
+      border: "rgba(34,197,94,0.35)",
+      ring: "rgba(34,197,94,0.18)",
+    },
+  }[variant];
+
+  return {
+    className:
+      "navPill inline-flex items-center rounded-full border px-3 py-1 text-sm whitespace-nowrap border-slate-200 text-slate-700 dark:border-slate-700 dark:text-slate-200",
+    style: {
+      "--pill-bg": colors.bg,
+      "--pill-border": colors.border,
+      "--pill-ring": colors.ring,
+    } as CSSProperties,
+  };
+};
 
 export default function Header() {
   const pathname = usePathname();
@@ -58,13 +91,15 @@ export default function Header() {
         <nav className="flex flex-wrap items-center gap-3 text-sm text-zinc-600 dark:text-zinc-300">
           {navLinks.map((link) => {
             const isActive = pathname.startsWith(link.href);
+            const { className, style } = navPill(link.variant);
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`transition-colors hover:text-zinc-900 dark:hover:text-zinc-100 ${
-                  isActive ? "text-zinc-900 dark:text-zinc-100" : ""
+                className={`${className} ${
+                  isActive ? "text-slate-900 dark:text-white" : ""
                 }`}
+                style={style}
               >
                 {link.label}
               </Link>

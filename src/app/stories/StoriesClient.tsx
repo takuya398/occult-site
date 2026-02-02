@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { stories } from "@/data/loaders";
+import { stories } from "@/loaders";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
 
 export default function StoriesClient() {

@@ -22,3 +22,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* hover可能な端末だけ、ナビを“押せるピル”に */
+@media (hover: hover) and (pointer: fine) {
+  .navPill {
+    transition: background-color 0.18s ease, box-shadow 0.18s ease,
+      border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  }
+  .navPill:hover {
+    background-color: var(--pill-bg);
+    border-color: var(--pill-border);
+    box-shadow: 0 0 0 4px var(--pill-ring);
+    transform: translateY(-1px);
+  }
+}
+
+/* キーボード操作の視認性 */
+.navPill:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--pill-ring);
+  border-color: var(--pill-border);
+}

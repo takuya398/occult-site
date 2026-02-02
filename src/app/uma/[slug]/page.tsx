@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { umas } from "@/data/loaders";
+import { umas } from "@/loaders";
 import EntryLayout from "@/components/EntryLayout";
 import { Badge, CardLink, TagChip } from "@/components/ui";
 

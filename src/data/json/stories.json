@@ -1,5 +1,6 @@
 [
   {
+    "id": "school-broadcast",
     "title": "返事のない校内放送",
     "slug": "school-broadcast",
     "summary": "深夜の校内放送に答えると二度と声が戻らないという。",
@@ -14,9 +15,13 @@
         "title": "学内の口伝"
       }
     ],
+    "status": "published",
+    "category": "stories",
+    "publishedAt": "2026-01-25",
     "updatedAt": "2026-01-25"
   },
   {
+    "id": "red-umbrella",
     "title": "赤い傘の合図",
     "slug": "red-umbrella",
     "summary": "交差点で赤い傘を持つ人に会うと不運が続く都市伝説。",
@@ -31,9 +36,13 @@
         "url": "https://example.com/red-umbrella"
       }
     ],
+    "status": "published",
+    "category": "stories",
+    "publishedAt": "2026-01-18",
     "updatedAt": "2026-01-18"
   },
   {
+    "id": "counting-stairs",
     "title": "階段の数を数えるな",
     "slug": "counting-stairs",
     "summary": "夜の集合住宅で階段を数えると一段多くなる。",
@@ -41,9 +50,14 @@
     "type": "意味怖",
     "credibility": "C",
     "danger": 2,
+    "body": "夜の集合住宅で階段を数えると、一段多くなっているという不気味な話。",
+    "status": "published",
+    "category": "stories",
+    "publishedAt": "2026-01-14",
     "updatedAt": "2026-01-14"
   },
   {
+    "id": "last-car",
     "title": "最後の車両",
     "slug": "last-car",
     "summary": "終電の最後尾に座ると誰かが隣に座るという。",
@@ -51,9 +65,14 @@
     "type": "怪談",
     "credibility": "B",
     "danger": 2,
+    "body": "終電の最後尾に座ると、誰もいないはずの隣に誰かが座るという噂。",
+    "status": "published",
+    "category": "stories",
+    "publishedAt": "2026-01-13",
     "updatedAt": "2026-01-13"
   },
   {
+    "id": "vanishing-alley",
     "title": "消える路地裏",
     "slug": "vanishing-alley",
     "summary": "地図にない路地に入ると翌日には入口が消えている。",
@@ -61,9 +80,14 @@
     "type": "都市伝説",
     "credibility": "D",
     "danger": 3,
+    "body": "地図にない路地に入ると、翌日には入口が消えているという都市伝説。",
+    "status": "published",
+    "category": "stories",
+    "publishedAt": "2026-01-11",
     "updatedAt": "2026-01-11"
   },
   {
+    "id": "laughing-mirror",
     "title": "笑う鏡",
     "slug": "laughing-mirror",
     "summary": "鏡の中の自分が先に笑ったら振り返るなと言われる。",
@@ -71,6 +95,10 @@
     "type": "怪談",
     "credibility": "B",
     "danger": 2,
+    "body": "鏡の中の自分が先に笑ったら振り返るな、という言い伝えが残る話。",
+    "status": "published",
+    "category": "stories",
+    "publishedAt": "2026-01-10",
     "updatedAt": "2026-01-10"
   }
 ]

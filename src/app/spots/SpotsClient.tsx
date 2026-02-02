@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { spots } from "@/data/loaders";
+import { spots } from "@/loaders";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
 
 export default function SpotsClient() {

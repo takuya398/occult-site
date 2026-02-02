@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { spots } from "@/data/loaders";
+import { spots } from "@/loaders";
 import EntryLayout from "@/components/EntryLayout";
 import { Badge, CardLink, TagChip } from "@/components/ui";
 

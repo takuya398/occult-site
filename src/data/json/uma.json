@@ -1,5 +1,6 @@
 [
   {
+    "id": "kiriba-bird",
     "title": "霧羽の巨鳥",
     "slug": "kiriba-bird",
     "summary": "山間に現れる巨大な黒い鳥影。翼音だけが残る。",
@@ -13,9 +14,13 @@
         "title": "山岳観測メモ"
       }
     ],
+    "status": "published",
+    "category": "uma",
+    "publishedAt": "2026-01-22",
     "updatedAt": "2026-01-22"
   },
   {
+    "id": "lake-long-neck",
     "title": "湖底の長首",
     "slug": "lake-long-neck",
     "summary": "霧の湖に首の長い影が浮かぶという報告。",
@@ -33,9 +38,13 @@
         "title": "地方紙の小記事"
       }
     ],
+    "status": "published",
+    "category": "uma",
+    "publishedAt": "2026-01-12",
     "updatedAt": "2026-01-12"
   },
   {
+    "id": "forest-ape",
     "title": "木陰の猿人",
     "slug": "forest-ape",
     "summary": "深い森で人に似た影が追跡するという目撃談。",
@@ -43,9 +52,14 @@
     "type": "猿人",
     "credibility": "B",
     "danger": 3,
+    "body": "深い森で人に似た影が追跡してきたという目撃談が報告されている。",
+    "status": "published",
+    "category": "uma",
+    "publishedAt": "2026-01-16",
     "updatedAt": "2026-01-16"
   },
   {
+    "id": "white-shell",
     "title": "白砂の甲羅",
     "slug": "white-shell",
     "summary": "海岸に巨大な甲羅の痕跡が残るという報告。",
@@ -53,6 +67,10 @@
     "type": "水棲",
     "credibility": "C",
     "danger": 2,
+    "body": "海岸に巨大な甲羅の痕跡が残るという報告が相次いだ。",
+    "status": "published",
+    "category": "uma",
+    "publishedAt": "2026-01-09",
     "updatedAt": "2026-01-09"
   }
 ]

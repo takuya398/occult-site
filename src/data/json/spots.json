@@ -1,5 +1,6 @@
 [
   {
+    "id": "yogiri-toge-tunnel",
     "title": "夜霧峠トンネル",
     "slug": "yogiri-toge-tunnel",
     "summary": "深夜に車のエンジンが止まると噂される旧道トンネル。",
@@ -16,9 +17,13 @@
         "url": "https://example.com/yogiri-report"
       }
     ],
+    "status": "published",
+    "category": "spots",
+    "publishedAt": "2026-01-31",
     "updatedAt": "2026-01-31"
   },
   {
+    "id": "shirasuna-ruins",
     "title": "白砂浜の廃旅館",
     "slug": "shirasuna-ruins",
     "summary": "海霧の夜に窓辺に影が立つと語られる廃旅館。",
@@ -34,9 +39,13 @@
         "title": "個人ブログの記録"
       }
     ],
+    "status": "published",
+    "category": "spots",
+    "publishedAt": "2026-01-29",
     "updatedAt": "2026-01-29"
   },
   {
+    "id": "kurokagami-dam",
     "title": "黒鏡ダム",
     "slug": "kurokagami-dam",
     "summary": "水面に逆さの人影が映るというダム湖。",
@@ -45,9 +54,14 @@
     "type": "ダム",
     "credibility": "B",
     "danger": 2,
+    "body": "静かな湖面に逆さの人影が映るという噂が残るダム。霧の日ほど目撃が増えるとされる。",
+    "status": "published",
+    "category": "spots",
+    "publishedAt": "2026-01-20",
     "updatedAt": "2026-01-20"
   },
   {
+    "id": "akasaka-hospital",
     "title": "旧赤坂病院跡",
     "slug": "akasaka-hospital",
     "summary": "閉鎖後もナースコールが鳴ると噂される建物跡。",
@@ -56,9 +70,14 @@
     "type": "廃墟",
     "credibility": "A",
     "danger": 4,
+    "body": "閉鎖された病院跡で、夜になるとナースコールが鳴るという話が残る。",
+    "status": "published",
+    "category": "spots",
+    "publishedAt": "2026-01-27",
     "updatedAt": "2026-01-27"
   },
   {
+    "id": "mikazuki-bridge",
     "title": "三日月谷の吊り橋",
     "slug": "mikazuki-bridge",
     "summary": "深夜に橋を渡ると足音が追ってくるという。",
@@ -67,9 +86,14 @@
     "type": "橋",
     "credibility": "C",
     "danger": 3,
+    "body": "山道の谷に架かる吊り橋で、深夜に渡ると足音が追ってくるという体験談がある。",
+    "status": "published",
+    "category": "spots",
+    "publishedAt": "2026-01-24",
     "updatedAt": "2026-01-24"
   },
   {
+    "id": "ao-todai-cape",
     "title": "蒼灯台の岬",
     "slug": "ao-todai-cape",
     "summary": "青い光が海面を這うと語られる岬の灯台。",
@@ -78,6 +102,10 @@
     "type": "岬",
     "credibility": "D",
     "danger": 2,
+    "body": "岬の灯台付近で青い光が海面を這うという噂が残る。",
+    "status": "published",
+    "category": "spots",
+    "publishedAt": "2026-01-15",
     "updatedAt": "2026-01-15"
   }
 ]
