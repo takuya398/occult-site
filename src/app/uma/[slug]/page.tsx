@@ -1,7 +1,13 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { umas } from "@/loaders";
-import EntryLayout from "@/components/EntryLayout";
-import { Badge, CardLink, TagChip } from "@/components/ui";
+import ArticleHeader from "@/components/article/ArticleHeader";
+import Embeds from "@/components/article/Embeds";
+import ImageGallery from "@/components/article/ImageGallery";
+import PrevNext from "@/components/article/PrevNext";
+import Related from "@/components/article/Related";
+import ShareBar from "@/components/article/ShareBar";
+import { Card } from "@/components/ui";
 
 export function generateStaticParams() {
   return umas.map((uma) => ({ slug: uma.slug }));
@@ -65,14 +71,16 @@ export default async function UmaDetailPage({
           {item.url ? (
             <a
               href={item.url}
-              className="text-sm text-zinc-700 underline decoration-zinc-300 underline-offset-4"
+              className="text-sm text-zinc-700 underline decoration-zinc-300 underline-offset-4 dark:text-zinc-300"
               target="_blank"
               rel="noreferrer"
             >
               {item.title}
             </a>
           ) : (
-            <span className="text-sm text-zinc-600">{item.title}</span>
+            <span className="text-sm text-zinc-600 dark:text-zinc-300">
+              {item.title}
+            </span>
           )}
         </li>
       ))}
@@ -101,122 +109,105 @@ export default async function UmaDetailPage({
       return { item, matchTags, matchTagCount, score };
     })
     .filter((entry) => entry.score > 0)
-    .sort((a, b) => {
-      const scoreDiff = b.score - a.score;
-      if (scoreDiff !== 0) return scoreDiff;
-      const matchDiff = b.matchTagCount - a.matchTagCount;
-      if (matchDiff !== 0) return matchDiff;
-      const dangerDiff = (b.item.danger ?? 0) - (a.item.danger ?? 0);
-      if (dangerDiff !== 0) return dangerDiff;
-      return a.item.title.localeCompare(b.item.title, "ja");
-    })
-    .slice(0, 5);
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 6);
 
-  const relatedTagSet = new Set(
-    scoredUmas.flatMap((entry) => entry.matchTags)
+  const relatedUmas = scoredUmas.map(({ item }) => ({
+    href: `/uma/${item.slug}`,
+    title: item.title,
+    summary: item.summary,
+    tags: item.tags,
+  }));
+
+  const sortedUmas = [...umas].sort(
+    (a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)
   );
-  const relatedHeading = relatedTagSet.size
-    ? `関連するUMA（${Array.from(relatedTagSet).join("/")}）`
-    : "関連するUMA";
-
-  const getStarRating = (score: number) => {
-    if (score >= 6) return "★★★";
-    if (score >= 3) return "★★☆";
-    return "★☆☆";
-  };
+  const currentIndex = sortedUmas.findIndex((item) => item.slug === uma.slug);
+  const prevUma = currentIndex > 0 ? sortedUmas[currentIndex - 1] : undefined;
+  const nextUma =
+    currentIndex >= 0 && currentIndex < sortedUmas.length - 1
+      ? sortedUmas[currentIndex + 1]
+      : undefined;
 
   return (
-    <EntryLayout
-      backHref={backHref}
-      title={uma.title}
-      summary={uma.summary}
-      updatedAt={uma.updatedAt}
-      metaBadges={metaBadges}
-      tags={uma.tags}
-      sections={[
-        {
-          heading: "概要",
-          body: uma.body ?? "準備中",
-        },
-        {
-          heading: "特徴",
-          body: (
-            <ul className="list-disc space-y-1 pl-5">
-              <li>分類: {uma.type ?? "不明"}</li>
-              <li>主なタグ: {uma.tags.slice(0, 3).join(" / ")}</li>
-              <li>目撃情報: 断続的に報告</li>
-            </ul>
-          ),
-        },
-        {
-          heading: "目撃・伝承",
-          body:
-            "地域ごとに目撃内容の差があり、時期によって報告数が増減する傾向があります。",
-        },
-        {
-          heading: "安全メモ",
-          body: (
-            <ul className="list-disc space-y-1 pl-5">
-              {[...commonCaution, ...(uma.caution ?? [])].map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          ),
-        },
-        {
-          heading: relatedHeading,
-          body: scoredUmas.length ? (
-            <div className="grid gap-3 sm:grid-cols-2">
-              {scoredUmas.map(({ item, score }) => (
-                <CardLink
-                  key={item.slug}
-                  href={`/uma/${item.slug}`}
-                  ariaLabel={`${item.title}の詳細へ`}
-                  className="p-4"
-                >
-                  <div className="flex items-center justify-between text-xs text-zinc-500">
-                    <span>関連度: {getStarRating(score)}</span>
-                    {item.type && (
-                      <TagChip variant="outline">
-                        {item.type}
-                      </TagChip>
-                    )}
-                  </div>
-                  <p className="mt-2 text-sm font-semibold text-zinc-900">
-                    {item.title}
-                  </p>
-                  <p className="mt-1 text-xs text-zinc-600">{item.summary}</p>
-                  <div className="mt-3 flex flex-wrap gap-2 text-xs">
-                    {item.credibility && (
-                      <Badge tone="emerald">
-                        信憑性 {item.credibility}
-                      </Badge>
-                    )}
-                    {item.danger && (
-                      <Badge tone="rose">
-                        危険度 {item.danger}
-                      </Badge>
-                    )}
-                  </div>
-                  <div className="mt-2 flex flex-wrap gap-1.5">
-                    {item.tags.slice(0, 3).map((tag) => (
-                      <TagChip key={tag}>
-                        {tag}
-                      </TagChip>
-                    ))}
-                  </div>
-                </CardLink>
-              ))}
+    <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+      <div className="mx-auto w-full max-w-5xl px-6 py-12">
+        <div className="mb-6">
+          <Link
+            href={backHref}
+            className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
+          >
+            ← 一覧へ戻る
+          </Link>
+        </div>
+
+        <ArticleHeader
+          categoryLabel="UMA"
+          title={uma.title}
+          summary={uma.summary}
+          publishedAt={uma.publishedAt}
+          updatedAt={uma.updatedAt}
+          metaBadges={metaBadges}
+          tags={uma.tags}
+        />
+
+        <div className="mt-6 grid gap-6">
+          <ShareBar />
+          <ImageGallery coverImage={uma.coverImage} images={uma.images} />
+          <Card>
+            <div className="space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
+              <p>{uma.body}</p>
+              <ul className="list-disc space-y-1 pl-5">
+                <li>分類: {uma.type ?? "不明"}</li>
+                <li>主なタグ: {uma.tags.slice(0, 3).join(" / ")}</li>
+                <li>目撃情報: 断続的に報告</li>
+              </ul>
             </div>
-          ) : (
-            "関連項目はまだありません"
-          ),
-        },
-        {
-          heading: "出典",
-          body: sourceBody,
-        },
-      ]}
-    />
+          </Card>
+          <Card>
+            <div className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+              <p className="font-semibold text-zinc-900 dark:text-zinc-100">
+                安全メモ
+              </p>
+              <ul className="list-disc space-y-1 pl-5">
+                {[...commonCaution, ...(uma.caution ?? [])].map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </Card>
+          <Embeds embeds={uma.embeds} />
+          <PrevNext
+            prev={
+              prevUma
+                ? {
+                    href: `/uma/${prevUma.slug}`,
+                    title: prevUma.title,
+                    label: "前の記事",
+                  }
+                : undefined
+            }
+            next={
+              nextUma
+                ? {
+                    href: `/uma/${nextUma.slug}`,
+                    title: nextUma.title,
+                    label: "次の記事",
+                  }
+                : undefined
+            }
+          />
+          <Related items={relatedUmas} heading="関連UMA" />
+          <Card>
+            <div className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+              <p className="font-semibold text-zinc-900 dark:text-zinc-100">
+                出典
+              </p>
+              {sourceBody}
+            </div>
+          </Card>
+        </div>
+      </div>
+    </div>
   );
 }

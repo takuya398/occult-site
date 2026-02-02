@@ -39,6 +39,38 @@
     "status": "published",
     "category": "stories",
     "publishedAt": "2026-01-18",
+    "coverImage": {
+      "type": "image",
+      "src": "https://placehold.co/1200x800/png?text=Red+Umbrella",
+      "alt": "夜の交差点に立つ赤い傘",
+      "credit": "Placeholder"
+    },
+    "images": [
+      {
+        "type": "image",
+        "src": "https://placehold.co/1200x800/png?text=Red+Umbrella+1",
+        "alt": "赤い傘の人物が立つ交差点",
+        "credit": "Placeholder"
+      },
+      {
+        "type": "image",
+        "src": "https://placehold.co/1200x800/png?text=Red+Umbrella+2",
+        "alt": "夜の道路に反射する街灯",
+        "credit": "Placeholder"
+      }
+    ],
+    "embeds": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+        "title": "目撃談の検証動画"
+      },
+      {
+        "type": "tiktok",
+        "url": "https://www.tiktok.com/@scout2015/video/6718335390845095173",
+        "title": "短尺の都市伝説クリップ"
+      }
+    ],
     "updatedAt": "2026-01-18"
   },
   {

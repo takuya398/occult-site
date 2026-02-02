@@ -20,6 +20,51 @@
     "status": "published",
     "category": "spots",
     "publishedAt": "2026-01-31",
+    "coverImage": {
+      "type": "image",
+      "src": "https://placehold.co/1200x800/png?text=Yogiri+Tunnel",
+      "alt": "霧に包まれた峠のトンネル",
+      "credit": "Placeholder"
+    },
+    "images": [
+      {
+        "type": "image",
+        "src": "https://placehold.co/1200x800/png?text=Yogiri+Tunnel+1",
+        "alt": "夜霧峠トンネルの入口",
+        "credit": "Placeholder"
+      },
+      {
+        "type": "image",
+        "src": "https://placehold.co/1200x800/png?text=Yogiri+Tunnel+2",
+        "alt": "旧道沿いの薄暗い道",
+        "credit": "Placeholder"
+      },
+      {
+        "type": "image",
+        "src": "https://placehold.co/1200x800/png?text=Yogiri+Tunnel+3",
+        "alt": "霧のかかった山道",
+        "credit": "Placeholder"
+      },
+      {
+        "type": "image",
+        "src": "https://placehold.co/1200x800/png?text=Yogiri+Tunnel+4",
+        "alt": "トンネル内部の暗がり",
+        "credit": "Placeholder"
+      },
+      {
+        "type": "image",
+        "src": "https://placehold.co/1200x800/png?text=Yogiri+Tunnel+5",
+        "alt": "付近の案内標識",
+        "credit": "Placeholder"
+      }
+    ],
+    "embeds": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ysz5S6PUM-U",
+        "title": "夜のトンネル検証動画"
+      }
+    ],
     "updatedAt": "2026-01-31"
   },
   {

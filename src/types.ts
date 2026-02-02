@@ -1,23 +1,19 @@
 export type Category = "spots" | "stories" | "uma";
 export type Status = "draft" | "published";
 
-export type MediaImage = {
+export type ImageMedia = {
   type: "image";
   src: string;
-  alt?: string;
+  alt: string;
+  credit?: string;
+  license?: string;
   width?: number;
   height?: number;
-  credit?: string;
 };
 
-export type MediaVideo = {
-  type: "video";
-  provider: "youtube" | "vimeo" | "mp4";
-  url: string;
-  title?: string;
-};
-
-export type Media = MediaImage | MediaVideo;
+export type EmbedMedia =
+  | { type: "youtube"; url: string; title?: string }
+  | { type: "tiktok"; url: string; title?: string };
 
 export type BaseEntry = {
   id: string;
@@ -30,8 +26,9 @@ export type BaseEntry = {
   updatedAt?: string;
   status: Status;
   category: Category;
-  cover?: MediaImage;
-  media?: Media[];
+  coverImage?: ImageMedia;
+  images?: ImageMedia[];
+  embeds?: EmbedMedia[];
 };
 
 export type SourceItem = {

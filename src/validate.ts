@@ -2,7 +2,7 @@ import spotsData from "./data/json/spots.json";
 import storiesData from "./data/json/stories.json";
 import umasData from "./data/json/uma.json";
 import { TAGS } from "./data/tags";
-import type { BaseEntry, Media, MediaImage, MediaVideo } from "./types";
+import type { BaseEntry, EmbedMedia, ImageMedia } from "./types";
 
 const tagSet = new Set<string>(TAGS as readonly string[]);
 const slugSet = new Set<string>();
@@ -14,36 +14,35 @@ const isNonEmptyString = (value: unknown): value is string =>
 
 const isValidDate = (value: unknown) => {
   if (!isNonEmptyString(value)) return false;
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const isSimple = /^\d{4}-\d{2}-\d{2}$/.test(value);
+  const isIso = /^\d{4}-\d{2}-\d{2}T/.test(value);
+  if (!isSimple && !isIso) return false;
   return !Number.isNaN(Date.parse(value));
 };
 
-const isImage = (value: unknown): value is MediaImage => {
+const isImage = (value: unknown): value is ImageMedia => {
   if (!value || typeof value !== "object") return false;
-  const image = value as MediaImage;
-  return image.type === "image" && isNonEmptyString(image.src);
-};
-
-const isVideo = (value: unknown): value is MediaVideo => {
-  if (!value || typeof value !== "object") return false;
-  const video = value as MediaVideo;
-  const providers = new Set(["youtube", "vimeo", "mp4"]);
+  const image = value as ImageMedia;
   return (
-    video.type === "video" &&
-    providers.has(video.provider) &&
-    isNonEmptyString(video.url)
+    image.type === "image" &&
+    isNonEmptyString(image.src) &&
+    isNonEmptyString(image.alt)
   );
 };
 
-const validateMedia = (media: unknown, context: string) => {
-  if (media === undefined) return;
-  if (!Array.isArray(media)) {
-    errors.push(`${context} media は配列である必要があります`);
+const validateImages = (images: unknown, context: string) => {
+  if (images === undefined) return;
+  if (!Array.isArray(images)) {
+    errors.push(`${context} images は配列である必要があります`);
     return;
   }
-  media.forEach((item, index) => {
-    if (!isImage(item) && !isVideo(item)) {
-      errors.push(`${context} media[${index}] の形式が不正です`);
+  images.forEach((item, index) => {
+    if (!isImage(item)) {
+      errors.push(`${context} images[${index}] の形式が不正です`);
+      return;
+    }
+    if (!/^https?:\/\//.test(item.src) && !item.src.startsWith("/")) {
+      errors.push(`${context} images[${index}].src が不正です`);
     }
   });
 };
@@ -51,8 +50,44 @@ const validateMedia = (media: unknown, context: string) => {
 const validateCover = (cover: unknown, context: string) => {
   if (cover === undefined) return;
   if (!isImage(cover)) {
-    errors.push(`${context} cover の形式が不正です`);
+    errors.push(`${context} coverImage の形式が不正です`);
+    return;
   }
+  if (!/^https?:\/\//.test(cover.src) && !cover.src.startsWith("/")) {
+    errors.push(`${context} coverImage.src が不正です`);
+  }
+};
+
+const validateEmbeds = (embeds: unknown, context: string) => {
+  if (embeds === undefined) return;
+  if (!Array.isArray(embeds)) {
+    errors.push(`${context} embeds は配列である必要があります`);
+    return;
+  }
+  embeds.forEach((item, index) => {
+    if (!item || typeof item !== "object") {
+      errors.push(`${context} embeds[${index}] の形式が不正です`);
+      return;
+    }
+    const embed = item as EmbedMedia;
+    if (!isNonEmptyString(embed.url)) {
+      errors.push(`${context} embeds[${index}].url が不正です`);
+      return;
+    }
+    if (embed.type === "youtube") {
+      if (!/youtube\.com|youtu\.be/.test(embed.url)) {
+        errors.push(`${context} embeds[${index}] のURLがYouTubeではありません`);
+      }
+      return;
+    }
+    if (embed.type === "tiktok") {
+      if (!/tiktok\.com/.test(embed.url)) {
+        errors.push(`${context} embeds[${index}] のURLがTikTokではありません`);
+      }
+      return;
+    }
+    errors.push(`${context} embeds[${index}] のtypeが不正です`);
+  });
 };
 
 const validateEntry = (entry: BaseEntry, context: string) => {
@@ -61,6 +96,8 @@ const validateEntry = (entry: BaseEntry, context: string) => {
   }
   if (!isNonEmptyString(entry.slug)) {
     errors.push(`${context} slug が不正です`);
+  } else if (!/^[a-z0-9-]+$/.test(entry.slug)) {
+    errors.push(`${context} slug 形式が不正です`);
   } else if (slugSet.has(entry.slug)) {
     errors.push(`${context} slug が重複しています: ${entry.slug}`);
   } else {
@@ -98,8 +135,9 @@ const validateEntry = (entry: BaseEntry, context: string) => {
     errors.push(`${context} category が不正です`);
   }
 
-  validateCover(entry.cover, context);
-  validateMedia(entry.media, context);
+  validateCover(entry.coverImage, context);
+  validateImages(entry.images, context);
+  validateEmbeds(entry.embeds, context);
 };
 
 const validateDataset = (entries: BaseEntry[], name: string, category: string) => {

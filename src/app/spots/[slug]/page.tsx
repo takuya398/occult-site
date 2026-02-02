@@ -1,7 +1,13 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { spots } from "@/loaders";
-import EntryLayout from "@/components/EntryLayout";
-import { Badge, CardLink, TagChip } from "@/components/ui";
+import ArticleHeader from "@/components/article/ArticleHeader";
+import Embeds from "@/components/article/Embeds";
+import ImageGallery from "@/components/article/ImageGallery";
+import PrevNext from "@/components/article/PrevNext";
+import Related from "@/components/article/Related";
+import ShareBar from "@/components/article/ShareBar";
+import { Card } from "@/components/ui";
 
 export function generateStaticParams() {
   return spots.map((spot) => ({ slug: spot.slug }));
@@ -48,14 +54,16 @@ export default async function SpotsDetailPage({
           {item.url ? (
             <a
               href={item.url}
-              className="text-sm text-zinc-700 underline decoration-zinc-300 underline-offset-4"
+              className="text-sm text-zinc-700 underline decoration-zinc-300 underline-offset-4 dark:text-zinc-300"
               target="_blank"
               rel="noreferrer"
             >
               {item.title}
             </a>
           ) : (
-            <span className="text-sm text-zinc-600">{item.title}</span>
+            <span className="text-sm text-zinc-600 dark:text-zinc-300">
+              {item.title}
+            </span>
           )}
         </li>
       ))}
@@ -82,50 +90,27 @@ export default async function SpotsDetailPage({
           ? 1
           : 0);
 
-      const matchedTagList = item.tags.filter((tag) =>
-        spot.tags.includes(tag)
-      );
-
-      return { item, matchTags, score, matchedTagList };
+      return { item, matchTags, score };
     })
     .filter((entry) => entry.score >= 1)
-    .sort((a, b) => {
-      const hasMatchA = a.matchTags >= 1 ? 1 : 0;
-      const hasMatchB = b.matchTags >= 1 ? 1 : 0;
-      const matchPriority = hasMatchB - hasMatchA;
-      if (matchPriority !== 0) {
-        return matchPriority;
-      }
-      const scoreDiff = b.score - a.score;
-      if (scoreDiff !== 0) {
-        return scoreDiff;
-      }
-      const matchDiff = b.matchTags - a.matchTags;
-      if (matchDiff !== 0) {
-        return matchDiff;
-      }
-      const dangerDiff = (b.item.danger ?? 0) - (a.item.danger ?? 0);
-      if (dangerDiff !== 0) {
-        return dangerDiff;
-      }
-      return a.item.title.localeCompare(b.item.title, "ja");
-    });
+    .sort((a, b) => b.score - a.score);
 
-  const relatedSpots = scoredSpots
-    .filter((entry) => entry.matchTags >= 1)
-    .slice(0, 6);
+  const relatedSpots = scoredSpots.slice(0, 6).map(({ item }) => ({
+    href: `/spots/${item.slug}`,
+    title: item.title,
+    summary: item.summary,
+    tags: item.tags,
+  }));
 
-  const fallbackSpots = relatedSpots.length
-    ? relatedSpots
-    : scoredSpots.slice(0, 6);
-
-  const relatedHeading = `関連スポット（${spot.tags.join(" / ")}）`;
-
-  const getStarRating = (score: number) => {
-    if (score >= 6) return "★★★";
-    if (score >= 3) return "★★☆";
-    return "★☆☆";
-  };
+  const sortedSpots = [...spots].sort(
+    (a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)
+  );
+  const currentIndex = sortedSpots.findIndex((item) => item.slug === spot.slug);
+  const prevSpot = currentIndex > 0 ? sortedSpots[currentIndex - 1] : undefined;
+  const nextSpot =
+    currentIndex >= 0 && currentIndex < sortedSpots.length - 1
+      ? sortedSpots[currentIndex + 1]
+      : undefined;
 
   const backQuery = (() => {
     if (!resolvedSearchParams) return "";
@@ -146,112 +131,84 @@ export default async function SpotsDetailPage({
   const backHref = backQuery ? `/spots?${backQuery}` : "/spots";
 
   return (
-    <EntryLayout
-      backHref={backHref}
-      title={spot.title}
-      summary={spot.summary}
-      updatedAt={spot.updatedAt}
-      metaBadges={metaBadges}
-      tags={spot.tags}
-      sections={[
-        {
-          heading: "概要",
-          body: spot.body ?? "準備中",
-        },
-        {
-          heading: "特徴",
-          body: (
-            <ul className="list-disc space-y-1 pl-5">
-              <li>分類: {spot.type ?? "不明"}</li>
-              <li>エリア: {spot.pref ?? "不明"}</li>
-              <li>主なタグ: {spot.tags.slice(0, 3).join(" / ")}</li>
-            </ul>
-          ),
-        },
-        {
-          heading: "目撃・伝承",
-          body:
-            "夜間に足音が近づく、音が反響して人影が見えるなどの体験談が語られています。",
-        },
-        {
-          heading: "安全メモ",
-          body: (
-            <ul className="list-disc space-y-1 pl-5">
-              {[...commonCaution, ...(spot.caution ?? [])].map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          ),
-        },
-        {
-          heading: relatedHeading,
-          body: fallbackSpots.length ? (
-            <div className="grid gap-3 sm:grid-cols-2">
-              <p className="sm:col-span-2 text-xs text-zinc-500">
-                ※関連度はタグ一致・種別一致・危険度差などから算出
-              </p>
-              {fallbackSpots.map(({ item, score, matchedTagList }) => (
-                <CardLink
-                  key={item.slug}
-                  href={`/spots/${item.slug}`}
-                  ariaLabel={`${item.title}の詳細へ`}
-                  className="p-4"
-                >
-                  <div className="flex items-center justify-between text-xs text-zinc-500">
-                    <span>関連度: {getStarRating(score)}</span>
-                    {item.pref && (
-                      <TagChip variant="outline">
-                        {item.pref}
-                      </TagChip>
-                    )}
-                  </div>
-                  <p className="mt-2 text-sm font-semibold text-zinc-900">
-                    {item.title}
-                  </p>
-                  <p className="mt-1 text-xs text-zinc-600">{item.summary}</p>
-                  <div className="mt-2 flex flex-wrap gap-1.5 text-xs text-zinc-500">
-                    {item.type && (
-                      <TagChip variant="outline">
-                        {item.type}
-                      </TagChip>
-                    )}
-                    {item.credibility && (
-                      <Badge tone="emerald">
-                        信憑性 {item.credibility}
-                      </Badge>
-                    )}
-                    {item.danger && (
-                      <Badge tone="rose">
-                        危険度 {item.danger}
-                      </Badge>
-                    )}
-                  </div>
-                  {matchedTagList.length > 0 && (
-                    <p className="mt-2 text-xs text-zinc-500">
-                      一致タグ: {matchedTagList.slice(0, 3).join(", ")}
-                      {matchedTagList.length > 3 &&
-                        ` +${matchedTagList.length - 3}`}
-                    </p>
-                  )}
-                  <div className="mt-2 flex flex-wrap gap-1.5">
-                    {item.tags.slice(0, 3).map((tag) => (
-                      <TagChip key={tag}>
-                        {tag}
-                      </TagChip>
-                    ))}
-                  </div>
-                </CardLink>
-              ))}
+    <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+      <div className="mx-auto w-full max-w-5xl px-6 py-12">
+        <div className="mb-6">
+          <Link
+            href={backHref}
+            className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
+          >
+            ← 一覧へ戻る
+          </Link>
+        </div>
+
+        <ArticleHeader
+          categoryLabel="心霊スポット"
+          title={spot.title}
+          summary={spot.summary}
+          publishedAt={spot.publishedAt}
+          updatedAt={spot.updatedAt}
+          metaBadges={metaBadges}
+          tags={spot.tags}
+        />
+
+        <div className="mt-6 grid gap-6">
+          <ShareBar />
+          <ImageGallery coverImage={spot.coverImage} images={spot.images} />
+          <Card>
+            <div className="space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
+              <p>{spot.body}</p>
+              <ul className="list-disc space-y-1 pl-5">
+                <li>分類: {spot.type ?? "不明"}</li>
+                <li>エリア: {spot.pref ?? "不明"}</li>
+                <li>主なタグ: {spot.tags.slice(0, 3).join(" / ")}</li>
+              </ul>
             </div>
-          ) : (
-            "関連項目はまだありません"
-          ),
-        },
-        {
-          heading: "出典",
-          body: sourceBody,
-        },
-      ]}
-    />
+          </Card>
+          <Card>
+            <div className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+              <p className="font-semibold text-zinc-900 dark:text-zinc-100">
+                安全メモ
+              </p>
+              <ul className="list-disc space-y-1 pl-5">
+                {[...commonCaution, ...(spot.caution ?? [])].map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </Card>
+          <Embeds embeds={spot.embeds} />
+          <PrevNext
+            prev={
+              prevSpot
+                ? {
+                    href: `/spots/${prevSpot.slug}`,
+                    title: prevSpot.title,
+                    label: "前の記事",
+                  }
+                : undefined
+            }
+            next={
+              nextSpot
+                ? {
+                    href: `/spots/${nextSpot.slug}`,
+                    title: nextSpot.title,
+                    label: "次の記事",
+                  }
+                : undefined
+            }
+          />
+          <Related items={relatedSpots} heading="関連スポット" />
+          <Card>
+            <div className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+              <p className="font-semibold text-zinc-900 dark:text-zinc-100">
+                出典
+              </p>
+              {sourceBody}
+            </div>
+          </Card>
+        </div>
+      </div>
+    </div>
   );
 }
