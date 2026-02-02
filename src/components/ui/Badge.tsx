@@ -14,10 +14,10 @@ export default function Badge({
 }: BadgeProps) {
   const toneClass =
     tone === "emerald"
-      ? "border-emerald-200 bg-emerald-50 text-emerald-700"
+      ? "border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-200"
       : tone === "rose"
-        ? "border-rose-200 bg-rose-50 text-rose-700"
-        : "border-zinc-200 bg-zinc-50 text-zinc-600";
+        ? "border-rose-200 bg-rose-50 text-rose-700 dark:border-rose-900/60 dark:bg-rose-950/40 dark:text-rose-200"
+        : "border-zinc-200 bg-zinc-50 text-zinc-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200";
 
   return (
     <span

@@ -279,12 +279,12 @@ export default function SpotsClient() {
   const detailsSuffix = queryString ? `?${queryString}` : "";
 
   return (
-    <div className="min-h-screen bg-zinc-50 text-zinc-900">
+    <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
         <div className="mb-6">
           <Link
             href="/"
-            className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900"
+            className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
           >
             ← トップへ戻る
           </Link>
@@ -294,8 +294,8 @@ export default function SpotsClient() {
           <h1 className="text-3xl font-semibold tracking-tight">
             心霊スポット一覧
           </h1>
-          <p className="text-base text-zinc-600">
-            検索・絞り込み・ソートで気になる場所を探せます。
+          <p className="text-base text-zinc-600 dark:text-zinc-300">
+            検索・絞り込み・ソートで気になるスポットを探せます。
           </p>
         </header>
 
@@ -303,13 +303,13 @@ export default function SpotsClient() {
           <Card>
             <div className="flex flex-col gap-4">
               <div className="flex flex-wrap items-center justify-between gap-3">
-                <p className="text-sm font-semibold text-zinc-900">
+                <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
                   検索・絞り込み
                 </p>
                 <button
                   type="button"
                   onClick={handleReset}
-                  className="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600 transition-colors hover:border-zinc-300 hover:text-zinc-900"
+                  className="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600 transition-colors hover:border-zinc-300 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-300 dark:hover:text-zinc-100"
                 >
                   リセット
                 </button>

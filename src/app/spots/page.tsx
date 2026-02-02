@@ -3,7 +3,11 @@ import SpotsClient from "./SpotsClient";
 
 export default function SpotsPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-zinc-50 text-zinc-900" />}>
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100" />
+      }
+    >
       <SpotsClient />
     </Suspense>
   );

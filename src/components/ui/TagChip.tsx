@@ -14,8 +14,8 @@ export default function TagChip({
 }: TagChipProps) {
   const styles =
     variant === "outline"
-      ? "border border-zinc-200 bg-zinc-50 text-zinc-600"
-      : "bg-zinc-100 text-zinc-600";
+      ? "border border-zinc-200 bg-zinc-50 text-zinc-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+      : "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-200";
 
   return (
     <span

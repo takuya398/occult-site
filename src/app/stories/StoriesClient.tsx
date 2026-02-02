@@ -1,19 +1,44 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { stories } from "@/data/loaders";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
 
 export default function StoriesClient() {
+  const router = useRouter();
   const searchParams = useSearchParams();
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
   const [typeFilter, setTypeFilter] = useState("all");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [dangerFilter, setDangerFilter] = useState("all");
   const [credibilityFilter, setCredibilityFilter] = useState("all");
   const [sortKey, setSortKey] = useState("recommend");
+
+  useEffect(() => {
+    setQuery(searchParams.get("q") ?? "");
+  }, [searchParams]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+    const normalizedQuery = query.trim();
+
+    if (normalizedQuery) {
+      params.set("q", normalizedQuery);
+    } else {
+      params.delete("q");
+    }
+
+    const nextQuery = params.toString();
+    const currentQuery = searchParams.toString();
+
+    if (nextQuery !== currentQuery) {
+      router.replace(nextQuery ? `?${nextQuery}` : "/stories", {
+        scroll: false,
+      });
+    }
+  }, [query, router, searchParams]);
 
   const typeOptions = useMemo(() => {
     const types = stories
@@ -163,12 +188,12 @@ export default function StoriesClient() {
   const detailsSuffix = queryString ? `?${queryString}` : "";
 
   return (
-    <div className="min-h-screen bg-zinc-50 text-zinc-900">
+    <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
         <div className="mb-6">
           <Link
             href="/"
-            className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900"
+            className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
           >
             ← トップへ戻る
           </Link>
@@ -178,7 +203,7 @@ export default function StoriesClient() {
           <h1 className="text-3xl font-semibold tracking-tight">
             怪談・都市伝説一覧
           </h1>
-          <p className="text-base text-zinc-600">
+          <p className="text-base text-zinc-600 dark:text-zinc-300">
             検索・絞り込み・ソートで気になる話を探せます。
           </p>
         </header>
@@ -187,13 +212,13 @@ export default function StoriesClient() {
           <Card>
             <div className="flex flex-col gap-4">
               <div className="flex flex-wrap items-center justify-between gap-3">
-                <p className="text-sm font-semibold text-zinc-900">
+                <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
                   検索・絞り込み
                 </p>
                 <button
                   type="button"
                   onClick={handleReset}
-                  className="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600 transition-colors hover:border-zinc-300 hover:text-zinc-900"
+                  className="rounded-full border border-zinc-200 px-3 py-1 text-xs text-zinc-600 transition-colors hover:border-zinc-300 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-300 dark:hover:text-zinc-100"
                 >
                   リセット
                 </button>
