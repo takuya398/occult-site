@@ -1,4 +1,5 @@
 import { CardLink, TagChip } from "@/components/ui";
+import type { GlowVariant } from "@/components/ui/glow";
 
 export type RecentItem = {
   title: string;
@@ -13,10 +14,19 @@ type RecentCardProps = {
 };
 
 export default function RecentCard({ item }: RecentCardProps) {
+  const variantMap: Record<string, GlowVariant> = {
+    心霊スポット: "spot",
+    "怪談・都市伝説": "story",
+    UMA: "uma",
+  };
+
+  const variant = variantMap[item.category];
+
   return (
     <CardLink
       href={item.href}
       ariaLabel={`${item.title}の詳細へ`}
+      variant={variant}
       className="group rounded-xl border border-zinc-200 bg-white p-4 transition-colors hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700 dark:hover:bg-zinc-800 sm:p-5"
     >
       <div className="flex gap-4">

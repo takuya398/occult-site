@@ -91,6 +91,7 @@ export default function Home() {
               href="/spots"
               ariaLabel="心霊スポットの一覧へ"
               className="group"
+              variant="spot"
             >
               <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                 心霊スポット
@@ -103,6 +104,7 @@ export default function Home() {
               href="/stories"
               ariaLabel="怪談・都市伝説の一覧へ"
               className="group"
+              variant="story"
             >
               <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                 怪談・都市伝説
@@ -115,6 +117,7 @@ export default function Home() {
               href="/uma"
               ariaLabel="UMAの一覧へ"
               className="group"
+              variant="uma"
             >
               <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                 UMA
