@@ -2,6 +2,7 @@ import spotsData from "./data/json/spots.json";
 import storiesData from "./data/json/stories.json";
 import umasData from "./data/json/uma.json";
 import { TAGS } from "./data/tags";
+import { normalizeMedia } from "./lib/media";
 import type { BaseEntry, EmbedMedia, ImageMedia } from "./types";
 
 const tagSet = new Set<string>(TAGS as readonly string[]);
@@ -90,6 +91,24 @@ const validateEmbeds = (embeds: unknown, context: string) => {
   });
 };
 
+const validateVideoUrls = (videoUrls: unknown, context: string) => {
+  if (videoUrls === undefined) return;
+  if (!Array.isArray(videoUrls)) {
+    errors.push(`${context} videoUrls は配列である必要があります`);
+    return;
+  }
+  videoUrls.forEach((url, index) => {
+    if (!isNonEmptyString(url)) {
+      errors.push(`${context} videoUrls[${index}] が不正です`);
+      return;
+    }
+    const normalized = normalizeMedia(url.trim());
+    if (normalized.kind === "other") {
+      errors.push(`${context} videoUrls[${index}] が不正です`);
+    }
+  });
+};
+
 const validateEntry = (entry: BaseEntry, context: string) => {
   if (!isNonEmptyString(entry.id)) {
     errors.push(`${context} id が不正です`);
@@ -138,6 +157,7 @@ const validateEntry = (entry: BaseEntry, context: string) => {
   validateCover(entry.coverImage, context);
   validateImages(entry.images, context);
   validateEmbeds(entry.embeds, context);
+  validateVideoUrls(entry.videoUrls, context);
 };
 
 const validateDataset = (entries: BaseEntry[], name: string, category: string) => {

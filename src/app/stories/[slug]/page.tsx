@@ -2,12 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { stories } from "@/loaders";
 import ArticleHeader from "@/components/article/ArticleHeader";
-import Embeds from "@/components/article/Embeds";
 import ImageGallery from "@/components/article/ImageGallery";
 import PrevNext from "@/components/article/PrevNext";
 import Related from "@/components/article/Related";
 import ShareBar from "@/components/article/ShareBar";
 import { Card } from "@/components/ui";
+import EmbedMedia from "@/components/EmbedMedia";
 
 export function generateStaticParams() {
   return stories.map((story) => ({ slug: story.slug }));
@@ -179,7 +179,13 @@ export default async function StoriesDetailPage({
               </ul>
             </div>
           </Card>
-          <Embeds embeds={story.embeds} />
+          {story.videoUrls && story.videoUrls.length > 0 && (
+            <section className="space-y-4">
+              {story.videoUrls.map((url, index) => (
+                <EmbedMedia key={`${url}-${index}`} url={url} />
+              ))}
+            </section>
+          )}
           <PrevNext
             prev={
               prevStory

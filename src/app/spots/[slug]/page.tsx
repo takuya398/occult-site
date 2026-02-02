@@ -2,12 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { spots } from "@/loaders";
 import ArticleHeader from "@/components/article/ArticleHeader";
-import Embeds from "@/components/article/Embeds";
 import ImageGallery from "@/components/article/ImageGallery";
 import PrevNext from "@/components/article/PrevNext";
 import Related from "@/components/article/Related";
 import ShareBar from "@/components/article/ShareBar";
 import { Card } from "@/components/ui";
+import EmbedMedia from "@/components/EmbedMedia";
 
 export function generateStaticParams() {
   return spots.map((spot) => ({ slug: spot.slug }));
@@ -177,7 +177,13 @@ export default async function SpotsDetailPage({
               </ul>
             </div>
           </Card>
-          <Embeds embeds={spot.embeds} />
+          {spot.videoUrls && spot.videoUrls.length > 0 && (
+            <section className="space-y-4">
+              {spot.videoUrls.map((url, index) => (
+                <EmbedMedia key={`${url}-${index}`} url={url} />
+              ))}
+            </section>
+          )}
           <PrevNext
             prev={
               prevSpot

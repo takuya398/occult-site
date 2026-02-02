@@ -29,6 +29,7 @@ export type BaseEntry = {
   coverImage?: ImageMedia;
   images?: ImageMedia[];
   embeds?: EmbedMedia[];
+  videoUrls?: string[];
 };
 
 export type SourceItem = {
