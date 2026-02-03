@@ -1,5 +1,56 @@
 [
   {
+    "id": "aokigahara-jukai-occult",
+    "title": "青木ヶ原樹海・完全オカルト版",
+    "slug": "aokigahara-jukai-occult",
+    "summary": "静けさの中に気配が漂うと語られる青木ヶ原樹海。その噂と背景を静かに見つめる。",
+    "tags": ["心霊", "山", "異界", "体験談", "目撃"],
+    "pref": "山梨県",
+    "type": "心霊スポット/樹海",
+    "credibility": "C",
+    "danger": 3,
+    "body": "森に一歩入ると、音が柔らかく吸い込まれていくように感じる。私は静かに観察しているつもりでも、どこかで『見られている気がする』という話が語られている理由が少しだけわかった気がした。\n\n青木ヶ原樹海は富士山の北西に広がる森林地帯と言われている。溶岩地形の起伏と樹木の密度が高く、視界や距離感が揺らぎやすいと語られる。そうした環境が、迷いやすい印象を強くしているのかもしれない。\n\n語られている心霊現象としては、誰もいないはずなのに名前を呼ばれたという話、背後に気配を感じ続けたという証言、同じ場所を何度も通るループ現象、写真や映像に影が写るといった噂がある。いずれも体験談として語られている内容であり、断定はできない。\n\n心霊スポットとして広く語られるようになった背景には、昭和期の小説や報道が影響したと言われている。一方で、地元では自然環境や地質学的価値に重きを置く見方もある。私はその両方を踏まえ、静かに向き合うことが大切だと感じている。\n\nオカルト的考察としては、土地の記憶が感覚に影響するという説、地形や静寂が不安を増幅させるという環境要因説、恐怖が心の内側から生まれるという心理説が語られている。私はどれも断定せず、静かに観察したいと思う。\n\n他の心霊スポットと違い、人工物ではなく自然そのものが舞台である点が特徴だと語られている。静けさの中で恐怖が立ち上がるように見える、そんな印象が残る。\n\n注意として、立入禁止区域には絶対に入らないこと、夜間や単独行動は避けること、冷やかし目的の探索は控えることが重要だ。安全とマナーを守ることが最優先である。\n\n信じるかどうかはあなた次第。だが、そこで何を感じるのかを静かに考えてみる余地はある。",
+    "status": "published",
+    "category": "spots",
+    "publishedAt": "2026-02-03",
+    "coverImage": {
+      "type": "image",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Hiking_in_Aokigahara_Sea_of_Trees_%2850295849761%29.jpg",
+      "alt": "霧に包まれた青木ヶ原樹海の森",
+      "credit": "Wikimedia Commons"
+    },
+    "images": [
+      {
+        "type": "image",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Hiking_in_Aokigahara_Sea_of_Trees_%2850295849761%29.jpg",
+        "alt": "霧に包まれた青木ヶ原樹海の森",
+        "credit": "Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1685875863103-753f715ce8f6?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=2400",
+        "alt": "夜の青木ヶ原樹海のイメージ",
+        "credit": "Unsplash"
+      },
+      {
+        "type": "image",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Warning_signal_for_suicides_in_Aokigahara.jpg",
+        "alt": "樹海入口の注意看板",
+        "credit": "Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Fugaku_Fuketu_Entrance_Stairs_20161025.jpg",
+        "alt": "富岳風穴の入口階段",
+        "credit": "Wikimedia Commons"
+      }
+    ],
+    "videoUrls": [
+      "https://www.youtube.com/watch?v=ff7xFjZ_XdY"
+    ],
+    "updatedAt": "2026-02-03"
+  },
+  {
     "id": "yogiri-toge-tunnel",
     "title": "夜霧峠トンネル",
     "slug": "yogiri-toge-tunnel",
