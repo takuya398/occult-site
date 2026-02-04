@@ -1,8 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { notFound } from "next/navigation";
 import { spots } from "@/loaders";
 import ArticleHeader from "@/components/article/ArticleHeader";
-import ImageGallery from "@/components/article/ImageGallery";
 import PrevNext from "@/components/article/PrevNext";
 import Related from "@/components/article/Related";
 import ShareBar from "@/components/article/ShareBar";
@@ -129,6 +131,11 @@ export default async function SpotsDetailPage({
     return params.toString();
   })();
   const backHref = backQuery ? `/spots?${backQuery}` : "/spots";
+  const heroImage = spot.coverImage ?? spot.images?.[0];
+  const rawContent = spot.content ?? spot.body;
+  const videoUrl = spot.videoUrls?.[0];
+  const hasVideoToken = rawContent.includes("{{VIDEO}}");
+  const contentParts = rawContent.split("{{VIDEO}}");
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
@@ -154,15 +161,95 @@ export default async function SpotsDetailPage({
 
         <div className="mt-6 grid gap-6">
           <ShareBar />
-          <ImageGallery coverImage={spot.coverImage} images={spot.images} />
+          {heroImage && (
+            <figure className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
+              <Image
+                src={heroImage.src}
+                alt={heroImage.alt}
+                width={heroImage.width ?? 1200}
+                height={heroImage.height ?? 800}
+                className="h-auto w-full object-cover"
+                sizes="(max-width: 768px) 100vw, 960px"
+              />
+              {heroImage.credit && (
+                <figcaption className="px-4 pb-3 pt-2 text-xs text-zinc-500 dark:text-zinc-400">
+                  {heroImage.credit}
+                </figcaption>
+              )}
+            </figure>
+          )}
           <Card>
-            <div className="space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
-              <p>{spot.body}</p>
-              <ul className="list-disc space-y-1 pl-5">
-                <li>分類: {spot.type ?? "不明"}</li>
-                <li>エリア: {spot.pref ?? "不明"}</li>
-                <li>主なタグ: {spot.tags.slice(0, 3).join(" / ")}</li>
-              </ul>
+            <div className="prose max-w-none prose-zinc dark:prose-invert">
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                components={{
+                  p: ({ node, children, ...props }) => {
+                    const hasImage =
+                      node?.children?.some(
+                        (child) =>
+                          child.type === "element" && child.tagName === "img"
+                      ) ?? false;
+                    if (hasImage) {
+                      return <div {...props}>{children}</div>;
+                    }
+                    return <p {...props}>{children}</p>;
+                  },
+                  img: ({ node, ...props }) => (
+                    <figure className="my-6">
+                      <img className="w-full rounded-xl" {...props} />
+                    </figure>
+                  ),
+                  h2: ({ node, ...props }) => (
+                    <h2 className="mb-4 mt-10 text-2xl font-bold" {...props} />
+                  ),
+                  h3: ({ node, ...props }) => (
+                    <h3 className="mb-3 mt-8 text-xl font-semibold" {...props} />
+                  ),
+                }}
+              >
+                {contentParts[0]}
+              </ReactMarkdown>
+              {hasVideoToken && videoUrl && (
+                <div className="my-6">
+                  <EmbedMedia url={videoUrl} />
+                </div>
+              )}
+              {contentParts[1] && (
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  components={{
+                    p: ({ node, children, ...props }) => {
+                      const hasImage =
+                        node?.children?.some(
+                          (child) =>
+                            child.type === "element" && child.tagName === "img"
+                        ) ?? false;
+                      if (hasImage) {
+                        return <div {...props}>{children}</div>;
+                      }
+                      return <p {...props}>{children}</p>;
+                    },
+                    img: ({ node, ...props }) => (
+                      <figure className="my-6">
+                        <img className="w-full rounded-xl" {...props} />
+                      </figure>
+                    ),
+                    h2: ({ node, ...props }) => (
+                      <h2 className="mb-4 mt-10 text-2xl font-bold" {...props} />
+                    ),
+                    h3: ({ node, ...props }) => (
+                      <h3 className="mb-3 mt-8 text-xl font-semibold" {...props} />
+                    ),
+                  }}
+                >
+                  {contentParts[1]}
+                </ReactMarkdown>
+              )}
+              {!hasVideoToken && videoUrl && (
+                <div className="my-6">
+                  <EmbedMedia url={videoUrl} />
+                </div>
+              )}
             </div>
           </Card>
           <Card>
@@ -177,13 +264,6 @@ export default async function SpotsDetailPage({
               </ul>
             </div>
           </Card>
-          {spot.videoUrls && spot.videoUrls.length > 0 && (
-            <section className="space-y-4">
-              {spot.videoUrls.map((url, index) => (
-                <EmbedMedia key={`${url}-${index}`} url={url} />
-              ))}
-            </section>
-          )}
           <PrevNext
             prev={
               prevSpot

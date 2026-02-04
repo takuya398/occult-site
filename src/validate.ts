@@ -129,8 +129,10 @@ const validateEntry = (entry: BaseEntry, context: string) => {
   if (!isNonEmptyString(entry.summary)) {
     errors.push(`${context} summary が不正です`);
   }
-  if (!isNonEmptyString(entry.body)) {
-    errors.push(`${context} body が不正です`);
+  const hasBody = isNonEmptyString(entry.body);
+  const hasContent = isNonEmptyString(entry.content);
+  if (!hasBody && !hasContent) {
+    errors.push(`${context} body も content も不正です`);
   }
   if (!Array.isArray(entry.tags) || entry.tags.length === 0) {
     errors.push(`${context} tags が不正です`);

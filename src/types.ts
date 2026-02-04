@@ -21,6 +21,7 @@ export type BaseEntry = {
   title: string;
   summary: string;
   body: string;
+  content?: string;
   tags: string[];
   publishedAt: string;
   updatedAt?: string;
