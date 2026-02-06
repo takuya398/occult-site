@@ -101,6 +101,104 @@
     "updatedAt": "2026-02-03"
   },
   {
+    "id": "hotel-katsugyo",
+    "title": "ホテル活魚",
+    "slug": "hotel-katsugyo",
+    "summary": "崩落や違法侵入の危険が強く警戒され、背景に事件も語られる廃ホテル。",
+    "tags": ["廃墟", "ホテル", "事件", "噂", "立入禁止", "危険"],
+    "pref": "千葉県",
+    "type": "心霊スポット",
+    "credibility": 4,
+    "danger": 5,
+    "body": "廃ホテルとして語られ、崩落や違法侵入の危険が強く警戒されている。噂は噂として扱う。",
+    "content": "## 導入\n看板に大きく残る二文字――「活魚」。  \nその名で呼ばれる廃ホテルが、千葉県内の“最危険クラス”として語られている。\n\n怖さの中心は、幽霊話だけではない。  \n**崩落・怪我・通報・補導・検挙**。そして背景にある**実在の事件**。  \nこの場所は、オカルト以前に「現実の危険」が濃いとされる。\n\n![ホテル活魚：外観（ヒーロー）](/spots/hotel-katsugyo/cover.jpg)\n\n---\n\n## スポット概要\n「ホテル活魚」は通称で、**油井グランドホテル跡**としても知られると言われている。  \n現在は廃墟となり、立ち入りが問題視されている。\n\n- カテゴリ：廃ホテル（廃墟）\n- 状態：老朽化・荒廃が進行しているとされる\n- 注意：東金警察署が「#活魚」と称される廃墟への立ち入りに注意喚起を発信している\n\n![外観別カット](/spots/hotel-katsugyo/exterior.jpg)\n\n---\n\n## 事実として確認できる要素\n### 1) 立ち入りの危険と違法性（公式の注意喚起）\n東金警察署は「#活魚」と称される廃墟への立ち入りが問題視されているとして、  \n**崩落による大けが**や**法令違反**の可能性に言及し、警戒を強化している。  \n職務質問・補導等の報告も発信されている。\n\n![注意看板・バリケード等](/spots/hotel-katsugyo/sign.jpg)\n\n### 2) 事件が背景として語られる\nこの場所は、過去の事件と結びつけて語られることがある。  \nただし、ネット上の情報は噂も混ざるため、記事では「確認できる範囲」と「噂」を分けて扱う。\n\n---\n\n## 語られている噂・体験談（断定しない）\n※以下は、体験談・噂として語られている内容です。事実とは限りません。\n\n- 「女性の気配がする」「泣き声が聞こえる」といった話\n- 写真や動画に“影”が入ると言われる\n- 特定の場所で急に寒気・頭痛がするという体験談\n\n廃墟という環境では、風・建材のきしみ・侵入者の存在などで  \n「何かいる」と感じやすい、という指摘もある。\n\n![通路・階段など雰囲気](/spots/hotel-katsugyo/corridor.jpg)\n\n---\n\n## オカルト的考察\n### 土地の記憶説\n「起きた出来事の重さ」が、場所の印象を強くし、  \n後から訪れた人の感覚に影響するのではないか――という語られ方。\n\n### 環境要因説（廃墟バイアス）\n暗さ、静けさ、落書き、破壊痕。  \n廃墟はそれ自体が“恐怖を増幅する舞台装置”になりやすい。\n\n### 心理的増幅説\n「危険」「事件」「立ち入り禁止」という前情報があるほど、  \n人は些細な音や影を“確信”に変えてしまう。\n\n![落書き・荒廃の象徴](/spots/hotel-katsugyo/graffiti.jpg)\n\n---\n\n## 現地の様子（安全の範囲で）\nここでは侵入方法や抜け道などは扱わない。  \n理由は単純で、**危険であり、違法になりうる**からだ。\n\n外観の見学だけでも、周辺の迷惑にならない配慮が必要で、  \n夜間の騒音・ゴミ・交通の妨げはトラブルの原因になる。\n\n---\n\n## 安全メモ（必須）\n- 私有地・立入禁止区域には絶対に入らない（不法侵入のリスク）\n- 老朽化で崩落・落下物・床抜けの危険がある\n- ガラス片・釘・金属で裂傷の恐れ\n- 警察の警戒が強化されている（職務質問・補導等の可能性）\n- 周辺住民の迷惑行為（騒音/投棄/無断駐車）は絶対にしない\n- 「心霊」以前に現実の安全と法令順守が最優先\n\n---\n\n## まとめ\nホテル活魚は、怪談として語られる“怖さ”よりも、  \n**現実の危険（崩落・怪我・違法性）**と、背景にある出来事の重さが  \n場の印象を濃くしているタイプのスポットだと言われている。\n\n信じるかどうかは人それぞれ。  \nだが、近づくなら“物語”ではなく、**安全とルール**を先に考えたい。\n\n---\n\n## 出典（調査ソース）\n- 東金警察署 公式発信（#活魚：立ち入り注意喚起）\n  - hotel-katsugyo-sources.md を参照\n- 関連する背景情報（事件・語られ方）\n  - hotel-katsugyo-sources.md を参照",
+    "status": "published",
+    "category": "spots",
+    "publishedAt": "2026-02-05",
+    "coverImage": {
+      "type": "image",
+      "src": "/spots/hotel-katsugyo/cover.jpg",
+      "alt": "ホテル活魚の外観",
+      "credit": "User Provided / Source in hotel-katsugyo-sources.md"
+    },
+    "images": [
+      {
+        "type": "image",
+        "src": "/spots/hotel-katsugyo/exterior.jpg",
+        "alt": "外観別カット",
+        "credit": "User Provided / Source in hotel-katsugyo-sources.md"
+      },
+      {
+        "type": "image",
+        "src": "/spots/hotel-katsugyo/sign.jpg",
+        "alt": "注意看板やバリケード",
+        "credit": "User Provided / Source in hotel-katsugyo-sources.md"
+      },
+      {
+        "type": "image",
+        "src": "/spots/hotel-katsugyo/corridor.jpg",
+        "alt": "通路や階段の雰囲気",
+        "credit": "User Provided / Source in hotel-katsugyo-sources.md"
+      },
+      {
+        "type": "image",
+        "src": "/spots/hotel-katsugyo/graffiti.jpg",
+        "alt": "落書きや荒廃の象徴",
+        "credit": "User Provided / Source in hotel-katsugyo-sources.md"
+      }
+    ],
+    "updatedAt": "2026-02-05"
+  },
+  {
+    "id": "old-inunaki-tunnel",
+    "title": "旧犬鳴トンネル",
+    "slug": "old-inunaki-tunnel",
+    "summary": "封鎖された旧道側のトンネルとして語られ、危険と立入禁止が強く注意喚起されている。",
+    "tags": ["トンネル", "旧道", "都市伝説", "事件", "立入禁止", "危険"],
+    "pref": "福岡県",
+    "type": "心霊スポット",
+    "credibility": 3,
+    "danger": 4,
+    "body": "旧道側のトンネルが封鎖され、過去の事件や噂と結び付けて語られている。",
+    "content": "## 導入\n山の稜線を縫う旧道の先。  \nいまは封鎖され、近づくこと自体が危険とされる――「旧犬鳴トンネル」。\n\nこの場所の怖さは、ただの怪談では終わらない。  \n過去の事件と事故、そして「立ち入りの危険」。  \nオカルトの入口に見えて、最初に向き合うべきは“現実のリスク”だ。\n\n![旧犬鳴トンネル：ヒーロー](/spots/old-inunaki-tunnel/cover.jpg)\n\n---\n\n## スポット概要\n旧犬鳴トンネル（旧犬鳴隧道）は、福岡県の犬鳴峠周辺で語られる心霊スポット。  \n新トンネル開通後に旧道側が廃れ、現在は封鎖されていると言われる。\n\n- カテゴリ：旧トンネル（廃道/封鎖）\n- 特徴：都市伝説「犬鳴村」と結びつけて語られやすい\n- 注意：封鎖・立入禁止の扱いが前提（侵入を推奨しない）\n\n![入口（封鎖イメージ）](/spots/old-inunaki-tunnel/entrance.jpg)\n\n---\n\n## 事実として確認できる要素\n### 1) 映画『犬鳴村』はフィクション（公式の注意）\n宮若市は、映画『犬鳴村』の内容がフィクションであり、  \n地域の実情・歴史と異なる点がある旨を案内している（出典は sources.md）。\n\n### 2) 「犬鳴村伝説」は都市伝説として流通\n「この先、日本国憲法通用せず」などの有名フレーズは、  \n現地の事実というより“都市伝説として語られる物語”の側面が強い。\n\n![立入禁止などの看板](/spots/old-inunaki-tunnel/sign.jpg)\n\n---\n\n## 語られている噂・体験談（断定しない）\n※以下は噂・体験談として語られている内容で、事実とは限りません。\n\n- トンネル内で人影を見た、声を聞いたという話\n- 写真や動画に不自然な影が入ると言われる\n- 急に寒気がする、頭痛がするという体験談\n- 「行った人に不幸が起きる」といった“祟り”の語られ方\n\nただし、暗所・反響・水滴音などの環境要因で、  \n音や影を“それらしく”感じやすい、という見方もある。\n\n![内部の雰囲気（イメージ）](/spots/old-inunaki-tunnel/inside.jpg)\n\n---\n\n## オカルト的考察\n### 土地の記憶説\n事件・事故・恐怖体験の語りが重なるほど、  \n場所は“物語を背負った空間”として感じられやすい。\n\n### 封鎖が生む増幅説\n封鎖や立入禁止は、安全のための措置である一方、  \n「なぜ閉ざすのか」という疑問が想像を増幅することもある。\n\n### 心理的増幅説\n怖いと知って行くほど、人は小さな違和感を大きく解釈しがち。  \n心霊スポットでは“前情報”が体験の質を変える。\n\n![落書き・荒廃（象徴）](/spots/old-inunaki-tunnel/graffiti.jpg)\n\n---\n\n## 動画（疑似体験：訪問を推奨しない）\n現地へ行くことを勧めない代わりに、映像で雰囲気を知る方法がある。  \n※動画視聴は安全だが、真似して侵入しないこと。\n\n- https://www.youtube.com/watch?v=jnkuIHewhlw\n\n---\n\n## 安全メモ（必須）\n- 立入禁止区域・封鎖箇所には絶対に入らない（不法侵入の恐れ）\n- 山道・旧道は崩落/落石/転落の危険がある\n- 夜間の接近は特に危険（視界・携帯電波・救助の遅れ）\n- 周辺住民や交通の迷惑行為（騒音/ゴミ/無断駐車）はしない\n- 心霊以前に「安全とルール」が最優先\n\n---\n\n## まとめ\n旧犬鳴トンネルは、都市伝説と実在の出来事が混ざり合い、  \n“入口の物語”として語られてきた場所だと言われている。\n\nただし現在は封鎖され、危険も大きい。  \nだからこそ、恐怖の消費ではなく、事実と安全を前提に向き合いたい。\n\n---\n\n## 出典（調査ソース）\n- old-inunaki-tunnel-sources.md を参照（宮若市公式、メディア記事、解説動画など）",
+    "status": "published",
+    "category": "spots",
+    "publishedAt": "2026-02-06",
+    "coverImage": {
+      "type": "image",
+      "src": "/spots/old-inunaki-tunnel/cover.jpg",
+      "alt": "旧犬鳴トンネル：ヒーロー",
+      "credit": "User Provided / Sources in old-inunaki-tunnel-sources.md"
+    },
+    "images": [
+      {
+        "type": "image",
+        "src": "/spots/old-inunaki-tunnel/entrance.jpg",
+        "alt": "入口（封鎖イメージ）",
+        "credit": "User Provided / Sources in old-inunaki-tunnel-sources.md"
+      },
+      {
+        "type": "image",
+        "src": "/spots/old-inunaki-tunnel/sign.jpg",
+        "alt": "立入禁止などの看板",
+        "credit": "User Provided / Sources in old-inunaki-tunnel-sources.md"
+      },
+      {
+        "type": "image",
+        "src": "/spots/old-inunaki-tunnel/inside.jpg",
+        "alt": "内部の雰囲気（イメージ）",
+        "credit": "User Provided / Sources in old-inunaki-tunnel-sources.md"
+      },
+      {
+        "type": "image",
+        "src": "/spots/old-inunaki-tunnel/graffiti.jpg",
+        "alt": "落書き・荒廃（象徴）",
+        "credit": "User Provided / Sources in old-inunaki-tunnel-sources.md"
+      }
+    ],
+    "updatedAt": "2026-02-06"
+  },
+  {
     "id": "yogiri-toge-tunnel",
     "title": "夜霧峠トンネル",
     "slug": "yogiri-toge-tunnel",

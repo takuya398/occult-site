@@ -15,6 +15,19 @@ export type Spot = {
 
 export const spots: Spot[] = [
   {
+    title: "旧犬鳴トンネル",
+    slug: "old-inunaki-tunnel",
+    summary: "封鎖された旧道側のトンネルとして噂が残る場所。",
+    tags: ["トンネル", "旧道", "心霊", "噂", "立入禁止", "危険"],
+    pref: "福岡県",
+    type: "トンネル",
+    credibility: "B",
+    danger: 4,
+    body: "旧道側のトンネルが封鎖され、過去の噂が重なって語られている。",
+    caution: ["立入禁止区域に入らない", "落石や崩落に注意"],
+    updatedAt: "2026-02-06",
+  },
+  {
     title: "夜霧峠トンネル",
     slug: "yogiri-toge-tunnel",
     summary: "深夜に車のエンジンが止まると噂される旧道トンネル。",
