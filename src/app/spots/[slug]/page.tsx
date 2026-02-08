@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeSlug from "rehype-slug";
 import { notFound } from "next/navigation";
 import { spots } from "@/loaders";
 import ArticleHeader from "@/components/article/ArticleHeader";
@@ -182,6 +183,7 @@ export default async function SpotsDetailPage({
             <div className="prose max-w-none prose-zinc dark:prose-invert">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
+                rehypePlugins={[rehypeSlug]}
                 components={{
                   p: ({ node, children, ...props }) => {
                     const hasImage =
@@ -200,10 +202,16 @@ export default async function SpotsDetailPage({
                     </figure>
                   ),
                   h2: ({ node, ...props }) => (
-                    <h2 className="mb-4 mt-10 text-2xl font-bold" {...props} />
+                    <h2
+                      className="mb-4 mt-10 scroll-mt-24 rounded-md border-l-4 border-violet-500 bg-violet-100/70 px-4 py-2 text-2xl font-bold text-violet-900 dark:border-violet-400 dark:bg-violet-500/10 dark:text-violet-200"
+                      {...props}
+                    />
                   ),
                   h3: ({ node, ...props }) => (
-                    <h3 className="mb-3 mt-8 text-xl font-semibold" {...props} />
+                    <h3
+                      className="mb-3 mt-8 scroll-mt-24 border-l-2 border-indigo-400 pl-3 text-xl font-semibold text-indigo-800 dark:text-indigo-200"
+                      {...props}
+                    />
                   ),
                 }}
               >
@@ -217,6 +225,7 @@ export default async function SpotsDetailPage({
               {contentParts[1] && (
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm]}
+                  rehypePlugins={[rehypeSlug]}
                   components={{
                     p: ({ node, children, ...props }) => {
                       const hasImage =
@@ -235,10 +244,16 @@ export default async function SpotsDetailPage({
                       </figure>
                     ),
                     h2: ({ node, ...props }) => (
-                      <h2 className="mb-4 mt-10 text-2xl font-bold" {...props} />
+                      <h2
+                        className="mb-4 mt-10 scroll-mt-24 rounded-md border-l-4 border-violet-500 bg-violet-100/70 px-4 py-2 text-2xl font-bold text-violet-900 dark:border-violet-400 dark:bg-violet-500/10 dark:text-violet-200"
+                        {...props}
+                      />
                     ),
                     h3: ({ node, ...props }) => (
-                      <h3 className="mb-3 mt-8 text-xl font-semibold" {...props} />
+                      <h3
+                        className="mb-3 mt-8 scroll-mt-24 border-l-2 border-indigo-400 pl-3 text-xl font-semibold text-indigo-800 dark:text-indigo-200"
+                        {...props}
+                      />
                     ),
                   }}
                 >
