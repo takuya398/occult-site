@@ -34,7 +34,7 @@ export default function ArticleHeader({
       <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
         {title}
       </h1>
-      <p className="max-w-3xl text-base leading-7 text-zinc-600 dark:text-zinc-300 sm:text-lg">
+      <p className="max-w-3xl line-clamp-4 overflow-hidden break-words text-base leading-7 text-zinc-600 dark:text-zinc-300 sm:text-lg">
         {summary}
       </p>
       {metaBadges.length > 0 && (

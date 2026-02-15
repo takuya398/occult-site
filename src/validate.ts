@@ -1,8 +1,8 @@
-import spotsData from "./data/json/spots.json";
 import storiesData from "./data/json/stories.json";
 import umasData from "./data/json/uma.json";
 import { TAGS } from "./data/tags";
 import { normalizeMedia } from "./lib/media";
+import { getSpotEntriesFromArticles } from "./lib/spot-articles";
 import type { BaseEntry, EmbedMedia, ImageMedia } from "./types";
 
 const tagSet = new Set<string>(TAGS as readonly string[]);
@@ -177,14 +177,24 @@ const validateDataset = (entries: BaseEntry[], name: string, category: string) =
   });
 };
 
-validateDataset(spotsData as BaseEntry[], "spots", "spots");
-validateDataset(storiesData as BaseEntry[], "stories", "stories");
-validateDataset(umasData as BaseEntry[], "uma", "uma");
+const run = async () => {
+  const spotsData = await getSpotEntriesFromArticles();
 
-if (errors.length > 0) {
+  validateDataset(spotsData as BaseEntry[], "spots", "spots");
+  validateDataset(storiesData as BaseEntry[], "stories", "stories");
+  validateDataset(umasData as BaseEntry[], "uma", "uma");
+
+  if (errors.length > 0) {
+    console.error("\nデータ検証エラー:");
+    errors.forEach((error) => console.error(`- ${error}`));
+    process.exit(1);
+  }
+
+  console.log("データ検証OK");
+};
+
+run().catch((error) => {
   console.error("\nデータ検証エラー:");
-  errors.forEach((error) => console.error(`- ${error}`));
+  console.error(`- ${error instanceof Error ? error.message : String(error)}`);
   process.exit(1);
-}
-
-console.log("データ検証OK");
+});

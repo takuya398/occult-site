@@ -1,9 +1,1 @@
-export {
-	loadSpots as getSpots,
-	loadStories as getStories,
-	loadUmas as getUmas,
-	getAllLatest,
-	spots,
-	stories,
-	umas,
-} from "@/loaders";
+export { loadStories as getStories, loadUmas as getUmas, stories, umas } from "@/loaders";

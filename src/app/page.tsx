@@ -2,22 +2,28 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import RecentList from "@/components/RecentList";
 import { CardLink } from "@/components/ui";
-import { getAllLatest } from "@/loaders";
+import { stories, umas } from "@/loaders";
+import { getSpotEntriesFromArticles } from "@/lib/spot-articles";
 
-export default function Home() {
+export default async function Home() {
   const categoryLabel = {
     spots: "心霊スポット",
     stories: "怪談・都市伝説",
     uma: "UMA",
   } as const;
 
-  const latestItems = getAllLatest(6).map((item) => ({
-    title: item.title,
-    href: `/${item.category}/${item.slug}`,
-    date: item.publishedAt,
-    category: categoryLabel[item.category],
-    summary: item.summary,
-  }));
+  const spots = await getSpotEntriesFromArticles();
+  const merged = [...spots, ...stories, ...umas];
+  const latestItems = merged
+    .sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt))
+    .slice(0, 6)
+    .map((item) => ({
+      title: item.title,
+      href: `/${item.category}/${item.slug}`,
+      date: item.publishedAt,
+      category: categoryLabel[item.category],
+      summary: item.summary,
+    }));
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">

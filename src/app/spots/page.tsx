@@ -1,14 +1,10 @@
-import { Suspense } from "react";
 import SpotsClient from "./SpotsClient";
+import { getSpotEntriesFromArticles } from "@/lib/spot-articles";
 
-export default function SpotsPage() {
+export default async function SpotsPage() {
+  const spots = await getSpotEntriesFromArticles();
+
   return (
-    <Suspense
-      fallback={
-        <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100" />
-      }
-    >
-      <SpotsClient />
-    </Suspense>
+    <SpotsClient initialSpots={spots} />
   );
 }

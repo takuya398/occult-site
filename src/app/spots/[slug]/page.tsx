@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import { notFound } from "next/navigation";
-import { spots } from "@/loaders";
+import { getSpotEntriesFromArticles } from "@/lib/spot-articles";
 import ArticleHeader from "@/components/article/ArticleHeader";
 import PrevNext from "@/components/article/PrevNext";
 import Related from "@/components/article/Related";
@@ -12,7 +12,50 @@ import ShareBar from "@/components/article/ShareBar";
 import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
 
-export function generateStaticParams() {
+const extractTocSection = (content: string) => {
+  const tocRegex = /(^|\n)##\s*目次\s*\n([\s\S]*?)(?=\n##\s|\n#\s|$)/;
+  const match = content.match(tocRegex);
+  if (!match || match.index === undefined) {
+    return { toc: "", body: content };
+  }
+  const before = content.slice(0, match.index).trimEnd();
+  const after = content.slice(match.index + match[0].length).trimStart();
+  const body = [before, after].filter(Boolean).join("\n\n");
+  return { toc: match[2].trim(), body: body || "" };
+};
+
+const markdownComponents: Components = {
+  p: ({ node, children, ...props }) => {
+    const hasImage =
+      node?.children?.some(
+        (child) => child.type === "element" && child.tagName === "img"
+      ) ?? false;
+    if (hasImage) {
+      return <div {...props}>{children}</div>;
+    }
+    return <p {...props}>{children}</p>;
+  },
+  img: ({ node, ...props }) => (
+    <figure className="my-6">
+      <img className="w-full rounded-xl" {...props} />
+    </figure>
+  ),
+  h2: ({ node, ...props }) => (
+    <h2
+      className="mb-4 mt-10 scroll-mt-24 rounded-md border-l-4 border-violet-500 bg-violet-100/70 px-4 py-2 text-2xl font-bold text-violet-900 dark:border-violet-400 dark:bg-violet-500/10 dark:text-violet-200"
+      {...props}
+    />
+  ),
+  h3: ({ node, ...props }) => (
+    <h3
+      className="mb-3 mt-8 scroll-mt-24 border-l-2 border-indigo-400 pl-3 text-xl font-semibold text-indigo-800 dark:text-indigo-200"
+      {...props}
+    />
+  ),
+};
+
+export async function generateStaticParams() {
+  const spots = await getSpotEntriesFromArticles();
   return spots.map((spot) => ({ slug: spot.slug }));
 }
 
@@ -27,6 +70,7 @@ export default async function SpotsDetailPage({
 }: SpotsDetailPageProps) {
   const { slug } = await params;
   const resolvedSearchParams = searchParams ? await searchParams : undefined;
+  const spots = await getSpotEntriesFromArticles();
   const spot = spots.find((item) => item.slug === slug);
 
   if (!spot) {
@@ -134,9 +178,10 @@ export default async function SpotsDetailPage({
   const backHref = backQuery ? `/spots?${backQuery}` : "/spots";
   const heroImage = spot.coverImage ?? spot.images?.[0];
   const rawContent = spot.content ?? spot.body;
+  const { toc, body: contentBody } = extractTocSection(rawContent);
   const videoUrl = spot.videoUrls?.[0];
-  const hasVideoToken = rawContent.includes("{{VIDEO}}");
-  const contentParts = rawContent.split("{{VIDEO}}");
+  const hasVideoToken = contentBody.includes("{{VIDEO}}");
+  const contentParts = contentBody.split("{{VIDEO}}");
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
@@ -180,40 +225,27 @@ export default async function SpotsDetailPage({
             </figure>
           )}
           <Card>
-            <div className="prose max-w-none prose-zinc dark:prose-invert">
+            <div className="prose prose-neutral max-w-none dark:prose-invert">
+              {toc && (
+                <details className="mb-6 rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-700 dark:border-zinc-800 dark:bg-zinc-900/60 dark:text-zinc-200">
+                  <summary className="cursor-pointer text-sm font-semibold text-zinc-800 dark:text-zinc-100">
+                    目次
+                  </summary>
+                  <div className="mt-3">
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      rehypePlugins={[rehypeSlug]}
+                      components={markdownComponents}
+                    >
+                      {toc}
+                    </ReactMarkdown>
+                  </div>
+                </details>
+              )}
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeSlug]}
-                components={{
-                  p: ({ node, children, ...props }) => {
-                    const hasImage =
-                      node?.children?.some(
-                        (child) =>
-                          child.type === "element" && child.tagName === "img"
-                      ) ?? false;
-                    if (hasImage) {
-                      return <div {...props}>{children}</div>;
-                    }
-                    return <p {...props}>{children}</p>;
-                  },
-                  img: ({ node, ...props }) => (
-                    <figure className="my-6">
-                      <img className="w-full rounded-xl" {...props} />
-                    </figure>
-                  ),
-                  h2: ({ node, ...props }) => (
-                    <h2
-                      className="mb-4 mt-10 scroll-mt-24 rounded-md border-l-4 border-violet-500 bg-violet-100/70 px-4 py-2 text-2xl font-bold text-violet-900 dark:border-violet-400 dark:bg-violet-500/10 dark:text-violet-200"
-                      {...props}
-                    />
-                  ),
-                  h3: ({ node, ...props }) => (
-                    <h3
-                      className="mb-3 mt-8 scroll-mt-24 border-l-2 border-indigo-400 pl-3 text-xl font-semibold text-indigo-800 dark:text-indigo-200"
-                      {...props}
-                    />
-                  ),
-                }}
+                components={markdownComponents}
               >
                 {contentParts[0]}
               </ReactMarkdown>
@@ -226,36 +258,7 @@ export default async function SpotsDetailPage({
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm]}
                   rehypePlugins={[rehypeSlug]}
-                  components={{
-                    p: ({ node, children, ...props }) => {
-                      const hasImage =
-                        node?.children?.some(
-                          (child) =>
-                            child.type === "element" && child.tagName === "img"
-                        ) ?? false;
-                      if (hasImage) {
-                        return <div {...props}>{children}</div>;
-                      }
-                      return <p {...props}>{children}</p>;
-                    },
-                    img: ({ node, ...props }) => (
-                      <figure className="my-6">
-                        <img className="w-full rounded-xl" {...props} />
-                      </figure>
-                    ),
-                    h2: ({ node, ...props }) => (
-                      <h2
-                        className="mb-4 mt-10 scroll-mt-24 rounded-md border-l-4 border-violet-500 bg-violet-100/70 px-4 py-2 text-2xl font-bold text-violet-900 dark:border-violet-400 dark:bg-violet-500/10 dark:text-violet-200"
-                        {...props}
-                      />
-                    ),
-                    h3: ({ node, ...props }) => (
-                      <h3
-                        className="mb-3 mt-8 scroll-mt-24 border-l-2 border-indigo-400 pl-3 text-xl font-semibold text-indigo-800 dark:text-indigo-200"
-                        {...props}
-                      />
-                    ),
-                  }}
+                  components={markdownComponents}
                 >
                   {contentParts[1]}
                 </ReactMarkdown>

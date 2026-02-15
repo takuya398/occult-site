@@ -1,12 +1,18 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { spots } from "@/loaders";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
+import type { SpotEntry } from "@/types";
 
-export default function SpotsClient() {
+type SpotsClientProps = {
+  initialSpots: SpotEntry[];
+};
+
+export default function SpotsClient({ initialSpots }: SpotsClientProps) {
+  const spots = initialSpots;
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -114,19 +120,19 @@ export default function SpotsClient() {
       .map((spot) => spot.pref)
       .filter((pref): pref is string => Boolean(pref));
     return Array.from(new Set(prefs));
-  }, []);
+  }, [spots]);
 
   const typeOptions = useMemo(() => {
     const types = spots
       .map((spot) => spot.type)
       .filter((type): type is string => Boolean(type));
     return Array.from(new Set(types));
-  }, []);
+  }, [spots]);
 
   const tagOptions = useMemo(() => {
     const tags = spots.flatMap((spot) => spot.tags);
     return Array.from(new Set(tags));
-  }, []);
+  }, [spots]);
 
   const filteredSpots = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -232,6 +238,7 @@ export default function SpotsClient() {
 
     return sorted;
   }, [
+    spots,
     query,
     prefFilter,
     typeFilter,
@@ -453,6 +460,18 @@ export default function SpotsClient() {
               href={`/spots/${spot.slug}${detailsSuffix}`}
               ariaLabel={`${spot.title}の詳細へ`}
             >
+              {spot.coverImage && (
+                <div className="overflow-hidden rounded-xl border border-zinc-200 bg-white">
+                  <Image
+                    src={spot.coverImage.src}
+                    alt={spot.coverImage.alt}
+                    width={spot.coverImage.width ?? 1200}
+                    height={spot.coverImage.height ?? 800}
+                    className="h-40 w-full object-cover"
+                    sizes="(max-width: 768px) 100vw, 480px"
+                  />
+                </div>
+              )}
               <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">
                 {spot.pref && <TagChip variant="outline">{spot.pref}</TagChip>}
                 {spot.type && <TagChip variant="outline">{spot.type}</TagChip>}
@@ -460,7 +479,11 @@ export default function SpotsClient() {
               <h2 className="mt-3 text-lg font-semibold text-zinc-900">
                 {spot.title}
               </h2>
-              <p className="mt-2 text-sm text-zinc-600">{spot.summary}</p>
+              {spot.summary && (
+                <p className="mt-2 line-clamp-3 overflow-hidden break-words text-sm text-zinc-600">
+                  {spot.summary}
+                </p>
+              )}
 
               <div className="mt-4 flex flex-wrap gap-2">
                 {spot.tags.map((tag) => (
