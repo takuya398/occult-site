@@ -4,7 +4,7 @@ pref: 栃木県
 type: 心霊スポット
 credibility: B
 danger: 5
-tags: [病院, 廃墟, 立入禁止, 栃木, 心霊]
+tags: ["病院", "廃墟", "立入禁止", "栃木", "心霊"]
 heroImage: /spots/old-nogi-hospital/cover.jpg
 videoUrls:
   - https://www.youtube.com/watch?v=uJMFLG3Nvos

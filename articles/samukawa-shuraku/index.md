@@ -4,7 +4,7 @@ pref: 宮崎県
 type: 心霊スポット
 credibility: C
 danger: 4
-tags: [廃村, 山間部, 因習伝説, 心霊, 宮崎]
+tags: ["廃村", "山間部", "因習伝説", "心霊", "宮崎"]
 heroImage: /spots/samukawa-shuraku/cover.jpg
 videoUrls:
   - https://www.youtube.com/watch?v=L5ZlUXUmdvo

@@ -4,6 +4,7 @@ slug: inuyama-tengu-jinja
 publishedAt: 2026-02-09
 credibility: B
 danger: 4
+tags: ["心霊", "伝承", "山道", "噂", "立入禁止"]
 coverImage: /spots/inuyama-tengu-jinja/cover.jpg
 ---
 

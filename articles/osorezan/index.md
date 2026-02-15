@@ -2,6 +2,7 @@
 title: 恐山
 slug: osorezan
 publishedAt: 2026-02-08
+tags: ["山", "慰霊", "供養", "伝承", "噂"]
 coverImage: /spots/osorezan/cover.jpg
 videoUrl: https://www.youtube.com/watch?v=orGNtgf7iOs
 ---

@@ -4,6 +4,7 @@ slug: orange-house
 publishedAt: 2026-02-09
 credibility: B
 danger: 5
+tags: ["廃墟", "噂", "体験談", "危険", "立入禁止"]
 coverImage: /spots/orange-house/cover.jpg
 ---
 

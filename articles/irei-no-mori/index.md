@@ -4,6 +4,7 @@ slug: irei-no-mori
 publishedAt: 2026-02-07
 credibility: A
 danger: 5
+tags: ["慰霊", "事故", "供養", "山林", "体験談"]
 coverImage: /spots/irei-no-mori/cover.jpg
 videoUrl: https://www.youtube.com/watch?v=8pkGp1k90ms
 ---
