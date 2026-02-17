@@ -56,4 +56,7 @@ export const TAGS = [
   "供養",
   "立入禁止",
   "危険"
+  ,"神社"
+  ,"寺"
+  ,"滝"
 ] as const;
