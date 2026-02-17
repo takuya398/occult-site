@@ -142,7 +142,7 @@ const ensureVideoToken = (content: string, videoUrl?: string) => {
 };
 
 const isSpotCategory = (value: string) =>
-  value === "" || value === "心霊スポット" || value === "spots";
+  value === "" || value === "心霊スポット" || value === "心霊・噂" || value === "spots";
 
 const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
   const articlePath = path.join(ARTICLES_DIR, slug, "index.md");
