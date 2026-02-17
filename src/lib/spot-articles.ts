@@ -141,6 +141,16 @@ const ensureVideoToken = (content: string, videoUrl?: string) => {
   return `${content}\n\n{{VIDEO}}\n`;
 };
 
+const linkifySourcesPath = (content: string) =>
+  content.replace(/\/articles\/[a-z0-9-]+\/sources\.md/g, (match, offset, full) => {
+    const prevChar = full[offset - 1];
+    const prevTwo = full.slice(Math.max(0, offset - 2), offset);
+    if (prevChar === "[" || prevTwo === "](") {
+      return match;
+    }
+    return `[${match}](${match})`;
+  });
+
 const isSpotCategory = (value: string) =>
   value === "" || value === "心霊スポット" || value === "心霊・噂" || value === "spots";
 
@@ -191,6 +201,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
     (stats ? formatDate(stats.mtime) : undefined);
 
   const contentWithVideo = ensureVideoToken(contentWithoutTitle, youtube || undefined);
+  const contentWithLinks = linkifySourcesPath(contentWithVideo);
   const tags = normalizeTags(frontmatter.tags);
   const coverImage = cover
     ? {
@@ -207,7 +218,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
     title,
     summary,
     body: summary,
-    content: contentWithVideo,
+    content: contentWithLinks,
     tags,
     pref: pref || undefined,
     type: type || undefined,
