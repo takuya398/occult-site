@@ -1,3 +1,4 @@
+import type { UmaEntry } from "@/types";
 import { UMA_TAG_CATEGORIES } from "./uma-tags";
 
 // 日本語タグ → 英語slug（永続・変更禁止）
@@ -68,7 +69,7 @@ export const TAG_SLUG_REVERSE: Record<string, string> = Object.fromEntries(
 );
 
 // tagName → { key: categoryKey, label: categoryLabel }
-type CategoryKey = keyof typeof UMA_TAG_CATEGORIES;
+export type CategoryKey = keyof typeof UMA_TAG_CATEGORIES;
 
 export const TAG_CATEGORY_MAP: Record<
   string,
@@ -83,3 +84,54 @@ export const TAG_CATEGORY_MAP: Record<
     tags.map((tag) => [tag, { key, label }])
   )
 );
+
+// ─── 関連タグ ───────────────────────────────────────────────────────────────
+
+export type RelatedTag = {
+  tagName: string;
+  tagSlug: string;
+  categoryKey: CategoryKey | "";
+  categoryLabel: string;
+  count: number;
+};
+
+/**
+ * 現在のタグ詳細ページに表示されているUMAから、関連タグを抽出して返す。
+ * - currentTagName を除外
+ * - count >= minCount のみ採用（デフォルト 2）
+ * - TAG_SLUG_MAP に存在しないタグは除外
+ * - count 降順、同点時は tagName 昇順
+ */
+export function getRelatedTags(
+  umasInThisTag: UmaEntry[],
+  currentTagName: string,
+  options: { maxCount?: number; minCount?: number } = {}
+): RelatedTag[] {
+  const { maxCount = 10, minCount = 2 } = options;
+
+  const counts: Record<string, number> = {};
+  for (const uma of umasInThisTag) {
+    for (const tag of uma.tags) {
+      if (tag === currentTagName) continue;
+      counts[tag] = (counts[tag] ?? 0) + 1;
+    }
+  }
+
+  const result: RelatedTag[] = [];
+  for (const [tagName, count] of Object.entries(counts)) {
+    if (count < minCount) continue;
+    const tagSlug = TAG_SLUG_MAP[tagName];
+    if (!tagSlug) continue;
+    const categoryInfo = TAG_CATEGORY_MAP[tagName];
+    result.push({
+      tagName,
+      tagSlug,
+      categoryKey: categoryInfo?.key ?? "",
+      categoryLabel: categoryInfo?.label ?? "",
+      count,
+    });
+  }
+
+  result.sort((a, b) => b.count - a.count || a.tagName.localeCompare(b.tagName));
+  return result.slice(0, maxCount);
+}
