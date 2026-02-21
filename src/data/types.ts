@@ -40,8 +40,11 @@ export type Uma = {
   summary: string;
   tags: string[];
   type?: string;
-  credibility?: "S" | "A" | "B" | "C" | "D";
+  region: string;
   danger?: 1 | 2 | 3 | 4 | 5;
+  existence_rank: "S" | "A" | "B" | "C" | "D";
+  evidence_rank: "A" | "B" | "C" | "D" | "E";
+  views: number;
   body?: string;
   source?: SourceItem[];
   caution?: string[];

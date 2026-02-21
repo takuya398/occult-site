@@ -50,8 +50,12 @@ export default async function UmaDetailPage({
 
   const metaBadges = [
     ...(uma.type ? [{ label: uma.type, tone: "neutral" as const }] : []),
-    ...(uma.credibility
-      ? [{ label: `信憑性 ${uma.credibility}`, tone: "good" as const }]
+    ...(uma.region ? [{ label: uma.region, tone: "neutral" as const }] : []),
+    ...(uma.existence_rank
+      ? [{ label: `実在度 ${uma.existence_rank}`, tone: "neutral" as const }]
+      : []),
+    ...(uma.evidence_rank
+      ? [{ label: `証拠強度 ${uma.evidence_rank}`, tone: "good" as const }]
       : []),
     ...(uma.danger
       ? [{ label: `危険度 ${uma.danger}`, tone: "warn" as const }]
@@ -97,11 +101,7 @@ export default async function UmaDetailPage({
       const score =
         matchTagCount * 2 +
         (item.type && uma.type && item.type === uma.type ? 1 : 0) +
-        (item.credibility &&
-        uma.credibility &&
-        item.credibility === uma.credibility
-          ? 1
-          : 0) +
+        (item.evidence_rank === uma.evidence_rank ? 1 : 0) +
         (item.danger && uma.danger && Math.abs(item.danger - uma.danger) <= 1
           ? 1
           : 0);

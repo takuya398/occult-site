@@ -6,15 +6,69 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { umas } from "@/loaders";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
 
+// モジュールレベルで定義（SSR/CSRで常に同じ値を保証しHydration Mismatchを防ぐ）
+const regionOptions = Array.from(
+  new Set(umas.map((uma) => uma.region).filter(Boolean))
+);
+
+const tagOptions = Array.from(new Set(umas.flatMap((uma) => uma.tags)));
+
+// 数値マッピング（厳守）
+const EXISTENCE_RANK_SCORE: Record<string, number> = {
+  S: 5, A: 4, B: 3, C: 2, D: 1,
+};
+
+const EVIDENCE_RANK_SCORE: Record<string, number> = {
+  A: 5, B: 4, C: 3, D: 2, E: 1,
+};
+
+const existenceRankScore = (rank?: string): number =>
+  rank ? (EXISTENCE_RANK_SCORE[rank] ?? 0) : 0;
+
+const evidenceRankScore = (rank?: string): number =>
+  rank ? (EVIDENCE_RANK_SCORE[rank] ?? 0) : 0;
+
+type UmaItem = (typeof umas)[number];
+
+const calcRecommendScore = (uma: UmaItem, today: Date): number => {
+  const existenceValue = existenceRankScore(uma.existence_rank);
+  const evidenceValue = evidenceRankScore(uma.evidence_rank);
+  const dangerLevel = uma.danger ?? 0;
+
+  // 3-1: ベーススコア（研究価値）
+  const baseScore =
+    existenceValue * 0.35 + evidenceValue * 0.25 + dangerLevel * 0.20;
+
+  // 3-2: 閲覧数補正（暴走防止のためlog使用）
+  const viewScore = Math.log10((uma.views ?? 0) + 1) * 0.10;
+
+  // 3-3: 新規性補正（公開30日以内のみ）
+  let freshScore = 0;
+  if (uma.createdAt) {
+    const created = new Date(uma.createdAt);
+    const days = Math.floor(
+      (today.getTime() - created.getTime()) / (1000 * 60 * 60 * 24)
+    );
+    freshScore = Math.max(0, 30 - days) / 30 * 0.10;
+  }
+
+  // 4: ボーナス（実在度と証拠強度が両方 >= 4 の場合）
+  const bonus = existenceValue >= 4 && evidenceValue >= 4 ? 0.3 : 0;
+
+  // 5: 最終スコア
+  return baseScore + viewScore + freshScore + bonus;
+};
+
 export default function UmaClient() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
-  const [typeFilter, setTypeFilter] = useState("all");
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [dangerFilter, setDangerFilter] = useState("all");
-  const [credibilityFilter, setCredibilityFilter] = useState("all");
   const [sortKey, setSortKey] = useState("recommend");
+  const [existenceRankFilter, setExistenceRankFilter] = useState("all");
+  const [dangerFilter, setDangerFilter] = useState("all");
+  const [evidenceRankFilter, setEvidenceRankFilter] = useState("all");
+  const [regionFilter, setRegionFilter] = useState("all");
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   useEffect(() => {
     setQuery(searchParams.get("q") ?? "");
@@ -40,37 +94,15 @@ export default function UmaClient() {
     }
   }, [query, router, searchParams]);
 
-  const typeOptions = useMemo(() => {
-    const types = umas
-      .map((uma) => uma.type)
-      .filter((type): type is string => Boolean(type));
-    return Array.from(new Set(types));
-  }, []);
-
-  const tagOptions = useMemo(() => {
-    const tags = umas.flatMap((uma) => uma.tags);
-    return Array.from(new Set(tags));
-  }, []);
-
   const filteredUmas = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
 
     const matchesQuery = (uma: (typeof umas)[number]) => {
       if (!normalizedQuery) return true;
-      const haystack = [
-        uma.title,
-        uma.summary,
-        uma.type ?? "",
-        uma.tags.join(" "),
-      ]
+      const haystack = [uma.title, uma.summary, uma.tags.join(" ")]
         .join(" ")
         .toLowerCase();
       return haystack.includes(normalizedQuery);
-    };
-
-    const matchesType = (uma: (typeof umas)[number]) => {
-      if (typeFilter === "all") return true;
-      return uma.type === typeFilter;
     };
 
     const matchesTags = (uma: (typeof umas)[number]) => {
@@ -80,76 +112,77 @@ export default function UmaClient() {
 
     const matchesDanger = (uma: (typeof umas)[number]) => {
       if (dangerFilter === "all") return true;
-      const danger = uma.danger ?? 0;
-      if (dangerFilter === "5") return danger === 5;
-      const threshold = Number(dangerFilter);
-      return danger >= threshold;
+      return uma.danger === Number(dangerFilter);
     };
 
-    const matchesCredibility = (uma: (typeof umas)[number]) => {
-      if (credibilityFilter === "all") return true;
-      return uma.credibility === credibilityFilter;
+    const matchesExistenceRank = (uma: (typeof umas)[number]) => {
+      if (existenceRankFilter === "all") return true;
+      return uma.existence_rank === existenceRankFilter;
     };
 
-    const credibilityScore = (credibility?: string) => {
-      switch (credibility) {
-        case "S":
-          return 5;
-        case "A":
-          return 4;
-        case "B":
-          return 3;
-        case "C":
-          return 2;
-        case "D":
-          return 1;
-        default:
-          return 0;
+    const matchesEvidenceRank = (uma: (typeof umas)[number]) => {
+      if (evidenceRankFilter === "all") return true;
+      return uma.evidence_rank === evidenceRankFilter;
+    };
+
+    const matchesRegion = (uma: (typeof umas)[number]) => {
+      if (regionFilter === "all") return true;
+      return uma.region === regionFilter;
+    };
+
+    const filtered = umas.filter(
+      (uma) =>
+        matchesQuery(uma) &&
+        matchesTags(uma) &&
+        matchesDanger(uma) &&
+        matchesExistenceRank(uma) &&
+        matchesEvidenceRank(uma) &&
+        matchesRegion(uma)
+    );
+
+    // today はソート全体で1回だけ生成
+    const today = new Date();
+
+    return filtered.sort((a, b) => {
+      // 同点タイブレーク：新着順（createdAt降順）
+      const byNewest = (x: typeof a, y: typeof b) => {
+        const cx = x.createdAt ?? "";
+        const cy = y.createdAt ?? "";
+        if (cy > cx) return 1;
+        if (cy < cx) return -1;
+        return 0;
+      };
+
+      if (sortKey === "existence_rank") {
+        const diff =
+          existenceRankScore(b.existence_rank) -
+          existenceRankScore(a.existence_rank);
+        return diff !== 0 ? diff : byNewest(a, b);
       }
-    };
-
-    const sorted = umas
-      .filter(
-        (uma) =>
-          matchesQuery(uma) &&
-          matchesType(uma) &&
-          matchesTags(uma) &&
-          matchesDanger(uma) &&
-          matchesCredibility(uma)
-      )
-      .sort((a, b) => {
-        if (sortKey === "danger") {
-          const dangerDiff = (b.danger ?? 0) - (a.danger ?? 0);
-          if (dangerDiff !== 0) return dangerDiff;
-          return a.title.localeCompare(b.title, "ja");
-        }
-        if (sortKey === "credibility") {
-          const credDiff =
-            credibilityScore(b.credibility) -
-            credibilityScore(a.credibility);
-          if (credDiff !== 0) return credDiff;
-          const dangerDiff = (b.danger ?? 0) - (a.danger ?? 0);
-          if (dangerDiff !== 0) return dangerDiff;
-          return a.title.localeCompare(b.title, "ja");
-        }
-        if (sortKey === "title") {
-          return a.title.localeCompare(b.title, "ja");
-        }
-        const credDiff =
-          credibilityScore(b.credibility) - credibilityScore(a.credibility);
-        if (credDiff !== 0) return credDiff;
-        const dangerDiff = (b.danger ?? 0) - (a.danger ?? 0);
-        if (dangerDiff !== 0) return dangerDiff;
-        return a.title.localeCompare(b.title, "ja");
-      });
-
-    return sorted;
+      if (sortKey === "evidence_rank") {
+        const diff =
+          evidenceRankScore(b.evidence_rank) -
+          evidenceRankScore(a.evidence_rank);
+        return diff !== 0 ? diff : byNewest(a, b);
+      }
+      if (sortKey === "danger") {
+        const diff = (b.danger ?? 0) - (a.danger ?? 0);
+        return diff !== 0 ? diff : byNewest(a, b);
+      }
+      if (sortKey === "newest") {
+        return byNewest(a, b);
+      }
+      // recommend: finalScore 降順
+      const diff = calcRecommendScore(b, today) - calcRecommendScore(a, today);
+      return diff !== 0 ? diff : byNewest(a, b);
+    });
   }, [
     query,
-    typeFilter,
     selectedTags,
     dangerFilter,
-    credibilityFilter,
+    existenceRankFilter,
+    evidenceRankFilter,
+    regionFilter,
     sortKey,
   ]);
 
@@ -161,27 +194,23 @@ export default function UmaClient() {
 
   const handleReset = () => {
     setQuery("");
-    setTypeFilter("all");
-    setSelectedTags([]);
-    setDangerFilter("all");
-    setCredibilityFilter("all");
     setSortKey("recommend");
+    setExistenceRankFilter("all");
+    setDangerFilter("all");
+    setEvidenceRankFilter("all");
+    setRegionFilter("all");
+    setSelectedTags([]);
   };
 
   const summaryParts: string[] = [];
   if (query.trim()) summaryParts.push(`キーワード=${query.trim()}`);
-  if (typeFilter !== "all") summaryParts.push(`種別=${typeFilter}`);
+  if (existenceRankFilter !== "all") summaryParts.push(`実在度=${existenceRankFilter}`);
   if (dangerFilter !== "all") {
-    summaryParts.push(
-      `危険度=${dangerFilter === "5" ? "5のみ" : `${dangerFilter}以上`}`
-    );
+    summaryParts.push(`危険度=${dangerFilter}`);
   }
-  if (credibilityFilter !== "all") {
-    summaryParts.push(`信憑性=${credibilityFilter}`);
-  }
-  if (selectedTags.length > 0) {
-    summaryParts.push(`タグ=${selectedTags.join(",")}`);
-  }
+  if (evidenceRankFilter !== "all") summaryParts.push(`証拠強度=${evidenceRankFilter}`);
+  if (regionFilter !== "all") summaryParts.push(`地域=${regionFilter}`);
+  if (selectedTags.length > 0) summaryParts.push(`タグ=${selectedTags.join(",")}`);
   const summaryText = summaryParts.join(" / ");
 
   const queryString = searchParams.toString();
@@ -200,9 +229,7 @@ export default function UmaClient() {
         </div>
 
         <header className="space-y-3">
-          <h1 className="text-3xl font-semibold tracking-tight">
-            UMA一覧
-          </h1>
+          <h1 className="text-3xl font-semibold tracking-tight">UMA一覧</h1>
           <p className="text-base text-zinc-600 dark:text-zinc-300">
             目撃情報や伝承を検索・絞り込みできます。
           </p>
@@ -224,6 +251,7 @@ export default function UmaClient() {
                 </button>
               </div>
 
+              {/* ① フリーワード + ② ソート */}
               <div className="grid gap-3 sm:grid-cols-2">
                 <label className="text-xs text-zinc-500">
                   フリーワード
@@ -242,49 +270,27 @@ export default function UmaClient() {
                     className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
                   >
                     <option value="recommend">おすすめ</option>
+                    <option value="existence_rank">実在度が高い順</option>
+                    <option value="evidence_rank">証拠強度が高い順</option>
                     <option value="danger">危険度が高い順</option>
-                    <option value="credibility">信憑性が高い順</option>
-                    <option value="title">タイトル順</option>
+                    <option value="newest">新着順</option>
                   </select>
                 </label>
               </div>
 
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {/* ③ 実在度 / ④ 危険度 / ⑤ 証拠強度 / ⑥ 地域 */}
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 <label className="text-xs text-zinc-500">
-                  種別
-                  <select
-                    value={typeFilter}
-                    onChange={(event) => setTypeFilter(event.target.value)}
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+                  <span>実在度</span>
+                  <span
+                    className="ml-1 cursor-help text-zinc-400"
+                    title="科学的可能性（S〜D）"
                   >
-                    <option value="all">すべて</option>
-                    {typeOptions.map((type) => (
-                      <option key={type} value={type}>
-                        {type}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label className="text-xs text-zinc-500">
-                  危険度
+                    ?
+                  </span>
                   <select
-                    value={dangerFilter}
-                    onChange={(event) => setDangerFilter(event.target.value)}
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="all">すべて</option>
-                    <option value="1">1以上</option>
-                    <option value="2">2以上</option>
-                    <option value="3">3以上</option>
-                    <option value="4">4以上</option>
-                    <option value="5">5のみ</option>
-                  </select>
-                </label>
-                <label className="text-xs text-zinc-500">
-                  信憑性
-                  <select
-                    value={credibilityFilter}
-                    onChange={(event) => setCredibilityFilter(event.target.value)}
+                    value={existenceRankFilter}
+                    onChange={(event) => setExistenceRankFilter(event.target.value)}
                     className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
                   >
                     <option value="all">すべて</option>
@@ -295,8 +301,60 @@ export default function UmaClient() {
                     <option value="D">D</option>
                   </select>
                 </label>
+                <label className="text-xs text-zinc-500">
+                  危険度
+                  <select
+                    value={dangerFilter}
+                    onChange={(event) => setDangerFilter(event.target.value)}
+                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+                  >
+                    <option value="all">すべて</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </label>
+                <label className="text-xs text-zinc-500">
+                  <span>証拠強度</span>
+                  <span
+                    className="ml-1 cursor-help text-zinc-400"
+                    title="DNA/写真/映像/複数証言などの証拠量（A〜E）"
+                  >
+                    ?
+                  </span>
+                  <select
+                    value={evidenceRankFilter}
+                    onChange={(event) => setEvidenceRankFilter(event.target.value)}
+                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+                  >
+                    <option value="all">すべて</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                  </select>
+                </label>
+                <label className="text-xs text-zinc-500">
+                  地域
+                  <select
+                    value={regionFilter}
+                    onChange={(event) => setRegionFilter(event.target.value)}
+                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+                  >
+                    <option value="all">すべて</option>
+                    {regionOptions.map((region) => (
+                      <option key={region} value={region}>
+                        {region}
+                      </option>
+                    ))}
+                  </select>
+                </label>
               </div>
 
+              {/* ⑦ タグ複数選択 */}
               <div className="space-y-2">
                 <p className="text-xs text-zinc-500">タグ（複数選択）</p>
                 <div className="flex flex-wrap gap-2">
@@ -349,6 +407,7 @@ export default function UmaClient() {
             >
               <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">
                 {uma.type && <TagChip variant="outline">{uma.type}</TagChip>}
+                {uma.region && <span>{uma.region}</span>}
               </div>
               <h2 className="mt-3 text-lg font-semibold text-zinc-900">
                 {uma.title}
@@ -362,8 +421,11 @@ export default function UmaClient() {
               </div>
 
               <div className="mt-4 flex flex-wrap gap-2 text-xs">
-                {uma.credibility && (
-                  <Badge tone="emerald">信憑性 {uma.credibility}</Badge>
+                {uma.existence_rank && (
+                  <Badge tone="neutral">実在度 {uma.existence_rank}</Badge>
+                )}
+                {uma.evidence_rank && (
+                  <Badge tone="emerald">証拠強度 {uma.evidence_rank}</Badge>
                 )}
                 {uma.danger && (
                   <Badge tone="rose">危険度 {uma.danger}</Badge>

@@ -60,8 +60,12 @@ export type StoryEntry = BaseEntry & {
 export type UmaEntry = BaseEntry & {
   category: "uma";
   type?: string;
-  credibility?: "S" | "A" | "B" | "C" | "D";
+  region: string;
   danger?: 1 | 2 | 3 | 4 | 5;
+  existence_rank: "S" | "A" | "B" | "C" | "D";
+  evidence_rank: "A" | "B" | "C" | "D" | "E";
+  views: number;
   source?: SourceItem[];
   caution?: string[];
+  createdAt?: string;
 };

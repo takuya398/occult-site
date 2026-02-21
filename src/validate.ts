@@ -162,6 +162,21 @@ const validateEntry = (entry: BaseEntry, context: string) => {
   validateVideoUrls(entry.videoUrls, context);
 };
 
+const EXISTENCE_RANKS = new Set(["S", "A", "B", "C", "D"]);
+const EVIDENCE_RANKS = new Set(["A", "B", "C", "D", "E"]);
+
+const validateUmaEntry = (entry: Record<string, unknown>, context: string) => {
+  if (!isNonEmptyString(entry.region)) {
+    errors.push(`${context} region が不正です`);
+  }
+  if (!isNonEmptyString(entry.existence_rank) || !EXISTENCE_RANKS.has(entry.existence_rank as string)) {
+    errors.push(`${context} existence_rank が不正です（S/A/B/C/D）`);
+  }
+  if (!isNonEmptyString(entry.evidence_rank) || !EVIDENCE_RANKS.has(entry.evidence_rank as string)) {
+    errors.push(`${context} evidence_rank が不正です（A/B/C/D/E）`);
+  }
+};
+
 const validateDataset = (entries: BaseEntry[], name: string, category: string) => {
   if (!Array.isArray(entries)) {
     errors.push(`[data:${name}] データ形式が不正です`);
@@ -174,6 +189,9 @@ const validateDataset = (entries: BaseEntry[], name: string, category: string) =
       errors.push(`${context} category が ${category} ではありません`);
     }
     validateEntry(entry as BaseEntry, context);
+    if (category === "uma") {
+      validateUmaEntry(entry as Record<string, unknown>, context);
+    }
   });
 };
 
