@@ -5,13 +5,12 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { umas } from "@/loaders";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
+import { UMA_TAG_CATEGORIES } from "@/data/uma-tags";
 
 // モジュールレベルで定義（SSR/CSRで常に同じ値を保証しHydration Mismatchを防ぐ）
 const regionOptions = Array.from(
   new Set(umas.map((uma) => uma.region).filter(Boolean))
 );
-
-const tagOptions = Array.from(new Set(umas.flatMap((uma) => uma.tags)));
 
 // 数値マッピング（厳守）
 const EXISTENCE_RANK_SCORE: Record<string, number> = {
@@ -30,7 +29,7 @@ const evidenceRankScore = (rank?: string): number =>
 
 type UmaItem = (typeof umas)[number];
 
-const calcRecommendScore = (uma: UmaItem, today: Date): number => {
+const getRecommendDetails = (uma: UmaItem, today: Date) => {
   const existenceValue = existenceRankScore(uma.existence_rank);
   const evidenceValue = evidenceRankScore(uma.evidence_rank);
   const dangerLevel = uma.danger ?? 0;
@@ -55,9 +54,20 @@ const calcRecommendScore = (uma: UmaItem, today: Date): number => {
   // 4: ボーナス（実在度と証拠強度が両方 >= 4 の場合）
   const bonus = existenceValue >= 4 && evidenceValue >= 4 ? 0.3 : 0;
 
-  // 5: 最終スコア
-  return baseScore + viewScore + freshScore + bonus;
+  return {
+    baseScore,
+    viewScore,
+    freshScore,
+    bonus,
+    finalScore: baseScore + viewScore + freshScore + bonus,
+    hasBonus: bonus > 0,
+    isFresh: freshScore > 0,
+    isPopular: (uma.views ?? 0) >= 1000,
+  };
 };
+
+const calcRecommendScore = (uma: UmaItem, today: Date): number =>
+  getRecommendDetails(uma, today).finalScore;
 
 export default function UmaClient() {
   const router = useRouter();
@@ -69,6 +79,9 @@ export default function UmaClient() {
   const [evidenceRankFilter, setEvidenceRankFilter] = useState("all");
   const [regionFilter, setRegionFilter] = useState("all");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+
+  // ソートと表示で共通して使うため1回だけ生成
+  const today = useMemo(() => new Date(), []);
 
   useEffect(() => {
     setQuery(searchParams.get("q") ?? "");
@@ -140,9 +153,6 @@ export default function UmaClient() {
         matchesRegion(uma)
     );
 
-    // today はソート全体で1回だけ生成
-    const today = new Date();
-
     return filtered.sort((a, b) => {
       // 同点タイブレーク：新着順（createdAt降順）
       const byNewest = (x: typeof a, y: typeof b) => {
@@ -184,7 +194,24 @@ export default function UmaClient() {
     evidenceRankFilter,
     regionFilter,
     sortKey,
+    today,
   ]);
+
+  const [collapsedCategories, setCollapsedCategories] = useState<Set<string>>(
+    new Set()
+  );
+
+  const toggleCategory = (key: string) => {
+    setCollapsedCategories((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) {
+        next.delete(key);
+      } else {
+        next.add(key);
+      }
+      return next;
+    });
+  };
 
   const handleToggleTag = (tag: string) => {
     setSelectedTags((prev) =>
@@ -354,28 +381,50 @@ export default function UmaClient() {
                 </label>
               </div>
 
-              {/* ⑦ タグ複数選択 */}
-              <div className="space-y-2">
-                <p className="text-xs text-zinc-500">タグ（複数選択）</p>
-                <div className="flex flex-wrap gap-2">
-                  {tagOptions.map((tag) => {
-                    const isActive = selectedTags.includes(tag);
-                    return (
+              {/* ⑦ タグ複数選択（カテゴリ別） */}
+              <div className="space-y-3">
+                <p className="text-xs text-zinc-500">タグ（複数選択・AND検索）</p>
+                {(
+                  Object.entries(UMA_TAG_CATEGORIES) as [
+                    keyof typeof UMA_TAG_CATEGORIES,
+                    (typeof UMA_TAG_CATEGORIES)[keyof typeof UMA_TAG_CATEGORIES],
+                  ][]
+                ).map(([key, category]) => {
+                  const isCollapsed = collapsedCategories.has(key);
+                  return (
+                    <div key={key} className="space-y-1.5">
                       <button
-                        key={tag}
                         type="button"
-                        onClick={() => handleToggleTag(tag)}
-                        className={`rounded-full border px-3 py-1 text-xs transition-colors ${
-                          isActive
-                            ? "border-zinc-900 bg-zinc-900 text-white"
-                            : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300"
-                        }`}
+                        onClick={() => toggleCategory(key)}
+                        className="flex items-center gap-1 text-xs font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
                       >
-                        {tag}
+                        <span>{isCollapsed ? "▶" : "▼"}</span>
+                        <span>{category.label}</span>
                       </button>
-                    );
-                  })}
-                </div>
+                      {!isCollapsed && (
+                        <div className="flex flex-wrap gap-1.5 pl-3">
+                          {category.tags.map((tag) => {
+                            const isActive = selectedTags.includes(tag);
+                            return (
+                              <button
+                                key={tag}
+                                type="button"
+                                onClick={() => handleToggleTag(tag)}
+                                className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+                                  isActive
+                                    ? "border-zinc-900 bg-zinc-900 text-white"
+                                    : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300"
+                                }`}
+                              >
+                                {tag}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </Card>
@@ -399,40 +448,69 @@ export default function UmaClient() {
         </div>
 
         <section className="mt-8 grid gap-4 sm:grid-cols-2">
-          {filteredUmas.map((uma) => (
-            <CardLink
-              key={uma.slug}
-              href={`/uma/${uma.slug}${detailsSuffix}`}
-              ariaLabel={`${uma.title}の詳細へ`}
-            >
-              <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">
-                {uma.type && <TagChip variant="outline">{uma.type}</TagChip>}
-                {uma.region && <span>{uma.region}</span>}
-              </div>
-              <h2 className="mt-3 text-lg font-semibold text-zinc-900">
-                {uma.title}
-              </h2>
-              <p className="mt-2 text-sm text-zinc-600">{uma.summary}</p>
+          {filteredUmas.map((uma) => {
+            const details =
+              sortKey === "recommend"
+                ? getRecommendDetails(uma, today)
+                : null;
+            return (
+              <CardLink
+                key={uma.slug}
+                href={`/uma/${uma.slug}${detailsSuffix}`}
+                ariaLabel={`${uma.title}の詳細へ`}
+              >
+                <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">
+                  {uma.type && <TagChip variant="outline">{uma.type}</TagChip>}
+                  {uma.region && <span>{uma.region}</span>}
+                </div>
+                <h2 className="mt-3 text-lg font-semibold text-zinc-900">
+                  {uma.title}
+                </h2>
+                <p className="mt-2 text-sm text-zinc-600">{uma.summary}</p>
 
-              <div className="mt-4 flex flex-wrap gap-2">
-                {uma.tags.map((tag) => (
-                  <TagChip key={tag}>{tag}</TagChip>
-                ))}
-              </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {uma.tags.map((tag) => (
+                    <TagChip key={tag}>{tag}</TagChip>
+                  ))}
+                </div>
 
-              <div className="mt-4 flex flex-wrap gap-2 text-xs">
-                {uma.existence_rank && (
-                  <Badge tone="neutral">実在度 {uma.existence_rank}</Badge>
+                {details ? (
+                  // おすすめ時：理由チップ行
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    <Badge tone="neutral">実在度 {uma.existence_rank}</Badge>
+                    <Badge tone="neutral">証拠 {uma.evidence_rank}</Badge>
+                    {uma.danger != null && (
+                      <Badge tone="rose">
+                        危険 {"★".repeat(uma.danger)}
+                      </Badge>
+                    )}
+                    {details.hasBonus && (
+                      <Badge tone="amber">高実在×高証拠</Badge>
+                    )}
+                    {details.isFresh && (
+                      <Badge tone="sky">新着</Badge>
+                    )}
+                    {details.isPopular && (
+                      <Badge tone="violet">人気</Badge>
+                    )}
+                  </div>
+                ) : (
+                  // 他ソート時：通常バッジ行
+                  <div className="mt-4 flex flex-wrap gap-2 text-xs">
+                    {uma.existence_rank && (
+                      <Badge tone="neutral">実在度 {uma.existence_rank}</Badge>
+                    )}
+                    {uma.evidence_rank && (
+                      <Badge tone="emerald">証拠強度 {uma.evidence_rank}</Badge>
+                    )}
+                    {uma.danger && (
+                      <Badge tone="rose">危険度 {uma.danger}</Badge>
+                    )}
+                  </div>
                 )}
-                {uma.evidence_rank && (
-                  <Badge tone="emerald">証拠強度 {uma.evidence_rank}</Badge>
-                )}
-                {uma.danger && (
-                  <Badge tone="rose">危険度 {uma.danger}</Badge>
-                )}
-              </div>
-            </CardLink>
-          ))}
+              </CardLink>
+            );
+          })}
         </section>
 
         {filteredUmas.length === 0 && (
