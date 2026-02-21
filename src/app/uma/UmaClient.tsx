@@ -6,68 +6,18 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { umas } from "@/loaders";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
 import { UMA_TAG_CATEGORIES } from "@/data/uma-tags";
+import {
+  existenceRankScore,
+  evidenceRankScore,
+  getRecommendDetails,
+  calcRecommendScore,
+} from "@/lib/uma-score";
 
 // モジュールレベルで定義（SSR/CSRで常に同じ値を保証しHydration Mismatchを防ぐ）
 const regionOptions = Array.from(
   new Set(umas.map((uma) => uma.region).filter(Boolean))
 );
 
-// 数値マッピング（厳守）
-const EXISTENCE_RANK_SCORE: Record<string, number> = {
-  S: 5, A: 4, B: 3, C: 2, D: 1,
-};
-
-const EVIDENCE_RANK_SCORE: Record<string, number> = {
-  A: 5, B: 4, C: 3, D: 2, E: 1,
-};
-
-const existenceRankScore = (rank?: string): number =>
-  rank ? (EXISTENCE_RANK_SCORE[rank] ?? 0) : 0;
-
-const evidenceRankScore = (rank?: string): number =>
-  rank ? (EVIDENCE_RANK_SCORE[rank] ?? 0) : 0;
-
-type UmaItem = (typeof umas)[number];
-
-const getRecommendDetails = (uma: UmaItem, today: Date) => {
-  const existenceValue = existenceRankScore(uma.existence_rank);
-  const evidenceValue = evidenceRankScore(uma.evidence_rank);
-  const dangerLevel = uma.danger ?? 0;
-
-  // 3-1: ベーススコア（研究価値）
-  const baseScore =
-    existenceValue * 0.35 + evidenceValue * 0.25 + dangerLevel * 0.20;
-
-  // 3-2: 閲覧数補正（暴走防止のためlog使用）
-  const viewScore = Math.log10((uma.views ?? 0) + 1) * 0.10;
-
-  // 3-3: 新規性補正（公開30日以内のみ）
-  let freshScore = 0;
-  if (uma.createdAt) {
-    const created = new Date(uma.createdAt);
-    const days = Math.floor(
-      (today.getTime() - created.getTime()) / (1000 * 60 * 60 * 24)
-    );
-    freshScore = Math.max(0, 30 - days) / 30 * 0.10;
-  }
-
-  // 4: ボーナス（実在度と証拠強度が両方 >= 4 の場合）
-  const bonus = existenceValue >= 4 && evidenceValue >= 4 ? 0.3 : 0;
-
-  return {
-    baseScore,
-    viewScore,
-    freshScore,
-    bonus,
-    finalScore: baseScore + viewScore + freshScore + bonus,
-    hasBonus: bonus > 0,
-    isFresh: freshScore > 0,
-    isPopular: (uma.views ?? 0) >= 1000,
-  };
-};
-
-const calcRecommendScore = (uma: UmaItem, today: Date): number =>
-  getRecommendDetails(uma, today).finalScore;
 
 export default function UmaClient() {
   const router = useRouter();
