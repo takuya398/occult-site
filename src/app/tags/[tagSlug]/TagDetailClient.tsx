@@ -10,24 +10,47 @@ import {
   getRecommendDetails,
   calcRecommendScore,
 } from "@/lib/uma-score";
-import { getRelatedTags } from "@/data/uma-tag-slugs";
+import {
+  getRelatedTagsByCategory,
+  type CategoryKey,
+} from "@/data/uma-tag-slugs";
 
 type SortKey = "recommend" | "existence_rank" | "evidence_rank" | "danger" | "newest";
 
-// カテゴリごとのチップ配色（Tailwind静的クラス）
-const CATEGORY_CHIP_CLASSES: Record<string, string> = {
-  "生息環境":
+// カテゴリの表示順（固定）
+const CATEGORY_ORDER: CategoryKey[] = [
+  "environment",
+  "morphology",
+  "traits",
+  "origin_evidence",
+];
+
+const CATEGORY_LABELS: Record<CategoryKey, string> = {
+  environment: "生息環境",
+  morphology: "形態",
+  traits: "特徴",
+  origin_evidence: "由来・証拠",
+};
+
+// カテゴリキーごとのチップ配色（Tailwind静的クラス）
+const CATEGORY_CHIP_CLASSES: Record<CategoryKey, string> = {
+  environment:
     "border-emerald-200 bg-emerald-50 text-emerald-700 hover:border-emerald-400 dark:border-emerald-800/50 dark:bg-emerald-950/30 dark:text-emerald-300",
-  "形態":
+  morphology:
     "border-sky-200 bg-sky-50 text-sky-700 hover:border-sky-400 dark:border-sky-800/50 dark:bg-sky-950/30 dark:text-sky-300",
-  "特徴":
+  traits:
     "border-amber-200 bg-amber-50 text-amber-700 hover:border-amber-400 dark:border-amber-800/50 dark:bg-amber-950/30 dark:text-amber-300",
-  "由来・証拠":
+  origin_evidence:
     "border-violet-200 bg-violet-50 text-violet-700 hover:border-violet-400 dark:border-violet-800/50 dark:bg-violet-950/30 dark:text-violet-300",
 };
 
-const DEFAULT_CHIP_CLASSES =
-  "border-zinc-200 bg-white text-zinc-700 hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200";
+// カテゴリ見出しの小ラベル配色
+const CATEGORY_LABEL_CLASSES: Record<CategoryKey, string> = {
+  environment: "text-emerald-600 dark:text-emerald-400",
+  morphology: "text-sky-600 dark:text-sky-400",
+  traits: "text-amber-600 dark:text-amber-400",
+  origin_evidence: "text-violet-600 dark:text-violet-400",
+};
 
 interface Props {
   tagName: string;
@@ -84,10 +107,14 @@ export default function TagDetailClient({ tagName }: Props) {
     });
   }, [umasInThisTag, sortKey, today]);
 
-  // 関連タグ（ソートに依存しない）
-  const relatedTags = useMemo(
-    () => getRelatedTags(umasInThisTag, tagName),
+  // 関連タグ（カテゴリ別・ソートに依存しない）
+  const relatedTagsByCategory = useMemo(
+    () => getRelatedTagsByCategory(umasInThisTag, tagName),
     [umasInThisTag, tagName]
+  );
+
+  const hasRelatedTags = CATEGORY_ORDER.some(
+    (key) => (relatedTagsByCategory[key]?.length ?? 0) > 0
   );
 
   return (
@@ -121,25 +148,38 @@ export default function TagDetailClient({ tagName }: Props) {
           </p>
         </header>
 
-        {/* 関連タグ（0件なら非表示） */}
-        {relatedTags.length > 0 && (
-          <section className="mt-6">
-            <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+        {/* 関連タグ（カテゴリ別・0件なら非表示） */}
+        {hasRelatedTags && (
+          <section className="mt-6 rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900/50">
+            <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
               関連タグ
             </h2>
-            <div className="flex flex-wrap gap-2">
-              {relatedTags.map((rt) => {
-                const chipClass =
-                  CATEGORY_CHIP_CLASSES[rt.categoryLabel] ?? DEFAULT_CHIP_CLASSES;
+            <div className="space-y-4">
+              {CATEGORY_ORDER.map((key) => {
+                const tags = relatedTagsByCategory[key];
+                if (!tags || tags.length === 0) return null;
                 return (
-                  <Link
-                    key={rt.tagSlug}
-                    href={`/tags/${rt.tagSlug}`}
-                    className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm transition-colors ${chipClass}`}
-                  >
-                    <span>{rt.tagName}</span>
-                    <span className="text-xs opacity-60">({rt.count})</span>
-                  </Link>
+                  <div key={key}>
+                    <p
+                      className={`mb-2 text-xs font-semibold ${CATEGORY_LABEL_CLASSES[key]}`}
+                    >
+                      {CATEGORY_LABELS[key]}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {tags.map((rt) => (
+                        <Link
+                          key={rt.tagSlug}
+                          href={`/tags/${rt.tagSlug}`}
+                          className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm transition-colors ${CATEGORY_CHIP_CLASSES[key]}`}
+                        >
+                          <span>{rt.tagName}</span>
+                          <span className="text-xs opacity-60">
+                            ({rt.count})
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 );
               })}
             </div>

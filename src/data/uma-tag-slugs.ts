@@ -135,3 +135,62 @@ export function getRelatedTags(
   result.sort((a, b) => b.count - a.count || a.tagName.localeCompare(b.tagName));
   return result.slice(0, maxCount);
 }
+
+// ─── 関連タグ（カテゴリ別） ──────────────────────────────────────────────────
+
+export type RelatedTagItem = {
+  tagName: string;
+  tagSlug: string;
+  count: number;
+};
+
+export type RelatedTagsByCategory = Partial<Record<CategoryKey, RelatedTagItem[]>>;
+
+/**
+ * 関連タグをカテゴリ別にグルーピングして返す。
+ * - currentTagName を除外
+ * - TAG_SLUG_MAP / TAG_CATEGORY_MAP に存在しないタグは除外
+ * - count >= minCount のみ採用（デフォルト 2）
+ * - 各カテゴリ内は count 降順、perCategoryLimit 件でクリップ
+ * - タグが0件のカテゴリは返り値に含まれない
+ */
+export function getRelatedTagsByCategory(
+  umasInThisTag: UmaEntry[],
+  currentTagName: string,
+  options: {
+    minCount?: number;
+    perCategoryLimit?: number;
+  } = {}
+): RelatedTagsByCategory {
+  const { minCount = 2, perCategoryLimit = 6 } = options;
+
+  const counts: Record<string, number> = {};
+  for (const uma of umasInThisTag) {
+    for (const tag of uma.tags) {
+      if (tag === currentTagName) continue;
+      counts[tag] = (counts[tag] ?? 0) + 1;
+    }
+  }
+
+  const grouped: Partial<Record<CategoryKey, RelatedTagItem[]>> = {};
+  for (const [tagName, count] of Object.entries(counts)) {
+    if (count < minCount) continue;
+    const tagSlug = TAG_SLUG_MAP[tagName];
+    if (!tagSlug) continue;
+    const categoryInfo = TAG_CATEGORY_MAP[tagName];
+    if (!categoryInfo) continue;
+
+    const key = categoryInfo.key;
+    if (!grouped[key]) grouped[key] = [];
+    grouped[key]!.push({ tagName, tagSlug, count });
+  }
+
+  // 各カテゴリ内をソートしてクリップ
+  for (const key of Object.keys(grouped) as CategoryKey[]) {
+    grouped[key] = grouped[key]!
+      .sort((a, b) => b.count - a.count || a.tagName.localeCompare(b.tagName))
+      .slice(0, perCategoryLimit);
+  }
+
+  return grouped;
+}
