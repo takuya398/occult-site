@@ -160,9 +160,10 @@ export function getRelatedTagsByCategory(
   options: {
     minCount?: number;
     perCategoryLimit?: number;
+    maxTotal?: number;
   } = {}
 ): RelatedTagsByCategory {
-  const { minCount = 2, perCategoryLimit = 6 } = options;
+  const { minCount = 2, perCategoryLimit = 5, maxTotal = 14 } = options;
 
   const counts: Record<string, number> = {};
   for (const uma of umasInThisTag) {
@@ -185,12 +186,43 @@ export function getRelatedTagsByCategory(
     grouped[key]!.push({ tagName, tagSlug, count });
   }
 
-  // 各カテゴリ内をソートしてクリップ
+  // ステップA：各カテゴリ内を count 降順にソートして perCategoryLimit 件でクリップ
   for (const key of Object.keys(grouped) as CategoryKey[]) {
     grouped[key] = grouped[key]!
       .sort((a, b) => b.count - a.count || a.tagName.localeCompare(b.tagName))
       .slice(0, perCategoryLimit);
   }
 
-  return grouped;
+  // ステップB：全体合計が maxTotal 以内ならそのまま返す
+  const totalItems = (Object.values(grouped) as RelatedTagItem[][]).reduce(
+    (sum, arr) => sum + arr.length,
+    0
+  );
+  if (totalItems <= maxTotal) return grouped;
+
+  // ステップB（続き）：ラウンドロビンで均等に間引く
+  // カテゴリの固定順に1件ずつ取り、maxTotal に達したら終了
+  const categoryOrder = Object.keys(UMA_TAG_CATEGORIES) as CategoryKey[];
+  const trimmed: Partial<Record<CategoryKey, RelatedTagItem[]>> = {};
+  const pointers: Partial<Record<CategoryKey, number>> = {};
+  let total = 0;
+
+  outer: while (true) {
+    let anyAdded = false;
+    for (const key of categoryOrder) {
+      if (!grouped[key]) continue;
+      const ptr = pointers[key] ?? 0;
+      if (ptr < grouped[key]!.length) {
+        if (!trimmed[key]) trimmed[key] = [];
+        trimmed[key]!.push(grouped[key]![ptr]);
+        pointers[key] = ptr + 1;
+        total++;
+        anyAdded = true;
+        if (total >= maxTotal) break outer;
+      }
+    }
+    if (!anyAdded) break;
+  }
+
+  return trimmed;
 }
