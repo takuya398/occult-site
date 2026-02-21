@@ -60,4 +60,6 @@ export const TAGS = [
   ,"神社"
   ,"寺"
   ,"滝"
+  ,"公園"
+  ,"城跡"
 ] as const;
