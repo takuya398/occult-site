@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { umas } from "@/loaders";
 import ArticleHeader from "@/components/article/ArticleHeader";
 import ImageGallery from "@/components/article/ImageGallery";
+import MarkdownContent from "@/components/article/MarkdownContent";
+import UmaToc from "@/components/article/UmaToc";
 import PrevNext from "@/components/article/PrevNext";
 import Related from "@/components/article/Related";
 import ShareBar from "@/components/article/ShareBar";
@@ -154,16 +156,25 @@ export default async function UmaDetailPage({
         <div className="mt-6 grid gap-6">
           <ShareBar />
           <ImageGallery coverImage={uma.coverImage} images={uma.images} />
-          <Card>
-            <div className="space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
-              <p>{uma.body}</p>
-              <ul className="list-disc space-y-1 pl-5">
-                <li>分類: {uma.type ?? "不明"}</li>
-                <li>主なタグ: {uma.tags.slice(0, 3).join(" / ")}</li>
-                <li>目撃情報: 断続的に報告</li>
-              </ul>
-            </div>
-          </Card>
+          {uma.contentMd ? (
+            <>
+              <UmaToc contentMd={uma.contentMd} />
+              <div className="rounded-xl border border-zinc-200 bg-white px-6 py-4 dark:border-zinc-800 dark:bg-zinc-900/50">
+                <MarkdownContent content={uma.contentMd} />
+              </div>
+            </>
+          ) : (
+            <Card>
+              <div className="space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
+                <p>{uma.body}</p>
+                <ul className="list-disc space-y-1 pl-5">
+                  <li>分類: {uma.type ?? "不明"}</li>
+                  <li>主なタグ: {uma.tags.slice(0, 3).join(" / ")}</li>
+                  <li>目撃情報: 断続的に報告</li>
+                </ul>
+              </div>
+            </Card>
+          )}
           <Card>
             <div className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
               <p className="font-semibold text-zinc-900 dark:text-zinc-100">

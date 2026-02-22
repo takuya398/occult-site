@@ -13,11 +13,25 @@ import {
   calcRecommendScore,
 } from "@/lib/uma-score";
 
-// モジュールレベルで定義（SSR/CSRで常に同じ値を保証しHydration Mismatchを防ぐ）
-const regionOptions = Array.from(
-  new Set(umas.map((uma) => uma.region).filter(Boolean))
-);
+// 都道府県フィルター用（geo.scope==="JP" のみ、ユニーク・ソート済）
+const prefectureOptions = Array.from(
+  new Set(
+    umas
+      .filter((u) => u.geo?.scope === "JP")
+      .flatMap((u) => u.geo?.prefectures ?? [])
+      .filter(Boolean)
+  )
+).sort();
 
+// 国フィルター用（geo.scope==="INTL" のみ、ユニーク・ソート済）
+const countryOptions = Array.from(
+  new Set(
+    umas
+      .filter((u) => u.geo?.scope === "INTL")
+      .flatMap((u) => u.geo?.countries ?? [])
+      .filter(Boolean)
+  )
+).sort();
 
 export default function UmaClient() {
   const router = useRouter();
@@ -27,7 +41,9 @@ export default function UmaClient() {
   const [existenceRankFilter, setExistenceRankFilter] = useState("all");
   const [dangerFilter, setDangerFilter] = useState("all");
   const [evidenceRankFilter, setEvidenceRankFilter] = useState("all");
-  const [regionFilter, setRegionFilter] = useState("all");
+  const [scopeFilter, setScopeFilter] = useState<"ALL" | "JP" | "INTL">("ALL");
+  const [prefectureFilter, setPrefectureFilter] = useState("all");
+  const [countryFilter, setCountryFilter] = useState("all");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   // ソートと表示で共通して使うため1回だけ生成
@@ -88,9 +104,21 @@ export default function UmaClient() {
       return uma.evidence_rank === evidenceRankFilter;
     };
 
-    const matchesRegion = (uma: (typeof umas)[number]) => {
-      if (regionFilter === "all") return true;
-      return uma.region === regionFilter;
+    const matchesGeo = (uma: (typeof umas)[number]) => {
+      if (scopeFilter === "ALL") return true;
+      const geo = uma.geo;
+      // geo未設定の場合はJPとして扱う
+      const scope = geo?.scope ?? "JP";
+      if (scope !== scopeFilter) return false;
+      if (scopeFilter === "JP") {
+        if (prefectureFilter === "all") return true;
+        return (geo?.prefectures ?? []).includes(prefectureFilter);
+      }
+      if (scopeFilter === "INTL") {
+        if (countryFilter === "all") return true;
+        return (geo?.countries ?? []).includes(countryFilter);
+      }
+      return true;
     };
 
     const filtered = umas.filter(
@@ -100,7 +128,7 @@ export default function UmaClient() {
         matchesDanger(uma) &&
         matchesExistenceRank(uma) &&
         matchesEvidenceRank(uma) &&
-        matchesRegion(uma)
+        matchesGeo(uma)
     );
 
     return filtered.sort((a, b) => {
@@ -142,7 +170,9 @@ export default function UmaClient() {
     dangerFilter,
     existenceRankFilter,
     evidenceRankFilter,
-    regionFilter,
+    scopeFilter,
+    prefectureFilter,
+    countryFilter,
     sortKey,
     today,
   ]);
@@ -175,18 +205,33 @@ export default function UmaClient() {
     setExistenceRankFilter("all");
     setDangerFilter("all");
     setEvidenceRankFilter("all");
-    setRegionFilter("all");
+    setScopeFilter("ALL");
+    setPrefectureFilter("all");
+    setCountryFilter("all");
     setSelectedTags([]);
+  };
+
+  // 一次スコープ変更時に二次フィルターをリセット
+  const handleScopeChange = (next: "ALL" | "JP" | "INTL") => {
+    setScopeFilter(next);
+    setPrefectureFilter("all");
+    setCountryFilter("all");
   };
 
   const summaryParts: string[] = [];
   if (query.trim()) summaryParts.push(`キーワード=${query.trim()}`);
   if (existenceRankFilter !== "all") summaryParts.push(`実在度=${existenceRankFilter}`);
-  if (dangerFilter !== "all") {
-    summaryParts.push(`危険度=${dangerFilter}`);
-  }
+  if (dangerFilter !== "all") summaryParts.push(`危険度=${dangerFilter}`);
   if (evidenceRankFilter !== "all") summaryParts.push(`証拠強度=${evidenceRankFilter}`);
-  if (regionFilter !== "all") summaryParts.push(`地域=${regionFilter}`);
+  if (scopeFilter === "JP") {
+    summaryParts.push(
+      prefectureFilter === "all" ? "地域=日本" : `地域=日本（${prefectureFilter}）`
+    );
+  } else if (scopeFilter === "INTL") {
+    summaryParts.push(
+      countryFilter === "all" ? "地域=海外" : `地域=海外（${countryFilter}）`
+    );
+  }
   if (selectedTags.length > 0) summaryParts.push(`タグ=${selectedTags.join(",")}`);
   const summaryText = summaryParts.join(" / ");
 
@@ -255,7 +300,7 @@ export default function UmaClient() {
                 </label>
               </div>
 
-              {/* ③ 実在度 / ④ 危険度 / ⑤ 証拠強度 / ⑥ 地域 */}
+              {/* ③ 実在度 / ④ 危険度 / ⑤ 証拠強度 / ⑥ 地域（一次） */}
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 <label className="text-xs text-zinc-500">
                   <span>実在度</span>
@@ -317,21 +362,58 @@ export default function UmaClient() {
                 <label className="text-xs text-zinc-500">
                   地域
                   <select
-                    value={regionFilter}
-                    onChange={(event) => setRegionFilter(event.target.value)}
+                    value={scopeFilter}
+                    onChange={(event) =>
+                      handleScopeChange(event.target.value as "ALL" | "JP" | "INTL")
+                    }
                     className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
                   >
-                    <option value="all">すべて</option>
-                    {regionOptions.map((region) => (
-                      <option key={region} value={region}>
-                        {region}
-                      </option>
-                    ))}
+                    <option value="ALL">すべて</option>
+                    <option value="JP">日本</option>
+                    <option value="INTL">海外</option>
                   </select>
                 </label>
               </div>
 
-              {/* ⑦ タグ複数選択（カテゴリ別） */}
+              {/* ⑦ 都道府県（日本選択時のみ） */}
+              {scopeFilter === "JP" && (
+                <label className="text-xs text-zinc-500">
+                  都道府県
+                  <select
+                    value={prefectureFilter}
+                    onChange={(event) => setPrefectureFilter(event.target.value)}
+                    className="mt-2 w-full max-w-xs rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+                  >
+                    <option value="all">すべて</option>
+                    {prefectureOptions.map((pref) => (
+                      <option key={pref} value={pref}>
+                        {pref}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              )}
+
+              {/* ⑦ 国（海外選択時のみ） */}
+              {scopeFilter === "INTL" && (
+                <label className="text-xs text-zinc-500">
+                  国
+                  <select
+                    value={countryFilter}
+                    onChange={(event) => setCountryFilter(event.target.value)}
+                    className="mt-2 w-full max-w-xs rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+                  >
+                    <option value="all">すべて</option>
+                    {countryOptions.map((country) => (
+                      <option key={country} value={country}>
+                        {country}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              )}
+
+              {/* ⑧ タグ複数選択（カテゴリ別） */}
               <div className="space-y-3">
                 <p className="text-xs text-zinc-500">タグ（複数選択・AND検索）</p>
                 {(

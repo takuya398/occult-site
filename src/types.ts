@@ -38,6 +38,13 @@ export type SourceItem = {
   url?: string;
 };
 
+export type GeoInfo = {
+  scope: "JP" | "INTL";
+  prefectures?: string[];
+  countries?: string[];
+  area?: string;
+};
+
 export type SpotEntry = BaseEntry & {
   category: "spots";
   pref?: string;
@@ -61,6 +68,7 @@ export type UmaEntry = BaseEntry & {
   category: "uma";
   type?: string;
   region: string;
+  geo?: GeoInfo;
   danger?: 1 | 2 | 3 | 4 | 5;
   existence_rank: "S" | "A" | "B" | "C" | "D";
   evidence_rank: "A" | "B" | "C" | "D" | "E";
@@ -68,4 +76,5 @@ export type UmaEntry = BaseEntry & {
   source?: SourceItem[];
   caution?: string[];
   createdAt?: string;
+  contentMd?: string;
 };
