@@ -12,8 +12,10 @@ import {
 } from "@/lib/uma-score";
 import {
   getRelatedTagsByCategory,
+  TAG_CATEGORY_MAP,
   type CategoryKey,
 } from "@/data/uma-tag-slugs";
+import { getTagDescription } from "@/lib/tag-description";
 
 type SortKey = "recommend" | "existence_rank" | "evidence_rank" | "danger" | "newest";
 
@@ -54,9 +56,10 @@ const CATEGORY_LABEL_CLASSES: Record<CategoryKey, string> = {
 
 interface Props {
   tagName: string;
+  tagSlug: string;
 }
 
-export default function TagDetailClient({ tagName }: Props) {
+export default function TagDetailClient({ tagName, tagSlug }: Props) {
   const [sortKey, setSortKey] = useState<SortKey>("recommend");
 
   const today = useMemo(() => new Date(), []);
@@ -113,6 +116,12 @@ export default function TagDetailClient({ tagName }: Props) {
     [umasInThisTag, tagName]
   );
 
+  // タグ説明文（固定辞書 + カテゴリテンプレ + 動的統計文）
+  const description = useMemo(() => {
+    const categoryKey = TAG_CATEGORY_MAP[tagName]?.key ?? "";
+    return getTagDescription(tagSlug, tagName, categoryKey, umasInThisTag);
+  }, [tagSlug, tagName, umasInThisTag]);
+
   const hasRelatedTags = CATEGORY_ORDER.some(
     (key) => (relatedTagsByCategory[key]?.length ?? 0) > 0
   );
@@ -147,6 +156,14 @@ export default function TagDetailClient({ tagName }: Props) {
             {filteredUmas.length} 件のUMAが見つかりました。
           </p>
         </header>
+
+        {/* タグ説明文 */}
+        <div className="mt-6 space-y-2 text-sm leading-relaxed">
+          <p className="text-zinc-700 dark:text-zinc-300">{description.body}</p>
+          <p className="text-xs text-zinc-500 dark:text-zinc-400">
+            {description.statSentence}
+          </p>
+        </div>
 
         {/* 関連タグ（カテゴリ別・0件なら非表示） */}
         {hasRelatedTags && (
