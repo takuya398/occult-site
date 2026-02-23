@@ -67,7 +67,7 @@ export default function MarkdownContent({ content }: Props) {
           const objectClass = isContain ? "object-contain bg-white" : "object-cover";
           return (
             <figure className="my-8">
-              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-white">
+              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-slate-50">
                 <img
                   src={src}
                   alt={alt ?? ""}
