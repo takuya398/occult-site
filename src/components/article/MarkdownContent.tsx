@@ -62,18 +62,22 @@ export default function MarkdownContent({ content }: Props) {
           <li className="leading-relaxed">{children}</li>
         ),
         // eslint-disable-next-line @next/next/no-img-element
-        img: ({ src, alt }) => (
-          <figure className="my-8">
-            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl">
-              <img
-                src={src}
-                alt={alt ?? ""}
-                className="absolute inset-0 h-full w-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </figure>
-        ),
+        img: ({ src, alt }) => {
+          const isContain = typeof src === "string" && src.includes("contain");
+          const objectClass = isContain ? "object-contain bg-white" : "object-cover";
+          return (
+            <figure className="my-8">
+              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-white">
+                <img
+                  src={src}
+                  alt={alt ?? ""}
+                  className={`absolute inset-0 h-full w-full ${objectClass}`}
+                  loading="lazy"
+                />
+              </div>
+            </figure>
+          );
+        },
         strong: ({ children }) => (
           <strong className="font-semibold text-zinc-900 dark:text-zinc-100">
             {children}
