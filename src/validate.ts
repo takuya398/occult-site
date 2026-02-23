@@ -1,11 +1,15 @@
 import storiesData from "./data/json/stories.json";
 import umasData from "./data/json/uma.json";
 import { TAGS } from "./data/tags";
+import { UMA_TAG_CATEGORIES } from "./data/uma-tags";
 import { normalizeMedia } from "./lib/media";
 import { getSpotEntriesFromArticles } from "./lib/spot-articles";
 import type { BaseEntry, EmbedMedia, ImageMedia } from "./types";
 
 const tagSet = new Set<string>(TAGS as readonly string[]);
+const umaTagSet = new Set<string>(
+  Object.values(UMA_TAG_CATEGORIES).flatMap((cat) => [...cat.tags] as string[])
+);
 const slugSet = new Set<string>();
 const errors: string[] = [];
 
@@ -109,7 +113,7 @@ const validateVideoUrls = (videoUrls: unknown, context: string) => {
   });
 };
 
-const validateEntry = (entry: BaseEntry, context: string) => {
+const validateEntry = (entry: BaseEntry, context: string, activeTagSet: Set<string> = tagSet) => {
   if (!isNonEmptyString(entry.id)) {
     errors.push(`${context} id が不正です`);
   }
@@ -138,7 +142,7 @@ const validateEntry = (entry: BaseEntry, context: string) => {
     errors.push(`${context} tags が不正です`);
   } else {
     entry.tags.forEach((tag) => {
-      if (!tagSet.has(tag)) {
+      if (!activeTagSet.has(tag)) {
         errors.push(`${context} tags に未登録タグがあります: ${tag}`);
       }
     });
@@ -183,12 +187,13 @@ const validateDataset = (entries: BaseEntry[], name: string, category: string) =
     return;
   }
 
+  const activeTagSet = category === "uma" ? umaTagSet : tagSet;
   entries.forEach((entry, index) => {
     const context = `[data:${name} index=${index} slug=${(entry as BaseEntry).slug ?? ""}]`;
     if ((entry as BaseEntry).category !== category) {
       errors.push(`${context} category が ${category} ではありません`);
     }
-    validateEntry(entry as BaseEntry, context);
+    validateEntry(entry as BaseEntry, context, activeTagSet);
     if (category === "uma") {
       validateUmaEntry(entry as Record<string, unknown>, context);
     }
