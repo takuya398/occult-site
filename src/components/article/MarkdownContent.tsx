@@ -63,12 +63,15 @@ export default function MarkdownContent({ content }: Props) {
         ),
         // eslint-disable-next-line @next/next/no-img-element
         img: ({ src, alt }) => (
-          <figure className="my-6">
-            <img
-              src={src}
-              alt={alt ?? ""}
-              className="w-full rounded-xl"
-            />
+          <figure className="my-8">
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl">
+              <img
+                src={src}
+                alt={alt ?? ""}
+                className="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
           </figure>
         ),
         strong: ({ children }) => (
