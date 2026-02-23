@@ -41,11 +41,18 @@ export default function MarkdownContent({ content }: Props) {
             {children}
           </h3>
         ),
-        p: ({ children }) => (
-          <p className="my-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
-            {children}
-          </p>
-        ),
+        p: ({ node, children }) => {
+          const hasImage =
+            node?.children?.some(
+              (child) => child.type === "element" && child.tagName === "img"
+            ) ?? false;
+          if (hasImage) return <div>{children}</div>;
+          return (
+            <p className="my-3 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+              {children}
+            </p>
+          );
+        },
         ul: ({ children }) => (
           <ul className="my-3 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
             {children}
@@ -56,11 +63,13 @@ export default function MarkdownContent({ content }: Props) {
         ),
         // eslint-disable-next-line @next/next/no-img-element
         img: ({ src, alt }) => (
-          <img
-            src={src}
-            alt={alt ?? ""}
-            className="my-4 w-full rounded-lg object-cover"
-          />
+          <figure className="my-6">
+            <img
+              src={src}
+              alt={alt ?? ""}
+              className="w-full rounded-xl"
+            />
+          </figure>
         ),
         strong: ({ children }) => (
           <strong className="font-semibold text-zinc-900 dark:text-zinc-100">
