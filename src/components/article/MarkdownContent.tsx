@@ -64,14 +64,14 @@ export default function MarkdownContent({ content }: Props) {
         // eslint-disable-next-line @next/next/no-img-element
         img: ({ src, alt }) => {
           const isContain = typeof src === "string" && src.includes("contain");
-          const objectClass = isContain ? "object-contain bg-white" : "object-cover";
+          const objectClass = isContain ? "object-contain object-center" : "object-cover object-center";
           return (
             <figure className="my-8">
-              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-slate-50">
+              <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl bg-slate-50">
                 <img
                   src={src}
                   alt={alt ?? ""}
-                  className={`absolute inset-0 h-full w-full ${objectClass}`}
+                  className={"absolute inset-0 w-full h-full " + objectClass}
                   loading="lazy"
                 />
               </div>

@@ -12,6 +12,7 @@ import {
   getRecommendDetails,
   calcRecommendScore,
 } from "@/lib/uma-score";
+import UmaCardCover from "./UmaCardCover";
 
 // 都道府県フィルター用（geo.scope==="JP" のみ、ユニーク・ソート済）
 const prefectureOptions = Array.from(
@@ -485,61 +486,65 @@ export default function UmaClient() {
               sortKey === "recommend"
                 ? getRecommendDetails(uma, today)
                 : null;
+            const visibleTags = uma.tags.slice(0, 4);
+            const extraTagCount = uma.tags.length - 4;
+            const isDanger5 = uma.danger === 5;
             return (
               <CardLink
                 key={uma.slug}
                 href={`/uma/${uma.slug}${detailsSuffix}`}
                 ariaLabel={`${uma.title}の詳細へ`}
+                variant="uma"
+                className={`group overflow-hidden hover:shadow-md${isDanger5 ? " uma-danger5" : ""}`}
               >
+                <UmaCardCover slug={uma.slug} isNew={!!details?.isFresh} isDanger5={isDanger5} />
+
+                {/* 上段メタ */}
                 <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">
                   {uma.type && <TagChip variant="outline">{uma.type}</TagChip>}
                   {uma.region && <span>{uma.region}</span>}
                 </div>
-                <h2 className="mt-3 text-lg font-semibold text-zinc-900">
+
+                {/* タイトル */}
+                <h2 className="mt-2 text-lg font-semibold tracking-tight line-clamp-2 text-zinc-900 dark:text-zinc-100">
                   {uma.title}
                 </h2>
-                <p className="mt-2 text-sm text-zinc-600">{uma.summary}</p>
 
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {uma.tags.map((tag) => (
+                {/* 要約 */}
+                <p className="mt-1 text-sm leading-snug line-clamp-2 text-zinc-600 dark:text-zinc-400">
+                  {uma.summary}
+                </p>
+
+                {/* タグ（最大4 + +N） */}
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {visibleTags.map((tag) => (
                     <TagChip key={tag}>{tag}</TagChip>
                   ))}
+                  {extraTagCount > 0 && (
+                    <TagChip variant="outline">+{extraTagCount}</TagChip>
+                  )}
                 </div>
 
-                {details ? (
-                  // おすすめ時：理由チップ行
-                  <div className="mt-4 flex flex-wrap gap-1.5">
-                    <Badge tone="neutral">実在度 {uma.existence_rank}</Badge>
+                {/* バッジ */}
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {uma.existence_rank && (
+                    <Badge tone="neutral">実在 {uma.existence_rank}</Badge>
+                  )}
+                  {uma.evidence_rank && (
                     <Badge tone="neutral">証拠 {uma.evidence_rank}</Badge>
-                    {uma.danger != null && (
-                      <Badge tone="rose">
-                        危険 {"★".repeat(uma.danger)}
-                      </Badge>
-                    )}
-                    {details.hasBonus && (
-                      <Badge tone="amber">高実在×高証拠</Badge>
-                    )}
-                    {details.isFresh && (
-                      <Badge tone="sky">新着</Badge>
-                    )}
-                    {details.isPopular && (
-                      <Badge tone="violet">人気</Badge>
-                    )}
-                  </div>
-                ) : (
-                  // 他ソート時：通常バッジ行
-                  <div className="mt-4 flex flex-wrap gap-2 text-xs">
-                    {uma.existence_rank && (
-                      <Badge tone="neutral">実在度 {uma.existence_rank}</Badge>
-                    )}
-                    {uma.evidence_rank && (
-                      <Badge tone="emerald">証拠強度 {uma.evidence_rank}</Badge>
-                    )}
-                    {uma.danger && (
-                      <Badge tone="rose">危険度 {uma.danger}</Badge>
-                    )}
-                  </div>
-                )}
+                  )}
+                  {uma.danger != null && (
+                    <Badge
+                      tone={
+                        uma.danger >= 4 ? "rose" : uma.danger <= 2 ? "amber" : "rose"
+                      }
+                    >
+                      危険 {uma.danger}
+                    </Badge>
+                  )}
+                  {details?.hasBonus && <Badge tone="amber">高実在×高証拠</Badge>}
+                  {details?.isPopular && <Badge tone="violet">人気</Badge>}
+                </div>
               </CardLink>
             );
           })}
