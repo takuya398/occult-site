@@ -148,8 +148,8 @@ body {
 
 /* Gothic カード（dark モード専用スタイル） */
 .dark .gothic-card {
-  background-color: #0d0008;
-  border-color: rgba(139,0,0,0.25);
+  background: linear-gradient(135deg, #211030 0%, #1a0c26 100%);
+  border-color: rgba(139,0,0,0.32);
 }
 @media (hover: hover) and (pointer: fine) {
   .dark .gothic-card:hover {

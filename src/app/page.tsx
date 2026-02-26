@@ -73,10 +73,11 @@ export default async function Home() {
               className="group gothic-card"
               variant="spot"
             >
-              <p className="text-lg font-semibold text-zinc-900 dark:text-[#e8ddd0]">
+              <div className="mb-3 h-0.5 w-10 rounded-full bg-sky-400/60 dark:bg-sky-300/50" />
+              <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                 心霊スポット
               </p>
-              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
                 日本各地のスポット情報を地図感覚で探索。
               </p>
             </CardLink>
@@ -86,10 +87,11 @@ export default async function Home() {
               className="group gothic-card"
               variant="story"
             >
-              <p className="text-lg font-semibold text-zinc-900 dark:text-[#e8ddd0]">
+              <div className="mb-3 h-0.5 w-10 rounded-full bg-rose-400/60 dark:bg-rose-300/50" />
+              <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                 怪談・都市伝説
               </p>
-              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
                 伝承や目撃談を読み物として整理。
               </p>
             </CardLink>
@@ -99,10 +101,11 @@ export default async function Home() {
               className="group gothic-card"
               variant="uma"
             >
-              <p className="text-lg font-semibold text-zinc-900 dark:text-[#e8ddd0]">
+              <div className="mb-3 h-0.5 w-10 rounded-full bg-emerald-400/60 dark:bg-emerald-300/50" />
+              <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                 UMA
               </p>
-              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
                 未確認生物の情報を一覧でまとめて参照。
               </p>
             </CardLink>
