@@ -2,8 +2,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import RecentList from "@/components/RecentList";
 import { CardLink } from "@/components/ui";
-import { stories, umas } from "@/loaders";
-import { getSpotEntriesFromArticles } from "@/lib/spot-articles";
+import { getAllLatest } from "@/lib/server-loaders";
 
 export default async function Home() {
   const categoryLabel = {
@@ -12,18 +11,14 @@ export default async function Home() {
     uma: "UMA",
   } as const;
 
-  const spots = await getSpotEntriesFromArticles();
-  const merged = [...spots, ...stories, ...umas];
-  const latestItems = merged
-    .sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt))
-    .slice(0, 6)
-    .map((item) => ({
-      title: item.title,
-      href: `/${item.category}/${item.slug}`,
-      date: item.publishedAt,
-      category: categoryLabel[item.category],
-      summary: item.summary,
-    }));
+  const latest = await getAllLatest(6);
+  const latestItems = latest.map((item) => ({
+    title: item.title,
+    href: item.href,
+    date: item.publishedAt,
+    category: categoryLabel[item.category],
+    summary: item.summary,
+  }));
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-[#07000a] dark:text-[#e8ddd0] dark:[background-image:radial-gradient(ellipse_at_50%_0%,rgba(74,14,107,0.18)_0%,transparent_55%)]">

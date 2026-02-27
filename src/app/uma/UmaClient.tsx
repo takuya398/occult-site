@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { umas } from "@/loaders";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
+import FilterDrawer from "@/components/FilterDrawer";
 import { UMA_TAG_CATEGORIES } from "@/data/uma-tags";
 import {
   existenceRankScore,
@@ -46,6 +47,7 @@ export default function UmaClient() {
   const [prefectureFilter, setPrefectureFilter] = useState("all");
   const [countryFilter, setCountryFilter] = useState("all");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [filterOpen, setFilterOpen] = useState(false);
 
   // ソートと表示で共通して使うため1回だけ生成
   const today = useMemo(() => new Date(), []);
@@ -239,6 +241,197 @@ export default function UmaClient() {
   const queryString = searchParams.toString();
   const detailsSuffix = queryString ? `?${queryString}` : "";
 
+  // フィルター入力フォーム（PC インラインとモバイル Drawer で共用）
+  const filterFields = (
+    <div className="flex flex-col gap-4">
+      {/* ① フリーワード + ② ソート */}
+      <div className="grid gap-3 sm:grid-cols-2">
+        <label className="text-xs text-zinc-500">
+          フリーワード
+          <input
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="例: 雪男 / 湖 / 巨大生物"
+            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800 outline-none focus:border-zinc-400"
+          />
+        </label>
+        <label className="text-xs text-zinc-500">
+          ソート
+          <select
+            value={sortKey}
+            onChange={(event) => setSortKey(event.target.value)}
+            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+          >
+            <option value="recommend">おすすめ</option>
+            <option value="existence_rank">実在度が高い順</option>
+            <option value="evidence_rank">証拠強度が高い順</option>
+            <option value="danger">危険度が高い順</option>
+            <option value="newest">新着順</option>
+          </select>
+        </label>
+      </div>
+
+      {/* ③ 実在度 / ④ 危険度 / ⑤ 証拠強度 / ⑥ 地域（一次） */}
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <label className="text-xs text-zinc-500">
+          <span>実在度</span>
+          <span
+            className="ml-1 cursor-help text-zinc-400"
+            title="科学的可能性（S〜D）"
+          >
+            ?
+          </span>
+          <select
+            value={existenceRankFilter}
+            onChange={(event) => setExistenceRankFilter(event.target.value)}
+            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+          >
+            <option value="all">すべて</option>
+            <option value="S">S</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+          </select>
+        </label>
+        <label className="text-xs text-zinc-500">
+          危険度
+          <select
+            value={dangerFilter}
+            onChange={(event) => setDangerFilter(event.target.value)}
+            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+          >
+            <option value="all">すべて</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+        <label className="text-xs text-zinc-500">
+          <span>証拠強度</span>
+          <span
+            className="ml-1 cursor-help text-zinc-400"
+            title="DNA/写真/映像/複数証言などの証拠量（A〜E）"
+          >
+            ?
+          </span>
+          <select
+            value={evidenceRankFilter}
+            onChange={(event) => setEvidenceRankFilter(event.target.value)}
+            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+          >
+            <option value="all">すべて</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select>
+        </label>
+        <label className="text-xs text-zinc-500">
+          地域
+          <select
+            value={scopeFilter}
+            onChange={(event) =>
+              handleScopeChange(event.target.value as "ALL" | "JP" | "INTL")
+            }
+            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+          >
+            <option value="ALL">すべて</option>
+            <option value="JP">日本</option>
+            <option value="INTL">海外</option>
+          </select>
+        </label>
+      </div>
+
+      {/* ⑦ 都道府県（日本選択時のみ） */}
+      {scopeFilter === "JP" && (
+        <label className="text-xs text-zinc-500">
+          都道府県
+          <select
+            value={prefectureFilter}
+            onChange={(event) => setPrefectureFilter(event.target.value)}
+            className="mt-2 w-full max-w-xs rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+          >
+            <option value="all">すべて</option>
+            {prefectureOptions.map((pref) => (
+              <option key={pref} value={pref}>
+                {pref}
+              </option>
+            ))}
+          </select>
+        </label>
+      )}
+
+      {/* ⑦ 国（海外選択時のみ） */}
+      {scopeFilter === "INTL" && (
+        <label className="text-xs text-zinc-500">
+          国
+          <select
+            value={countryFilter}
+            onChange={(event) => setCountryFilter(event.target.value)}
+            className="mt-2 w-full max-w-xs rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+          >
+            <option value="all">すべて</option>
+            {countryOptions.map((country) => (
+              <option key={country} value={country}>
+                {country}
+              </option>
+            ))}
+          </select>
+        </label>
+      )}
+
+      {/* ⑧ タグ複数選択（カテゴリ別） */}
+      <div className="space-y-3">
+        <p className="text-xs text-zinc-500">タグ（複数選択・AND検索）</p>
+        {(
+          Object.entries(UMA_TAG_CATEGORIES) as [
+            keyof typeof UMA_TAG_CATEGORIES,
+            (typeof UMA_TAG_CATEGORIES)[keyof typeof UMA_TAG_CATEGORIES],
+          ][]
+        ).map(([key, category]) => {
+          const isCollapsed = collapsedCategories.has(key);
+          return (
+            <div key={key} className="space-y-1.5">
+              <button
+                type="button"
+                onClick={() => toggleCategory(key)}
+                className="flex items-center gap-1 text-xs font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
+              >
+                <span>{isCollapsed ? "▶" : "▼"}</span>
+                <span>{category.label}</span>
+              </button>
+              {!isCollapsed && (
+                <div className="flex flex-wrap gap-1.5 pl-3">
+                  {category.tags.map((tag) => {
+                    const isActive = selectedTags.includes(tag);
+                    return (
+                      <button
+                        key={tag}
+                        type="button"
+                        onClick={() => handleToggleTag(tag)}
+                        className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+                          isActive
+                            ? "border-zinc-900 bg-zinc-900 text-white"
+                            : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300"
+                        }`}
+                      >
+                        {tag}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
@@ -258,7 +451,56 @@ export default function UmaClient() {
           </p>
         </header>
 
-        <section className="mt-8">
+        {/* Mobile: 絞り込みボタン */}
+        <div className="mt-6 flex items-center justify-between sm:hidden">
+          <button
+            type="button"
+            onClick={() => setFilterOpen(true)}
+            className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-700 shadow-sm transition-colors active:bg-zinc-50"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 4h12M4 8h8M6 12h4"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+            </svg>
+            絞り込み
+            {summaryParts.length > 0 && (
+              <span className="flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-zinc-800 px-1 text-[11px] text-white">
+                {summaryParts.length}
+              </span>
+            )}
+          </button>
+          {summaryParts.length > 0 && (
+            <button
+              type="button"
+              onClick={handleReset}
+              className="text-xs text-zinc-500 underline"
+            >
+              リセット
+            </button>
+          )}
+        </div>
+
+        {/* FilterDrawer（モバイル用） */}
+        <FilterDrawer
+          open={filterOpen}
+          onOpenChange={setFilterOpen}
+          onReset={handleReset}
+        >
+          {filterFields}
+        </FilterDrawer>
+
+        {/* PC: フィルター（インライン） */}
+        <section className="mt-8 hidden sm:block">
           <Card>
             <div className="flex flex-col gap-4">
               <div className="flex flex-wrap items-center justify-between gap-3">
@@ -273,192 +515,7 @@ export default function UmaClient() {
                   リセット
                 </button>
               </div>
-
-              {/* ① フリーワード + ② ソート */}
-              <div className="grid gap-3 sm:grid-cols-2">
-                <label className="text-xs text-zinc-500">
-                  フリーワード
-                  <input
-                    value={query}
-                    onChange={(event) => setQuery(event.target.value)}
-                    placeholder="例: 雪男 / 湖 / 巨大生物"
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800 outline-none focus:border-zinc-400"
-                  />
-                </label>
-                <label className="text-xs text-zinc-500">
-                  ソート
-                  <select
-                    value={sortKey}
-                    onChange={(event) => setSortKey(event.target.value)}
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="recommend">おすすめ</option>
-                    <option value="existence_rank">実在度が高い順</option>
-                    <option value="evidence_rank">証拠強度が高い順</option>
-                    <option value="danger">危険度が高い順</option>
-                    <option value="newest">新着順</option>
-                  </select>
-                </label>
-              </div>
-
-              {/* ③ 実在度 / ④ 危険度 / ⑤ 証拠強度 / ⑥ 地域（一次） */}
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                <label className="text-xs text-zinc-500">
-                  <span>実在度</span>
-                  <span
-                    className="ml-1 cursor-help text-zinc-400"
-                    title="科学的可能性（S〜D）"
-                  >
-                    ?
-                  </span>
-                  <select
-                    value={existenceRankFilter}
-                    onChange={(event) => setExistenceRankFilter(event.target.value)}
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="all">すべて</option>
-                    <option value="S">S</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                  </select>
-                </label>
-                <label className="text-xs text-zinc-500">
-                  危険度
-                  <select
-                    value={dangerFilter}
-                    onChange={(event) => setDangerFilter(event.target.value)}
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="all">すべて</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </label>
-                <label className="text-xs text-zinc-500">
-                  <span>証拠強度</span>
-                  <span
-                    className="ml-1 cursor-help text-zinc-400"
-                    title="DNA/写真/映像/複数証言などの証拠量（A〜E）"
-                  >
-                    ?
-                  </span>
-                  <select
-                    value={evidenceRankFilter}
-                    onChange={(event) => setEvidenceRankFilter(event.target.value)}
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="all">すべて</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="E">E</option>
-                  </select>
-                </label>
-                <label className="text-xs text-zinc-500">
-                  地域
-                  <select
-                    value={scopeFilter}
-                    onChange={(event) =>
-                      handleScopeChange(event.target.value as "ALL" | "JP" | "INTL")
-                    }
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="ALL">すべて</option>
-                    <option value="JP">日本</option>
-                    <option value="INTL">海外</option>
-                  </select>
-                </label>
-              </div>
-
-              {/* ⑦ 都道府県（日本選択時のみ） */}
-              {scopeFilter === "JP" && (
-                <label className="text-xs text-zinc-500">
-                  都道府県
-                  <select
-                    value={prefectureFilter}
-                    onChange={(event) => setPrefectureFilter(event.target.value)}
-                    className="mt-2 w-full max-w-xs rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="all">すべて</option>
-                    {prefectureOptions.map((pref) => (
-                      <option key={pref} value={pref}>
-                        {pref}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-              )}
-
-              {/* ⑦ 国（海外選択時のみ） */}
-              {scopeFilter === "INTL" && (
-                <label className="text-xs text-zinc-500">
-                  国
-                  <select
-                    value={countryFilter}
-                    onChange={(event) => setCountryFilter(event.target.value)}
-                    className="mt-2 w-full max-w-xs rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="all">すべて</option>
-                    {countryOptions.map((country) => (
-                      <option key={country} value={country}>
-                        {country}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-              )}
-
-              {/* ⑧ タグ複数選択（カテゴリ別） */}
-              <div className="space-y-3">
-                <p className="text-xs text-zinc-500">タグ（複数選択・AND検索）</p>
-                {(
-                  Object.entries(UMA_TAG_CATEGORIES) as [
-                    keyof typeof UMA_TAG_CATEGORIES,
-                    (typeof UMA_TAG_CATEGORIES)[keyof typeof UMA_TAG_CATEGORIES],
-                  ][]
-                ).map(([key, category]) => {
-                  const isCollapsed = collapsedCategories.has(key);
-                  return (
-                    <div key={key} className="space-y-1.5">
-                      <button
-                        type="button"
-                        onClick={() => toggleCategory(key)}
-                        className="flex items-center gap-1 text-xs font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
-                      >
-                        <span>{isCollapsed ? "▶" : "▼"}</span>
-                        <span>{category.label}</span>
-                      </button>
-                      {!isCollapsed && (
-                        <div className="flex flex-wrap gap-1.5 pl-3">
-                          {category.tags.map((tag) => {
-                            const isActive = selectedTags.includes(tag);
-                            return (
-                              <button
-                                key={tag}
-                                type="button"
-                                onClick={() => handleToggleTag(tag)}
-                                className={`rounded-full border px-3 py-1 text-xs transition-colors ${
-                                  isActive
-                                    ? "border-zinc-900 bg-zinc-900 text-white"
-                                    : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300"
-                                }`}
-                              >
-                                {tag}
-                              </button>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
+              {filterFields}
             </div>
           </Card>
         </section>

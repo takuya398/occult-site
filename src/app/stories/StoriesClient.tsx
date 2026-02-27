@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { stories } from "@/loaders";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
+import FilterDrawer from "@/components/FilterDrawer";
 
 export default function StoriesClient() {
   const router = useRouter();
@@ -15,6 +16,7 @@ export default function StoriesClient() {
   const [dangerFilter, setDangerFilter] = useState("all");
   const [credibilityFilter, setCredibilityFilter] = useState("all");
   const [sortKey, setSortKey] = useState("recommend");
+  const [filterOpen, setFilterOpen] = useState(false);
 
   useEffect(() => {
     setQuery(searchParams.get("q") ?? "");
@@ -187,6 +189,107 @@ export default function StoriesClient() {
   const queryString = searchParams.toString();
   const detailsSuffix = queryString ? `?${queryString}` : "";
 
+  // フィルター入力フォーム（PC インラインとモバイル Drawer で共用）
+  const filterFields = (
+    <div className="flex flex-col gap-4">
+      <div className="grid gap-3 sm:grid-cols-2">
+        <label className="text-xs text-zinc-500">
+          フリーワード
+          <input
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="例: 学校 / 都市伝説 / 鏡"
+            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800 outline-none focus:border-zinc-400"
+          />
+        </label>
+        <label className="text-xs text-zinc-500">
+          ソート
+          <select
+            value={sortKey}
+            onChange={(event) => setSortKey(event.target.value)}
+            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+          >
+            <option value="recommend">おすすめ</option>
+            <option value="danger">危険度が高い順</option>
+            <option value="credibility">信憑性が高い順</option>
+            <option value="title">タイトル順</option>
+          </select>
+        </label>
+      </div>
+
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <label className="text-xs text-zinc-500">
+          種別
+          <select
+            value={typeFilter}
+            onChange={(event) => setTypeFilter(event.target.value)}
+            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+          >
+            <option value="all">すべて</option>
+            {typeOptions.map((type) => (
+              <option key={type} value={type}>
+                {type}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label className="text-xs text-zinc-500">
+          危険度
+          <select
+            value={dangerFilter}
+            onChange={(event) => setDangerFilter(event.target.value)}
+            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+          >
+            <option value="all">すべて</option>
+            <option value="1">1以上</option>
+            <option value="2">2以上</option>
+            <option value="3">3以上</option>
+            <option value="4">4以上</option>
+            <option value="5">5のみ</option>
+          </select>
+        </label>
+        <label className="text-xs text-zinc-500">
+          信憑性
+          <select
+            value={credibilityFilter}
+            onChange={(event) => setCredibilityFilter(event.target.value)}
+            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+          >
+            <option value="all">すべて</option>
+            <option value="S">S</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+          </select>
+        </label>
+      </div>
+
+      <div className="space-y-2">
+        <p className="text-xs text-zinc-500">タグ（複数選択）</p>
+        <div className="flex flex-wrap gap-2">
+          {tagOptions.map((tag) => {
+            const isActive = selectedTags.includes(tag);
+            return (
+              <button
+                key={tag}
+                type="button"
+                onClick={() => handleToggleTag(tag)}
+                className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+                  isActive
+                    ? "border-zinc-900 bg-zinc-900 text-white"
+                    : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300"
+                }`}
+              >
+                {tag}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
@@ -208,7 +311,56 @@ export default function StoriesClient() {
           </p>
         </header>
 
-        <section className="mt-8">
+        {/* Mobile: 絞り込みボタン */}
+        <div className="mt-6 flex items-center justify-between sm:hidden">
+          <button
+            type="button"
+            onClick={() => setFilterOpen(true)}
+            className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-700 shadow-sm transition-colors active:bg-zinc-50"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 4h12M4 8h8M6 12h4"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+            </svg>
+            絞り込み
+            {summaryParts.length > 0 && (
+              <span className="flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-zinc-800 px-1 text-[11px] text-white">
+                {summaryParts.length}
+              </span>
+            )}
+          </button>
+          {summaryParts.length > 0 && (
+            <button
+              type="button"
+              onClick={handleReset}
+              className="text-xs text-zinc-500 underline"
+            >
+              リセット
+            </button>
+          )}
+        </div>
+
+        {/* FilterDrawer（モバイル用） */}
+        <FilterDrawer
+          open={filterOpen}
+          onOpenChange={setFilterOpen}
+          onReset={handleReset}
+        >
+          {filterFields}
+        </FilterDrawer>
+
+        {/* PC: フィルター（インライン） */}
+        <section className="mt-8 hidden sm:block">
           <Card>
             <div className="flex flex-col gap-4">
               <div className="flex flex-wrap items-center justify-between gap-3">
@@ -223,102 +375,7 @@ export default function StoriesClient() {
                   リセット
                 </button>
               </div>
-
-              <div className="grid gap-3 sm:grid-cols-2">
-                <label className="text-xs text-zinc-500">
-                  フリーワード
-                  <input
-                    value={query}
-                    onChange={(event) => setQuery(event.target.value)}
-                    placeholder="例: 学校 / 都市伝説 / 鏡"
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800 outline-none focus:border-zinc-400"
-                  />
-                </label>
-                <label className="text-xs text-zinc-500">
-                  ソート
-                  <select
-                    value={sortKey}
-                    onChange={(event) => setSortKey(event.target.value)}
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="recommend">おすすめ</option>
-                    <option value="danger">危険度が高い順</option>
-                    <option value="credibility">信憑性が高い順</option>
-                    <option value="title">タイトル順</option>
-                  </select>
-                </label>
-              </div>
-
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                <label className="text-xs text-zinc-500">
-                  種別
-                  <select
-                    value={typeFilter}
-                    onChange={(event) => setTypeFilter(event.target.value)}
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="all">すべて</option>
-                    {typeOptions.map((type) => (
-                      <option key={type} value={type}>
-                        {type}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label className="text-xs text-zinc-500">
-                  危険度
-                  <select
-                    value={dangerFilter}
-                    onChange={(event) => setDangerFilter(event.target.value)}
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="all">すべて</option>
-                    <option value="1">1以上</option>
-                    <option value="2">2以上</option>
-                    <option value="3">3以上</option>
-                    <option value="4">4以上</option>
-                    <option value="5">5のみ</option>
-                  </select>
-                </label>
-                <label className="text-xs text-zinc-500">
-                  信憑性
-                  <select
-                    value={credibilityFilter}
-                    onChange={(event) => setCredibilityFilter(event.target.value)}
-                    className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-                  >
-                    <option value="all">すべて</option>
-                    <option value="S">S</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                  </select>
-                </label>
-              </div>
-
-              <div className="space-y-2">
-                <p className="text-xs text-zinc-500">タグ（複数選択）</p>
-                <div className="flex flex-wrap gap-2">
-                  {tagOptions.map((tag) => {
-                    const isActive = selectedTags.includes(tag);
-                    return (
-                      <button
-                        key={tag}
-                        type="button"
-                        onClick={() => handleToggleTag(tag)}
-                        className={`rounded-full border px-3 py-1 text-xs transition-colors ${
-                          isActive
-                            ? "border-zinc-900 bg-zinc-900 text-white"
-                            : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300"
-                        }`}
-                      >
-                        {tag}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
+              {filterFields}
             </div>
           </Card>
         </section>

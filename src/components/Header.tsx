@@ -1,10 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import ThemeToggle from "@/components/ThemeToggle";
 
 type NavVariant = "spot" | "story" | "uma";
 
@@ -35,7 +34,7 @@ const navPill = (variant: NavVariant) => {
 
   return {
     className:
-      "navPill inline-flex items-center rounded-full border px-3 py-1 text-sm whitespace-nowrap border-slate-200 text-slate-700 dark:border-slate-700 dark:text-slate-200",
+      "navPill inline-flex items-center rounded-full border px-3 py-1 text-sm whitespace-nowrap border-slate-200 text-slate-700",
     style: {
       "--pill-bg": colors.bg,
       "--pill-border": colors.border,
@@ -49,6 +48,8 @@ export default function Header() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [query, setQuery] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   const basePath = useMemo(() => {
     if (pathname.startsWith("/stories")) return "/stories";
@@ -61,71 +62,178 @@ export default function Header() {
     setQuery(searchParams.get("q") ?? "");
   }, [searchParams]);
 
+  // Close on ESC
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [menuOpen]);
+
+  // Focus close button when drawer opens
+  useEffect(() => {
+    if (menuOpen) closeButtonRef.current?.focus();
+  }, [menuOpen]);
+
+  // Lock body scroll when drawer is open
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const trimmed = query.trim();
     const params = new URLSearchParams(searchParams.toString());
-
     if (trimmed) {
       params.set("q", trimmed);
     } else {
       params.delete("q");
     }
-
     const nextQuery = params.toString();
     router.push(nextQuery ? `${basePath}?${nextQuery}` : basePath);
   };
 
+  const searchInput = (id: string, className: string) => (
+    <form onSubmit={handleSubmit} className="flex items-center gap-2">
+      <label htmlFor={id} className="sr-only">
+        サイト内検索
+      </label>
+      <input
+        id={id}
+        type="search"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="カテゴリ内検索"
+        className={className}
+      />
+    </form>
+  );
+
   return (
-    <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/80">
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-4 px-6 py-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex items-center justify-between gap-4">
-          <Link href="/" className="text-lg font-semibold tracking-tight">
+    <>
+      <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/80 backdrop-blur">
+        {/* ── 1段目 ── */}
+        <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
+          {/* サイト名 */}
+          <Link href="/" className="text-base font-semibold tracking-tight sm:text-lg">
             Occult Encyclopedia
           </Link>
-          <div className="sm:hidden">
-            <ThemeToggle />
+
+          {/* PC: ナビ + 検索 */}
+          <div className="hidden sm:flex sm:items-center sm:gap-4">
+            <nav className="flex items-center gap-3 text-sm text-zinc-600">
+              {navLinks.map((link) => {
+                const isActive = pathname.startsWith(link.href);
+                const { className, style } = navPill(link.variant);
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`${className} ${isActive ? "text-slate-900" : ""}`}
+                    style={style}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </nav>
+            {searchInput(
+              "site-search-pc",
+              "h-9 w-48 rounded-full border border-zinc-200 bg-white px-4 text-sm text-zinc-800 shadow-sm transition-colors focus:border-zinc-400 focus:outline-none sm:w-56"
+            )}
           </div>
+
+          {/* Mobile: ハンバーガー */}
+          <button
+            type="button"
+            aria-label="メニューを開く"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen(true)}
+            className="sm:hidden inline-flex h-9 w-9 items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-700 transition-colors active:bg-zinc-100"
+          >
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <rect x="2" y="4" width="14" height="1.5" rx="0.75" fill="currentColor" />
+              <rect x="2" y="8.25" width="14" height="1.5" rx="0.75" fill="currentColor" />
+              <rect x="2" y="12.5" width="14" height="1.5" rx="0.75" fill="currentColor" />
+            </svg>
+          </button>
         </div>
 
-        <nav className="flex flex-wrap items-center gap-3 text-sm text-zinc-600 dark:text-zinc-300">
+        {/* ── 2段目（Mobile専用: 検索） ── */}
+        <div className="sm:hidden px-4 pb-3">
+          {searchInput(
+            "site-search-mobile",
+            "h-9 w-full rounded-full border border-zinc-200 bg-white px-4 text-sm text-zinc-800 shadow-sm transition-colors focus:border-zinc-400 focus:outline-none"
+          )}
+        </div>
+      </header>
+
+      {/* ── Drawer ── */}
+      {/* Overlay */}
+      <div
+        aria-hidden="true"
+        onClick={() => setMenuOpen(false)}
+        className={`fixed inset-0 z-40 bg-black/40 transition-opacity duration-200 sm:hidden ${
+          menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+      />
+
+      {/* Panel */}
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-label="ナビゲーションメニュー"
+        className={`fixed right-0 top-0 z-50 h-full w-[80%] max-w-sm bg-white shadow-xl transition-transform duration-200 ease-in-out sm:hidden ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {/* Drawer ヘッダー */}
+        <div className="flex items-center justify-between border-b border-zinc-100 px-5 py-4">
+          <span className="text-sm font-semibold text-zinc-700">メニュー</span>
+          <button
+            ref={closeButtonRef}
+            type="button"
+            aria-label="メニューを閉じる"
+            onClick={() => setMenuOpen(false)}
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-zinc-200 text-zinc-500 transition-colors active:bg-zinc-100"
+          >
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Drawer ナビ */}
+        <nav className="flex flex-col gap-1 px-4 py-5">
+          <Link
+            href="/"
+            onClick={() => setMenuOpen(false)}
+            className={`rounded-lg px-4 py-3 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-50 ${
+              pathname === "/" ? "bg-zinc-100 text-zinc-900" : ""
+            }`}
+          >
+            トップへ
+          </Link>
           {navLinks.map((link) => {
             const isActive = pathname.startsWith(link.href);
-            const { className, style } = navPill(link.variant);
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`${className} ${
-                  isActive ? "text-slate-900 dark:text-white" : ""
+                onClick={() => setMenuOpen(false)}
+                className={`rounded-lg px-4 py-3 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-50 ${
+                  isActive ? "bg-zinc-100 text-zinc-900" : ""
                 }`}
-                style={style}
               >
                 {link.label}
               </Link>
             );
           })}
         </nav>
-
-        <div className="flex flex-wrap items-center gap-3">
-          <form onSubmit={handleSubmit} className="flex items-center gap-2">
-            <label htmlFor="site-search" className="sr-only">
-              サイト内検索
-            </label>
-            <input
-              id="site-search"
-              type="search"
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder="カテゴリ内検索"
-              className="h-9 w-48 rounded-full border border-zinc-200 bg-white px-4 text-sm text-zinc-800 shadow-sm transition-colors focus:border-zinc-400 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:focus:border-zinc-500 sm:w-56"
-            />
-          </form>
-          <div className="hidden sm:block">
-            <ThemeToggle />
-          </div>
-        </div>
       </div>
-    </header>
+    </>
   );
 }
