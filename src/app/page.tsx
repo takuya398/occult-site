@@ -5,11 +5,13 @@ import { CardLink } from "@/components/ui";
 import { getAllLatest } from "@/lib/server-loaders";
 
 export default async function Home() {
-  const categoryLabel = {
+  const categoryLabel: Record<string, string> = {
     spots: "心霊スポット",
     stories: "怪談・都市伝説",
     uma: "UMA",
-  } as const;
+    entities: "UMA・異形",
+    mysteries: "怪事件・ミステリー",
+  };
 
   const latest = await getAllLatest(6);
   const latestItems = latest.map((item) => ({
@@ -61,7 +63,7 @@ export default async function Home() {
           <h2 className="gothic-divider text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-600">
             ✦ カテゴリ ✦
           </h2>
-          <div className="grid gap-4 sm:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <CardLink
               href="/spots"
               ariaLabel="心霊スポットの一覧へ"
@@ -91,17 +93,31 @@ export default async function Home() {
               </p>
             </CardLink>
             <CardLink
-              href="/uma"
-              ariaLabel="UMAの一覧へ"
+              href="/entities"
+              ariaLabel="UMA・異形の一覧へ"
               className="group gothic-card"
               variant="uma"
             >
               <div className="mb-3 h-0.5 w-10 rounded-full bg-emerald-400/60 dark:bg-emerald-300/50" />
               <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                UMA
+                UMA・異形
               </p>
               <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
-                未確認生物の情報を一覧でまとめて参照。
+                未確認生物・異形の存在を一覧で参照。
+              </p>
+            </CardLink>
+            <CardLink
+              href="/mysteries"
+              ariaLabel="怪事件・ミステリーの一覧へ"
+              className="group gothic-card"
+              variant="mystery"
+            >
+              <div className="mb-3 h-0.5 w-10 rounded-full bg-violet-400/60 dark:bg-violet-300/50" />
+              <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                怪事件・ミステリー
+              </p>
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
+                未解決の歴史的事件と謎に迫る。
               </p>
             </CardLink>
           </div>
@@ -141,7 +157,7 @@ export default async function Home() {
                 怪談・都市伝説へ
               </Link>
               <Link
-                href="/uma"
+                href="/entities"
                 className="navPill inline-flex items-center rounded-full border px-3 py-1 text-sm whitespace-nowrap border-slate-200 text-slate-700 dark:border-zinc-700/60 dark:text-zinc-400"
                 style={
                   {
@@ -151,7 +167,20 @@ export default async function Home() {
                   } as CSSProperties
                 }
               >
-                UMAへ
+                UMA・異形へ
+              </Link>
+              <Link
+                href="/mysteries"
+                className="navPill inline-flex items-center rounded-full border px-3 py-1 text-sm whitespace-nowrap border-slate-200 text-slate-700 dark:border-zinc-700/60 dark:text-zinc-400"
+                style={
+                  {
+                    "--pill-bg": "rgba(168,85,247,0.10)",
+                    "--pill-border": "rgba(168,85,247,0.35)",
+                    "--pill-ring": "rgba(168,85,247,0.12)",
+                  } as CSSProperties
+                }
+              >
+                怪事件へ
               </Link>
             </div>
           </div>

@@ -1,4 +1,6 @@
-import type { UmaEntry } from "@/types";
+import type { EntityEntry, UmaEntry } from "@/types";
+
+type ScorableEntry = UmaEntry | EntityEntry;
 
 // 数値マッピング（厳守）
 export const EXISTENCE_RANK_SCORE: Record<string, number> = {
@@ -15,7 +17,7 @@ export const existenceRankScore = (rank?: string): number =>
 export const evidenceRankScore = (rank?: string): number =>
   rank ? (EVIDENCE_RANK_SCORE[rank] ?? 0) : 0;
 
-export const getRecommendDetails = (uma: UmaEntry, today: Date) => {
+export const getRecommendDetails = (uma: ScorableEntry, today: Date) => {
   const existenceValue = existenceRankScore(uma.existence_rank);
   const evidenceValue = evidenceRankScore(uma.evidence_rank);
   const dangerLevel = uma.danger ?? 0;
@@ -52,5 +54,5 @@ export const getRecommendDetails = (uma: UmaEntry, today: Date) => {
   };
 };
 
-export const calcRecommendScore = (uma: UmaEntry, today: Date): number =>
+export const calcRecommendScore = (uma: ScorableEntry, today: Date): number =>
   getRecommendDetails(uma, today).finalScore;

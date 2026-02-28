@@ -1,4 +1,4 @@
-export type GlowVariant = "spot" | "story" | "uma";
+export type GlowVariant = "spot" | "story" | "uma" | "mystery";
 
 export function glowClass(variant: GlowVariant) {
   const base =
@@ -21,10 +21,16 @@ export function glowClass(variant: GlowVariant) {
     "md:hover:shadow-[0_0_0_1px_rgba(16,185,129,0.22),0_0_28px_rgba(34,197,94,0.20)] " +
     "focus-visible:ring-emerald-400/70";
 
+  const mysteryViolet =
+    "md:hover:ring-2 md:hover:ring-violet-400/60 " +
+    "md:hover:shadow-[0_0_0_1px_rgba(167,139,250,0.22),0_0_28px_rgba(168,85,247,0.20)] " +
+    "focus-visible:ring-violet-400/70";
+
   const map: Record<GlowVariant, string> = {
     spot: spotBlue,
     story: storyRed,
     uma: umaGreen,
+    mystery: mysteryViolet,
   };
 
   return `${base} ${map[variant]}`;

@@ -5,12 +5,13 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
-type NavVariant = "spot" | "story" | "uma";
+type NavVariant = "spot" | "story" | "uma" | "mystery";
 
 const navLinks: { href: string; label: string; variant: NavVariant }[] = [
   { href: "/spots", label: "心霊スポット", variant: "spot" },
   { href: "/stories", label: "怪談・都市伝説", variant: "story" },
-  { href: "/uma", label: "UMA", variant: "uma" },
+  { href: "/entities", label: "UMA・異形", variant: "uma" },
+  { href: "/mysteries", label: "怪事件・ミステリー", variant: "mystery" },
 ];
 
 const navPill = (variant: NavVariant) => {
@@ -29,6 +30,11 @@ const navPill = (variant: NavVariant) => {
       bg: "rgba(34,197,94,0.12)",
       border: "rgba(34,197,94,0.35)",
       ring: "rgba(34,197,94,0.18)",
+    },
+    mystery: {
+      bg: "rgba(168,85,247,0.12)",
+      border: "rgba(168,85,247,0.35)",
+      ring: "rgba(168,85,247,0.18)",
     },
   }[variant];
 
@@ -53,6 +59,8 @@ export default function Header() {
 
   const basePath = useMemo(() => {
     if (pathname.startsWith("/stories")) return "/stories";
+    if (pathname.startsWith("/entities")) return "/entities";
+    if (pathname.startsWith("/mysteries")) return "/mysteries";
     if (pathname.startsWith("/uma")) return "/uma";
     if (pathname.startsWith("/spots")) return "/spots";
     return "/spots";
