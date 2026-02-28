@@ -19,7 +19,7 @@ export type LatestItem = {
 };
 
 // Category sort priority: UMA and stories before mtime-based spots on same date
-const CATEGORY_ORDER: Record<Category, number> = { uma: 0, stories: 1, spots: 2, mysteries: 3 };
+const CATEGORY_ORDER: Record<Category, number> = { uma: 0, entities: 0, stories: 1, spots: 2, mysteries: 3 };
 
 export const getAllLatest = async (limit = 6): Promise<LatestItem[]> => {
   const spots = await getSpotEntriesFromArticles();

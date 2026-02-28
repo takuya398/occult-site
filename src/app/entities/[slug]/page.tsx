@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { umas } from "@/loaders";
+import { entities } from "@/loaders";
 import ArticleHeader from "@/components/article/ArticleHeader";
 import ImageGallery from "@/components/article/ImageGallery";
 import MarkdownContent from "@/components/article/MarkdownContent";
@@ -12,7 +12,7 @@ import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
 
 export function generateStaticParams() {
-  return umas.map((uma) => ({ slug: uma.slug }));
+  return entities.map((uma) => ({ slug: uma.slug }));
 }
 
 type EntityDetailPageProps = {
@@ -26,7 +26,7 @@ export default async function EntityDetailPage({
 }: EntityDetailPageProps) {
   const { slug } = await params;
   const resolvedSearchParams = searchParams ? await searchParams : undefined;
-  const uma = umas.find((item) => item.slug === slug);
+  const uma = entities.find((item) => item.slug === slug);
 
   if (!uma) {
     notFound();
@@ -95,7 +95,7 @@ export default async function EntityDetailPage({
     "準備中"
   );
 
-  const scoredUmas = umas
+  const scoredUmas = entities
     .filter((item) => item.slug !== uma.slug)
     .map((item) => {
       const matchTags = item.tags.filter((tag) => uma.tags.includes(tag));
@@ -121,7 +121,7 @@ export default async function EntityDetailPage({
     tags: item.tags,
   }));
 
-  const sortedUmas = [...umas].sort(
+  const sortedUmas = [...entities].sort(
     (a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)
   );
   const currentIndex = sortedUmas.findIndex((item) => item.slug === uma.slug);

@@ -1,7 +1,10 @@
 import storiesData from "./data/json/stories.json";
 import umasData from "./data/json/uma.json";
+import entitiesData from "./data/json/entities.json";
+import mysteriesData from "./data/json/mysteries.json";
 import { TAGS } from "./data/tags";
 import { UMA_TAG_CATEGORIES } from "./data/uma-tags";
+import { MYSTERY_TAGS } from "./data/mystery-tags";
 import { normalizeMedia } from "./lib/media";
 import { getSpotEntriesFromArticles } from "./lib/spot-articles";
 import type { BaseEntry, EmbedMedia, ImageMedia } from "./types";
@@ -10,6 +13,7 @@ const tagSet = new Set<string>(TAGS as readonly string[]);
 const umaTagSet = new Set<string>(
   Object.values(UMA_TAG_CATEGORIES).flatMap((cat) => [...cat.tags] as string[])
 );
+const mysteryTagSet = new Set<string>(MYSTERY_TAGS as readonly string[]);
 const slugSet = new Set<string>();
 const errors: string[] = [];
 
@@ -113,7 +117,13 @@ const validateVideoUrls = (videoUrls: unknown, context: string) => {
   });
 };
 
-const validateEntry = (entry: BaseEntry, context: string, activeTagSet: Set<string> = tagSet) => {
+const validateEntry = (
+  entry: BaseEntry,
+  context: string,
+  activeTagSet: Set<string> = tagSet,
+  localSlugSet?: Set<string>
+) => {
+  const usedSlugSet = localSlugSet ?? slugSet;
   if (!isNonEmptyString(entry.id)) {
     errors.push(`${context} id が不正です`);
   }
@@ -121,10 +131,10 @@ const validateEntry = (entry: BaseEntry, context: string, activeTagSet: Set<stri
     errors.push(`${context} slug が不正です`);
   } else if (!/^[a-z0-9-]+$/.test(entry.slug)) {
     errors.push(`${context} slug 形式が不正です`);
-  } else if (slugSet.has(entry.slug)) {
+  } else if (usedSlugSet.has(entry.slug)) {
     errors.push(`${context} slug が重複しています: ${entry.slug}`);
   } else {
-    slugSet.add(entry.slug);
+    usedSlugSet.add(entry.slug);
   }
 
   if (!isNonEmptyString(entry.title)) {
@@ -156,7 +166,7 @@ const validateEntry = (entry: BaseEntry, context: string, activeTagSet: Set<stri
   if (!isNonEmptyString(entry.status) || !["draft", "published"].includes(entry.status)) {
     errors.push(`${context} status が不正です`);
   }
-  if (!isNonEmptyString(entry.category) || !["spots", "stories", "uma"].includes(entry.category)) {
+  if (!isNonEmptyString(entry.category) || !["spots", "stories", "uma", "entities", "mysteries"].includes(entry.category)) {
     errors.push(`${context} category が不正です`);
   }
 
@@ -169,8 +179,8 @@ const validateEntry = (entry: BaseEntry, context: string, activeTagSet: Set<stri
 const EXISTENCE_RANKS = new Set(["S", "A", "B", "C", "D"]);
 const EVIDENCE_RANKS = new Set(["A", "B", "C", "D", "E"]);
 
-const validateUmaEntry = (entry: Record<string, unknown>, context: string) => {
-  if (!isNonEmptyString(entry.region)) {
+const validateUmaEntry = (entry: Record<string, unknown>, context: string, regionRequired = true) => {
+  if (regionRequired && !isNonEmptyString(entry.region)) {
     errors.push(`${context} region が不正です`);
   }
   if (!isNonEmptyString(entry.existence_rank) || !EXISTENCE_RANKS.has(entry.existence_rank as string)) {
@@ -181,21 +191,48 @@ const validateUmaEntry = (entry: Record<string, unknown>, context: string) => {
   }
 };
 
-const validateDataset = (entries: BaseEntry[], name: string, category: string) => {
+const CREDIBILITY_RANKS = new Set(["S", "A", "B", "C", "D"]);
+
+const validateMysteryEntry = (entry: Record<string, unknown>, context: string) => {
+  if (entry.credibility !== undefined) {
+    if (!isNonEmptyString(entry.credibility) || !CREDIBILITY_RANKS.has(entry.credibility as string)) {
+      errors.push(`${context} credibility が不正です（S/A/B/C/D）`);
+    }
+  }
+};
+
+const validateDataset = (
+  entries: BaseEntry[],
+  name: string,
+  category: string,
+  localSlugSet?: Set<string>
+) => {
   if (!Array.isArray(entries)) {
     errors.push(`[data:${name}] データ形式が不正です`);
     return;
   }
 
-  const activeTagSet = category === "uma" ? umaTagSet : tagSet;
+  const usedSlugSet = localSlugSet ?? slugSet;
+  const activeTagSet =
+    category === "uma" || category === "entities"
+      ? umaTagSet
+      : category === "mysteries"
+        ? mysteryTagSet
+        : tagSet;
   entries.forEach((entry, index) => {
     const context = `[data:${name} index=${index} slug=${(entry as BaseEntry).slug ?? ""}]`;
     if ((entry as BaseEntry).category !== category) {
       errors.push(`${context} category が ${category} ではありません`);
     }
-    validateEntry(entry as BaseEntry, context, activeTagSet);
+    validateEntry(entry as BaseEntry, context, activeTagSet, usedSlugSet);
     if (category === "uma") {
       validateUmaEntry(entry as Record<string, unknown>, context);
+    }
+    if (category === "entities") {
+      validateUmaEntry(entry as Record<string, unknown>, context, false);
+    }
+    if (category === "mysteries") {
+      validateMysteryEntry(entry as Record<string, unknown>, context);
     }
   });
 };
@@ -203,9 +240,16 @@ const validateDataset = (entries: BaseEntry[], name: string, category: string) =
 const run = async () => {
   const spotsData = await getSpotEntriesFromArticles();
 
+  // spots・stories・mysteries は全体で slug 重複チェック（同一slugSet）
   validateDataset(spotsData as BaseEntry[], "spots", "spots");
   validateDataset(storiesData as BaseEntry[], "stories", "stories");
-  validateDataset(umasData as BaseEntry[], "uma", "uma");
+  validateDataset(mysteriesData as BaseEntry[], "mysteries", "mysteries");
+
+  // uma・entities は移行期間中に同一 slug を持つため独立チェック
+  const umaSlugSet = new Set<string>();
+  const entitySlugSet = new Set<string>();
+  validateDataset(umasData as BaseEntry[], "uma", "uma", umaSlugSet);
+  validateDataset(entitiesData as BaseEntry[], "entities", "entities", entitySlugSet);
 
   if (errors.length > 0) {
     console.error("\nデータ検証エラー:");

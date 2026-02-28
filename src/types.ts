@@ -1,4 +1,4 @@
-export type Category = "spots" | "stories" | "uma" | "mysteries";
+export type Category = "spots" | "stories" | "uma" | "entities" | "mysteries";
 export type Status = "draft" | "published";
 
 export type ImageMedia = {
@@ -73,6 +73,26 @@ export type MysteryEntry = BaseEntry & {
   caution?: string[];
   contentMd?: string;
   createdAt?: string;
+};
+
+/**
+ * EntityEntry — UmaEntry の上位互換。
+ * category: "entities" が正式。
+ * region は任意（将来 UFO/宇宙人など多様な存在を扱える）。
+ */
+export type EntityEntry = BaseEntry & {
+  category: "entities";
+  type?: string;
+  region?: string;
+  geo?: GeoInfo;
+  danger?: 1 | 2 | 3 | 4 | 5;
+  existence_rank: "S" | "A" | "B" | "C" | "D";
+  evidence_rank: "A" | "B" | "C" | "D" | "E";
+  views: number;
+  source?: SourceItem[];
+  caution?: string[];
+  createdAt?: string;
+  contentMd?: string;
 };
 
 export type UmaEntry = BaseEntry & {

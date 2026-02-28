@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { umas } from "@/loaders";
+import { entities } from "@/loaders";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
 import FilterDrawer from "@/components/FilterDrawer";
 import { UMA_TAG_CATEGORIES } from "@/data/uma-tags";
@@ -18,7 +18,7 @@ import UmaCardCover from "@/app/uma/UmaCardCover";
 // 都道府県フィルター用（geo.scope==="JP" のみ、ユニーク・ソート済）
 const prefectureOptions = Array.from(
   new Set(
-    umas
+    entities
       .filter((u) => u.geo?.scope === "JP")
       .flatMap((u) => u.geo?.prefectures ?? [])
       .filter(Boolean)
@@ -28,7 +28,7 @@ const prefectureOptions = Array.from(
 // 国フィルター用（geo.scope==="INTL" のみ、ユニーク・ソート済）
 const countryOptions = Array.from(
   new Set(
-    umas
+    entities
       .filter((u) => u.geo?.scope === "INTL")
       .flatMap((u) => u.geo?.countries ?? [])
       .filter(Boolean)
@@ -78,7 +78,7 @@ export default function EntitiesClient() {
   const filteredUmas = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
 
-    const matchesQuery = (uma: (typeof umas)[number]) => {
+    const matchesQuery = (uma: (typeof entities)[number]) => {
       if (!normalizedQuery) return true;
       const haystack = [uma.title, uma.summary, uma.tags.join(" ")]
         .join(" ")
@@ -86,27 +86,27 @@ export default function EntitiesClient() {
       return haystack.includes(normalizedQuery);
     };
 
-    const matchesTags = (uma: (typeof umas)[number]) => {
+    const matchesTags = (uma: (typeof entities)[number]) => {
       if (selectedTags.length === 0) return true;
       return selectedTags.every((tag) => uma.tags.includes(tag));
     };
 
-    const matchesDanger = (uma: (typeof umas)[number]) => {
+    const matchesDanger = (uma: (typeof entities)[number]) => {
       if (dangerFilter === "all") return true;
       return uma.danger === Number(dangerFilter);
     };
 
-    const matchesExistenceRank = (uma: (typeof umas)[number]) => {
+    const matchesExistenceRank = (uma: (typeof entities)[number]) => {
       if (existenceRankFilter === "all") return true;
       return uma.existence_rank === existenceRankFilter;
     };
 
-    const matchesEvidenceRank = (uma: (typeof umas)[number]) => {
+    const matchesEvidenceRank = (uma: (typeof entities)[number]) => {
       if (evidenceRankFilter === "all") return true;
       return uma.evidence_rank === evidenceRankFilter;
     };
 
-    const matchesGeo = (uma: (typeof umas)[number]) => {
+    const matchesGeo = (uma: (typeof entities)[number]) => {
       if (scopeFilter === "ALL") return true;
       const geo = uma.geo;
       const scope = geo?.scope ?? "JP";
@@ -122,7 +122,7 @@ export default function EntitiesClient() {
       return true;
     };
 
-    const filtered = umas.filter(
+    const filtered = entities.filter(
       (uma) =>
         matchesQuery(uma) &&
         matchesTags(uma) &&
