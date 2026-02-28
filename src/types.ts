@@ -1,4 +1,4 @@
-export type Category = "spots" | "stories" | "uma";
+export type Category = "spots" | "stories" | "uma" | "mysteries";
 export type Status = "draft" | "published";
 
 export type ImageMedia = {
@@ -62,6 +62,17 @@ export type StoryEntry = BaseEntry & {
   danger?: 1 | 2 | 3 | 4 | 5;
   source?: SourceItem[];
   caution?: string[];
+};
+
+export type MysteryEntry = BaseEntry & {
+  category: "mysteries";
+  era?: string;
+  location?: string;
+  credibility?: "S" | "A" | "B" | "C" | "D";
+  source?: SourceItem[];
+  caution?: string[];
+  contentMd?: string;
+  createdAt?: string;
 };
 
 export type UmaEntry = BaseEntry & {
