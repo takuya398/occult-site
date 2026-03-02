@@ -1,4 +1,4 @@
-export type Category = "spots" | "stories" | "uma" | "entities" | "mysteries";
+export type Category = "spots" | "stories" | "uma" | "entities" | "mysteries" | "legends";
 export type Status = "draft" | "published";
 
 export type ImageMedia = {
@@ -93,6 +93,28 @@ export type EntityEntry = BaseEntry & {
   caution?: string[];
   createdAt?: string;
   contentMd?: string;
+};
+
+export type LegendEntry = Omit<BaseEntry, "category" | "coverImage"> & {
+  category: "legends";
+  type: "kaidan" | "urban" | "imi-kowa";
+  danger?: 1 | 2 | 3 | 4 | 5;
+  credibility?: "A" | "B" | "C" | "D" | "E";
+  excerpt?: string;
+  views30d: number;
+  viewsTotal?: number;
+  editorPick?: boolean;
+  stage?: string;
+  motif?: string;
+  tone?: string;
+  coverImage?: string;
+  sceneImages?: string[];
+  sources?: string[];
+  source?: SourceItem[];
+  caution?: string[];
+  images?: ImageMedia[];
+  embeds?: EmbedMedia[];
+  videoUrls?: string[];
 };
 
 export type UmaEntry = BaseEntry & {

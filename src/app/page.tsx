@@ -79,7 +79,7 @@ export default async function Home() {
               </p>
             </CardLink>
             <CardLink
-              href="/stories"
+              href="/legends"
               ariaLabel="怪談・都市伝説の一覧へ"
               className="group gothic-card"
               variant="story"
@@ -144,7 +144,7 @@ export default async function Home() {
                 心霊スポットへ
               </Link>
               <Link
-                href="/stories"
+                href="/legends"
                 className="navPill inline-flex items-center rounded-full border px-3 py-1 text-sm whitespace-nowrap border-slate-200 text-slate-700 dark:border-zinc-700/60 dark:text-zinc-400"
                 style={
                   {
