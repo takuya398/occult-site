@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { legends } from "@/loaders";
@@ -9,6 +10,7 @@ import ShareBar from "@/components/article/ShareBar";
 import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
 import LegendArticleShell from "@/components/legends/LegendArticleShell";
+import { legendImageMap } from "@/lib/legends/imageMap";
 
 const TYPE_LABELS: Record<string, string> = {
   kaidan: "怪談",
@@ -18,6 +20,43 @@ const TYPE_LABELS: Record<string, string> = {
 
 export function generateStaticParams() {
   return legends.map((item) => ({ slug: item.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const item = legends.find((l) => l.slug === slug);
+  if (!item) return {};
+
+  const title = (item as { seoTitle?: string }).seoTitle ?? `${item.title}｜怪談・都市伝説図鑑`;
+  const description =
+    (item as { seoDescription?: string }).seoDescription ??
+    item.excerpt ??
+    item.summary;
+  const coverFile = legendImageMap[slug]?.cover ?? "cover.jpg";
+  const ogImage = `/legends/${slug}/${coverFile}`;
+  const keywords = (item as { seoKeywords?: string[] }).seoKeywords ?? item.tags;
+
+  return {
+    title,
+    description,
+    keywords,
+    openGraph: {
+      type: "article",
+      title,
+      description,
+      images: [{ url: ogImage }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
+    },
+  };
 }
 
 type LegendsDetailPageProps = {
@@ -145,8 +184,24 @@ export default async function LegendsDetailPage({
       tags: l.tags,
     }));
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: item.title,
+    description: item.excerpt ?? item.summary,
+    image: `/legends/${slug}/${legendImageMap[slug]?.cover ?? "cover.jpg"}`,
+    author: { "@type": "Organization", name: "オカルト図鑑" },
+    publisher: { "@type": "Organization", name: "オカルト図鑑" },
+    datePublished: item.publishedAt,
+    articleSection: "怪談・都市伝説",
+  };
+
   return (
     <LegendArticleShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mb-6">
           <Link
             href={backHref}

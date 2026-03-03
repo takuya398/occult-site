@@ -4,9 +4,10 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { legends } from "@/loaders";
-import { Badge, Card, CardLink, TagChip } from "@/components/ui";
+import { Badge, Card, TagChip } from "@/components/ui";
 import FilterDrawer from "@/components/FilterDrawer";
 import { calcLegendScore } from "@/lib/legend-score";
+import LegendCardCover from "./LegendCardCover";
 
 const TYPE_LABELS: Record<string, string> = {
   kaidan: "怪談",
@@ -438,36 +439,49 @@ export default function LegendsClient() {
         </div>
 
         <section className="mt-4 grid gap-4 sm:grid-cols-2">
-          {filteredLegends.map((item) => (
-            <CardLink
-              key={item.slug}
-              href={`/legends/${item.slug}${detailsSuffix}`}
-              ariaLabel={`${item.title}の詳細へ`}
-            >
-              <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">
-                <TagChip variant="outline">{TYPE_LABELS[item.type] ?? item.type}</TagChip>
-              </div>
-              <h2 className="mt-3 text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                {item.title}
-              </h2>
-              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                {item.excerpt ?? item.summary}
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {item.tags.map((tag) => (
-                  <TagChip key={tag}>{tag}</TagChip>
-                ))}
-              </div>
-              <div className="mt-4 flex flex-wrap gap-2 text-xs">
-                {item.danger !== undefined && (
-                  <Badge tone="rose">危険度 {item.danger}/5</Badge>
-                )}
-                {item.credibility && (
-                  <Badge tone="emerald">信憑性 {item.credibility}</Badge>
-                )}
-              </div>
-            </CardLink>
-          ))}
+          {filteredLegends.map((item) => {
+            const isNew =
+              today.getTime() - new Date(item.publishedAt).getTime() <
+              7 * 24 * 60 * 60 * 1000;
+            return (
+              <Link
+                key={item.slug}
+                href={`/legends/${item.slug}${detailsSuffix}`}
+                aria-label={`${item.title}の詳細へ`}
+                className="group block overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition hover:border-zinc-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-300 focus-visible:ring-offset-2 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700"
+              >
+                <LegendCardCover slug={item.slug} title={item.title} isNew={isNew} />
+
+                <div className="p-4">
+                  <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">
+                    <TagChip variant="outline">{TYPE_LABELS[item.type] ?? item.type}</TagChip>
+                  </div>
+                  <h2 className="mt-2 text-lg font-semibold tracking-tight line-clamp-2 text-zinc-900 dark:text-zinc-100">
+                    {item.title}
+                  </h2>
+                  <p className="mt-1 text-sm leading-snug line-clamp-2 text-zinc-600 dark:text-zinc-400">
+                    {item.excerpt ?? item.summary}
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    {item.tags.slice(0, 4).map((tag) => (
+                      <TagChip key={tag}>{tag}</TagChip>
+                    ))}
+                    {item.tags.length > 4 && (
+                      <TagChip variant="outline">+{item.tags.length - 4}</TagChip>
+                    )}
+                  </div>
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    {item.danger !== undefined && (
+                      <Badge tone="rose">危険 {item.danger}</Badge>
+                    )}
+                    {item.credibility && (
+                      <Badge tone="neutral">信憑性 {item.credibility}</Badge>
+                    )}
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
         </section>
 
         {filteredLegends.length === 0 && (

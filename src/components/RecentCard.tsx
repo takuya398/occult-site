@@ -9,18 +9,33 @@ export type RecentItem = {
   summary?: string;
 };
 
+// raw category key → 日本語表示ラベル
+const CATEGORY_LABEL: Record<string, string> = {
+  spots: "心霊スポット",
+  legends: "怪談・都市伝説",
+  stories: "怪談・都市伝説",
+  uma: "UMA",
+  entities: "UMA・異形",
+  mysteries: "怪事件・ミステリー",
+};
+
+// raw category key → glow variant（カテゴリカードの色と一致）
+const CATEGORY_VARIANT: Record<string, GlowVariant> = {
+  spots: "spot",
+  legends: "story",
+  stories: "story",
+  uma: "uma",
+  entities: "uma",
+  mysteries: "mystery",
+};
+
 type RecentCardProps = {
   item: RecentItem;
 };
 
 export default function RecentCard({ item }: RecentCardProps) {
-  const variantMap: Record<string, GlowVariant> = {
-    心霊スポット: "spot",
-    "怪談・都市伝説": "story",
-    UMA: "uma",
-  };
-
-  const variant = variantMap[item.category];
+  const label = CATEGORY_LABEL[item.category] ?? item.category;
+  const variant = CATEGORY_VARIANT[item.category];
 
   return (
     <CardLink
@@ -36,7 +51,7 @@ export default function RecentCard({ item }: RecentCardProps) {
         />
         <div className="flex min-w-0 flex-1 flex-col gap-2">
           <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
-            <TagChip className="text-[11px]">{item.category}</TagChip>
+            <TagChip className="text-[11px]">{label}</TagChip>
             <span>{item.date}</span>
           </div>
           <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">

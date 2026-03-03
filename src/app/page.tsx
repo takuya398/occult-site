@@ -5,20 +5,12 @@ import { CardLink } from "@/components/ui";
 import { getAllLatest } from "@/lib/server-loaders";
 
 export default async function Home() {
-  const categoryLabel: Record<string, string> = {
-    spots: "心霊スポット",
-    stories: "怪談・都市伝説",
-    uma: "UMA",
-    entities: "UMA・異形",
-    mysteries: "怪事件・ミステリー",
-  };
-
   const latest = await getAllLatest(6);
   const latestItems = latest.map((item) => ({
     title: item.title,
     href: item.href,
     date: item.publishedAt,
-    category: categoryLabel[item.category],
+    category: item.category,
     summary: item.summary,
   }));
 
