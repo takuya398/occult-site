@@ -166,7 +166,7 @@ const validateEntry = (
   if (!isNonEmptyString(entry.status) || !["draft", "published"].includes(entry.status)) {
     errors.push(`${context} status が不正です`);
   }
-  if (!isNonEmptyString(entry.category) || !["spots", "stories", "uma", "entities", "mysteries"].includes(entry.category)) {
+  if (!isNonEmptyString(entry.category) || !["spots", "stories", "legends", "uma", "entities", "mysteries"].includes(entry.category)) {
     errors.push(`${context} category が不正です`);
   }
 
@@ -242,7 +242,7 @@ const run = async () => {
 
   // spots・stories・mysteries は全体で slug 重複チェック（同一slugSet）
   validateDataset(spotsData as BaseEntry[], "spots", "spots");
-  validateDataset(storiesData as BaseEntry[], "stories", "stories");
+  validateDataset(storiesData as BaseEntry[], "stories", "legends");
   validateDataset(mysteriesData as BaseEntry[], "mysteries", "mysteries");
 
   // uma・entities は移行期間中に同一 slug を持つため独立チェック

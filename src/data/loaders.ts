@@ -1,1 +1,1 @@
-export { loadStories as getStories, loadUmas as getUmas, stories, umas } from "@/loaders";
+export { loadLegends as getStories, loadUmas as getUmas, legends as stories, umas } from "@/loaders";
