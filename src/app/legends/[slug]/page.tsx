@@ -182,6 +182,9 @@ export default async function LegendsDetailPage({
       title: l.title,
       summary: l.summary,
       tags: l.tags,
+      coverImage: typeof l.coverImage === "string" ? l.coverImage : undefined,
+      publishedAt: l.publishedAt,
+      category: l.category,
     }));
 
   const jsonLd = {

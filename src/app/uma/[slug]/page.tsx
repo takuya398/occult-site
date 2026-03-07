@@ -119,6 +119,9 @@ export default async function UmaDetailPage({
     title: item.title,
     summary: item.summary,
     tags: item.tags,
+    coverImage: item.coverImage?.src,
+    publishedAt: item.publishedAt,
+    category: item.category,
   }));
 
   const sortedUmas = [...umas].sort(
