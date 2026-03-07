@@ -1,6 +1,7 @@
 ---
 title: "常紋トンネル"
 prefecture: "北海道"
+date: "2026-03-07"
 danger: 5
 credibility: "B"
 youtube: "https://m.youtube.com/watch?v=n_T2ZgQS-kw&pp=ygUS5bi457SL44OI44Oz44ON44Or"

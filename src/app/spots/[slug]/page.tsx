@@ -153,7 +153,7 @@ export default async function SpotsDetailPage({
     .filter((entry) => entry.score >= 1)
     .sort((a, b) => b.score - a.score);
 
-  const relatedSpots = scoredSpots.slice(0, 6).map(({ item }) => ({
+  const relatedSpots = scoredSpots.slice(0, 3).map(({ item }) => ({
     href: `/spots/${item.slug}`,
     title: item.title,
     summary: item.summary,

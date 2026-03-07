@@ -176,7 +176,7 @@ export default async function LegendsDetailPage({
     })
     .filter((e) => e.score > 0)
     .sort((a, b) => b.score - a.score)
-    .slice(0, 6)
+    .slice(0, 3)
     .map(({ item: l }) => ({
       href: `/legends/${l.slug}`,
       title: l.title,

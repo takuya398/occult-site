@@ -1,6 +1,7 @@
 ---
 title: "旧吹上トンネル"
 prefecture: "東京都"
+date: "2026-03-06"
 danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=ry6OAP7OFuc"

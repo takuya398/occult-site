@@ -112,7 +112,7 @@ export default async function UmaDetailPage({
     })
     .filter((entry) => entry.score > 0)
     .sort((a, b) => b.score - a.score)
-    .slice(0, 6);
+    .slice(0, 3);
 
   const relatedUmas = scoredUmas.map(({ item }) => ({
     href: `/uma/${item.slug}`,
