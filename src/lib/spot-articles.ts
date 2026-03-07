@@ -226,7 +226,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
     typeof dangerValue === "number" && dangerValue >= 1 && dangerValue <= 5
       ? (dangerValue as SpotEntry["danger"])
       : undefined;
-  const cover = normalizeString(frontmatter.cover);
+  const cover = normalizeString(frontmatter.cover) || normalizeString(frontmatter.coverImage) || normalizeString(frontmatter.heroImage);
   const youtube = normalizeString(frontmatter.youtube);
   const publishedAt =
     normalizeDate(frontmatter.publishedAt) ||
