@@ -107,8 +107,8 @@ export default async function SpotsDetailPage({
 
   const sourceBody = spot.source?.length ? (
     <ul className="space-y-2">
-      {spot.source.map((item) => (
-        <li key={item.title}>
+      {spot.source.map((item, i) => (
+        <li key={`${item.title}-${i}`}>
           {item.url ? (
             <a
               href={item.url}
@@ -240,6 +240,35 @@ export default async function SpotsDetailPage({
             </figure>
           )}
           {tocItems.length >= 2 && <SpotToc items={tocItems} />}
+          <Card>
+            <p className="mb-3 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+              基本データ
+            </p>
+            <ul className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+              <li>
+                <span className="text-zinc-500">種別：</span>
+                {spot.type ?? "心霊スポット"}
+              </li>
+              {spot.pref && (
+                <li>
+                  <span className="text-zinc-500">所在地：</span>
+                  {spot.pref}
+                </li>
+              )}
+              {spot.danger !== undefined && (
+                <li>
+                  <span className="text-zinc-500">危険度：</span>
+                  {spot.danger}/5
+                </li>
+              )}
+              {spot.credibility && (
+                <li>
+                  <span className="text-zinc-500">信憑性：</span>
+                  {spot.credibility}
+                </li>
+              )}
+            </ul>
+          </Card>
           <Card>
             <div className="prose prose-neutral max-w-none dark:prose-invert">
               <ReactMarkdown
