@@ -9,8 +9,19 @@ import ArticleHeader from "@/components/article/ArticleHeader";
 import PrevNext from "@/components/article/PrevNext";
 import Related from "@/components/article/Related";
 import ShareBar from "@/components/article/ShareBar";
+import SpotToc from "@/components/article/SpotToc";
 import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
+
+function parseTocMarkdown(tocMd: string): { text: string; id: string }[] {
+  const items: { text: string; id: string }[] = [];
+  const linkRegex = /\[([^\]]+)\]\(#([^)]+)\)/g;
+  let match;
+  while ((match = linkRegex.exec(tocMd)) !== null) {
+    items.push({ text: match[1], id: match[2] });
+  }
+  return items;
+}
 
 const extractTocSection = (content: string) => {
   const tocRegex = /(^|\n)##\s*目次\s*\n([\s\S]*?)(?=\n##\s|\n#\s|$)/;
@@ -179,6 +190,7 @@ export default async function SpotsDetailPage({
   const heroImage = spot.coverImage ?? spot.images?.[0];
   const rawContent = spot.content ?? spot.body;
   const { toc, body: contentBody } = extractTocSection(rawContent);
+  const tocItems = parseTocMarkdown(toc);
   const videoUrl = spot.videoUrls?.[0];
   const hasVideoToken = contentBody.includes("{{VIDEO}}");
   const contentParts = contentBody.split("{{VIDEO}}");
@@ -224,24 +236,9 @@ export default async function SpotsDetailPage({
               )}
             </figure>
           )}
+          {tocItems.length >= 2 && <SpotToc items={tocItems} />}
           <Card>
             <div className="prose prose-neutral max-w-none dark:prose-invert">
-              {toc && (
-                <details className="mb-6 rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-700 dark:border-zinc-800 dark:bg-zinc-900/60 dark:text-zinc-200">
-                  <summary className="cursor-pointer text-sm font-semibold text-zinc-800 dark:text-zinc-100">
-                    目次
-                  </summary>
-                  <div className="mt-3">
-                    <ReactMarkdown
-                      remarkPlugins={[remarkGfm]}
-                      rehypePlugins={[rehypeSlug]}
-                      components={markdownComponents}
-                    >
-                      {toc}
-                    </ReactMarkdown>
-                  </div>
-                </details>
-              )}
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeSlug]}
