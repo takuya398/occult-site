@@ -1,6 +1,7 @@
 ---
 title: "ホテルリスボン"
 slug: "hotel-lisbon"
+date: "2026-02-15"
 prefecture: "三重県"
 category: "心霊スポット"
 danger: 4

@@ -1,5 +1,6 @@
 ---
 title: "硫黄島（いおうとう）"
+date: "2026-02-17"
 prefecture: "東京都"
 danger: 5
 credibility: "C"

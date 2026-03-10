@@ -1,5 +1,6 @@
 ---
 title: "開聞トンネル"
+date: "2026-02-21"
 prefecture: "鹿児島県"
 danger: 4
 credibility: "D"

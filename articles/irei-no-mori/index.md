@@ -1,4 +1,5 @@
 ---
+date: "2026-02-08"
 title: 慰霊の森
 slug: irei-no-mori
 publishedAt: 2026-02-07

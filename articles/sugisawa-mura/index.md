@@ -1,5 +1,6 @@
 ---
 title: "杉沢村"
+date: "2026-02-20"
 prefecture: "青森県"
 danger: 4
 credibility: "D"

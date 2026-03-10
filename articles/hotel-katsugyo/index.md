@@ -1,6 +1,7 @@
 ---
 title: "ホテル活魚"
 slug: "hotel-katsugyo"
+date: "2026-02-15"
 prefecture: "千葉県"
 category: "心霊スポット"
 danger: 5

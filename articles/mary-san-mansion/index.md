@@ -1,7 +1,7 @@
 ---
 title: "メリーさんの館"
 prefecture: "兵庫県"
-date: "2026-03-09"
+date: "2026-03-10"
 danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=R47EPooINN8"

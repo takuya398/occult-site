@@ -1,6 +1,7 @@
 ---
 title: "青木ヶ原樹海"
 slug: "aokigahara"
+date: "2026-02-15"
 prefecture: "山梨県"
 category: "心霊スポット"
 danger: 4

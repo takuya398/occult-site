@@ -1,4 +1,5 @@
 ---
+date: "2026-02-09"
 title: オレンジハウス
 slug: orange-house
 publishedAt: 2026-02-09

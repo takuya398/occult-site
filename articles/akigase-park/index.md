@@ -1,5 +1,6 @@
 ---
 title: "秋ヶ瀬公園"
+date: "2026-02-21"
 prefecture: "埼玉県"
 danger: 3
 credibility: "D"

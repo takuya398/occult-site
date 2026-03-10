@@ -1,4 +1,5 @@
 ---
+date: "2026-02-08"
 title: 恐山
 slug: osorezan
 publishedAt: 2026-02-08

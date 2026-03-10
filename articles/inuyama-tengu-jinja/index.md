@@ -1,4 +1,5 @@
 ---
+date: "2026-02-10"
 title: 犬山天狗神社
 slug: inuyama-tengu-jinja
 publishedAt: 2026-02-09

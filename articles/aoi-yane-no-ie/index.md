@@ -1,5 +1,6 @@
 ---
 title: "青い屋根の家"
+date: "2026-02-17"
 prefecture: "北海道"
 danger: 4
 credibility: "D"

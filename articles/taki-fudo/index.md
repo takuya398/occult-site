@@ -1,6 +1,7 @@
 ---
 title: 滝不動
 slug: taki-fudo
+date: "2026-02-17"
 prefecture: 山形県
 type: 心霊スポット
 category: 心霊スポット

@@ -1,6 +1,7 @@
 ---
 title: "旧犬鳴トンネル"
 slug: "old-inunaki-tunnel"
+date: "2026-02-15"
 prefecture: "福岡県"
 category: "心霊スポット"
 danger: 4

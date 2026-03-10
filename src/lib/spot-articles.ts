@@ -90,6 +90,22 @@ const normalizeDate = (value: unknown): string | undefined => {
   return undefined;
 };
 
+// publishedAt専用: 時刻付き文字列はISO形式のまま保持してソート精度を上げる
+const normalizeDatetime = (value: unknown): string | undefined => {
+  if (typeof value === "string" && value.trim()) {
+    const v = value.trim();
+    const parsed = Date.parse(v);
+    if (!Number.isNaN(parsed)) {
+      // 時刻成分がある場合（T または 日付部分10文字超）はISOで保持
+      if (v.length > 10) {
+        return new Date(parsed).toISOString();
+      }
+      return formatDate(new Date(parsed));
+    }
+  }
+  return undefined;
+};
+
 const extractTitleFromContent = (content: string) => {
   const match = content.match(/^#\s+(.+)$/m);
   return match ? match[1].trim() : "";
@@ -229,7 +245,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
   const cover = normalizeString(frontmatter.cover) || normalizeString(frontmatter.coverImage) || normalizeString(frontmatter.heroImage);
   const youtube = normalizeString(frontmatter.youtube);
   const publishedAt =
-    normalizeDate(frontmatter.publishedAt) ||
+    normalizeDatetime(frontmatter.publishedAt) ||
     normalizeDate(frontmatter.date) ||
     (stats ? formatDate(stats.mtime) : "1970-01-01");
   const updatedAt =
