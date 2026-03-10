@@ -176,12 +176,15 @@ export default async function LegendsDetailPage({
     })
     .filter((e) => e.score > 0)
     .sort((a, b) => b.score - a.score)
-    .slice(0, 6)
+    .slice(0, 3)
     .map(({ item: l }) => ({
       href: `/legends/${l.slug}`,
       title: l.title,
       summary: l.summary,
       tags: l.tags,
+      coverImage: typeof l.coverImage === "string" ? l.coverImage : undefined,
+      publishedAt: l.publishedAt,
+      category: l.category,
     }));
 
   const jsonLd = {

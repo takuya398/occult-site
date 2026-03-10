@@ -9,8 +9,19 @@ import ArticleHeader from "@/components/article/ArticleHeader";
 import PrevNext from "@/components/article/PrevNext";
 import Related from "@/components/article/Related";
 import ShareBar from "@/components/article/ShareBar";
+import SpotToc from "@/components/article/SpotToc";
 import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
+
+function parseTocMarkdown(tocMd: string): { text: string; id: string }[] {
+  const items: { text: string; id: string }[] = [];
+  const linkRegex = /\[([^\]]+)\]\(#([^)]+)\)/g;
+  let match;
+  while ((match = linkRegex.exec(tocMd)) !== null) {
+    items.push({ text: match[1], id: match[2] });
+  }
+  return items;
+}
 
 const extractTocSection = (content: string) => {
   const tocRegex = /(^|\n)##\s*目次\s*\n([\s\S]*?)(?=\n##\s|\n#\s|$)/;
@@ -96,8 +107,8 @@ export default async function SpotsDetailPage({
 
   const sourceBody = spot.source?.length ? (
     <ul className="space-y-2">
-      {spot.source.map((item) => (
-        <li key={item.title}>
+      {spot.source.map((item, i) => (
+        <li key={`${item.title}-${i}`}>
           {item.url ? (
             <a
               href={item.url}
@@ -142,11 +153,14 @@ export default async function SpotsDetailPage({
     .filter((entry) => entry.score >= 1)
     .sort((a, b) => b.score - a.score);
 
-  const relatedSpots = scoredSpots.slice(0, 6).map(({ item }) => ({
+  const relatedSpots = scoredSpots.slice(0, 3).map(({ item }) => ({
     href: `/spots/${item.slug}`,
     title: item.title,
     summary: item.summary,
     tags: item.tags,
+    coverImage: item.coverImage?.src,
+    publishedAt: item.publishedAt,
+    category: item.category,
   }));
 
   const sortedSpots = [...spots].sort(
@@ -179,6 +193,7 @@ export default async function SpotsDetailPage({
   const heroImage = spot.coverImage ?? spot.images?.[0];
   const rawContent = spot.content ?? spot.body;
   const { toc, body: contentBody } = extractTocSection(rawContent);
+  const tocItems = parseTocMarkdown(toc);
   const videoUrl = spot.videoUrls?.[0];
   const hasVideoToken = contentBody.includes("{{VIDEO}}");
   const contentParts = contentBody.split("{{VIDEO}}");
@@ -224,24 +239,38 @@ export default async function SpotsDetailPage({
               )}
             </figure>
           )}
+          {tocItems.length >= 2 && <SpotToc items={tocItems} />}
+          <Card>
+            <p className="mb-3 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+              基本データ
+            </p>
+            <ul className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+              <li>
+                <span className="text-zinc-500">種別：</span>
+                {spot.type ?? "心霊スポット"}
+              </li>
+              {spot.pref && (
+                <li>
+                  <span className="text-zinc-500">所在地：</span>
+                  {spot.pref}
+                </li>
+              )}
+              {spot.danger !== undefined && (
+                <li>
+                  <span className="text-zinc-500">危険度：</span>
+                  {spot.danger}/5
+                </li>
+              )}
+              {spot.credibility && (
+                <li>
+                  <span className="text-zinc-500">信憑性：</span>
+                  {spot.credibility}
+                </li>
+              )}
+            </ul>
+          </Card>
           <Card>
             <div className="prose prose-neutral max-w-none dark:prose-invert">
-              {toc && (
-                <details className="mb-6 rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-700 dark:border-zinc-800 dark:bg-zinc-900/60 dark:text-zinc-200">
-                  <summary className="cursor-pointer text-sm font-semibold text-zinc-800 dark:text-zinc-100">
-                    目次
-                  </summary>
-                  <div className="mt-3">
-                    <ReactMarkdown
-                      remarkPlugins={[remarkGfm]}
-                      rehypePlugins={[rehypeSlug]}
-                      components={markdownComponents}
-                    >
-                      {toc}
-                    </ReactMarkdown>
-                  </div>
-                </details>
-              )}
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeSlug]}

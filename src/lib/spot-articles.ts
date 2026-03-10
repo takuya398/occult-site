@@ -154,6 +154,42 @@ const linkifySourcesPath = (content: string) =>
 const isSpotCategory = (value: string) =>
   value === "" || value === "心霊スポット" || value === "心霊・噂" || value === "spots";
 
+const readSources = async (slug: string): Promise<SpotEntry["source"]> => {
+  const sourcesPath = path.join(ARTICLES_DIR, slug, "sources.md");
+  let raw = "";
+  try {
+    raw = await fs.readFile(sourcesPath, "utf8");
+  } catch {
+    return undefined;
+  }
+  const items: NonNullable<SpotEntry["source"]> = [];
+  for (const line of raw.split(/\r?\n/)) {
+    const stripped = line.replace(/^[-*]\s*/, "").trim();
+    if (!stripped) continue;
+    // Markdown link: [title](url)
+    const mdLink = stripped.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (mdLink) {
+      items.push({ title: mdLink[1], url: mdLink[2] });
+      continue;
+    }
+    // Plain URL
+    if (/^https?:\/\//.test(stripped)) {
+      try {
+        const { hostname } = new URL(stripped);
+        items.push({ title: hostname, url: stripped });
+      } catch {
+        items.push({ title: stripped, url: stripped });
+      }
+      continue;
+    }
+    // Plain text (no URL)
+    if (stripped && !stripped.startsWith("#")) {
+      items.push({ title: stripped });
+    }
+  }
+  return items.length ? items : undefined;
+};
+
 const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
   const articlePath = path.join(ARTICLES_DIR, slug, "index.md");
   let raw = "";
@@ -190,7 +226,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
     typeof dangerValue === "number" && dangerValue >= 1 && dangerValue <= 5
       ? (dangerValue as SpotEntry["danger"])
       : undefined;
-  const cover = normalizeString(frontmatter.cover);
+  const cover = normalizeString(frontmatter.cover) || normalizeString(frontmatter.coverImage) || normalizeString(frontmatter.heroImage);
   const youtube = normalizeString(frontmatter.youtube);
   const publishedAt =
     normalizeDate(frontmatter.publishedAt) ||
@@ -203,6 +239,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
   const contentWithVideo = ensureVideoToken(contentWithoutTitle, youtube || undefined);
   const contentWithLinks = linkifySourcesPath(contentWithVideo);
   const tags = normalizeTags(frontmatter.tags);
+  const source = await readSources(slug);
   const coverImage = cover
     ? {
         type: "image" as const,
@@ -230,6 +267,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
     updatedAt,
     coverImage,
     videoUrls: youtube ? [youtube] : undefined,
+    source,
   } satisfies SpotEntry;
 };
 
