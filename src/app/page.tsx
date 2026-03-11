@@ -12,6 +12,7 @@ export default async function Home() {
     date: item.publishedAt,
     category: item.category,
     summary: item.summary,
+    cover: item.cover,
   }));
 
   return (

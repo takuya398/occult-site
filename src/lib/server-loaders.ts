@@ -16,6 +16,7 @@ export type LatestItem = {
   updatedAt?: string;
   category: Category;
   href: string;
+  cover?: string;
 };
 
 // Category sort priority: legends/UMA before mtime-based spots on same date
@@ -27,9 +28,9 @@ export const getAllLatest = async (limit = 6): Promise<LatestItem[]> => {
   const umaList = loadUmas();
 
   const all: LatestItem[] = [
-    ...spots.map((x) => ({ ...x, href: `/spots/${x.slug}` })),
-    ...legendList.map((x) => ({ ...x, href: `/legends/${x.slug}` })),
-    ...umaList.map((x) => ({ ...x, href: `/uma/${x.slug}` })),
+    ...spots.map((x) => ({ ...x, href: `/spots/${x.slug}`, cover: x.coverImage?.src })),
+    ...legendList.map((x) => ({ ...x, href: `/legends/${x.slug}`, cover: x.coverImage?.src })),
+    ...umaList.map((x) => ({ ...x, href: `/uma/${x.slug}`, cover: x.coverImage?.src })),
   ];
 
   return all
