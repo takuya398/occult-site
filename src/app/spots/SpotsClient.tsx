@@ -7,6 +7,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
 import FilterDrawer from "@/components/FilterDrawer";
 import type { SpotEntry } from "@/types";
+import { PREFECTURE_ORDER } from "@/constants/prefectures";
 
 type SpotsClientProps = {
   initialSpots: SpotEntry[];
@@ -118,10 +119,10 @@ export default function SpotsClient({ initialSpots }: SpotsClientProps) {
   ]);
 
   const prefOptions = useMemo(() => {
-    const prefs = spots
-      .map((spot) => spot.pref)
-      .filter((pref): pref is string => Boolean(pref));
-    return Array.from(new Set(prefs));
+    const available = new Set(
+      spots.map((spot) => spot.pref).filter((pref): pref is string => Boolean(pref))
+    );
+    return PREFECTURE_ORDER.filter((pref) => available.has(pref));
   }, [spots]);
 
   const typeOptions = useMemo(() => {
@@ -315,22 +316,23 @@ export default function SpotsClient({ initialSpots }: SpotsClientProps) {
         </label>
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        <label className="text-xs text-zinc-500">
-          都道府県
-          <select
-            value={prefFilter}
-            onChange={(event) => setPrefFilter(event.target.value)}
-            className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
-          >
-            <option value="all">すべて</option>
-            {prefOptions.map((pref) => (
-              <option key={pref} value={pref}>
-                {pref}
-              </option>
-            ))}
-          </select>
-        </label>
+      <label className="text-xs text-zinc-500">
+        都道府県
+        <select
+          value={prefFilter}
+          onChange={(event) => setPrefFilter(event.target.value)}
+          className="mt-2 w-full max-w-xs rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
+        >
+          <option value="all">すべて</option>
+          {prefOptions.map((pref) => (
+            <option key={pref} value={pref}>
+              {pref}
+            </option>
+          ))}
+        </select>
+      </label>
+
+      <div className="grid gap-3 sm:grid-cols-3">
         <label className="text-xs text-zinc-500">
           種別
           <select

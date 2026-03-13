@@ -14,16 +14,15 @@ import {
   calcRecommendScore,
 } from "@/lib/uma-score";
 import UmaCardCover from "@/app/uma/UmaCardCover";
+import { PREFECTURE_ORDER } from "@/constants/prefectures";
 
-// 都道府県フィルター用（geo.scope==="JP" のみ、ユニーク・ソート済）
-const prefectureOptions = Array.from(
-  new Set(
-    entities
-      .filter((u) => u.geo?.scope === "JP")
-      .flatMap((u) => u.geo?.prefectures ?? [])
-      .filter(Boolean)
-  )
-).sort();
+// 都道府県フィルター用（geo.scope==="JP" のみ、地域順）
+const prefectureOptions = PREFECTURE_ORDER.filter((pref) =>
+  entities
+    .filter((u) => u.geo?.scope === "JP")
+    .flatMap((u) => u.geo?.prefectures ?? [])
+    .includes(pref)
+);
 
 // 国フィルター用（geo.scope==="INTL" のみ、ユニーク・ソート済）
 const countryOptions = Array.from(
