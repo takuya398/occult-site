@@ -58,9 +58,9 @@ export async function POST(req: NextRequest) {
       .insert({ comment_id: commentId, user_key: userKey });
 
     if (insertError) {
-      // unique制約違反 = 同時リクエストで既にinsert済み
-      console.error("[good] insert error:", insertError.message);
-      return NextResponse.json({ error: "Already liked" }, { status: 409 });
+      // unique制約違反 = DB にはすでにlikeが存在（UI状態のずれ）
+      // エラーにせず liked:true で返してUIを同期させる
+      return NextResponse.json({ liked: true, good_count: comment.good_count });
     }
 
     newCount = comment.good_count + 1;
