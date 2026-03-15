@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { CommentItem as CommentItemType } from "@/app/api/comments/route";
+import { getUserKey, isCommentLiked, setCommentLiked } from "@/lib/userKey";
 
 type Props = {
   comment: CommentItemType;
@@ -20,31 +21,48 @@ function formatDate(iso: string): string {
 
 export default function CommentItem({ comment }: Props) {
   const [goodCount, setGoodCount] = useState(comment.good_count);
+  const [liked, setLiked] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+
+  // localStorage はサーバーでは読めないため useEffect で初期化
+  useEffect(() => {
+    setLiked(isCommentLiked(comment.id));
+  }, [comment.id]);
 
   async function handleGood() {
     if (isLoading) return;
     setIsLoading(true);
-    // 楽観更新: APIの応答を待たずに先に+1表示
-    setGoodCount((prev) => prev + 1);
+
+    const userKey = getUserKey();
+    const nextLiked = !liked;
+
+    // 楽観更新
+    setLiked(nextLiked);
+    setGoodCount((prev) => (nextLiked ? prev + 1 : Math.max(0, prev - 1)));
+
     try {
       const res = await fetch("/api/comments/good", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ commentId: comment.id }),
+        body: JSON.stringify({ commentId: comment.id, userKey }),
       });
+
       if (res.ok) {
         const data = await res.json();
-        // DBの実際の値で確定
+        setLiked(data.liked);
         setGoodCount(data.good_count);
+        setCommentLiked(comment.id, data.liked);
       } else {
-        // 失敗時は楽観更新を元に戻す
+        // ロールバック
         console.error("[good] API error:", res.status, await res.text());
-        setGoodCount((prev) => prev - 1);
+        setLiked(!nextLiked);
+        setGoodCount((prev) => (nextLiked ? Math.max(0, prev - 1) : prev + 1));
       }
     } catch (err) {
+      // ロールバック
       console.error("[good] Network error:", err);
-      setGoodCount((prev) => prev - 1);
+      setLiked(!nextLiked);
+      setGoodCount((prev) => (nextLiked ? Math.max(0, prev - 1) : prev + 1));
     } finally {
       setIsLoading(false);
     }
@@ -70,11 +88,16 @@ export default function CommentItem({ comment }: Props) {
         <button
           onClick={handleGood}
           disabled={isLoading}
-          className="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-700 disabled:opacity-50 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200"
-          aria-label="グッド"
+          className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium transition-colors disabled:opacity-50 ${
+            liked
+              ? "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300"
+              : "text-zinc-500 hover:bg-zinc-100 hover:text-zinc-700 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200"
+          }`}
+          aria-label={liked ? "グッドを取り消す" : "グッドする"}
         >
           <span>👍</span>
           <span>{goodCount}</span>
+          <span>{liked ? "済み" : "する"}</span>
         </button>
       </div>
     </li>
