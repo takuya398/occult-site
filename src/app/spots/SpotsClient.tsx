@@ -11,9 +11,10 @@ import { PREFECTURE_ORDER } from "@/constants/prefectures";
 
 type SpotsClientProps = {
   initialSpots: SpotEntry[];
+  commentCounts: Record<string, number>;
 };
 
-export default function SpotsClient({ initialSpots }: SpotsClientProps) {
+export default function SpotsClient({ initialSpots, commentCounts }: SpotsClientProps) {
   const spots = initialSpots;
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -557,6 +558,9 @@ export default function SpotsClient({ initialSpots }: SpotsClientProps) {
                 {spot.danger && (
                   <Badge tone="rose">危険度 {spot.danger}</Badge>
                 )}
+              </div>
+              <div className="mt-2 flex items-center gap-1 text-xs text-zinc-400 dark:text-zinc-500">
+                <span>💬 {commentCounts[spot.slug] ?? 0}</span>
               </div>
             </CardLink>
           ))}

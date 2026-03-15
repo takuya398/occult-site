@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import { notFound } from "next/navigation";
 import { getSpotEntriesFromArticles } from "@/lib/spot-articles";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import ArticleHeader from "@/components/article/ArticleHeader";
 import PrevNext from "@/components/article/PrevNext";
 import Related from "@/components/article/Related";
@@ -12,6 +12,7 @@ import ShareBar from "@/components/article/ShareBar";
 import SpotToc from "@/components/article/SpotToc";
 import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
+import CommentSection from "@/components/comments/CommentSection";
 
 function parseTocMarkdown(tocMd: string): { text: string; id: string }[] {
   const items: { text: string; id: string }[] = [];
@@ -72,15 +73,12 @@ export async function generateStaticParams() {
 
 type SpotsDetailPageProps = {
   params: Promise<{ slug: string }>;
-  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
 export default async function SpotsDetailPage({
   params,
-  searchParams,
 }: SpotsDetailPageProps) {
   const { slug } = await params;
-  const resolvedSearchParams = searchParams ? await searchParams : undefined;
   const spots = await getSpotEntriesFromArticles();
   const spot = spots.find((item) => item.slug === slug);
 
@@ -173,23 +171,6 @@ export default async function SpotsDetailPage({
       ? sortedSpots[currentIndex + 1]
       : undefined;
 
-  const backQuery = (() => {
-    if (!resolvedSearchParams) return "";
-    const params = new URLSearchParams();
-    Object.entries(resolvedSearchParams).forEach(([key, value]) => {
-      if (Array.isArray(value)) {
-        value.forEach((item) => {
-          if (item) params.append(key, item);
-        });
-        return;
-      }
-      if (typeof value === "string" && value.length > 0) {
-        params.set(key, value);
-      }
-    });
-    return params.toString();
-  })();
-  const backHref = backQuery ? `/spots?${backQuery}` : "/spots";
   const heroImage = spot.coverImage ?? spot.images?.[0];
   const rawContent = spot.content ?? spot.body;
   const { toc, body: contentBody } = extractTocSection(rawContent);
@@ -201,14 +182,13 @@ export default async function SpotsDetailPage({
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
-        <div className="mb-6">
-          <Link
-            href={backHref}
-            className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
-          >
-            ← 一覧へ戻る
-          </Link>
-        </div>
+        <Breadcrumbs
+          items={[
+            { label: "トップ", href: "/" },
+            { label: "心霊スポット", href: "/spots" },
+            { label: spot.title },
+          ]}
+        />
 
         <ArticleHeader
           categoryLabel="心霊スポット"
@@ -340,6 +320,7 @@ export default async function SpotsDetailPage({
               {sourceBody}
             </div>
           </Card>
+          <CommentSection slug={spot.slug} articleType="spots" />
         </div>
       </div>
     </div>

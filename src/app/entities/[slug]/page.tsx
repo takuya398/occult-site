@@ -1,6 +1,8 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { entities } from "@/loaders";
+import Breadcrumbs from "@/components/Breadcrumbs";
+// TODO: URL名整理メモ — /entities は将来 /yokai や /kaiki に変更検討。
+// ナビ表示「怪異・妖怪」はラベルのみ変更済み。URL は現状維持。
 import ArticleHeader from "@/components/article/ArticleHeader";
 import ImageGallery from "@/components/article/ImageGallery";
 import MarkdownContent from "@/components/article/MarkdownContent";
@@ -10,6 +12,7 @@ import Related from "@/components/article/Related";
 import ShareBar from "@/components/article/ShareBar";
 import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
+import CommentSection from "@/components/comments/CommentSection";
 
 export function generateStaticParams() {
   return entities.map((uma) => ({ slug: uma.slug }));
@@ -17,38 +20,18 @@ export function generateStaticParams() {
 
 type EntityDetailPageProps = {
   params: Promise<{ slug: string }>;
-  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
 export default async function EntityDetailPage({
   params,
-  searchParams,
 }: EntityDetailPageProps) {
   const { slug } = await params;
-  const resolvedSearchParams = searchParams ? await searchParams : undefined;
   const uma = entities.find((item) => item.slug === slug);
 
   if (!uma) {
     notFound();
   }
 
-  const backQuery = (() => {
-    if (!resolvedSearchParams) return "";
-    const params = new URLSearchParams();
-    Object.entries(resolvedSearchParams).forEach(([key, value]) => {
-      if (Array.isArray(value)) {
-        value.forEach((item) => {
-          if (item) params.append(key, item);
-        });
-        return;
-      }
-      if (typeof value === "string" && value.length > 0) {
-        params.set(key, value);
-      }
-    });
-    return params.toString();
-  })();
-  const backHref = backQuery ? `/entities?${backQuery}` : "/entities";
 
   const metaBadges = [
     ...(uma.type ? [{ label: uma.type, tone: "neutral" as const }] : []),
@@ -134,14 +117,13 @@ export default async function EntityDetailPage({
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
-        <div className="mb-6">
-          <Link
-            href={backHref}
-            className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
-          >
-            ← 一覧へ戻る
-          </Link>
-        </div>
+        <Breadcrumbs
+          items={[
+            { label: "トップ", href: "/" },
+            { label: "怪異・妖怪", href: "/entities" },
+            { label: uma.title },
+          ]}
+        />
 
         <ArticleHeader
           categoryLabel="UMA"
@@ -223,6 +205,7 @@ export default async function EntityDetailPage({
               {sourceBody}
             </div>
           </Card>
+          <CommentSection slug={uma.slug} articleType="entities" />
         </div>
       </div>
     </div>

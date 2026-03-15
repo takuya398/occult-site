@@ -1,7 +1,9 @@
 import { Suspense } from "react";
 import UmaClient from "./UmaClient";
+import { getCommentCounts } from "@/lib/comments/getCommentCounts";
 
-export default function UmaPage() {
+export default async function UmaPage() {
+  const commentCounts = await getCommentCounts("uma");
   return (
     <Suspense
       fallback={
@@ -14,7 +16,7 @@ export default function UmaPage() {
         </div>
       }
     >
-      <UmaClient />
+      <UmaClient commentCounts={commentCounts} />
     </Suspense>
   );
 }

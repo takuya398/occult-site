@@ -34,7 +34,7 @@ const countryOptions = Array.from(
   )
 ).sort();
 
-export default function UmaClient() {
+export default function UmaClient({ commentCounts }: { commentCounts: Record<string, number> }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
@@ -600,6 +600,9 @@ export default function UmaClient() {
                   )}
                   {details?.hasBonus && <Badge tone="amber">高実在×高証拠</Badge>}
                   {details?.isPopular && <Badge tone="violet">人気</Badge>}
+                </div>
+                <div className="mt-2 flex items-center gap-1 text-xs text-zinc-400 dark:text-zinc-500">
+                  <span>💬 {commentCounts[uma.slug] ?? 0}</span>
                 </div>
               </CardLink>
             );

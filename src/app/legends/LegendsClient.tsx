@@ -35,7 +35,7 @@ const PARAM_DEFAULTS: Record<string, string> = {
   q: "",
 };
 
-export default function LegendsClient() {
+export default function LegendsClient({ commentCounts }: { commentCounts: Record<string, number> }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const today = useMemo(() => new Date(), []);
@@ -477,6 +477,9 @@ export default function LegendsClient() {
                     {item.credibility && (
                       <Badge tone="neutral">信憑性 {item.credibility}</Badge>
                     )}
+                  </div>
+                  <div className="mt-2 flex items-center gap-1 text-xs text-zinc-400 dark:text-zinc-500">
+                    <span>💬 {commentCounts[item.slug] ?? 0}</span>
                   </div>
                 </div>
               </Link>

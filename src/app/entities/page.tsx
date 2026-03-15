@@ -1,7 +1,9 @@
 import { Suspense } from "react";
 import EntitiesClient from "./EntitiesClient";
+import { getCommentCounts } from "@/lib/comments/getCommentCounts";
 
-export default function EntitiesPage() {
+export default async function EntitiesPage() {
+  const commentCounts = await getCommentCounts("entities");
   return (
     <Suspense
       fallback={
@@ -14,7 +16,7 @@ export default function EntitiesPage() {
         </div>
       }
     >
-      <EntitiesClient />
+      <EntitiesClient commentCounts={commentCounts} />
     </Suspense>
   );
 }

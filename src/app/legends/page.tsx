@@ -1,7 +1,9 @@
 import { Suspense } from "react";
 import LegendsClient from "./LegendsClient";
+import { getCommentCounts } from "@/lib/comments/getCommentCounts";
 
-export default function LegendsPage() {
+export default async function LegendsPage() {
+  const commentCounts = await getCommentCounts("legends");
   return (
     <Suspense
       fallback={
@@ -14,7 +16,7 @@ export default function LegendsPage() {
         </div>
       }
     >
-      <LegendsClient />
+      <LegendsClient commentCounts={commentCounts} />
     </Suspense>
   );
 }

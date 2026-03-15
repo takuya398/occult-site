@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { legends } from "@/loaders";
+import Breadcrumbs from "@/components/Breadcrumbs";
+// TODO: URL名整理メモ — /legends は将来 /stories や /kaidan に変更検討。
+// 現在は URL を維持しつつ表示ラベルのみ「怪談・都市伝説」を使用。
 import ArticleHeader from "@/components/article/ArticleHeader";
 import { LegendBody } from "@/components/article/LegendBody";
 import PrevNext from "@/components/article/PrevNext";
@@ -11,6 +13,7 @@ import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
 import LegendArticleShell from "@/components/legends/LegendArticleShell";
 import { legendImageMap } from "@/lib/legends/imageMap";
+import CommentSection from "@/components/comments/CommentSection";
 
 const TYPE_LABELS: Record<string, string> = {
   kaidan: "怪談",
@@ -61,36 +64,17 @@ export async function generateMetadata({
 
 type LegendsDetailPageProps = {
   params: Promise<{ slug: string }>;
-  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
 export default async function LegendsDetailPage({
   params,
-  searchParams,
 }: LegendsDetailPageProps) {
   const { slug } = await params;
-  const resolvedSearchParams = searchParams ? await searchParams : undefined;
   const item = legends.find((l) => l.slug === slug);
 
   if (!item) {
     notFound();
   }
-
-  const backQuery = (() => {
-    if (!resolvedSearchParams) return "";
-    const p = new URLSearchParams();
-    Object.entries(resolvedSearchParams).forEach(([key, value]) => {
-      if (Array.isArray(value)) {
-        value.forEach((v) => { if (v) p.append(key, v); });
-        return;
-      }
-      if (typeof value === "string" && value.length > 0) {
-        p.set(key, value);
-      }
-    });
-    return p.toString();
-  })();
-  const backHref = backQuery ? `/legends?${backQuery}` : "/legends";
 
   const metaBadges = [
     { label: TYPE_LABELS[item.type] ?? item.type, tone: "neutral" as const },
@@ -205,14 +189,13 @@ export default async function LegendsDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="mb-6">
-          <Link
-            href={backHref}
-            className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
-          >
-            ← 一覧へ戻る
-          </Link>
-        </div>
+      <Breadcrumbs
+          items={[
+            { label: "トップ", href: "/" },
+            { label: "怪談・都市伝説", href: "/legends" },
+            { label: item.title },
+          ]}
+        />
 
         <ArticleHeader
           categoryLabel="怪談・都市伝説"
@@ -305,6 +288,7 @@ export default async function LegendsDetailPage({
             </p>
             {sourceBody}
           </Card>
+          <CommentSection slug={item.slug} articleType="legends" />
         </div>
     </LegendArticleShell>
   );
