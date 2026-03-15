@@ -29,7 +29,7 @@ export const getAllLatest = async (limit = 6): Promise<LatestItem[]> => {
 
   const all: LatestItem[] = [
     ...spots.map((x) => ({ ...x, href: `/spots/${x.slug}`, cover: x.coverImage?.src })),
-    ...legendList.map((x) => ({ ...x, href: `/legends/${x.slug}`, cover: x.coverImage?.src })),
+    ...legendList.map((x) => ({ ...x, href: `/legends/${x.slug}`, cover: x.coverImage })),
     ...umaList.map((x) => ({ ...x, href: `/uma/${x.slug}`, cover: x.coverImage?.src })),
   ];
 
