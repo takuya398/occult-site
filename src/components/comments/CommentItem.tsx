@@ -25,6 +25,8 @@ export default function CommentItem({ comment }: Props) {
   async function handleGood() {
     if (isLoading) return;
     setIsLoading(true);
+    // 楽観更新: APIの応答を待たずに先に+1表示
+    setGoodCount((prev) => prev + 1);
     try {
       const res = await fetch("/api/comments/good", {
         method: "POST",
@@ -33,10 +35,16 @@ export default function CommentItem({ comment }: Props) {
       });
       if (res.ok) {
         const data = await res.json();
+        // DBの実際の値で確定
         setGoodCount(data.good_count);
+      } else {
+        // 失敗時は楽観更新を元に戻す
+        console.error("[good] API error:", res.status, await res.text());
+        setGoodCount((prev) => prev - 1);
       }
-    } catch {
-      // ネットワークエラーは静かに無視
+    } catch (err) {
+      console.error("[good] Network error:", err);
+      setGoodCount((prev) => prev - 1);
     } finally {
       setIsLoading(false);
     }

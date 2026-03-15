@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
+import { createAdminClient } from "@/lib/supabase-admin";
 
 export async function POST(req: NextRequest) {
   let commentId: string;
@@ -14,7 +14,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Missing commentId" }, { status: 400 });
   }
 
-  // 現在の good_count を取得
+  const supabase = createAdminClient();
+
+  // 現在の good_count を取得（service_role でRLSをバイパス）
   const { data: current, error: fetchError } = await supabase
     .from("comments")
     .select("good_count")
@@ -23,6 +25,7 @@ export async function POST(req: NextRequest) {
     .single();
 
   if (fetchError || !current) {
+    console.error("[comments/good] fetch error:", fetchError?.message);
     return NextResponse.json({ error: "Comment not found" }, { status: 404 });
   }
 
