@@ -1,0 +1,4 @@
+- https://ghostmap.jp/spotdetail.php?spotcd=1048
+- https://takewo.xsrv.jp/movie.php?spotcd=1048
+- https://haikyo.info/s/1279.html
+- https://sinreikousatu.jp/daisenziyuuenti-sinrei/

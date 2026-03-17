@@ -1,0 +1,3 @@
+- https://ghostmap.jp/spotdetail.php?spotcd=387
+- https://takewo.xsrv.jp/movie.php?spotcd=387
+- https://soramaga.com/chikyuumisaki/

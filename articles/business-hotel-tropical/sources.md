@@ -1,0 +1,4 @@
+- [Ghostmap](https://ghostmap.jp/spotdetail.php?spotcd=1473)
+- [実際に行った人が語る「ビジネスホテルトロピカル」の心霊体験](https://takewo.xsrv.jp/movie.php?spotcd=1473)
+- [怪異資料館](https://kaii-shiryoukan.com/yokohama-ghost-spot-tropical/)
+- [廃墟検索地図](https://haikyo.info/s/11190.html)

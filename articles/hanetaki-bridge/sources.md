@@ -1,0 +1,3 @@
+- https://ghostmap.jp/spotdetail.php?spotcd=489
+- https://tabi-and-everyday.com/archives/10548
+- https://takewo.xsrv.jp/movie.php?spotcd=489

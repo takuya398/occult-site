@@ -1,0 +1,4 @@
+- https://ghostmap.jp/spotdetail.php?spotcd=350
+- https://ameblo.jp/kojitukekun/entry-12699925565.html
+- https://takewo.xsrv.jp/movie.php?spotcd=350
+- https://kaii-shiryoukan.com/post-2068/

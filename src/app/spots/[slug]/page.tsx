@@ -49,7 +49,9 @@ const markdownComponents: Components = {
   },
   img: ({ node, ...props }) => (
     <figure className="my-6">
-      <img className="w-full rounded-xl" {...props} />
+      <div className="aspect-video w-full overflow-hidden rounded-xl">
+        <img className="h-full w-full object-cover" {...props} />
+      </div>
     </figure>
   ),
   h2: ({ node, ...props }) => (
