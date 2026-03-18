@@ -1,0 +1,3 @@
+- https://ghostmap.jp/spotdetail.php?spotcd=1571
+- https://takewo.xsrv.jp/movie.php?spotcd=1571
+- https://sinreikousatu.jp/kosako-tunnel-fukiage-tunnel-rumored-ghost-stories/

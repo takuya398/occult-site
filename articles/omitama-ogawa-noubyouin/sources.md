@@ -1,0 +1,3 @@
+- https://ghostmap.jp/spotdetail.php?spotcd=238
+- https://ameblo.jp/tasogare-tanaka/entry-12944580060.html
+- https://ruins-cat.com/blog-entry-300.html

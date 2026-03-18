@@ -51,6 +51,7 @@ export default function LegendsClient({ commentCounts }: { commentCounts: Record
   const [inputValue, setInputValue] = useState(() => searchParams.get("q") ?? "");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [filterOpen, setFilterOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(12);
 
   useEffect(() => {
     setInputValue(searchParams.get("q") ?? "");
@@ -167,6 +168,10 @@ export default function LegendsClient({ commentCounts }: { commentCounts: Record
       return a.slug.localeCompare(b.slug);
     });
   }, [query, typeFilter, dangerFilter, credibilityFilter, sortKey, selectedTags, today]);
+
+  useEffect(() => {
+    setVisibleCount(12);
+  }, [filteredLegends]);
 
   const handleToggleTag = (tag: string) => {
     setSelectedTags((prev) =>
@@ -439,7 +444,7 @@ export default function LegendsClient({ commentCounts }: { commentCounts: Record
         </div>
 
         <section className="mt-4 grid gap-4 sm:grid-cols-2">
-          {filteredLegends.map((item) => {
+          {filteredLegends.slice(0, visibleCount).map((item) => {
             const isNew =
               today.getTime() - new Date(item.publishedAt).getTime() <
               7 * 24 * 60 * 60 * 1000;
@@ -486,6 +491,21 @@ export default function LegendsClient({ commentCounts }: { commentCounts: Record
             );
           })}
         </section>
+
+        {visibleCount < filteredLegends.length && (
+          <div className="mt-8 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setVisibleCount((prev) => prev + 12)}
+              className="inline-flex items-center gap-2 rounded-full border border-zinc-300 bg-white px-6 py-2.5 text-sm font-medium text-zinc-700 shadow-sm transition-colors hover:border-zinc-400 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
+            >
+              もっと表示する
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+          </div>
+        )}
 
         {filteredLegends.length === 0 && (
           <section className="mt-6">

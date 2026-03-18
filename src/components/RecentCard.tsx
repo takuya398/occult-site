@@ -4,6 +4,7 @@ import type { GlowVariant } from "@/components/ui/glow";
 
 export type RecentItem = {
   title: string;
+  ruby?: string;
   href: string;
   date: string;
   category: string;
@@ -64,7 +65,7 @@ export default function RecentCard({ item }: RecentCardProps) {
             <span>{item.date}</span>
           </div>
           <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
-            {item.title}
+            {item.ruby ? <ruby>{item.title}<rt className="text-xs font-normal tracking-widest">{item.ruby}</rt></ruby> : item.title}
           </h3>
           {item.summary && (
             <p className="line-clamp-2 overflow-hidden break-words text-sm text-zinc-600 dark:text-zinc-300">

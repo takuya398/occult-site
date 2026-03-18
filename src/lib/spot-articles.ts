@@ -243,6 +243,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
       ? (dangerValue as SpotEntry["danger"])
       : undefined;
   const cover = normalizeString(frontmatter.cover) || normalizeString(frontmatter.coverImage) || normalizeString(frontmatter.heroImage);
+  const ruby = normalizeString(frontmatter.ruby) || undefined;
   const youtube = normalizeString(frontmatter.youtube);
   const publishedAt =
     normalizeDatetime(frontmatter.publishedAt) ||
@@ -269,6 +270,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
     id: slug,
     slug,
     title,
+    ruby,
     summary,
     body: summary,
     content: contentWithLinks,

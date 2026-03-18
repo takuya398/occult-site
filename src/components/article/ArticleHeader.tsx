@@ -8,6 +8,7 @@ export type MetaBadge = {
 type ArticleHeaderProps = {
   categoryLabel: string;
   title: string;
+  ruby?: string;
   summary: string;
   publishedAt: string;
   updatedAt?: string;
@@ -18,6 +19,7 @@ type ArticleHeaderProps = {
 export default function ArticleHeader({
   categoryLabel,
   title,
+  ruby,
   summary,
   publishedAt,
   updatedAt,
@@ -32,7 +34,7 @@ export default function ArticleHeader({
         {updatedAt && <span>更新日: {updatedAt}</span>}
       </div>
       <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-        {title}
+        {ruby ? <ruby>{title}<rt className="text-sm font-normal tracking-widest">{ruby}</rt></ruby> : title}
       </h1>
       <p className="max-w-3xl line-clamp-4 overflow-hidden break-words text-base leading-7 text-zinc-600 dark:text-zinc-300 sm:text-lg">
         {summary}

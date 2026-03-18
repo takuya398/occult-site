@@ -19,6 +19,7 @@ export type BaseEntry = {
   id: string;
   slug: string;
   title: string;
+  ruby?: string;
   summary: string;
   body: string;
   content?: string;

@@ -8,6 +8,7 @@ import type { Category } from "@/types";
 
 export type LatestItem = {
   title: string;
+  ruby?: string;
   slug: string;
   summary: string;
   tags: string[];

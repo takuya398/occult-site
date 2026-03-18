@@ -51,6 +51,7 @@ export default function SpotsClient({ initialSpots, commentCounts }: SpotsClient
   const [sortKey, setSortKey] = useState(initialState.sort);
   const [debouncedQuery, setDebouncedQuery] = useState(initialState.query);
   const [filterOpen, setFilterOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(12);
 
   useEffect(() => {
     const handler = setTimeout(() => {
@@ -251,6 +252,10 @@ export default function SpotsClient({ initialSpots, commentCounts }: SpotsClient
     credibilityFilter,
     sortKey,
   ]);
+
+  useEffect(() => {
+    setVisibleCount(12);
+  }, [filteredSpots]);
 
   const handleToggleTag = (tag: string) => {
     setSelectedTags((prev) =>
@@ -514,7 +519,7 @@ export default function SpotsClient({ initialSpots, commentCounts }: SpotsClient
         </div>
 
         <section className="mt-8 grid gap-4 sm:grid-cols-2">
-          {filteredSpots.map((spot) => (
+          {filteredSpots.slice(0, visibleCount).map((spot) => (
             <CardLink
               key={spot.slug}
               href={`/spots/${spot.slug}${detailsSuffix}`}
@@ -537,7 +542,7 @@ export default function SpotsClient({ initialSpots, commentCounts }: SpotsClient
                 {spot.type && <TagChip variant="outline">{spot.type}</TagChip>}
               </div>
               <h2 className="mt-3 text-lg font-semibold text-zinc-900">
-                {spot.title}
+                {spot.ruby ? <ruby>{spot.title}<rt className="text-xs font-normal tracking-widest">{spot.ruby}</rt></ruby> : spot.title}
               </h2>
               {spot.summary && (
                 <p className="mt-2 line-clamp-3 overflow-hidden break-words text-sm text-zinc-600">
@@ -565,6 +570,21 @@ export default function SpotsClient({ initialSpots, commentCounts }: SpotsClient
             </CardLink>
           ))}
         </section>
+
+        {visibleCount < filteredSpots.length && (
+          <div className="mt-8 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setVisibleCount((prev) => prev + 12)}
+              className="inline-flex items-center gap-2 rounded-full border border-zinc-300 bg-white px-6 py-2.5 text-sm font-medium text-zinc-700 shadow-sm transition-colors hover:border-zinc-400 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
+            >
+              もっと表示する
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+          </div>
+        )}
 
         {filteredSpots.length === 0 && (
           <section className="mt-6">

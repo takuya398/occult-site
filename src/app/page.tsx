@@ -5,9 +5,10 @@ import { CardLink } from "@/components/ui";
 import { getAllLatest } from "@/lib/server-loaders";
 
 export default async function Home() {
-  const latest = await getAllLatest(6);
+  const latest = await getAllLatest();
   const latestItems = latest.map((item) => ({
     title: item.title,
+    ruby: item.ruby,
     href: item.href,
     date: item.publishedAt,
     category: item.category,
@@ -53,8 +54,8 @@ export default async function Home() {
 
         {/* ── カテゴリ ── */}
         <section className="space-y-5">
-          <h2 className="gothic-divider text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-600">
-            ✦ カテゴリ ✦
+          <h2 className="text-xl font-semibold text-zinc-800 dark:text-zinc-200">
+            カテゴリ
           </h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <CardLink
@@ -119,8 +120,8 @@ export default async function Home() {
         {/* ── 新着 ── */}
         <section className="space-y-5">
           <div className="flex w-full items-center justify-between gap-4">
-            <h2 className="gothic-divider flex-1 text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-600">
-              ✦ 新着 ✦
+            <h2 className="text-xl font-semibold text-zinc-800 dark:text-zinc-200 shrink-0">
+              新着記事
             </h2>
             <div className="flex flex-wrap items-center gap-3 text-sm shrink-0">
               <Link

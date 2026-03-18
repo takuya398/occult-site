@@ -195,6 +195,7 @@ export default async function SpotsDetailPage({
         <ArticleHeader
           categoryLabel="心霊スポット"
           title={spot.title}
+          ruby={spot.ruby}
           summary={spot.summary}
           publishedAt={spot.publishedAt}
           updatedAt={spot.updatedAt}
