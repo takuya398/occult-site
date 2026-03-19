@@ -1,0 +1,4 @@
+- https://www.youtube.com/watch?v=M3W1tKdvRMU
+- https://ghostmap.jp/spotdetail.php?spotcd=393
+- https://occultravel.com/archives/3010
+- https://www.departure-ruins.com/sinai-hospital/
