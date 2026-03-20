@@ -6,7 +6,7 @@ danger: 2
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=n60bwY6ZH3E"
 cover: "/spots/minamihata-dam/023ba455-67a1-4f9d-a99f-3c45b861e7c3.png"
-tags: ["心霊スポット","ダム","福岡","女性の霊","人影"]
+tags: ["心霊スポット","女性の霊"]
 category: "心霊スポット"
 summary: "南畑ダムは福岡県那珂川市にあるダムで、夜の静けさや山間部の暗さから女性の霊や人影の噂が語られる心霊スポットとして知られている。"
 ---

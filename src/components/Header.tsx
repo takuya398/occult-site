@@ -129,7 +129,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/80 backdrop-blur">
+      <header className="fixed top-0 left-0 right-0 z-20 border-b border-zinc-200 bg-white/95">
         {/* ── 1段目 ── */}
         <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
           {/* サイト名 */}

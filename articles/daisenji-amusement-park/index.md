@@ -6,7 +6,7 @@ prefecture: "富山県"
 category: "心霊スポット"
 danger: 2
 credibility: "D"
-tags: ["心霊スポット", "遊園地", "廃墟", "富山", "少女の霊", "声"]
+tags: ["心霊スポット","廃遊園地","廃墟","女性の霊"]
 cover: "/spots/daisenji-amusement-park/8f2eee57-3ac5-4a7c-9020-3e84bdd007bf.png"
 youtube: "https://m.youtube.com/watch?v=r9yB-qNSo5k"
 summary: "富山県富山市にかつて存在した廃遊園地。少女の霊や子どもの声の噂が語られるスポットで、賑わいの記憶が消えた後の静けさが怪談性の中心となっている。"

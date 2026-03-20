@@ -6,7 +6,7 @@ danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=cleWwWerKe0"
 cover: "/spots/hachioji-castle-ruins/262ec52b-6304-4bc8-b899-76504dc22be6.png"
-tags: ["城跡","歴史","心霊スポット","山道"]
+tags: ["廃墟","心霊スポット"]
 category: "心霊スポット"
 summary: "1590年の落城で多くの命が失われた東京都八王子市の山城跡。御主殿の滝での女性たちの悲劇的な伝承と共に、女性の泣き声・武士の霊・白い着物の霊などの怪奇現象が語られる関東有数の心霊スポット。"
 ---

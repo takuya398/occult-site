@@ -7,7 +7,7 @@ type: 心霊スポット
 category: 心霊スポット
 danger: 4
 credibility: D
-tags: ["神社","寺","滝"]
+tags: ["心霊スポット","滝・川"]
 youtube: "https://www.youtube.com/watch?v=R8Wwz-d3ugk"
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"

@@ -7,7 +7,7 @@ prefecture: "大分県"
 category: "心霊スポット"
 danger: 4
 credibility: "D"
-tags: ["心霊スポット", "トンネル", "大分", "日田", "少女の霊", "声", "神隠し"]
+tags: ["心霊スポット","トンネル","女性の霊"]
 youtube: "https://www.youtube.com/watch?v=o-GmKiYs9pQ"
 summary: "小迫トンネルは大分県日田市小迫にある手掘りの痕跡が残る旧トンネルで、少女の霊や声、神隠しの噂で知られる心霊スポット。"
 cover: "/spots/ozako-tunnel/5584f429-be8c-4df9-bfa0-fef649309f17.png"

@@ -6,7 +6,7 @@ danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=JV-o532oXyc"
 cover: "/spots/white-house-niigata/68a1655c-9b51-405d-ba93-227950980f49.png"
-tags: ["心霊スポット","廃墟","新潟","洋館","女性の霊","怪談"]
+tags: ["心霊スポット","廃墟","女性の霊"]
 category: "心霊スポット"
 summary: "ホワイトハウスは新潟県に存在すると噂される廃洋館で、女性の霊や奇妙な現象が語られる心霊スポットとして知られている。"
 ---

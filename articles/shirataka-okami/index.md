@@ -6,7 +6,7 @@ prefecture: "奈良県"
 category: "心霊スポット"
 danger: 5
 credibility: "D"
-tags: ["心霊スポット", "廃神社", "神社", "奈良", "少女の霊", "宗教施設"]
+tags: ["心霊スポット","廃墟","女性の霊"]
 youtube: "https://www.youtube.com/watch?v=5ypV97vL5eE"
 summary: "奈良県奈良市大和田町の山中に残る廃宗教施設。少女の霊の噂や独特の雰囲気で知られる、危険度の高い心霊スポット。"
 cover: "/spots/shirataka-okami/6a46e8e8-b26d-4af4-87b0-cff93aa74edd.png"

@@ -6,7 +6,7 @@ prefecture: "福岡県"
 category: "心霊スポット"
 danger: 4
 credibility: "C"
-tags: ["心霊スポット", "墓地", "慰霊碑", "福岡", "女性の霊", "洞窟", "石仏"]
+tags: ["心霊スポット","墓地","女性の霊","洞窟"]
 youtube: "https://www.youtube.com/watch?v=KLiUwMF9gBY"
 summary: "福岡県八女郡広川町にある墓地・慰霊碑系スポット。洞窟に石仏が並ぶ独特の構造と女性の霊の噂で知られる、福岡屈指の心霊霊場。"
 cover: "/spots/jusanbutsu/ae848b11-07d6-4488-8f22-8a5f3c3e8836.png"

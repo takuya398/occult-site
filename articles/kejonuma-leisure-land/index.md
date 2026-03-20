@@ -6,7 +6,7 @@ danger: 3
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=eQbY4r94d6Q"
 cover: "/spots/kejonuma-leisure-land/1b29b6d4-baab-4d97-882d-62c14b91c232.png"
-tags: ["廃遊園地","廃墟","湖","観覧車","テーマパーク"]
+tags: ["廃遊園地","廃墟","心霊スポット"]
 category: "心霊スポット"
 summary: "宮城県大崎市に存在する廃遊園地「化女沼レジャーランド」。1979年開業・2001年閉園後、巨大な観覧車と遊具が錆びついたまま残る異様な廃墟として知られ、東北地方を代表する廃墟系心霊スポット。"
 ---

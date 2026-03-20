@@ -6,7 +6,7 @@ prefecture: "石川県"
 category: "心霊スポット"
 danger: 5
 credibility: "B"
-tags: ["心霊スポット", "トンネル", "石川", "牛首", "少女の霊", "女性の霊", "事故"]
+tags: ["心霊スポット","トンネル","女性の霊","事件"]
 youtube: "https://www.youtube.com/watch?v=dbSkwP7Tsag"
 summary: "牛首トンネルは石川県河北郡津幡町にある心霊スポットで、少女や女性の霊、事故の噂が語られる危険度の高い場所。"
 cover: "/spots/ushikubi-tunnel/cf6cd9f1-25c4-48f6-abc0-fd3970b2f87f.png"

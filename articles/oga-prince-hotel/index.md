@@ -6,7 +6,7 @@ danger: 5
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=jY52d21uZUo"
 cover: "/spots/oga-prince-hotel/edaff8d2-521f-47ff-a567-d22fac7ad754.png"
-tags: ["心霊スポット","廃墟","ホテル","旅館","秋田","男鹿","女性の霊","怪談"]
+tags: ["心霊スポット","廃墟","ホテル","旅館","女性の霊"]
 category: "心霊スポット"
 summary: "男鹿プリンスホテルは秋田県男鹿市北浦湯本にある廃ホテルで、女性の霊や謎の声、心霊写真の噂が語られる東北でも有名な心霊スポットである。"
 ---

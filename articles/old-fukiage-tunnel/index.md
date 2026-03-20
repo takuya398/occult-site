@@ -6,7 +6,7 @@ danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=ry6OAP7OFuc"
 cover: "/spots/old-fukiage-tunnel/0a9521ba-63d7-4a55-b126-cf209ab7e3f2.png"
-tags: ["トンネル","廃道"]
+tags: ["心霊スポット","トンネル","廃線"]
 category: "心霊スポット"
 direction: "体験談多め"
 summary: "東京都青梅市にある旧吹上トンネルは、女性の霊や事故の霊が現れると噂される関東屈指の心霊スポット。周辺には旧旧トンネルも存在し、暗い山道と廃道の雰囲気が恐怖を増幅させる。"

@@ -6,7 +6,7 @@ prefecture: "福岡県"
 category: "心霊スポット"
 danger: 4
 credibility: "A"
-tags: ["トンネル", "旧道", "都市伝説", "事件", "危険"]
+tags: ["心霊スポット","トンネル","廃線","都市伝説","事件"]
 cover: "/spots/old-inunaki-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=jnkuIHewhlw"
 direction: "注意喚起中心"

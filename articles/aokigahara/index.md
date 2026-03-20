@@ -6,7 +6,7 @@ prefecture: "山梨県"
 category: "心霊スポット"
 danger: 4
 credibility: "C"
-tags: ["樹海", "森", "噂", "体験談", "目撃"]
+tags: ["心霊スポット", "自殺"]
 cover: "/spots/aokigahara/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=ff7xFjZ_XdY"
 direction: "静寂・噂中心"

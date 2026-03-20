@@ -6,7 +6,7 @@ prefecture: "沖縄県"
 category: "心霊スポット"
 danger: 5
 credibility: "B"
-tags: ["心霊スポット", "墓地", "慰霊碑", "沖縄", "女性の霊", "洞窟", "遺跡", "拝所"]
+tags: ["心霊スポット","墓地","女性の霊","洞窟","廃墟"]
 youtube: "https://www.youtube.com/watch?v=h8A9Ynmr7tM"
 summary: "沖縄県宜野湾市大山にある遺跡・拝所。女性の霊やユタの修行場という噂が絶えず、地元では夕方以降近づかないとされる霊域。"
 cover: "/spots/oyama-kaizuka/a35c8fb1-1c95-4d1c-92f8-b9d918a5e910.png"

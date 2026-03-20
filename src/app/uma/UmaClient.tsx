@@ -163,6 +163,9 @@ export default function UmaClient({ commentCounts }: { commentCounts: Record<str
       if (sortKey === "newest") {
         return byNewest(a, b);
       }
+      if (sortKey === "oldest") {
+        return -byNewest(a, b);
+      }
       // recommend: finalScore 降順
       const diff = calcRecommendScore(b, today) - calcRecommendScore(a, today);
       return diff !== 0 ? diff : byNewest(a, b);
@@ -267,10 +270,11 @@ export default function UmaClient({ commentCounts }: { commentCounts: Record<str
             className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
           >
             <option value="recommend">おすすめ</option>
+            <option value="newest">新着順</option>
+            <option value="oldest">古い順</option>
             <option value="existence_rank">実在度が高い順</option>
             <option value="evidence_rank">証拠強度が高い順</option>
             <option value="danger">危険度が高い順</option>
-            <option value="newest">新着順</option>
           </select>
         </label>
       </div>

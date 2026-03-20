@@ -40,7 +40,7 @@ export default function RootLayout({
           <Suspense fallback={null}>
             <Header />
           </Suspense>
-          <main>{children}</main>
+          <main className="pt-[109px] sm:pt-[61px]">{children}</main>
         </ThemeProvider>
       </body>
     </html>

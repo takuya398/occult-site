@@ -5,7 +5,7 @@ pref: 埼玉県
 type: 心霊スポット
 credibility: C
 danger: 3
-tags: ["未解決", "森", "殺人", "山林"]
+tags: ["心霊スポット", "事件"]
 heroImage: /spots/nanasato-satsujin-no-mori/cover.jpg
 videoUrls:
   - https://www.youtube.com/watch?v=Lx41OxcrkV0

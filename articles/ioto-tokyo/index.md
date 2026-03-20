@@ -6,7 +6,7 @@ danger: 5
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=RibBQw2MVQs"
 cover: "/spots/ioto-tokyo/cover.jpg"
-tags: ["島", "廃墟"]
+tags: ["廃墟"]
 category: "心霊・噂"
 direction: "読み物"
 summary: "太平洋戦争の激戦地として知られる硫黄島（いおうとう）。現在は一般の自由な立入が難しい環境にあり、断片的な体験談と“持ち帰り禁忌”“声”“人影”などの噂が、戦跡の記憶と結びついて語られ続けている。"

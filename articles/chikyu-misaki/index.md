@@ -6,7 +6,7 @@ prefecture: "北海道"
 category: "心霊スポット"
 danger: 4
 credibility: "C"
-tags: ["心霊スポット", "海", "自殺", "北海道", "室蘭", "女性の霊", "心霊写真"]
+tags: ["心霊スポット","自殺","女性の霊","心霊写真"]
 cover: "/spots/chikyu-misaki/2036dfae-bfb4-499c-b681-a460a15890af.png"
 youtube: "https://m.youtube.com/watch?v=Py_GFWwuyXU&pp=ygUQ5Zyw55CD5bKsIOW_g-mcig%3D%3D"
 summary: "地球岬は北海道室蘭市にある展望名所でありながら、女性の霊や鐘の音、心霊写真の噂が語られる海辺の心霊スポットとしても知られている。"

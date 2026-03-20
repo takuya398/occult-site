@@ -6,7 +6,7 @@ danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=TJCMGirq-cU"
 cover: "/spots/hotel-suzukigaike/bd1db162-21c7-4edc-94a1-883f77d552ec.png"
-tags: ["心霊スポット","廃墟","ホテル","新潟","女性の霊","怪談"]
+tags: ["心霊スポット","廃墟","ホテル","女性の霊"]
 category: "心霊スポット"
 summary: "ホテルすずきヶ池は新潟県村上市瀬波温泉に存在すると言われる廃ホテルで、女性の霊や人影の噂が語られる心霊スポットとして知られている。"
 ---

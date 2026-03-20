@@ -6,7 +6,7 @@ danger: 5
 credibility: "B"
 youtube: "https://m.youtube.com/watch?v=n_T2ZgQS-kw&pp=ygUS5bi457SL44OI44Oz44ON44Or"
 cover: "/spots/jommon-tunnel/329f42d8-38f7-4c22-93b2-ddae97313a0c.png"
-tags: ["トンネル","鉄道","歴史","廃線","心霊"]
+tags: ["心霊スポット","トンネル","廃線"]
 category: "心霊スポット"
 summary: "北海道の山間部に存在する常紋トンネルは、明治期の鉄道工事で多くの死者が出たとされ、壁から人骨が発見されたという衝撃的な記録を持つ。実際の歴史的事件を背景に持つ、日本屈指の心霊スポット。"
 ---

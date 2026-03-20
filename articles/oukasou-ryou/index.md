@@ -7,7 +7,7 @@ prefecture: "三重県"
 category: "心霊スポット"
 danger: 5
 credibility: "B"
-tags: ["心霊スポット", "ホテル", "旅館", "廃墟", "三重", "男性の霊", "黒い影"]
+tags: ["心霊スポット","ホテル","旅館","廃墟","男性の霊","正体不明の霊"]
 youtube: "https://m.youtube.com/watch?v=jRCBJzZDXyg&pp=ygUM6bav6Iqx6I2Y5a-u"
 summary: "鶯花荘寮は三重県菰野町の湯の山温泉エリアに残る廃墟で、男性の霊や黒い影、立ち入ると事故に遭うという噂で知られる心霊スポット。"
 cover: "/spots/oukasou-ryou/633329b7-2d9a-4983-a92f-70901c2154a8.png"

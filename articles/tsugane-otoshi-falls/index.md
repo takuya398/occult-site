@@ -6,7 +6,7 @@ prefecture: "長崎県"
 category: "心霊スポット"
 danger: 4
 credibility: "C"
-tags: ["心霊スポット", "滝", "川", "長崎", "自殺", "正体不明の霊"]
+tags: ["心霊スポット","滝・川","自殺","正体不明の霊"]
 youtube: "https://www.youtube.com/watch?v=-sOnYJ3YIxY"
 summary: "長崎県西海市大瀬戸町にある滝。自殺者の霊の噂が残る、昼と夜で印象が大きく変わる心霊スポット。"
 cover: "/spots/tsugane-otoshi-falls/61bfff09-8b4c-4796-9bfa-292845b97abb.png"

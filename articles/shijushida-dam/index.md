@@ -6,7 +6,7 @@ danger: 5
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=9Q9f9NE-TjA"
 cover: "/spots/shijushida-dam/2d9fd031-37d7-4e53-8850-4920259dfebf.png"
-tags: ["心霊スポット","ダム","岩手","盛岡","老婆の霊","人影","自殺の噂"]
+tags: ["心霊スポット","女性の霊","自殺"]
 category: "心霊スポット"
 summary: "四十四田ダムは岩手県盛岡市にあるダムで、老婆の霊や水面に浮かぶ顔、人影や声の噂が語られる東北でも有名な心霊スポットである。"
 ---

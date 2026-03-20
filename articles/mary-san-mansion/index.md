@@ -6,7 +6,7 @@ danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=R47EPooINN8"
 cover: "/spots/mary-san-mansion/e5fd6125-52ee-4b8d-be5a-ac8121f5f479.png"
-tags: ["心霊スポット","廃墟","兵庫","六甲山","女性の霊","怪談"]
+tags: ["心霊スポット","廃墟","女性の霊"]
 category: "心霊スポット"
 summary: "メリーさんの館は兵庫県六甲山周辺に存在すると噂される廃墟で、女性の霊や奇妙な怪現象が語られる関西でも有名な心霊スポットの一つ。"
 ---

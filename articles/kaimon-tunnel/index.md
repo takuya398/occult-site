@@ -6,7 +6,7 @@ danger: 4
 credibility: "D"
 youtube: "https://www.youtube.com/watch?v=HjIfMaDZ8DE"
 cover: "/spots/kaimon-tunnel/cover.jpg"
-tags: ["トンネル"]
+tags: ["心霊スポット","トンネル"]
 category: "心霊スポット"
 direction: "体験談多め"
 summary: "鹿児島県指宿市にある開聞トンネルは、白い服の女性や首なしライダーの噂で知られる心霊スポット。事故の記憶と怪談が重なり、夜の闇が恐怖を増幅させる。"

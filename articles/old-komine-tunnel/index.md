@@ -6,7 +6,7 @@ danger: 4
 credibility: "B"
 youtube: "https://www.youtube.com/watch?v=s3cBkyXLhzQ"
 cover: "/spots/old-komine-tunnel/52a52ee3-5198-4741-b92e-b7a701e1f00e.png"
-tags: ["心霊スポット","トンネル","山道","女性の霊","東京"]
+tags: ["心霊スポット","トンネル","女性の霊"]
 category: "心霊スポット"
 summary: "東京都内でも有名なトンネル系心霊スポット。女性の霊やバックミラーに映る人影、山中の閉塞感による不気味さが語られ、旧道の暗さと静けさが独特の恐怖を生み出している。"
 ---

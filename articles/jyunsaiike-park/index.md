@@ -6,7 +6,7 @@ danger: 3
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=8_XCyww-2t0"
 cover: "/spots/jyunsaiike-park/3e33a902-99e1-491b-83bb-8a2fc6dd3d9f.png"
-tags: ["心霊スポット","公園","池","新潟","女性の霊","人影"]
+tags: ["心霊スポット","公園","女性の霊"]
 category: "心霊スポット"
 summary: "じゅんさい池公園は新潟県の静かな池畔公園として知られる一方、夜になると女性の霊や人影の噂が語られる心霊スポットとしても知られている。"
 ---

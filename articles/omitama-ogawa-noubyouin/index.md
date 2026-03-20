@@ -6,7 +6,7 @@ prefecture: "茨城県"
 category: "心霊スポット"
 danger: 5
 credibility: "C"
-tags: ["心霊スポット", "病院", "廃墟", "茨城", "女性の霊", "声", "2chオカルト住民"]
+tags: ["心霊スポット","廃病院","廃墟","女性の霊"]
 youtube: "https://m.youtube.com/watch?v=yeni482OszA&pp=ygUW5bCP5bed6ISz55eF6ZmiIOW_g-mcig%3D%3D"
 summary: "小美玉小川脳病院は茨城県小美玉市倉数にある廃病院で、森に隠れるように残された建物と、女性の霊やうめき声の噂で知られる心霊スポットである。"
 cover: "/spots/omitama-ogawa-noubyouin/addd0808-12bb-4af8-91d4-830f9a3d90fa.png"

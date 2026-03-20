@@ -6,7 +6,7 @@ danger: 4
 credibility: "D"
 youtube: "https://www.youtube.com/watch?v=yVp8XlZ0RI0"
 cover: "/spots/sugisawa-mura/cover.jpg"
-tags: ["廃墟", "村"]
+tags: ["廃墟", "心霊スポット", "都市伝説", "村"]
 category: "心霊スポット"
 direction: "検証重視（読み物）"
 summary: "青森の都市伝説として知られる杉沢村は、昭和初期の大量殺人で村が地図から消えたという話が広まったが、実在の証拠は薄く、別の事件・物語・場所の混同とされる。危険なのは心霊よりも私有地侵入や老朽化による事故。"

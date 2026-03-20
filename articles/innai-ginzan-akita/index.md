@@ -6,7 +6,7 @@ danger: 3
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=DlNjYjv29pY"
 cover: "/spots/innai-ginzan-akita/18f79e82-47eb-4e69-bd3b-8f734c5508f3.png"
-tags: ["心霊スポット","廃鉱山","秋田","鉱山","廃墟","怪談"]
+tags: ["心霊スポット","廃墟"]
 category: "心霊スポット"
 summary: "院内銀山は秋田県湯沢市にある歴史ある鉱山跡で、現在は廃鉱山となっている。坑道周辺では人影や声などの怪奇現象の噂が語られ、心霊スポットとしても知られている。"
 ---

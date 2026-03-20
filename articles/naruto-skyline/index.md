@@ -6,7 +6,7 @@ danger: 3
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=EqlBs6s4Mmw"
 cover: "/spots/naruto-skyline/09b1a8e5-475e-4b57-9867-5714125e69a6.png"
-tags: ["心霊スポット","山道","トンネル","事故"]
+tags: ["心霊スポット","トンネル","事件"]
 category: "心霊スポット"
 summary: "徳島県鳴門市の山岳ドライブロード。昼間は絶景の観光道路だが、夜になると道路に立つ女性の霊やバックミラーに映る人影、トンネル付近の怪声など、数多くの心霊体験が語られる場所として知られる。"
 ---

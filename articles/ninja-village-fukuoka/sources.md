@@ -1,0 +1,4 @@
+- https://ghostmap.jp/（全国心霊マップ「忍者村」）
+- https://sinreikousatu.jp/（心霊考察「忍者村｜ウワサの心霊話」）
+- https://takewo.xsrv.jp/（心霊スポット動画まとめ「忍者村」）
+- https://www.youtube.com/watch?v=BCsN_mX401s（YouTube「忍者村」関連動画）

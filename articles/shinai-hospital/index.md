@@ -6,7 +6,7 @@ prefecture: "熊本県"
 category: "心霊スポット"
 danger: 5
 credibility: "C"
-tags: ["心霊スポット", "廃病院", "廃墟", "熊本", "正体不明の霊", "心霊写真", "植木町"]
+tags: ["心霊スポット","廃病院","廃墟","正体不明の霊","心霊写真"]
 youtube: "https://www.youtube.com/watch?v=M3W1tKdvRMU"
 summary: "熊本県熊本市北区植木町にある廃病院系廃墟。未完成のまま放置された建物に正体不明の霊や心霊写真の噂が重なる、九州屈指の心霊スポット。"
 cover: "/spots/shinai-hospital/a1508a60-0e3c-4876-9867-53e4b7d7c4a5.png"

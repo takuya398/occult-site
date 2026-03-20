@@ -6,7 +6,7 @@ prefecture: "福井県"
 category: "心霊スポット"
 danger: 5
 credibility: "A"
-tags: ["心霊スポット", "海", "自殺", "福井", "男性の霊", "断崖絶壁", "心霊写真"]
+tags: ["心霊スポット","自殺","男性の霊","心霊写真"]
 youtube: "https://m.youtube.com/watch?v=-oll27UcIuI&pp=ygUQ5p2x5bCL5Z2KIOW_g-mcig%3D%3D"
 summary: "東尋坊は福井県坂井市にある断崖絶壁の景勝地でありながら、自殺の名所や男性の霊、心霊写真の噂で知られる全国屈指の海辺の心霊スポットである。"
 cover: "/spots/tojinbo/a8278a4b-e1c9-4542-8d64-7d9a2137c136.png"

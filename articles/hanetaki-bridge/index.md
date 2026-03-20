@@ -6,7 +6,7 @@ prefecture: "群馬県"
 category: "心霊スポット"
 danger: 3
 credibility: "B"
-tags: ["心霊スポット", "橋", "自殺", "群馬", "女性の霊", "人影", "心霊写真"]
+tags: ["心霊スポット","橋","自殺","女性の霊","心霊写真"]
 youtube: "https://www.youtube.com/watch?v=JA8tv4obrlc"
 summary: "はねたき橋は群馬県みどり市にある渓谷の橋で、自殺の噂や女性の霊、人影、足音などの怪現象が語られる心霊スポットとして知られている。"
 cover: "/spots/hanetaki-bridge/815d1aad-feee-4f6c-813b-5e101306d2a8.png"

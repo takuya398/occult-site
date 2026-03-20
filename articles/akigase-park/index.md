@@ -6,7 +6,7 @@ danger: 3
 credibility: "D"
 youtube: "https://www.youtube.com/watch?v=5hVK60CbQm8"
 cover: "/spots/akigase-park/cover.jpg"
-tags: ["公園", "城跡"]
+tags: ["心霊スポット","公園","廃墟"]
 category: "心霊スポット"
 direction: "体験談多め"
 summary: "埼玉県の広大な河川敷公園・秋ヶ瀬公園。昼は家族連れで賑わうが、夜は女性の霊や子供の声、足音の怪異が語られる。城跡や水辺事故と結びつけられるが、裏付けは乏しい。怖さの本質は"暗闇と孤立"。"

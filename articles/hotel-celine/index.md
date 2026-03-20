@@ -6,7 +6,7 @@ danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=5k-MQ5j9Kqw"
 cover: "/spots/hotel-celine/3bb9c079-3cfa-4f16-86db-54c83dea98d9.png"
-tags: ["廃墟","ホテル","心霊スポット","山中"]
+tags: ["廃墟","ホテル","心霊スポット"]
 category: "心霊スポット"
 summary: "長野県の山間部に存在するとされる廃墟「ホテルセリーヌ」。女性の霊の目撃談や不思議な物音など、多くの怪奇現象が語られる廃墟系心霊スポットとして、日本でも特に有名な場所の一つ。"
 ---

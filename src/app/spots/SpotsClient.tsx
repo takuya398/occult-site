@@ -226,6 +226,12 @@ export default function SpotsClient({ initialSpots, commentCounts }: SpotsClient
           if (dangerDiff !== 0) return dangerDiff;
           return a.title.localeCompare(b.title, "ja");
         }
+        if (sortKey === "newest") {
+          return Date.parse(b.publishedAt) - Date.parse(a.publishedAt);
+        }
+        if (sortKey === "oldest") {
+          return Date.parse(a.publishedAt) - Date.parse(b.publishedAt);
+        }
         if (sortKey === "pref") {
           const prefA = a.pref ?? "未設定";
           const prefB = b.pref ?? "未設定";
@@ -315,6 +321,8 @@ export default function SpotsClient({ initialSpots, commentCounts }: SpotsClient
             className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800"
           >
             <option value="recommend">おすすめ</option>
+            <option value="newest">新着順</option>
+            <option value="oldest">古い順</option>
             <option value="danger">危険度が高い順</option>
             <option value="credibility">信憑性が高い順</option>
             <option value="pref">都道府県順</option>

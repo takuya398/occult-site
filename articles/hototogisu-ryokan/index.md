@@ -6,7 +6,7 @@ danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=H_WAQVsbv-M"
 cover: "/spots/hototogisu-ryokan/0df8f521-caf2-46f4-8b42-3cb0e2e5cf9e.png"
-tags: ["心霊スポット","廃墟","旅館","ホテル","大阪","阪南","女性の霊","怪談"]
+tags: ["心霊スポット","廃墟","旅館","ホテル","女性の霊"]
 category: "心霊スポット"
 summary: "ほととぎす旅館は大阪府阪南市周辺で語られる廃旅館の心霊スポットで、女性の霊や人影、館内の物音などの噂が知られている。"
 ---

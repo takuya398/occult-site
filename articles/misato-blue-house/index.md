@@ -6,7 +6,7 @@ danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=8hlAuS5REUk"
 cover: "/spots/misato-blue-house/fe7e288d-e968-4dab-bf91-974b9e9fb2fc.png"
-tags: ["心霊スポット","廃墟","埼玉","青い家","人影","怪談"]
+tags: ["心霊スポット","廃墟"]
 category: "心霊スポット"
 summary: "三郷の青い家は埼玉県三郷市に存在すると噂される廃墟で、奇妙な体験談や怪談が語られる心霊スポットとして知られている。"
 ---

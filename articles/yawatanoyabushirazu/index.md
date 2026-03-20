@@ -6,7 +6,7 @@ prefecture: "千葉県"
 category: "心霊スポット"
 danger: 2
 credibility: "B"
-tags: ["禁足地", "竹藪", "伝承", "都市部"]
+tags: ["心霊スポット"]
 cover: "/spots/yawatanoyabushirazu/cover.jpg"
 direction: "伝承中心"
 summary: "市街地に残る小さな禁足地として語られる八幡の藪知らず。入ると戻れないという伝承が広まり、距離の近さがかえって異質さを強める。立ち入りは避け、外から静かに向き合う。"

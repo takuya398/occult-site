@@ -1,0 +1,4 @@
+- https://ghostmap.jp/（全国心霊マップ「須花トンネル」）
+- https://takewo.xsrv.jp/（心霊スポット動画まとめ「須花トンネル（すばなとんねる）」）
+- https://nippon-tabi.net/（にっぽん旅行記「須花トンネルの歴史。超有名な心霊スポットで何があった？」）
+- https://sinreikousatu.jp/（心霊考察「須花トンネル｜ウワサの心霊話」）

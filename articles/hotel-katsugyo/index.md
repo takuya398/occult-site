@@ -6,7 +6,7 @@ prefecture: "千葉県"
 category: "心霊スポット"
 danger: 5
 credibility: "A"
-tags: ["廃墟", "ホテル", "事件", "危険", "立入禁止"]
+tags: ["心霊スポット","廃墟","ホテル","事件"]
 cover: "/spots/hotel-katsugyo/cover.jpg"
 direction: "安全注意強め"
 summary: "千葉県で廃墟化したホテル活魚（油井グランドホテル跡）は、警察の注意喚起が出るほど立ち入りの危険が高い場所。噂は噂として扱い、現実のリスクと法令順守を最優先にする。"

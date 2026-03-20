@@ -6,7 +6,7 @@ danger: 4
 credibility: "D"
 youtube: "https://www.youtube.com/watch?v=xFp72qRPjvk"
 cover: "/spots/aoi-yane-no-ie/cover.jpg"
-tags: ["廃墟", "住居"]
+tags: ["廃墟", "心霊スポット"]
 category: "心霊スポット"
 direction: "体験談多め"
 summary: "北海道岩見沢市の霊園近くに残る空き家。風呂場の噂や窓の気配、濃霧などの体験談が語られる一方、私有地と老朽化の現実リスクが大きい。"

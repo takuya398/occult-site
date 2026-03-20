@@ -6,7 +6,7 @@ danger: 3
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=SgSAPXv0pEI"
 cover: "/spots/heiwa-no-taki/2fc52abf-af56-4405-95ce-6eca5ec8162d.png"
-tags: ["心霊スポット","滝","北海道","女性の霊","修行"]
+tags: ["心霊スポット","滝・川","女性の霊"]
 category: "心霊スポット"
 summary: "平和の滝は札幌市西区にある滝で、修行の場として知られる一方、女性の霊や奇妙な気配が現れるという噂が語られる北海道の心霊スポットとしても知られている。"
 ---

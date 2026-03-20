@@ -6,7 +6,7 @@ prefecture: "神奈川県"
 category: "心霊スポット"
 danger: 4
 credibility: "C"
-tags: ["心霊スポット", "ホテル", "旅館", "廃墟", "神奈川", "横浜", "女性の霊", "人影"]
+tags: ["心霊スポット","ホテル","旅館","廃墟","女性の霊"]
 cover: "/spots/business-hotel-tropical/ef8ec211-6731-40b9-8005-d0dd722a145b.png"
 youtube: "https://m.youtube.com/watch?v=S0bvWL6AKso"
 summary: "神奈川県横浜市都筑区にある廃ホテル。女性の霊・足音・人影の噂が語られる横浜有数の心霊スポット。207号室や窓辺に現れる女性など、物語性の強いエピソードで知られる。"

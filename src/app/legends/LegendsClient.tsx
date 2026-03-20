@@ -141,6 +141,10 @@ export default function LegendsClient({ commentCounts }: { commentCounts: Record
         const diff = Date.parse(b.publishedAt) - Date.parse(a.publishedAt);
         return diff !== 0 ? diff : a.slug.localeCompare(b.slug);
       }
+      if (sortKey === "oldest") {
+        const diff = Date.parse(a.publishedAt) - Date.parse(b.publishedAt);
+        return diff !== 0 ? diff : a.slug.localeCompare(b.slug);
+      }
       if (sortKey === "popular") {
         const diff = (b.views30d ?? 0) - (a.views30d ?? 0);
         if (diff !== 0) return diff;
@@ -256,6 +260,7 @@ export default function LegendsClient({ commentCounts }: { commentCounts: Record
           >
             <option value="recommended">おすすめ</option>
             <option value="new">新着順</option>
+            <option value="oldest">古い順</option>
             <option value="popular">人気順</option>
             <option value="danger">危険度が高い順</option>
             <option value="credible">信憑性が高い順</option>

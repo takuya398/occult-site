@@ -6,7 +6,7 @@ prefecture: "三重県"
 category: "心霊スポット"
 danger: 4
 credibility: "D"
-tags: ["廃墟", "ホテル"]
+tags: ["廃墟", "ホテル", "心霊スポット"]
 cover: "/spots/hotel-lisbon/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=QKWn0QAAxdM"
 direction: "体験談多め"
