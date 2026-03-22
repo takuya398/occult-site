@@ -1,0 +1,5 @@
+- [Wikipedia「将門塚」](https://ja.wikipedia.org/wiki/%E5%B0%86%E9%96%80%E5%A1%9A)
+- [Visit Chiyoda「将門塚（スポット紹介）」](https://visit-chiyoda.tokyo/app/spot/detail/65)
+- [心霊スポット【畏怖】「平将門の首塚」](https://haunted-place.info/2450.html)
+- [トラベルjp「日本三大怨霊！平将門の祟りが怖すぎる将門の首塚」](https://www.travel.co.jp/guide/article/9868/)
+- [丸の内LOVE Walker「都内屈指の最恐スポット？将門塚にお参りするってどんな人？」](https://lovewalker.jp/elem/000/004/300/4300918/)
