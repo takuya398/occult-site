@@ -1,4 +1,4 @@
-- https://ghostmap.jp/spotdetail.php?spotcd=1048
-- https://takewo.xsrv.jp/movie.php?spotcd=1048
-- https://haikyo.info/s/1279.html
-- https://sinreikousatu.jp/daisenziyuuenti-sinrei/
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=1048)
+- [心霊スポット動画まとめ](https://takewo.xsrv.jp/movie.php?spotcd=1048)
+- [廃墟検索地図](https://haikyo.info/s/1279.html)
+- [心霊考察](https://sinreikousatu.jp/daisenziyuuenti-sinrei/)

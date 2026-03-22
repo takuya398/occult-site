@@ -1,5 +1,5 @@
-- https://ghostmap.jp/spotdetail.php?spotcd=258
-- https://www.asasikibu.com/entry/toujinbou-fukui
-- https://恐怖の泉.com/spot/fukui1.html
-- https://note.com/3015/n/n4489ddf3e0b0
-- https://ag71-official.com/tojinbo/
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=258)
+- [朝日紙分](https://www.asasikibu.com/entry/toujinbou-fukui)
+- [xn--u9jv84l7ea468b.com](https://恐怖の泉.com/spot/fukui1.html)
+- [note](https://note.com/3015/n/n4489ddf3e0b0)
+- [個人ブログ](https://ag71-official.com/tojinbo/)

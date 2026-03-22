@@ -1,5 +1,3 @@
-# 出典
-
-- https://ghostmap.jp/spotdetail.php?spotcd=24
-- https://mintoku.ne.jp/spot/278731?tab=0
-- https://ameblo.jp/6blogs/entry-10618653603.html
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=24)
+- [みんなの趣味](https://mintoku.ne.jp/spot/278731?tab=0)
+- [アメーバブログ](https://ameblo.jp/6blogs/entry-10618653603.html)

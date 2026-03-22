@@ -1,5 +1,3 @@
-# 出典
-
-- https://ghostmap.jp/spotdetail.php?spotcd=269
-- https://www.departure-ruins.com/hototo-ryo/
-- https://ruins-cat.com/blog-entry-356.html
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=269)
+- [廃墟探索サイト](https://www.departure-ruins.com/hototo-ryo/)
+- [廃墟と猫](https://ruins-cat.com/blog-entry-356.html)

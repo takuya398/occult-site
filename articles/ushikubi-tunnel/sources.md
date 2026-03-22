@@ -1,5 +1,5 @@
-- https://ghostmap.jp/spotdetail.php?spotcd=82
-- https://kaii-shiryoukan.com/post-4014/
-- https://ruins-cat.com/blog-entry-341.html
-- https://toshidensetsu-ikki.com/horror/ushi-kubi-tunnel
-- https://shinrei-spot.com/ushikubitunnel.html
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=82)
+- [怪異資料館](https://kaii-shiryoukan.com/post-4014/)
+- [廃墟と猫](https://ruins-cat.com/blog-entry-341.html)
+- [toshidensetsu-ikki.com](https://toshidensetsu-ikki.com/horror/ushi-kubi-tunnel)
+- [心霊スポット大全](https://shinrei-spot.com/ushikubitunnel.html)

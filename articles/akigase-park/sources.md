@@ -1,6 +1,4 @@
-# 出典
-
-- https://ghostmap.jp/spotdetail.php?spotcd=48
-- https://takewo.xsrv.jp/movie.php?spotcd=48
-- https://www.gibo-kantei.com/story/c/c025/
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=48)
+- [心霊スポット動画まとめ](https://takewo.xsrv.jp/movie.php?spotcd=48)
+- [霊視検証](https://www.gibo-kantei.com/story/c/c025/)
 - 動画検証情報まとめ

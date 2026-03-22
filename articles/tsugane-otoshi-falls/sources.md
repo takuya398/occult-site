@@ -1,5 +1,5 @@
-- https://ghostmap.jp/spotdetail.php?spotcd=74
-- https://occultravel.com/archives/4458
-- https://sinreikousatu.jp/tsuganeotoshi-falls-rumored-ghost-stories/
-- https://takewo.xsrv.jp/movie.php?spotcd=74
-- https://urbanlegend.jp/9979/
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=74)
+- [オカルトラベル](https://occultravel.com/archives/4458)
+- [心霊考察](https://sinreikousatu.jp/tsuganeotoshi-falls-rumored-ghost-stories/)
+- [心霊スポット動画まとめ](https://takewo.xsrv.jp/movie.php?spotcd=74)
+- [都市伝説Japan](https://urbanlegend.jp/9979/)

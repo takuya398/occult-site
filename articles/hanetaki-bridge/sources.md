@@ -1,3 +1,3 @@
-- https://ghostmap.jp/spotdetail.php?spotcd=489
-- https://tabi-and-everyday.com/archives/10548
-- https://takewo.xsrv.jp/movie.php?spotcd=489
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=489)
+- [旅と日常](https://tabi-and-everyday.com/archives/10548)
+- [心霊スポット動画まとめ](https://takewo.xsrv.jp/movie.php?spotcd=489)

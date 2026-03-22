@@ -1,7 +1,5 @@
-# 出典
-
-- https://note.com/yorunotegami/n/ne76263b04ebf
-- https://urbanlife.tokyo/post/67014/
-- https://ghostmap.jp/spotdetail.php?spotcd=196
-- https://takato.stars.ne.jp/18.html
-- https://hibiyajinja.com/hachiojicastleghost/
+- [note](https://note.com/yorunotegami/n/ne76263b04ebf)
+- [アーバンライフ東京](https://urbanlife.tokyo/post/67014/)
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=196)
+- [個人サイト](https://takato.stars.ne.jp/18.html)
+- [個人ブログ](https://hibiyajinja.com/hachiojicastleghost/)

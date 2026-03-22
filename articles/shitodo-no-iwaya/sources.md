@@ -1,0 +1,6 @@
+- [全国心霊マップ「しとどの巌」](https://ghostmap.jp/spotdetail.php?spotcd=102)
+- [怪異資料館「首なし地蔵のカウント厳禁！しとどの窟」](https://kaii-shiryoukan.com/3794/)
+- [心霊気違「しとどの巌」](https://shin-kichi.com/shitodonoiwaya/)
+- [廃墟写真ブログRuin's Cat「しとどの窟（土肥椙山巌窟）」](https://ruins-cat.com/blog-entry-296.html)
+- [ウワサの心霊話「土肥椙山巌窟（しとどの窟）」](https://sinreikousatu.jp/shitonodo-cave-rumored-ghost-stories/)
+- [釣りと車中泊のツカさん「しとどの窟（いわや）」](https://uzakituka.com/2016/03/23/8062)

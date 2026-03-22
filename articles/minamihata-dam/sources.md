@@ -1,5 +1,3 @@
-# 出典
-
-- https://ghostmap.jp/spotdetail.php?spotcd=374
-- https://occultravel.com/archives/4490
-- https://tabi-and-everyday.com/articles/16580
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=374)
+- [オカルトラベル](https://occultravel.com/archives/4490)
+- [旅と日常](https://tabi-and-everyday.com/articles/16580)

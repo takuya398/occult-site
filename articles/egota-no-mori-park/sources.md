@@ -1,5 +1,5 @@
-- https://ghostmap.jp/（全国心霊マップ「江古田の森公園」）
-- https://kaiki-siryokan.com/（怪異資料館「江古田の森公園」）
-- https://takewo.xsrv.jp/（心霊スポット動画まとめ「江古田の森公園」）
-- https://toshidensetsu-paradise.com/（都市伝説パラダイス「江古田の森公園」）
-- https://www.youtube.com/watch?v=KwlbIiMhUC0（YouTube「江古田の森公園」関連動画）
+- [全国心霊マップ](https://ghostmap.jp/（全国心霊マップ「江古田の森公園」)
+- [怪異資料館](https://kaiki-siryokan.com/（怪異資料館「江古田の森公園」)
+- [心霊スポット動画まとめ](https://takewo.xsrv.jp/（心霊スポット動画まとめ「江古田の森公園」)
+- [toshidensetsu-paradise.com](https://toshidensetsu-paradise.com/（都市伝説パラダイス「江古田の森公園」)
+- [YouTube](https://www.youtube.com/watch?v=KwlbIiMhUC0（YouTube「江古田の森公園」関連動画)

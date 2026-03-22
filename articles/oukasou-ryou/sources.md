@@ -1,5 +1,5 @@
-- https://ghostmap.jp/spotdetail.php?spotcd=288
-- https://note.com/babu_damedame/n/n49ee4b79b20a
-- https://haikyo.info/s/8395.html
-- https://kaii-shiryoukan.com/post-1868/
-- https://www.tokai-tv.com/tokainews/feature/article_20220401_17339
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=288)
+- [note](https://note.com/babu_damedame/n/n49ee4b79b20a)
+- [廃墟検索地図](https://haikyo.info/s/8395.html)
+- [怪異資料館](https://kaii-shiryoukan.com/post-1868/)
+- [東海テレビ](https://www.tokai-tv.com/tokainews/feature/article_20220401_17339)

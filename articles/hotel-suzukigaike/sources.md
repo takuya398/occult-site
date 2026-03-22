@@ -1,5 +1,3 @@
-# 出典
-
-- https://ghostmap.jp/spotdetail.php?spotcd=713
-- https://haikyo.info/s/1092.html
-- https://yugenchi.com/ghost-spot/niigata/hotel-suzukigaike-ruins/
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=713)
+- [廃墟検索地図](https://haikyo.info/s/1092.html)
+- [幽現地](https://yugenchi.com/ghost-spot/niigata/hotel-suzukigaike-ruins/)

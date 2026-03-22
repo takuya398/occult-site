@@ -1,5 +1,3 @@
-# 出典
-
-- https://ghostmap.jp/spotdetail.php?spotcd=463
-- https://takewo.xsrv.jp/movie.php?spotcd=463
-- https://urbanlegend.jp/10249/
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=463)
+- [心霊スポット動画まとめ](https://takewo.xsrv.jp/movie.php?spotcd=463)
+- [都市伝説Japan](https://urbanlegend.jp/10249/)

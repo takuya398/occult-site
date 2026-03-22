@@ -1,4 +1,4 @@
-- https://ghostmap.jp/spotdetail.php?spotcd=（要確認）
-- https://note.com/（ホラーが集う闇市場「十三佛」記事）
-- https://chayarokurokuro.blog.jp/（chayarokurokuroの雑記ブログ「心霊スポット？福岡県八女郡広川『十三佛』」）
-- https://takewo.xsrv.jp/（心霊スポット動画まとめ「十三佛」）
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=（要確認)
+- [note](https://note.com/（ホラーが集う闇市場「十三佛」記事)
+- [chayarokurokuroの雑記ブログ](https://chayarokurokuro.blog.jp/（chayarokurokuroの雑記ブログ「心霊スポット？福岡県八女郡広川『十三佛』」)
+- [心霊スポット動画まとめ](https://takewo.xsrv.jp/（心霊スポット動画まとめ「十三佛」)

@@ -1,3 +1,3 @@
-- https://ghostmap.jp/spotdetail.php?spotcd=387
-- https://takewo.xsrv.jp/movie.php?spotcd=387
-- https://soramaga.com/chikyuumisaki/
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=387)
+- [心霊スポット動画まとめ](https://takewo.xsrv.jp/movie.php?spotcd=387)
+- [そらまが](https://soramaga.com/chikyuumisaki/)

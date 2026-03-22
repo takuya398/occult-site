@@ -1,6 +1,4 @@
-# 出典
-
-- https://ghostmap.jp/spotdetail.php?spotcd=152
-- https://ameblo.jp/kojitukekun/entry-12895131310.html
-- https://haradaoffice.biz/kaimon-tunnel/
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=152)
+- [アメーバブログ](https://ameblo.jp/kojitukekun/entry-12895131310.html)
+- [個人ブログ](https://haradaoffice.biz/kaimon-tunnel/)
 - 動画検証情報

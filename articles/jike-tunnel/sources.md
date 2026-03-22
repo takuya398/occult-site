@@ -1,4 +1,4 @@
-- https://ghostmap.jp/spotdetail.php?spotcd=350
-- https://ameblo.jp/kojitukekun/entry-12699925565.html
-- https://takewo.xsrv.jp/movie.php?spotcd=350
-- https://kaii-shiryoukan.com/post-2068/
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=350)
+- [アメーバブログ](https://ameblo.jp/kojitukekun/entry-12699925565.html)
+- [心霊スポット動画まとめ](https://takewo.xsrv.jp/movie.php?spotcd=350)
+- [怪異資料館](https://kaii-shiryoukan.com/post-2068/)

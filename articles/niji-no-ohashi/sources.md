@@ -1,0 +1,8 @@
+- [全国心霊マップ「虹の大橋」](https://ghostmap.jp/spotdetail.php?spotcd=205)
+- [怪異資料館「虹の大橋の心霊現象」](https://kaii-shiryoukan.com/1996/)
+- [日本の心霊スポット大全集「虹の大橋（宮ケ瀬湖）」](https://shinrei-spot.info/?p=11695)
+- [すごめんち「心霊スポット体験談」](https://sugomen-chi.com/chats/zuq9xb445hnbrhix)
+- [心霊体験まとめ「虹の大橋の心霊は飛び降りで死んだ人？」](https://poltergeist.jp/rainbow-bridge/)
+- [霊視検証「虹の大橋（神奈川県）」](https://www.gibo-kantei.com/story/c/c005/)
+- [月下の走術師ブログ「なぜ宮ヶ瀬虹の大橋は心霊スポットなのか」](https://blog.goo.ne.jp/adcmso0830/e/891ac129c91540f7048ce75a0d7eb49f)
+- [Yahoo!知恵袋 関連投稿](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14294918849)

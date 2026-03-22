@@ -1,3 +1,3 @@
-- https://ghostmap.jp/spotdetail.php?spotcd=238
-- https://ameblo.jp/tasogare-tanaka/entry-12944580060.html
-- https://ruins-cat.com/blog-entry-300.html
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=238)
+- [アメーバブログ](https://ameblo.jp/tasogare-tanaka/entry-12944580060.html)
+- [廃墟と猫](https://ruins-cat.com/blog-entry-300.html)

@@ -1,6 +1,4 @@
-# 出典
-
-- https://ghostmap.jp/spotdetail.php?spotcd=581
-- https://takewo.xsrv.jp/movie.php?spotcd=581
-- https://sinreikousatu.jp/kejonuma-leisure-land-rumored-ghost-stories/
-- https://ja.wikipedia.org/wiki/化女沼レジャーランド
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=581)
+- [心霊スポット動画まとめ](https://takewo.xsrv.jp/movie.php?spotcd=581)
+- [心霊考察](https://sinreikousatu.jp/kejonuma-leisure-land-rumored-ghost-stories/)
+- [Wikipedia](https://ja.wikipedia.org/wiki/化女沼レジャーランド)

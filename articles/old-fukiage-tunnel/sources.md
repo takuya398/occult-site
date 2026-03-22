@@ -1,5 +1,3 @@
-# 出典
-
-- https://www.uyouyo.com/special/tunnel/oume2/
-- https://ghostmap.jp/spotdetail.php?spotcd=6
-- https://news.line.me/detail/oa-shujoprime/5s0ymjgakdv3
+- [www.uyouyo.com](https://www.uyouyo.com/special/tunnel/oume2/)
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=6)
+- [news.line.me](https://news.line.me/detail/oa-shujoprime/5s0ymjgakdv3)

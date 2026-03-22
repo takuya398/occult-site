@@ -1,3 +1,3 @@
-- https://ghostmap.jp/spotdetail.php?spotcd=1234
-- https://4travel.jp/travelogue/10927789
-- https://www.youtube.com/watch?v=5ypV97vL5eE
+- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=1234)
+- [4travel](https://4travel.jp/travelogue/10927789)
+- [YouTube](https://www.youtube.com/watch?v=5ypV97vL5eE)
