@@ -9,7 +9,7 @@ credibility: "C"
 tags: ["心霊スポット","廃病院","廃墟","正体不明の霊","心霊写真"]
 youtube: "https://www.youtube.com/watch?v=M3W1tKdvRMU"
 summary: "熊本県熊本市北区植木町にある廃病院系廃墟。未完成のまま放置された建物に正体不明の霊や心霊写真の噂が重なる、九州屈指の心霊スポット。"
-cover: "/spots/shinai-hospital/a1508a60-0e3c-4876-9867-53e4b7d7c4a5.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shinai-hospital/a1508a60-0e3c-4876-9867-53e4b7d7c4a5.png"
 ---
 
 # 信愛病院
@@ -64,7 +64,7 @@ cover: "/spots/shinai-hospital/a1508a60-0e3c-4876-9867-53e4b7d7c4a5.png"
 
 ## この場所の概要
 
-![信愛病院 外観・植物に覆われた廃墟](/spots/shinai-hospital/a1508a60-0e3c-4876-9867-53e4b7d7c4a5.png)
+![信愛病院 外観・植物に覆われた廃墟](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shinai-hospital/a1508a60-0e3c-4876-9867-53e4b7d7c4a5.png)
 
 信愛病院については、噂の内容にかなり食い違いがある。オカルト系の現地記事では「正式名称は信愛病院しらぬい荘」とも書かれ、精神病院だった、老人ホームだった、病院と老人ホームを兼ねた施設だった、そもそも開業前に閉鎖したなど複数の説が並んでいる。
 
@@ -82,7 +82,7 @@ cover: "/spots/shinai-hospital/a1508a60-0e3c-4876-9867-53e4b7d7c4a5.png"
 
 ## 心霊現象の噂
 
-![信愛病院 落書きだらけの暗い内部](/spots/shinai-hospital/5f40daa6-8a54-4d8d-a61e-7ce5e13f4d03.png)
+![信愛病院 落書きだらけの暗い内部](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shinai-hospital/5f40daa6-8a54-4d8d-a61e-7ce5e13f4d03.png)
 
 信愛病院でよく語られるのは、看護婦の霊が出る、院内で正体不明の人影を見る、心霊写真が撮れる、といった噂である。全国心霊マップでは「正体不明の霊」「心霊写真」が心霊現象として掲載されており、オカルト系記事ではさらに「物を持ち帰ると『返して』と電話がかかってくる」という廃病院系の定番怪談も紹介されている。
 
@@ -92,7 +92,7 @@ cover: "/spots/shinai-hospital/a1508a60-0e3c-4876-9867-53e4b7d7c4a5.png"
 
 ## 体験談
 
-![信愛病院 廃墟内部・パレットと植物](/spots/shinai-hospital/59778f59-cd87-4f4c-9718-0b86b37b880b.png)
+![信愛病院 廃墟内部・パレットと植物](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shinai-hospital/59778f59-cd87-4f4c-9718-0b86b37b880b.png)
 
 信愛病院は、昔から心霊DVDや探索動画で取り上げられてきたことで知られている。稲川淳二のDVD「恐怖の現場シリーズ」にもなったと紹介されており、それがスポットとしての知名度を一気に押し上げたとも言われている。「有名な心霊廃墟として見に行く場所」としての性格が強い。
 
@@ -102,7 +102,7 @@ cover: "/spots/shinai-hospital/a1508a60-0e3c-4876-9867-53e4b7d7c4a5.png"
 
 ## 危険性と注意点
 
-![信愛病院 落書きだらけの階段](/spots/shinai-hospital/d2c148f7-1c84-42ee-beaf-6796256bcf22.png)
+![信愛病院 落書きだらけの階段](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shinai-hospital/d2c148f7-1c84-42ee-beaf-6796256bcf22.png)
 
 信愛病院を心霊スポットとして見る場合でも、最優先すべきは現地の危険性である。長期間放置された大型廃墟である以上、床の崩落、ガラス片や金属片、老朽化した階段や壁面など、物理的リスクは非常に高いと考えられる。危険度を5とするのは、心霊の噂よりも、まず廃墟としての危険が大きいためである。
 
@@ -112,7 +112,7 @@ cover: "/spots/shinai-hospital/a1508a60-0e3c-4876-9867-53e4b7d7c4a5.png"
 
 ## なぜ心霊スポットになったのか
 
-![信愛病院 骸骨の壁画と落書き](/spots/shinai-hospital/8637eb3d-a673-49e1-837a-8a80fe952a08.png)
+![信愛病院 骸骨の壁画と落書き](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shinai-hospital/8637eb3d-a673-49e1-837a-8a80fe952a08.png)
 
 信愛病院が心霊スポット化した背景には、未完成のまま放置されたという特異な経緯がある。病院として使われるはずだった空間が、そのまま時間だけを蓄えて朽ちていく光景は、廃病院の中でも特に不気味な部類に入る。
 

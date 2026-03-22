@@ -15,7 +15,7 @@ export default function LegendCardCover({ slug, title, isNew }: Props) {
       {cover ? (
         <>
           <Image
-            src={`/legends/${slug}/${cover}`}
+            src={cover}
             alt={`${title} cover`}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"

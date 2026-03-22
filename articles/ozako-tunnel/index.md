@@ -10,7 +10,7 @@ credibility: "D"
 tags: ["心霊スポット","トンネル","女性の霊"]
 youtube: "https://www.youtube.com/watch?v=o-GmKiYs9pQ"
 summary: "小迫トンネルは大分県日田市小迫にある手掘りの痕跡が残る旧トンネルで、少女の霊や声、神隠しの噂で知られる心霊スポット。"
-cover: "/spots/ozako-tunnel/5584f429-be8c-4df9-bfa0-fef649309f17.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ozako-tunnel/5584f429-be8c-4df9-bfa0-fef649309f17.png"
 ---
 
 # 小迫トンネル
@@ -66,7 +66,7 @@ cover: "/spots/ozako-tunnel/5584f429-be8c-4df9-bfa0-fef649309f17.png"
 
 ## この場所の概要
 
-![小迫トンネル 入口全景](/spots/ozako-tunnel/f666c68f-f45b-443e-9b33-a38061eec6bb.png)
+![小迫トンネル 入口全景](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ozako-tunnel/f666c68f-f45b-443e-9b33-a38061eec6bb.png)
 
 全国心霊マップによれば、小迫トンネルは「おざことんねる」と読み、住所は大分県日田市小迫100、最寄り駅は光岡駅で徒歩10分前後とされている。ジャンルはトンネルで、現在も場所自体は地図で確認できるが、注意書きとして私有地への無断侵入は不法侵入になると明記されている。つまり、気軽な肝試しの場というより、扱いを誤れば現実のトラブルにつながる場所でもある。
 
@@ -76,7 +76,7 @@ cover: "/spots/ozako-tunnel/5584f429-be8c-4df9-bfa0-fef649309f17.png"
 
 ## 噂されている出来事
 
-![小迫トンネル 蔦に覆われた入口](/spots/ozako-tunnel/0b2bf948-dbca-4bb9-967f-bb596f70ab4f.png)
+![小迫トンネル 蔦に覆われた入口](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ozako-tunnel/0b2bf948-dbca-4bb9-967f-bb596f70ab4f.png)
 
 小迫トンネルを語るうえで外せないのが、「大晦日の深夜にだけ不気味な霧が立ち込める」という噂である。その霧の中を歩くと、背後から何者かがついてくる足音が聞こえるという。靴のような足音なら何も起きないが、裸足のような「ペタペタ」という音だった場合、神隠しに遭うという話が語り継がれている。怪談としてはかなり出来すぎているが、毎年同じ時期に起きるという周期性が、逆に人の記憶に残りやすい。
 
@@ -86,7 +86,7 @@ cover: "/spots/ozako-tunnel/5584f429-be8c-4df9-bfa0-fef649309f17.png"
 
 ## 報告されている心霊現象
 
-![小迫トンネル 夜間の入口](/spots/ozako-tunnel/5f81b732-4e3d-4ad1-bad9-5b9bc810ded2.png)
+![小迫トンネル 夜間の入口](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ozako-tunnel/5f81b732-4e3d-4ad1-bad9-5b9bc810ded2.png)
 
 全国心霊マップでは、小迫トンネルで実際に目撃されている幽霊として少女への投票が最も多く、心霊現象の中心も「少女の霊」とされている。ほかにも女性、男性、正体不明などの目撃票はあるが、この場所を象徴する存在は少女の霊だと見なされているようだ。トンネルという閉じた空間で子どもの存在が語られると、それだけで現実感が薄れ、説明のつかない不気味さが一気に増してくる。
 
@@ -96,7 +96,7 @@ cover: "/spots/ozako-tunnel/5584f429-be8c-4df9-bfa0-fef649309f17.png"
 
 ## 現地の雰囲気
 
-![小迫トンネル 内部・手掘り岩肌](/spots/ozako-tunnel/c21863cd-e499-4c4a-a343-e3527731fde8.png)
+![小迫トンネル 内部・手掘り岩肌](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ozako-tunnel/c21863cd-e499-4c4a-a343-e3527731fde8.png)
 
 小迫トンネルの怖さは、巨大な廃墟のような派手さではなく、古さと狭さが生む圧迫感にある。手掘りの痕跡が残るトンネル内部は、人工物でありながら洞窟に近い空気を持ち、外の光が届きにくいほどに不安感が強まる。しかも周囲には地蔵や石碑、防空壕、廃神社といった要素が点在しており、どれか一つだけでも十分不気味なのに、それらがまとまって存在している。
 

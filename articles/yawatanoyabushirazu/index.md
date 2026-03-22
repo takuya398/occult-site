@@ -7,7 +7,7 @@ category: "心霊スポット"
 danger: 2
 credibility: "B"
 tags: ["心霊スポット"]
-cover: "/spots/yawatanoyabushirazu/cover.jpg"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yawatanoyabushirazu/cover.jpg"
 direction: "伝承中心"
 summary: "市街地に残る小さな禁足地として語られる八幡の藪知らず。入ると戻れないという伝承が広まり、距離の近さがかえって異質さを強める。立ち入りは避け、外から静かに向き合う。"
 ---
@@ -29,7 +29,7 @@ summary: "市街地に残る小さな禁足地として語られる八幡の藪�
 
 市街地に残る小さな竹藪が「八幡の藪知らず」として語られている。規模は大きくないが、禁足地としての伝承が印象を強くしてきた。
 
-![scene1](/spots/yawatanoyabushirazu/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yawatanoyabushirazu/scene1.jpg)
 
 ---
 
@@ -43,7 +43,7 @@ summary: "市街地に残る小さな禁足地として語られる八幡の藪�
 
 都市部に残る禁域という要素が、噂を強める要因になっている。
 
-![scene2](/spots/yawatanoyabushirazu/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yawatanoyabushirazu/scene2.jpg)
 
 ---
 
@@ -51,7 +51,7 @@ summary: "市街地に残る小さな禁足地として語られる八幡の藪�
 
 生活圏の中にあるため、日常との距離が近い。近さがあるからこそ、違和感が増幅されやすい。
 
-![scene3](/spots/yawatanoyabushirazu/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yawatanoyabushirazu/scene3.jpg)
 
 ---
 
@@ -59,7 +59,7 @@ summary: "市街地に残る小さな禁足地として語られる八幡の藪�
 
 禁足地として扱われてきた背景があり、軽率に近づくことは避けたい。周囲には住宅や参拝客もいるため、静かに見守る姿勢が大切だ。
 
-![scene4](/spots/yawatanoyabushirazu/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yawatanoyabushirazu/scene4.jpg)
 
 ---
 

@@ -9,7 +9,7 @@ credibility: "C"
 tags: ["心霊スポット","滝・川","自殺","正体不明の霊"]
 youtube: "https://www.youtube.com/watch?v=-sOnYJ3YIxY"
 summary: "長崎県西海市大瀬戸町にある滝。自殺者の霊の噂が残る、昼と夜で印象が大きく変わる心霊スポット。"
-cover: "/spots/tsugane-otoshi-falls/61bfff09-8b4c-4796-9bfa-292845b97abb.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tsugane-otoshi-falls/61bfff09-8b4c-4796-9bfa-292845b97abb.png"
 ---
 
 # つがね落しの滝
@@ -64,7 +64,7 @@ cover: "/spots/tsugane-otoshi-falls/61bfff09-8b4c-4796-9bfa-292845b97abb.png"
 
 ## この場所の概要
 
-![つがね落しの滝 昼間の滝全景](/spots/tsugane-otoshi-falls/61bfff09-8b4c-4796-9bfa-292845b97abb.png)
+![つがね落しの滝 昼間の滝全景](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tsugane-otoshi-falls/61bfff09-8b4c-4796-9bfa-292845b97abb.png)
 
 全国心霊マップでは、つがね落しの滝は「湖・滝」カテゴリに分類されており、心霊現象として「正体不明の霊」が明記されている。投稿ベースでは幽霊を見た、気配を感じた、写真に妙なものが写ったなどの体験談が寄せられており、長崎県の心霊スポットの中でも一定の知名度を持つ場所といえる。
 
@@ -74,7 +74,7 @@ cover: "/spots/tsugane-otoshi-falls/61bfff09-8b4c-4796-9bfa-292845b97abb.png"
 
 ## 場所・アクセス
 
-![つがね落しの滝 入口看板とトンネル](/spots/tsugane-otoshi-falls/5680cf70-b13d-441a-8598-9a7e6fec30da.png)
+![つがね落しの滝 入口看板とトンネル](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tsugane-otoshi-falls/5680cf70-b13d-441a-8598-9a7e6fec30da.png)
 
 所在地は長崎県西海市大瀬戸町雪浦河通郷379である。全国心霊マップでは最寄り駅を道ノ尾駅、徒歩339分と案内しており、公共交通で気軽に行ける場所ではない。実質的には車でのアクセスを前提に考えるべき山間部のスポットで、夜間は道も暗く、慣れていない人が軽い気持ちで訪れるには向いていない立地である。
 
@@ -84,7 +84,7 @@ cover: "/spots/tsugane-otoshi-falls/61bfff09-8b4c-4796-9bfa-292845b97abb.png"
 
 ## 心霊現象の噂
 
-![つがね落しの滝 夜の滝つぼと木製柵](/spots/tsugane-otoshi-falls/9f92f590-189c-428f-9545-dea535f73620.png)
+![つがね落しの滝 夜の滝つぼと木製柵](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tsugane-otoshi-falls/9f92f590-189c-428f-9545-dea535f73620.png)
 
 つがね落しの滝で最も有名なのは、自殺者の霊が現れるという噂である。全国心霊マップでは「正体不明の霊」が代表的な現象として扱われているが、オカルト系サイトでは「昔から多くの人がこの滝で命を絶った」と語られ、その霊が今も滝つぼ付近や周辺に現れると紹介されている。中でも、水辺で白い人影を見た、夜に女性の泣き声のようなものを聞いた、背後から誰かに見られている感覚があった、という話がよく挙がる。
 
@@ -94,7 +94,7 @@ cover: "/spots/tsugane-otoshi-falls/61bfff09-8b4c-4796-9bfa-292845b97abb.png"
 
 ## 体験談
 
-![つがね落しの滝 夜の暗いトンネル入口](/spots/tsugane-otoshi-falls/08cba4ad-d86b-4689-b81f-08fd0c13a739.png)
+![つがね落しの滝 夜の暗いトンネル入口](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tsugane-otoshi-falls/08cba4ad-d86b-4689-b81f-08fd0c13a739.png)
 
 つがね落しの滝の体験談として多いのは、「何かをはっきり見た」というより、現地で空気の重さを感じた、妙に落ち着かなくなった、長居したくなくなった、といった感覚的な証言である。動画まとめサイトでも探索動画が複数紹介されており、現地の雰囲気そのものに不気味さを感じる人が多いことがうかがえる。昼間の自然景観から一転し、夜は水音だけが響く環境になるため、ちょっとした物音や気配でも強く印象に残るのだろう。
 
@@ -104,7 +104,7 @@ cover: "/spots/tsugane-otoshi-falls/61bfff09-8b4c-4796-9bfa-292845b97abb.png"
 
 ## 危険性と注意点
 
-![つがね落しの滝 水が流れるトンネル内部](/spots/tsugane-otoshi-falls/e5374715-31d9-4365-8016-2644478e89fc.png)
+![つがね落しの滝 水が流れるトンネル内部](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tsugane-otoshi-falls/e5374715-31d9-4365-8016-2644478e89fc.png)
 
 つがね落しの滝で最も注意すべきなのは、心霊現象よりも自然環境そのものの危険性である。滝周辺は足場が滑りやすく、夜間は視界も悪くなる。水辺は一見安全そうに見えても、濡れた岩場や不安定な足元は転落事故につながりやすく、特に肝試し感覚で訪れるのは危険である。危険度を4としたのは、廃墟のような建物崩落リスクこそないものの、滝・渓流・暗所という条件が揃っているためである。
 

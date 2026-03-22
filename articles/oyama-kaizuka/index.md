@@ -9,7 +9,7 @@ credibility: "B"
 tags: ["心霊スポット","墓地","女性の霊","洞窟","廃墟"]
 youtube: "https://www.youtube.com/watch?v=h8A9Ynmr7tM"
 summary: "沖縄県宜野湾市大山にある遺跡・拝所。女性の霊やユタの修行場という噂が絶えず、地元では夕方以降近づかないとされる霊域。"
-cover: "/spots/oyama-kaizuka/a35c8fb1-1c95-4d1c-92f8-b9d918a5e910.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oyama-kaizuka/a35c8fb1-1c95-4d1c-92f8-b9d918a5e910.png"
 ---
 
 # 大山貝塚
@@ -64,7 +64,7 @@ cover: "/spots/oyama-kaizuka/a35c8fb1-1c95-4d1c-92f8-b9d918a5e910.png"
 
 ## この場所の概要
 
-![大山貝塚 立入禁止看板と入口](/spots/oyama-kaizuka/d99b9264-d02c-4804-b64c-13f26fbe7466.png)
+![大山貝塚 立入禁止看板と入口](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oyama-kaizuka/d99b9264-d02c-4804-b64c-13f26fbe7466.png)
 
 全国心霊マップでは、大山貝塚は「墓地・慰霊碑」の心霊スポットとして整理されており、写真13枚、動画15件が掲載されている。心霊現象として「女性の霊」が明記されており、噂の量だけでなく探索動画が多いことからも、沖縄県内ではかなり知名度の高い場所だと分かる。
 
@@ -74,7 +74,7 @@ cover: "/spots/oyama-kaizuka/a35c8fb1-1c95-4d1c-92f8-b9d918a5e910.png"
 
 ## 場所・アクセス
 
-![大山貝塚 夜の参道](/spots/oyama-kaizuka/5ec4b3ec-b3ac-47ed-8283-a27bab3ad856.png)
+![大山貝塚 夜の参道](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oyama-kaizuka/5ec4b3ec-b3ac-47ed-8283-a27bab3ad856.png)
 
 大山貝塚の所在地は沖縄県宜野湾市大山2丁目12-1である。全国心霊マップでは最寄り駅を浦添前田駅、徒歩45分としているが、別サイトでは周辺に駅はないと案内されており、実際には徒歩だけで気軽に行く場所ではない。
 
@@ -84,7 +84,7 @@ cover: "/spots/oyama-kaizuka/a35c8fb1-1c95-4d1c-92f8-b9d918a5e910.png"
 
 ## 心霊現象の噂
 
-![大山貝塚 廃拝所正面](/spots/oyama-kaizuka/d53163bc-9379-4fc0-896f-7e029f396c78.png)
+![大山貝塚 廃拝所正面](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oyama-kaizuka/d53163bc-9379-4fc0-896f-7e029f396c78.png)
 
 大山貝塚で最も有名なのは、女性の霊が現れるという噂である。全国心霊マップでもこの現象が代表例として挙げられており、投票ベースでは少女・女性・正体不明の存在を見たという声が集まっている。また、耳鳴りや金縛り、洞窟の裂け目から恐ろしい形相の女性に睨まれた、といった話も紹介されている。
 
@@ -104,7 +104,7 @@ cover: "/spots/oyama-kaizuka/a35c8fb1-1c95-4d1c-92f8-b9d918a5e910.png"
 
 ## 危険性と注意点
 
-![大山貝塚 夜の石碑](/spots/oyama-kaizuka/1c37c845-abb4-451f-95b2-cfd156447569.png)
+![大山貝塚 夜の石碑](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oyama-kaizuka/1c37c845-abb4-451f-95b2-cfd156447569.png)
 
 大山貝塚を調べるうえで最も重要なのは、心霊現象よりも現地の扱いである。私有地への無断立ち入りは不法侵入になる可能性があると複数のサイトで注意喚起されている。また、洞窟や拝所を含む場所であるため、足元の悪さ、夜間の視界不良、老朽化した設備や狭い通路など、物理的な危険も考えられる。危険度を5としたのは、怖い噂が多いからではなく、史跡・聖域・夜間探索という条件が重なるためである。
 

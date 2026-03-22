@@ -5,7 +5,7 @@ date: "2026-03-06"
 danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=ry6OAP7OFuc"
-cover: "/spots/old-fukiage-tunnel/0a9521ba-63d7-4a55-b126-cf209ab7e3f2.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-fukiage-tunnel/0a9521ba-63d7-4a55-b126-cf209ab7e3f2.png"
 tags: ["心霊スポット","トンネル","廃線"]
 category: "心霊スポット"
 direction: "体験談多め"
@@ -75,7 +75,7 @@ summary: "東京都青梅市にある旧吹上トンネルは、女性の霊や�
 この"トンネルが重なる構造"が、
 場所の不気味さを強めている。
 
-![scene1](/spots/old-fukiage-tunnel/1c18646a-011f-4c18-989b-c7d1f7c063ee.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-fukiage-tunnel/1c18646a-011f-4c18-989b-c7d1f7c063ee.png)
 
 ---
 
@@ -114,7 +114,7 @@ summary: "東京都青梅市にある旧吹上トンネルは、女性の霊や�
 しかし具体的な史料と結びつくケースは少なく、
 多くは後から作られた怪談の可能性が高い。
 
-![scene2](/spots/old-fukiage-tunnel/2f8fb8b1-e64e-4239-a0e1-70093d2150bc.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-fukiage-tunnel/2f8fb8b1-e64e-4239-a0e1-70093d2150bc.png)
 
 ---
 
@@ -152,7 +152,7 @@ summary: "東京都青梅市にある旧吹上トンネルは、女性の霊や�
 
 という心理が怪談を生みやすい。
 
-![scene3](/spots/old-fukiage-tunnel/7e640df8-312e-47b0-a043-34ba6a3bdd0c.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-fukiage-tunnel/7e640df8-312e-47b0-a043-34ba6a3bdd0c.png)
 
 ---
 
@@ -190,7 +190,7 @@ summary: "東京都青梅市にある旧吹上トンネルは、女性の霊や�
 
 危険度は4。
 
-![scene4](/spots/old-fukiage-tunnel/e5457e20-4287-4dc5-8df6-61f4fcf38355.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-fukiage-tunnel/e5457e20-4287-4dc5-8df6-61f4fcf38355.png)
 
 ---
 

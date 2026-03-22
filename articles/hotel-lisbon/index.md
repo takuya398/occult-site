@@ -7,7 +7,7 @@ category: "心霊スポット"
 danger: 4
 credibility: "D"
 tags: ["廃墟", "ホテル", "心霊スポット"]
-cover: "/spots/hotel-lisbon/cover.jpg"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-lisbon/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=QKWn0QAAxdM"
 direction: "体験談多め"
 summary: "三重県亀山市周辺に残る廃ホテル。営業時代から“声”“視線”“別れの夢”が語られ、閉業後に廃墟として噂が定着した。心霊の確証は薄い一方、現地は私有地・老朽化など現実的危険が大きい。"
@@ -61,7 +61,7 @@ summary: "三重県亀山市周辺に残る廃ホテル。営業時代から“�
 「行く」ことを前提に考えるより、まずは動画や外観の情報で雰囲気を掴むのが安全だ。
 心霊スポットは、現地に行かなくても怖さを味わえる時代になっている。
 
-![scene1](/spots/hotel-lisbon/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-lisbon/scene1.jpg)
 
 ---
 
@@ -142,7 +142,7 @@ summary: "三重県亀山市周辺に残る廃ホテル。営業時代から“�
 廃墟はカビ、埃、湿気、換気不良など、体調を崩す要因がそろっている。
 それでも「空気が違う」と語られると、心霊体験の入口に見えてしまう。
 
-![scene2](/spots/hotel-lisbon/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-lisbon/scene2.jpg)
 
 ここまでの体験談は、決定打に欠ける。
 だからこそ信憑性はD。
@@ -200,7 +200,7 @@ summary: "三重県亀山市周辺に残る廃ホテル。営業時代から“�
 心霊は当たるか外れるかだが、物理リスクは外れない。
 危険度4は、ここを評価している。
 
-![scene3](/spots/hotel-lisbon/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-lisbon/scene3.jpg)
 
 ---
 
@@ -235,7 +235,7 @@ summary: "三重県亀山市周辺に残る廃ホテル。営業時代から“�
 
 安全に楽しむなら、動画や記録で十分に怖さは味わえる。
 
-![scene4](/spots/hotel-lisbon/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-lisbon/scene4.jpg)
 
 ---
 

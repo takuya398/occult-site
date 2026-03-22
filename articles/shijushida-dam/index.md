@@ -5,7 +5,7 @@ date: "2026-03-13"
 danger: 5
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=9Q9f9NE-TjA"
-cover: "/spots/shijushida-dam/2d9fd031-37d7-4e53-8850-4920259dfebf.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shijushida-dam/2d9fd031-37d7-4e53-8850-4920259dfebf.png"
 tags: ["心霊スポット","女性の霊","自殺"]
 category: "心霊スポット"
 summary: "四十四田ダムは岩手県盛岡市にあるダムで、老婆の霊や水面に浮かぶ顔、人影や声の噂が語られる東北でも有名な心霊スポットである。"
@@ -61,7 +61,7 @@ summary: "四十四田ダムは岩手県盛岡市にあるダムで、老婆の�
 
 さらに、2016年には深夜に女子高生2人が転落し、1人が死亡、1人が重傷となる出来事が報じられたことで、もともとの噂に現実の痛ましさが重なった。そうした背景もあり、四十四田ダムは「ただの噂話では片づけにくい場所」として今も語られ続けている。
 
-![scene1](/spots/shijushida-dam/486910ac-ecca-47a0-afb1-e5a023ffaa7b.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shijushida-dam/486910ac-ecca-47a0-afb1-e5a023ffaa7b.png)
 
 ---
 
@@ -73,7 +73,7 @@ summary: "四十四田ダムは岩手県盛岡市にあるダムで、老婆の�
 
 観光地や散歩コースとしての一面を持ちながら、夜には別の顔を見せる。この昼夜の落差こそが、四十四田ダムを単なるダムではなく、怪談の舞台として印象づけてきた要因のひとつだろう。
 
-![scene2](/spots/shijushida-dam/59ad5726-ba90-4bfc-9e44-d608f6f1cbf0.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shijushida-dam/59ad5726-ba90-4bfc-9e44-d608f6f1cbf0.png)
 
 ---
 
@@ -85,7 +85,7 @@ summary: "四十四田ダムは岩手県盛岡市にあるダムで、老婆の�
 
 さらに、2016年11月には四十四田ダムで深夜に女子高生2人が転落し、1人が死亡、1人が重傷を負った出来事が報じられている。この報道は、もともと存在していた「飛び降りの噂」や「自殺の名所」というイメージを現実の事件と結びつけ、場所の印象をさらに重くした。
 
-![scene3](/spots/shijushida-dam/61445912-4ddd-475e-83b5-d8b6e0119f18.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shijushida-dam/61445912-4ddd-475e-83b5-d8b6e0119f18.png)
 
 ---
 
@@ -97,7 +97,7 @@ summary: "四十四田ダムは岩手県盛岡市にあるダムで、老婆の�
 
 さらに、橋や堤体の上で感じる人影や気配もよく語られる。誰もいないはずなのに視線を感じる、すぐそばで声のようなものを聞いた、背後を歩く足音がした気がする、といった体験談だ。四十四田ダムの怪談は、何かがはっきり現れるというより、「そこに何かがいる気がする」という静かな恐怖の積み重ねでできている。
 
-![scene4](/spots/shijushida-dam/6585eae8-8dee-46f3-9441-b6e8de65e4eb.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shijushida-dam/6585eae8-8dee-46f3-9441-b6e8de65e4eb.png)
 
 ---
 

@@ -5,7 +5,7 @@ prefecture: "東京都"
 danger: 5
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=RibBQw2MVQs"
-cover: "/spots/ioto-tokyo/cover.jpg"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ioto-tokyo/cover.jpg"
 tags: ["廃墟"]
 category: "心霊・噂"
 direction: "読み物"
@@ -57,7 +57,7 @@ summary: "太平洋戦争の激戦地として知られる硫黄島（いおう�
 本記事は、立入の可否を議論するためではなく、噂がどう語られているかを読み物として整理する。
 現実のルールと安全を最優先し、無理な訪問を推奨しない。
 
-![scene1](/spots/ioto-tokyo/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ioto-tokyo/scene1.jpg)
 
 ---
 
@@ -89,7 +89,7 @@ summary: "太平洋戦争の激戦地として知られる硫黄島（いおう�
 戦跡は、地形・壕・廃構造物などで反響が起きやすく、「音が人の気配」に変換されやすい。
 その変換が起きた瞬間、人は“説明できない怖さ”を抱える。
 
-![scene2](/spots/ioto-tokyo/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ioto-tokyo/scene2.jpg)
 
 ### 目撃型
 
@@ -110,7 +110,7 @@ summary: "太平洋戦争の激戦地として知られる硫黄島（いおう�
 ただし、これは湿気・塩害・砂塵・光量など、環境要因でも起きうる。
 硫黄島は「語られ方として強い」一方で、検証が難しい。
 
-![scene3](/spots/ioto-tokyo/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ioto-tokyo/scene3.jpg)
 
 ### 夢と体調型
 
@@ -193,4 +193,4 @@ summary: "太平洋戦争の激戦地として知られる硫黄島（いおう�
 
 出典は /articles/ioto-tokyo/sources.md を参照。
 
-![scene4](/spots/ioto-tokyo/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ioto-tokyo/scene4.jpg)

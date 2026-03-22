@@ -5,7 +5,7 @@ prefecture: "北海道"
 danger: 4
 credibility: "D"
 youtube: "https://www.youtube.com/watch?v=xFp72qRPjvk"
-cover: "/spots/aoi-yane-no-ie/cover.jpg"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aoi-yane-no-ie/cover.jpg"
 tags: ["廃墟", "心霊スポット"]
 category: "心霊スポット"
 direction: "体験談多め"
@@ -50,7 +50,7 @@ summary: "北海道岩見沢市の霊園近くに残る空き家。風呂場の�
 ただし、重要なのはここが観光施設ではなく、私有地または管理対象になりうる「空き家」だという点。
 現地に行くとしても、外観を公道から見るだけに留めるべきで、敷地内への立ち入りは不法侵入になりうる。
 
-![scene1](/spots/aoi-yane-no-ie/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aoi-yane-no-ie/scene1.jpg)
 
 ## 噂される現象
 噂は住居系の定番に寄っている。よく語られるのは次の話だ。
@@ -73,7 +73,7 @@ summary: "北海道岩見沢市の霊園近くに残る空き家。風呂場の�
 ただしこれは伝聞が中心で、ニュースなどの一次情報で裏取りされているわけではない。
 読み物としては魅力的でも、事実として断定してはいけない領域だ。
 
-![scene2](/spots/aoi-yane-no-ie/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aoi-yane-no-ie/scene2.jpg)
 
 ## 噂型分類
 この場所で繰り返される噂を、型で整理しておく。
@@ -105,7 +105,7 @@ summary: "北海道岩見沢市の霊園近くに残る空き家。風呂場の�
 心霊の真偽よりも、事故やトラブルの方が起こりやすい。
 危険度を4にした理由はここにある。
 
-![scene3](/spots/aoi-yane-no-ie/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aoi-yane-no-ie/scene3.jpg)
 
 ## 行く前に知るべき注意
 - 法的注意
@@ -118,7 +118,7 @@ summary: "北海道岩見沢市の霊園近くに残る空き家。風呂場の�
 	- 霊園・住宅地に隣接している場合、騒音やライト照射は重大な迷惑になる
 	- SNS投稿は位置情報や周辺の個人宅が映らないよう配慮する
 
-![scene4](/spots/aoi-yane-no-ie/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aoi-yane-no-ie/scene4.jpg)
 
 ## まとめ
 青い屋根の家は、住居系心霊スポットの中でも、噂の型が分かりやすい。

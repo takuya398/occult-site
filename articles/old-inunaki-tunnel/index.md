@@ -7,7 +7,7 @@ category: "心霊スポット"
 danger: 4
 credibility: "A"
 tags: ["心霊スポット","トンネル","廃線","都市伝説","事件"]
-cover: "/spots/old-inunaki-tunnel/cover.jpg"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-inunaki-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=jnkuIHewhlw"
 direction: "注意喚起中心"
 summary: "旧犬鳴トンネルは封鎖された旧道側のトンネルとして語られ、立ち入りの危険性が大きい場所。伝説や噂よりも、封鎖と安全、法令順守を前提に距離を置いて知るのが基本となる。"
@@ -33,7 +33,7 @@ summary: "旧犬鳴トンネルは封鎖された旧道側のトンネルとし�
 
 噂が多く語られる一方、まず優先すべきは安全と法令順守である。
 
-![scene1](/spots/old-inunaki-tunnel/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-inunaki-tunnel/scene1.jpg)
 
 ---
 
@@ -41,7 +41,7 @@ summary: "旧犬鳴トンネルは封鎖された旧道側のトンネルとし�
 
 自治体から、映画の内容はフィクションであり事実と異なる旨の注意が示されている。噂や伝説と現実を分けて理解することが重要だ。
 
-![scene2](/spots/old-inunaki-tunnel/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-inunaki-tunnel/scene2.jpg)
 
 ---
 
@@ -55,7 +55,7 @@ summary: "旧犬鳴トンネルは封鎖された旧道側のトンネルとし�
 
 噂は噂として扱い、断定しない姿勢を保つことが必要だ。
 
-![scene3](/spots/old-inunaki-tunnel/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-inunaki-tunnel/scene3.jpg)
 
 ---
 
@@ -67,7 +67,7 @@ summary: "旧犬鳴トンネルは封鎖された旧道側のトンネルとし�
 
 心霊以前に現実の危険が大きい場所であることを忘れてはならない。
 
-![scene4](/spots/old-inunaki-tunnel/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-inunaki-tunnel/scene4.jpg)
 
 ---
 

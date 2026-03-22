@@ -5,7 +5,7 @@ prefecture: "青森県"
 danger: 4
 credibility: "D"
 youtube: "https://www.youtube.com/watch?v=yVp8XlZ0RI0"
-cover: "/spots/sugisawa-mura/cover.jpg"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/sugisawa-mura/cover.jpg"
 tags: ["廃墟", "心霊スポット", "都市伝説", "村"]
 category: "心霊スポット"
 direction: "検証重視（読み物）"
@@ -45,7 +45,7 @@ summary: "青森の都市伝説として知られる杉沢村は、昭和初期�
 
 移動手段としては青森市中心部から車で向かうのが一般的だが、廃屋は私有地または管理地であり、無断で敷地内に入るのは不法侵入となりうる。事故が多く危険なため、現地へ行くこと自体を推奨しない。
 
-![scene1](/spots/sugisawa-mura/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/sugisawa-mura/scene1.jpg)
 
 ## 噂される現象
 伝説に付随する代表的な噂は以下の通りである。
@@ -67,7 +67,7 @@ summary: "青森の都市伝説として知られる杉沢村は、昭和初期�
 
 ただし、これらはいずれも具体的な証拠がない。一部は場所が異なる心霊スポットの体験談と混同されている可能性が高く、噂として拡散されているに過ぎない。
 
-![scene2](/spots/sugisawa-mura/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/sugisawa-mura/scene2.jpg)
 
 ## 現実側の検証
 ### 伝説の起源
@@ -84,7 +84,7 @@ summary: "青森の都市伝説として知られる杉沢村は、昭和初期�
 
 由来説としては、1953年の青森県新和村で起きた一家7人殺害事件や、津山事件など別の大量殺人事件が混同されたという見方がある。小説や創作のモチーフ（別作品の集落がモデルという説）も挙げられており、事件・物語・場所が混ざり合って“杉沢村”という怪談が組み立てられたと考えるのが自然だ。
 
-![scene3](/spots/sugisawa-mura/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/sugisawa-mura/scene3.jpg)
 
 ## 行く前に知るべき注意
 - 私有地・立ち入り禁止：杉沢村と呼ばれる場所は私有地または管理地の可能性が高い。無断侵入は不法侵入になりうる
@@ -92,7 +92,7 @@ summary: "青森の都市伝説として知られる杉沢村は、昭和初期�
 - 監視・通報リスク：監視カメラや巡回の情報もあり、肝試し目的の侵入は法的トラブルになりやすい
 - 夜間・単独行動を避ける：暗所の山道は転倒・迷子・事故の危険が高い。行くならそもそも推奨しない
 
-![scene4](/spots/sugisawa-mura/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/sugisawa-mura/scene4.jpg)
 
 ## まとめ
 杉沢村伝説は、1人の男による大量殺人と廃村の消滅という強烈な物語が、インターネットやテレビを通じて広まった結果、全国的な怪談として定着した。看板や鳥居、髑髏石や血痕の家といったモチーフは、青森市内の実在の風景と結びついて再解釈され、さらに別事件や創作が混ざることで“地図から消えた村”が完成した可能性が高い。

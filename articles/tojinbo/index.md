@@ -9,7 +9,7 @@ credibility: "A"
 tags: ["心霊スポット","自殺","男性の霊","心霊写真"]
 youtube: "https://m.youtube.com/watch?v=-oll27UcIuI&pp=ygUQ5p2x5bCL5Z2KIOW_g-mcig%3D%3D"
 summary: "東尋坊は福井県坂井市にある断崖絶壁の景勝地でありながら、自殺の名所や男性の霊、心霊写真の噂で知られる全国屈指の海辺の心霊スポットである。"
-cover: "/spots/tojinbo/a8278a4b-e1c9-4542-8d64-7d9a2137c136.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tojinbo/a8278a4b-e1c9-4542-8d64-7d9a2137c136.png"
 ---
 
 # 東尋坊
@@ -59,7 +59,7 @@ cover: "/spots/tojinbo/a8278a4b-e1c9-4542-8d64-7d9a2137c136.png"
 
 ## この場所の概要
 
-![東尋坊 断崖絶壁](/spots/tojinbo/6ec6ecff-5f41-40c5-a1f6-98ac4fa35572.png)
+![東尋坊 断崖絶壁](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tojinbo/6ec6ecff-5f41-40c5-a1f6-98ac4fa35572.png)
 
 東尋坊は柱状節理の荒々しい岩壁が連なる海岸で、福井県を代表する景観スポットとして知られている。観光船や遊歩道、展望スポットもあり、日中はカメラを持った観光客や家族連れの姿も多い。海と空が大きく開け、晴れた日の印象だけを切り取れば、心霊の噂など結びつかないほど明るい場所に見える。
 
@@ -69,7 +69,7 @@ cover: "/spots/tojinbo/a8278a4b-e1c9-4542-8d64-7d9a2137c136.png"
 
 ## 噂されている出来事
 
-![東尋坊 石仏・祠](/spots/tojinbo/12d1e4c9-c558-4013-9133-efaced085492.png)
+![東尋坊 石仏・祠](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tojinbo/12d1e4c9-c558-4013-9133-efaced085492.png)
 
 東尋坊にまつわる怪談としてまず有名なのが、この地名の由来となった僧・東尋坊の伝承である。乱暴者だった僧が宴の最中に崖から突き落とされ、その後この海岸は七日七晩荒れ狂った、という話が残る。史実としての検証とは別に、この物語は土地の怨念や祟りのイメージを強く支えてきた。海が荒れるたび、東尋坊の名と死の伝説が結びつけられてきたのである。
 
@@ -79,7 +79,7 @@ cover: "/spots/tojinbo/a8278a4b-e1c9-4542-8d64-7d9a2137c136.png"
 
 ## 報告されている心霊現象
 
-![東尋坊 荒天の岩場](/spots/tojinbo/67846f91-9046-4295-9244-341a903969b6.png)
+![東尋坊 荒天の岩場](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tojinbo/67846f91-9046-4295-9244-341a903969b6.png)
 
 東尋坊で最も代表的なのは、男性の霊の目撃である。崖際にぽつんと立つ人影、遊歩道の先でこちらを見ているような男、誰もいないはずの場所から感じる視線など、証言の形はさまざまだ。遠目には普通の人に見えるのに、近づくと消える、あるいは次の瞬間にはもういないという話が多い。海辺の開けた場所だからこそ、ありえない存在がそこに立っている違和感が際立つ。
 
@@ -89,7 +89,7 @@ cover: "/spots/tojinbo/a8278a4b-e1c9-4542-8d64-7d9a2137c136.png"
 
 ## 現地の雰囲気
 
-![東尋坊 石碑](/spots/tojinbo/b5e66d30-ca0c-4560-ba9b-7dbc2e9505e8.png)
+![東尋坊 石碑](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tojinbo/b5e66d30-ca0c-4560-ba9b-7dbc2e9505e8.png)
 
 東尋坊の怖さは、廃墟のような閉鎖感ではなく、むしろ開けすぎていることにある。目の前には日本海がどこまでも広がり、空も大きい。だが、その広さは安心感ではなく、落ちれば終わりだという現実を突きつけてくる。足元の岩は荒く、波音は絶えず響き、風が強い日は体が持っていかれそうな感覚すらある。逃げ場のない開放感が恐怖へ反転する場所なのだ。
 

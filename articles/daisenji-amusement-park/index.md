@@ -7,7 +7,7 @@ category: "心霊スポット"
 danger: 2
 credibility: "D"
 tags: ["心霊スポット","廃遊園地","廃墟","女性の霊"]
-cover: "/spots/daisenji-amusement-park/8f2eee57-3ac5-4a7c-9020-3e84bdd007bf.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/daisenji-amusement-park/8f2eee57-3ac5-4a7c-9020-3e84bdd007bf.png"
 youtube: "https://m.youtube.com/watch?v=r9yB-qNSo5k"
 summary: "富山県富山市にかつて存在した廃遊園地。少女の霊や子どもの声の噂が語られるスポットで、賑わいの記憶が消えた後の静けさが怪談性の中心となっている。"
 ---
@@ -51,7 +51,7 @@ summary: "富山県富山市にかつて存在した廃遊園地。少女の霊�
 
 ## 概要
 
-![大川寺遊園地](/spots/daisenji-amusement-park/7f328b32-0ee7-47a6-ba1b-ccb3e1bc7df3.png)
+![大川寺遊園地](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/daisenji-amusement-park/7f328b32-0ee7-47a6-ba1b-ccb3e1bc7df3.png)
 
 大川寺遊園地は、富山県富山市大山上野にかつて存在した遊園地跡である。現在では廃遊園地として知られ、富山県内では比較的有名な心霊スポットのひとつとして名前が挙がることが多い。山あいの静かな土地にありながら、遊園地という本来は楽しさの象徴だった場所が役目を終え、人気のない跡地として残ったことで、独特の寂しさと不気味さを帯びるようになった。
 
@@ -61,7 +61,7 @@ summary: "富山県富山市にかつて存在した廃遊園地。少女の霊�
 
 ## この場所の概要
 
-![大川寺遊園地 遊具跡](/spots/daisenji-amusement-park/e7bfb2ae-50ca-48f3-8cc8-6bcf4dddc376.png)
+![大川寺遊園地 遊具跡](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/daisenji-amusement-park/e7bfb2ae-50ca-48f3-8cc8-6bcf4dddc376.png)
 
 大川寺遊園地は1958年に鉄道会社と町が出資して開園した遊園地とされている。ジェットコースターや観覧車など、当時の定番アトラクションを備えた地域のレジャースポットだったが、時代の流れとともに客足が遠のき、不況の影響も受けて1996年に閉鎖されたといわれる。かつては家族連れや子どもたちの笑い声で満ちていた場所が、今では廃墟として語られている点に、このスポットの大きなギャップがある。
 
@@ -71,7 +71,7 @@ summary: "富山県富山市にかつて存在した廃遊園地。少女の霊�
 
 ## 噂されている出来事
 
-![大川寺遊園地 内部](/spots/daisenji-amusement-park/826bbdae-34d9-4ae0-9d47-65c2ed72a9fe.png)
+![大川寺遊園地 内部](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/daisenji-amusement-park/826bbdae-34d9-4ae0-9d47-65c2ed72a9fe.png)
 
 この場所で広く語られているのは、廃遊園地となって間もない頃、子どもの霊が遊んでいるような姿がたびたび目撃されたという話である。園内に遊具が残っていた時期には、誰もいないはずの場所で遊ぶ気配があった、遠くに小さな姿が見えた、というような噂が繰り返し語られた。時間が経って遊具そのものは撤去されても、「この場所にはまだ子どもの記憶が残っているのではないか」というイメージだけが残り、怪談として定着していったように見える。
 
@@ -81,7 +81,7 @@ summary: "富山県富山市にかつて存在した廃遊園地。少女の霊�
 
 ## 報告されている心霊現象
 
-![大川寺遊園地 跡地の様子](/spots/daisenji-amusement-park/c068873b-a89b-46be-9e5c-3e1e2ddd8d7d.png)
+![大川寺遊園地 跡地の様子](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/daisenji-amusement-park/c068873b-a89b-46be-9e5c-3e1e2ddd8d7d.png)
 
 この場所でよく挙げられる心霊現象は、少女の霊と声である。噂される現象として少女の霊と声が挙げられており、子どもに関する怪異のイメージがこの場所を象徴している。大人の霊ではなく少女や少年の気配が前面に出てくることで、単なる恐怖とは別種の物悲しさが強まっている。
 

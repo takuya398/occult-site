@@ -5,7 +5,7 @@ date: "2026-03-13"
 danger: 3
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=DlNjYjv29pY"
-cover: "/spots/innai-ginzan-akita/18f79e82-47eb-4e69-bd3b-8f734c5508f3.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/innai-ginzan-akita/18f79e82-47eb-4e69-bd3b-8f734c5508f3.png"
 tags: ["心霊スポット","廃墟"]
 category: "心霊スポット"
 summary: "院内銀山は秋田県湯沢市にある歴史ある鉱山跡で、現在は廃鉱山となっている。坑道周辺では人影や声などの怪奇現象の噂が語られ、心霊スポットとしても知られている。"
@@ -54,7 +54,7 @@ summary: "院内銀山は秋田県湯沢市にある歴史ある鉱山跡で、�
 
 しかし鉱山の閉山とともに町は衰退し、現在では当時の面影を残す建物や坑道跡が静かに残されている。人の気配がほとんどなくなったこの場所は、歴史的な遺構であると同時に、不気味な雰囲気を漂わせる場所としても知られている。
 
-![scene1](/spots/innai-ginzan-akita/7fe817e7-2937-4153-89c4-c5aa6133dedd.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/innai-ginzan-akita/7fe817e7-2937-4153-89c4-c5aa6133dedd.png)
 
 ---
 
@@ -66,7 +66,7 @@ summary: "院内銀山は秋田県湯沢市にある歴史ある鉱山跡で、�
 
 また、坑道の奥から声のような音が聞こえたという話もある。風や水の音と考えることもできるが、静かな夜に聞くと、人の声のように感じてしまうこともあるという。
 
-![scene2](/spots/innai-ginzan-akita/99b7708a-a5fb-4a6b-b569-f74c0e609c7b.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/innai-ginzan-akita/99b7708a-a5fb-4a6b-b569-f74c0e609c7b.png)
 
 ---
 
@@ -78,7 +78,7 @@ summary: "院内銀山は秋田県湯沢市にある歴史ある鉱山跡で、�
 
 また、坑道の入り口付近は非常に暗く、内部がどこまで続いているのか分からない。こうした環境が、人の想像力を刺激し、怪談の舞台として語られる理由のひとつになっている。
 
-![scene3](/spots/innai-ginzan-akita/a296d366-c404-47f4-a1e9-cb119fff3d2e.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/innai-ginzan-akita/a296d366-c404-47f4-a1e9-cb119fff3d2e.png)
 
 ---
 
@@ -90,7 +90,7 @@ summary: "院内銀山は秋田県湯沢市にある歴史ある鉱山跡で、�
 
 さらに、閉山後に人のいなくなった鉱山町の雰囲気が、不思議な怖さを生み出している。人がいなくなった町や施設は、それだけで独特の寂しさと不気味さを感じさせるものだ。
 
-![scene4](/spots/innai-ginzan-akita/c49f58ac-ee3b-4f31-8aa9-38d547007640.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/innai-ginzan-akita/c49f58ac-ee3b-4f31-8aa9-38d547007640.png)
 
 ---
 

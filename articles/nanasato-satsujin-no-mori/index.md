@@ -35,7 +35,7 @@ updatedAt: 2026-02-11
 埼玉県内で“七里殺人の森”と呼ばれる場所は、名前だけで読者の想像を一段深く沈める。  
 「森」「未解決」「殺人」——その組み合わせは、心霊の噂にとって最も増幅しやすい下地になるからだ。
 
-![入口・外観](/spots/nanasato-satsujin-no-mori/scene1.jpg)
+![入口・外観](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/nanasato-satsujin-no-mori/scene1.jpg)
 
 この記事では、断定は避けつつも、語られてきた噂の“形”をできるだけ崩さずに整理し、  
 なぜこの森が怖がられるのかを、事実と考察に分けて読みやすくまとめていく。
@@ -71,7 +71,7 @@ updatedAt: 2026-02-11
 ## 心霊現象（噂・体験談）
 ここからは、ネット上・口伝で語られがちな“噂のパターン”を、断定せずに整理する。
 
-![注意・看板](/spots/nanasato-satsujin-no-mori/scene2.jpg)
+![注意・看板](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/nanasato-satsujin-no-mori/scene2.jpg)
 
 ### 1) 足音・枝を踏む音が“ついてくる”
 - 自分が止まると止まる
@@ -103,7 +103,7 @@ updatedAt: 2026-02-11
 ## オカルト的考察
 ここからは“断定しない”前提で、噂が育つ構造を考える。
 
-![内部・雰囲気](/spots/nanasato-satsujin-no-mori/scene3.jpg)
+![内部・雰囲気](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/nanasato-satsujin-no-mori/scene3.jpg)
 
 ### 事件性の匂いは、幽霊より強い
 幽霊の噂は地域に無数にある。だが「殺人」「未解決」が付くと、恐怖の種類が変わる。  
@@ -146,7 +146,7 @@ updatedAt: 2026-02-11
 - 私有地・立入禁止：境界が曖昧でも絶対に越えない
 - 地元への配慮：騒音・ライト照射・ゴミ放置は論外
 
-![象徴・周辺](/spots/nanasato-satsujin-no-mori/scene4.jpg)
+![象徴・周辺](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/nanasato-satsujin-no-mori/scene4.jpg)
 
 ---
 

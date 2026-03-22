@@ -5,7 +5,7 @@ date: "2026-03-07"
 danger: 3
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=eQbY4r94d6Q"
-cover: "/spots/kejonuma-leisure-land/1b29b6d4-baab-4d97-882d-62c14b91c232.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kejonuma-leisure-land/1b29b6d4-baab-4d97-882d-62c14b91c232.png"
 tags: ["廃遊園地","廃墟","心霊スポット"]
 category: "心霊スポット"
 summary: "宮城県大崎市に存在する廃遊園地「化女沼レジャーランド」。1979年開業・2001年閉園後、巨大な観覧車と遊具が錆びついたまま残る異様な廃墟として知られ、東北地方を代表する廃墟系心霊スポット。"
@@ -32,7 +32,7 @@ summary: "宮城県大崎市に存在する廃遊園地「化女沼レジャー�
 特に有名なのは、観覧車周辺で聞こえるという子供の笑い声や、誰もいないはずの遊園地で人影が動くという目撃談である。
 広大な遊園地跡と湖の静かな水面が作り出す独特の雰囲気が、数多くの怪談を生み出してきたとされている。
 
-![scene1](/spots/kejonuma-leisure-land/31b6d17e-9660-4175-8e3f-320741a7dadd.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kejonuma-leisure-land/31b6d17e-9660-4175-8e3f-320741a7dadd.png)
 
 ---
 
@@ -51,7 +51,7 @@ summary: "宮城県大崎市に存在する廃遊園地「化女沼レジャー�
 
 この独特の景観は廃墟写真家や探索者の間で注目され、インターネットの普及とともに「東北最大級の廃遊園地」として知られるようになった。
 
-![scene2](/spots/kejonuma-leisure-land/400155b1-14da-497a-b1e1-9892b6bf81f3.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kejonuma-leisure-land/400155b1-14da-497a-b1e1-9892b6bf81f3.png)
 
 ---
 
@@ -71,7 +71,7 @@ summary: "宮城県大崎市に存在する廃遊園地「化女沼レジャー�
 ただし、これらの現象はあくまで噂や体験談の域を出ておらず、確実な証拠が存在するわけではない。
 しかし広大な廃遊園地の雰囲気は強烈であり、夜の静寂の中では些細な物音さえ恐怖体験として感じられる可能性もある。
 
-![scene3](/spots/kejonuma-leisure-land/aa10a5bd-d72d-4149-8013-ee668c1bf55c.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kejonuma-leisure-land/aa10a5bd-d72d-4149-8013-ee668c1bf55c.png)
 
 ---
 
@@ -85,7 +85,7 @@ summary: "宮城県大崎市に存在する廃遊園地「化女沼レジャー�
 また、敷地が非常に広いため探索中に方向感覚を失うこともあり、これが恐怖体験として語られるケースも多い。
 こうした環境が重なり、東北地方でも有名な廃墟型心霊スポットとして知られるようになった。
 
-![scene4](/spots/kejonuma-leisure-land/ca2e5de9-0abe-4a8b-a269-b463fbae63a9.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kejonuma-leisure-land/ca2e5de9-0abe-4a8b-a269-b463fbae63a9.png)
 
 ---
 

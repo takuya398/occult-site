@@ -39,8 +39,7 @@ export async function generateMetadata({
     (item as { seoDescription?: string }).seoDescription ??
     item.excerpt ??
     item.summary;
-  const coverFile = legendImageMap[slug]?.cover ?? "cover.jpg";
-  const ogImage = `/legends/${slug}/${coverFile}`;
+  const ogImage = legendImageMap[slug]?.cover ?? "";
   const keywords = (item as { seoKeywords?: string[] }).seoKeywords ?? item.tags;
 
   return {
@@ -176,7 +175,7 @@ export default async function LegendsDetailPage({
     "@type": "Article",
     headline: item.title,
     description: item.excerpt ?? item.summary,
-    image: `/legends/${slug}/${legendImageMap[slug]?.cover ?? "cover.jpg"}`,
+    image: legendImageMap[slug]?.cover ?? "",
     author: { "@type": "Organization", name: "オカルト図鑑" },
     publisher: { "@type": "Organization", name: "オカルト図鑑" },
     datePublished: item.publishedAt,

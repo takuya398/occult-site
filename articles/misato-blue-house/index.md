@@ -5,7 +5,7 @@ date: "2026-03-09"
 danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=8hlAuS5REUk"
-cover: "/spots/misato-blue-house/fe7e288d-e968-4dab-bf91-974b9e9fb2fc.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/misato-blue-house/fe7e288d-e968-4dab-bf91-974b9e9fb2fc.png"
 tags: ["心霊スポット","廃墟"]
 category: "心霊スポット"
 summary: "三郷の青い家は埼玉県三郷市に存在すると噂される廃墟で、奇妙な体験談や怪談が語られる心霊スポットとして知られている。"
@@ -54,7 +54,7 @@ summary: "三郷の青い家は埼玉県三郷市に存在すると噂される�
 
 住宅地の近くに存在していたという話もあり、都市型の心霊スポットとして知られている。
 
-![scene1](/spots/misato-blue-house/2575e881-b0f8-4052-8f2d-2accb18c9f6b.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/misato-blue-house/2575e881-b0f8-4052-8f2d-2accb18c9f6b.png)
 
 ---
 
@@ -68,7 +68,7 @@ summary: "三郷の青い家は埼玉県三郷市に存在すると噂される�
 
 こうした話は具体的な証拠があるわけではないが、廃墟という環境が想像力を刺激し、怪談として広まっていったと考えられている。
 
-![scene2](/spots/misato-blue-house/3aea561c-8ef4-4485-b71d-611b02ed7cf4.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/misato-blue-house/3aea561c-8ef4-4485-b71d-611b02ed7cf4.png)
 
 ---
 
@@ -80,7 +80,7 @@ summary: "三郷の青い家は埼玉県三郷市に存在すると噂される�
 
 夜になると周囲はさらに静まり返り、建物の影や風の音が強調される。そのため、わずかな物音や影でも、人影や怪異のように感じてしまうことがある。
 
-![scene3](/spots/misato-blue-house/b49724ee-e5ed-463b-a854-9ce348c64f24.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/misato-blue-house/b49724ee-e5ed-463b-a854-9ce348c64f24.png)
 
 ---
 
@@ -104,7 +104,7 @@ summary: "三郷の青い家は埼玉県三郷市に存在すると噂される�
 
 心霊スポットとして興味を持つ場合でも、実際に訪れる際は法律や安全面を十分に考慮する必要がある。
 
-![scene4](/spots/misato-blue-house/e5a189d7-0a3c-4084-877b-08fbbaf68ad6.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/misato-blue-house/e5a189d7-0a3c-4084-877b-08fbbaf68ad6.png)
 
 ---
 

@@ -5,7 +5,7 @@ prefecture: "埼玉県"
 danger: 3
 credibility: "D"
 youtube: "https://www.youtube.com/watch?v=5hVK60CbQm8"
-cover: "/spots/akigase-park/cover.jpg"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/akigase-park/cover.jpg"
 tags: ["心霊スポット","公園","廃墟"]
 category: "心霊スポット"
 direction: "体験談多め"
@@ -52,7 +52,7 @@ summary: "埼玉県の広大な河川敷公園・秋ヶ瀬公園。昼は家族�
 しかし夜になると、人の気配はほぼ消える。
 広さゆえに「孤立感」が強く、心理的不安を増幅させる環境が整っている。
 
-![scene1](/spots/akigase-park/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/akigase-park/scene1.jpg)
 
 ---
 
@@ -93,7 +93,7 @@ summary: "埼玉県の広大な河川敷公園・秋ヶ瀬公園。昼は家族�
 これは砂利道や落ち葉による自己反響の可能性が高い。
 だが暗闇では、理屈より感覚が勝つ。
 
-![scene2](/spots/akigase-park/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/akigase-park/scene2.jpg)
 
 ---
 
@@ -123,7 +123,7 @@ summary: "埼玉県の広大な河川敷公園・秋ヶ瀬公園。昼は家族�
 実際に重大事故の公式記録が心霊化しているわけではないが、
 「水辺＝死」という心理連想が怪談を生みやすい。
 
-![scene3](/spots/akigase-park/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/akigase-park/scene3.jpg)
 
 ---
 
@@ -169,7 +169,7 @@ summary: "埼玉県の広大な河川敷公園・秋ヶ瀬公園。昼は家族�
 危険度は3。
 心霊より現実のほうが危ない。
 
-![scene4](/spots/akigase-park/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/akigase-park/scene4.jpg)
 
 ---
 

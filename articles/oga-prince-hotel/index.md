@@ -5,7 +5,7 @@ date: "2026-03-11"
 danger: 5
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=jY52d21uZUo"
-cover: "/spots/oga-prince-hotel/edaff8d2-521f-47ff-a567-d22fac7ad754.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oga-prince-hotel/edaff8d2-521f-47ff-a567-d22fac7ad754.png"
 tags: ["心霊スポット","廃墟","ホテル","旅館","女性の霊"]
 category: "心霊スポット"
 summary: "男鹿プリンスホテルは秋田県男鹿市北浦湯本にある廃ホテルで、女性の霊や謎の声、心霊写真の噂が語られる東北でも有名な心霊スポットである。"
@@ -57,7 +57,7 @@ summary: "男鹿プリンスホテルは秋田県男鹿市北浦湯本にある�
 
 この場所が特に有名なのは、巨大な建物そのものの威圧感に加え、窓辺に現れる女性の霊や、録音機に残る謎の声といった話が長く語られてきたためだ。単なる廃墟ではなく、「危険な心霊スポット」として認識されている点が、男鹿プリンスホテルの特徴といえる。
 
-![scene1](/spots/oga-prince-hotel/9ff264ed-18ad-4242-83f7-0a1d810a72b3.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oga-prince-hotel/9ff264ed-18ad-4242-83f7-0a1d810a72b3.png)
 
 ---
 
@@ -67,7 +67,7 @@ summary: "男鹿プリンスホテルは秋田県男鹿市北浦湯本にある�
 
 立地は男鹿温泉郷のはずれで、周囲には現役の宿泊施設もある一方、目的地周辺の道路は狭く、駐車場所も乏しいと現地探索記録にある。そのため、現地へ近づくまでの時点で、すでに普通の観光地とは違う緊張感がある。
 
-![scene2](/spots/oga-prince-hotel/b471fc41-a2c5-4fd2-ac3a-492dce10032b.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oga-prince-hotel/b471fc41-a2c5-4fd2-ac3a-492dce10032b.png)
 
 ---
 
@@ -77,7 +77,7 @@ summary: "男鹿プリンスホテルは秋田県男鹿市北浦湯本にある�
 
 こうした話が積み重なった結果、このホテルは単に朽ちた宿泊施設ではなく、「多くの負の記憶が残る場所」として語られるようになった。事実と伝承が入り混じっているからこそ、かえって場所の不気味さが強まっている。
 
-![scene3](/spots/oga-prince-hotel/659fd688-2438-447d-9c97-96fbcf0bd620.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oga-prince-hotel/659fd688-2438-447d-9c97-96fbcf0bd620.png)
 
 ---
 
@@ -87,7 +87,7 @@ summary: "男鹿プリンスホテルは秋田県男鹿市北浦湯本にある�
 
 また、外から三階の窓を撮ると手を振る女性が写る、ホテル前に停めた車の窓ガラスに複数の手形が付く、といった怪談もある。廃墟写真ブログでも、特に有名な話として「窓から手を振る女の幽霊」や、録音機器に館内を案内するような謎の声が入る現象が紹介されている。
 
-![scene4](/spots/oga-prince-hotel/f95242ef-3c3a-47d9-88e5-627573b1a527.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oga-prince-hotel/f95242ef-3c3a-47d9-88e5-627573b1a527.png)
 
 ---
 

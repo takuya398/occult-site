@@ -34,7 +34,7 @@ videoUrl: https://www.youtube.com/watch?v=orGNtgf7iOs
 
 貞観4年（862年）に天台宗の僧・慈覚大師（円仁）によって開山され、以後は曹洞宗の寺院「恐山菩提寺」がこの地を守ってきました。恐山菩提寺は比叡山（滋賀県）・高野山（和歌山県）と共に日本三大霊場に数えられ、現世と来世をつなぐ場所とされています。
 
-![入口/外観](/spots/osorezan/scene1.jpg)
+![入口/外観](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/osorezan/scene1.jpg)
 
 恐山の風景は、火山地帯特有の荒涼とした岩場、噴気、硫黄の匂いが強く漂う“地獄”を思わせる場所として語られます。その一方で、湖畔の白い砂浜は極楽浄土に見立てられ「極楽浜」と呼ばれています。地獄と極楽が同居する——恐山の印象を決定づける特徴のひとつです。
 
@@ -48,7 +48,7 @@ videoUrl: https://www.youtube.com/watch?v=orGNtgf7iOs
 
 また、恐山はイタコによる「口寄せ」（霊媒）が行われる土地としても有名です。夏の大祭や秋詣りの時期には全国から人が訪れ、亡くなった人の言葉を聞く場として語られてきました。「死者と会える場所」という特殊性が、恐山を心霊スポットとしてのイメージに結びつけているとも言われています。
 
-![看板/門](/spots/osorezan/scene2.jpg)
+![看板/門](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/osorezan/scene2.jpg)
 
 昭和の頃、心霊番組や怪談コンテンツの舞台として恐山が取り上げられたこともあり、怖い場所としての印象が広まりやすい土壌がありました。霊場としての“敬虔さ”と、怪談としての“恐怖”が同居して語られやすい点が、恐山の独特さでもあります。
 
@@ -70,7 +70,7 @@ videoUrl: https://www.youtube.com/watch?v=orGNtgf7iOs
 
 こうした噂は、恐山という土地の印象（硫黄臭、霧、荒涼とした岩場、地蔵と供養の風景）と結びつき、より“それらしく”感じられるのかもしれません。
 
-![内部/雰囲気](/spots/osorezan/scene3.jpg)
+![内部/雰囲気](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/osorezan/scene3.jpg)
 
 また近年は観光地として整備が進み、日中の参拝では「怖いというより厳かな空気だった」「神聖な場所だった」と感じたという声もあります。一方で、夜間の肝試しの文脈で語られる体験談は今なお多く、語り継がれ続けています。
 
@@ -87,7 +87,7 @@ videoUrl: https://www.youtube.com/watch?v=orGNtgf7iOs
 - **土地の記憶説**  
   長い時間、供養と死者への想いが積み重なってきた土地には、人の感情や祈りの“層”ができる、と語られることがあります。その層が、特定の人にだけ不思議な体験として現れるのではないか、という見方です。
 
-![象徴](/spots/osorezan/scene4.jpg)
+![象徴](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/osorezan/scene4.jpg)
 
 いずれも断定はできませんが、恐山が「怖さ」だけでなく「祈り」や「境界」の感覚を強く想起させる場所であることは確かです。
 

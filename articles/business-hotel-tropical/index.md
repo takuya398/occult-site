@@ -7,7 +7,7 @@ category: "心霊スポット"
 danger: 4
 credibility: "C"
 tags: ["心霊スポット","ホテル","旅館","廃墟","女性の霊"]
-cover: "/spots/business-hotel-tropical/ef8ec211-6731-40b9-8005-d0dd722a145b.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/business-hotel-tropical/ef8ec211-6731-40b9-8005-d0dd722a145b.png"
 youtube: "https://m.youtube.com/watch?v=S0bvWL6AKso"
 summary: "神奈川県横浜市都筑区にある廃ホテル。女性の霊・足音・人影の噂が語られる横浜有数の心霊スポット。207号室や窓辺に現れる女性など、物語性の強いエピソードで知られる。"
 ---
@@ -50,7 +50,7 @@ summary: "神奈川県横浜市都筑区にある廃ホテル。女性の霊・�
 
 ## 概要
 
-![ビジネスホテルトロピカル 外観](/spots/business-hotel-tropical/df020baa-eb9e-4dbd-bdf7-38e0795f7de2.png)
+![ビジネスホテルトロピカル 外観](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/business-hotel-tropical/df020baa-eb9e-4dbd-bdf7-38e0795f7de2.png)
 
 ビジネスホテルトロピカルは、神奈川県横浜市都筑区川向町にある廃ホテルである。心霊現象としては女性の霊、足音、人影が挙げられており、神奈川県内でも知名度の高いスポットとして扱われている。
 
@@ -60,7 +60,7 @@ summary: "神奈川県横浜市都筑区にある廃ホテル。女性の霊・�
 
 ## この場所の概要
 
-![ビジネスホテルトロピカル](/spots/business-hotel-tropical/ec8d56a1-f5ed-4a9b-bdc3-dfc9ed5978d8.png)
+![ビジネスホテルトロピカル](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/business-hotel-tropical/ec8d56a1-f5ed-4a9b-bdc3-dfc9ed5978d8.png)
 
 最寄り駅は小机駅で、徒歩15分ほどの位置にあるとされる。周辺には小机大橋北側交差点や第三京浜港北IC入口交差点などがあり、アクセスしやすい立地である。
 
@@ -70,7 +70,7 @@ summary: "神奈川県横浜市都筑区にある廃ホテル。女性の霊・�
 
 ## 噂されている出来事
 
-![ビジネスホテルトロピカル 内部](/spots/business-hotel-tropical/212478d8-540e-4f74-8a24-8b4569069f94.png)
+![ビジネスホテルトロピカル 内部](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/business-hotel-tropical/212478d8-540e-4f74-8a24-8b4569069f94.png)
 
 このスポットで特に有名なのは、「従業員が死んだ」「殺人事件が起きて廃墟になった」といった噂である。事件そのものの公的ニュースは確認されていない一方、怪談としては定着している。噂の中には、内部では従業員の霊や被害者の霊が出るという生々しい話まで含まれている。
 
@@ -80,7 +80,7 @@ summary: "神奈川県横浜市都筑区にある廃ホテル。女性の霊・�
 
 ## 報告されている心霊現象
 
-![ビジネスホテルトロピカル 内部の様子](/spots/business-hotel-tropical/fce8b305-07d5-488a-ab1c-de36e33e6a2c.png)
+![ビジネスホテルトロピカル 内部の様子](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/business-hotel-tropical/fce8b305-07d5-488a-ab1c-de36e33e6a2c.png)
 
 このスポットで噂される心霊現象として女性の霊、足音、人影が挙げられている。さらに詳細として、以下のような話がまとめられている。
 

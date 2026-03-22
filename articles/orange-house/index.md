@@ -38,7 +38,7 @@ coverImage: /spots/orange-house/cover.jpg
 
 一方で、廃墟になった経緯や時期ははっきりせず、「突然住人がいなくなった」「事件があった」など複数の噂が混在している。
 
-![外観のイメージ](/spots/orange-house/scene1.jpg)
+![外観のイメージ](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/orange-house/scene1.jpg)
 
 ## なぜ心霊スポットと呼ばれるのか
 
@@ -61,7 +61,7 @@ coverImage: /spots/orange-house/cover.jpg
 - 近づくと体調が悪くなるという証言
 - 解体作業中にトラブルが続いたという噂
 
-![内部のイメージ](/spots/orange-house/scene2.jpg)
+![内部のイメージ](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/orange-house/scene2.jpg)
 
 ## オカルト的考察
 
@@ -81,7 +81,7 @@ coverImage: /spots/orange-house/cover.jpg
 我孫子市周辺には、手賀沼など水辺の景観が広がるエリアがある。
 心霊スポットとしてではなく、自然や街の空気を静かに感じる場所として知られている。
 
-![周辺の雰囲気](/spots/orange-house/scene4.jpg)
+![周辺の雰囲気](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/orange-house/scene4.jpg)
 
 ## アクセス情報・訪問時の注意
 
@@ -94,7 +94,7 @@ coverImage: /spots/orange-house/cover.jpg
 - 建物は老朽化が進み、床抜け・崩落の危険がある
 - 夜間は視界が悪く、事故や通報リスクが上がる
 
-![注意のイメージ](/spots/orange-house/scene3.jpg)
+![注意のイメージ](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/orange-house/scene3.jpg)
 
 ## まとめ
 

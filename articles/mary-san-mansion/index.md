@@ -5,7 +5,7 @@ date: "2026-03-10"
 danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=R47EPooINN8"
-cover: "/spots/mary-san-mansion/e5fd6125-52ee-4b8d-be5a-ac8121f5f479.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/mary-san-mansion/e5fd6125-52ee-4b8d-be5a-ac8121f5f479.png"
 tags: ["心霊スポット","廃墟","女性の霊"]
 category: "心霊スポット"
 summary: "メリーさんの館は兵庫県六甲山周辺に存在すると噂される廃墟で、女性の霊や奇妙な怪現象が語られる関西でも有名な心霊スポットの一つ。"
@@ -54,7 +54,7 @@ summary: "メリーさんの館は兵庫県六甲山周辺に存在すると噂�
 
 現在では建物自体は解体されたという説が有力だが、「メリーさんの館」という名前は心霊スポットとして語り継がれている。
 
-![scene1](/spots/mary-san-mansion/9ee43281-c598-4db7-be6b-01f1b62b506b.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/mary-san-mansion/9ee43281-c598-4db7-be6b-01f1b62b506b.png)
 
 ---
 
@@ -68,7 +68,7 @@ summary: "メリーさんの館は兵庫県六甲山周辺に存在すると噂�
 
 さらに、外から館を見ていると、**窓の奥に人影が立っていた**という噂もある。近づいて確認すると、すでに影は消えていたという話だ。
 
-![scene2](/spots/mary-san-mansion/25ee26d0-7454-4b60-96b5-352744d0df7c.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/mary-san-mansion/25ee26d0-7454-4b60-96b5-352744d0df7c.png)
 
 ---
 
@@ -82,7 +82,7 @@ summary: "メリーさんの館は兵庫県六甲山周辺に存在すると噂�
 
 こうした環境が、怪談を生み出す背景になった可能性がある。
 
-![scene3](/spots/mary-san-mansion/23234cd5-5abb-45b2-b690-5615b73ec803.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/mary-san-mansion/23234cd5-5abb-45b2-b690-5615b73ec803.png)
 
 ---
 
@@ -106,7 +106,7 @@ summary: "メリーさんの館は兵庫県六甲山周辺に存在すると噂�
 
 また、私有地への無断侵入や騒音など、周囲に迷惑をかける行為は避けるべきである。
 
-![scene4](/spots/mary-san-mansion/f8df1a61-4b32-4452-b141-8663a578f010.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/mary-san-mansion/f8df1a61-4b32-4452-b141-8663a578f010.png)
 
 ---
 

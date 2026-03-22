@@ -7,7 +7,7 @@ category: "心霊スポット"
 danger: 4
 credibility: "C"
 tags: ["心霊スポット", "自殺"]
-cover: "/spots/aokigahara/cover.jpg"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aokigahara/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=ff7xFjZ_XdY"
 direction: "静寂・噂中心"
 summary: "富士山麓に広がる樹海として知られる青木ヶ原。静寂や地形の複雑さが噂を生みやすく、体験談が語られてきた一方、迷いやすさや夜間の安全面が現実のリスクとなる。"
@@ -34,7 +34,7 @@ summary: "富士山麓に広がる樹海として知られる青木ヶ原。静�
 
 心霊的な断定は避けつつ、現実のリスクを前提に距離を取って理解するのが基本だ。
 
-![scene1](/spots/aokigahara/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aokigahara/scene1.jpg)
 
 ---
 
@@ -49,7 +49,7 @@ summary: "富士山麓に広がる樹海として知られる青木ヶ原。静�
 
 噂は「気配」「迷い」「影」のように、感覚が中心に据えられている点が特徴だ。
 
-![scene2](/spots/aokigahara/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aokigahara/scene2.jpg)
 
 ---
 
@@ -63,7 +63,7 @@ summary: "富士山麓に広がる樹海として知られる青木ヶ原。静�
 
 こうした条件が重なると、普段なら流せる違和感が強い印象として残りやすい。
 
-![scene3](/spots/aokigahara/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aokigahara/scene3.jpg)
 
 ---
 
@@ -85,7 +85,7 @@ summary: "富士山麓に広がる樹海として知られる青木ヶ原。静�
 
 噂に近づくほど安全を失いやすいので、外から静かに向き合う距離感を優先したい。
 
-![scene4](/spots/aokigahara/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aokigahara/scene4.jpg)
 
 ---
 

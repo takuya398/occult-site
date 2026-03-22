@@ -9,7 +9,7 @@ credibility: "B"
 tags: ["心霊スポット","橋","自殺","女性の霊","心霊写真"]
 youtube: "https://www.youtube.com/watch?v=JA8tv4obrlc"
 summary: "はねたき橋は群馬県みどり市にある渓谷の橋で、自殺の噂や女性の霊、人影、足音などの怪現象が語られる心霊スポットとして知られている。"
-cover: "/spots/hanetaki-bridge/815d1aad-feee-4f6c-813b-5e101306d2a8.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hanetaki-bridge/815d1aad-feee-4f6c-813b-5e101306d2a8.png"
 ---
 
 # はねたき橋
@@ -59,7 +59,7 @@ cover: "/spots/hanetaki-bridge/815d1aad-feee-4f6c-813b-5e101306d2a8.png"
 
 ## この場所の概要
 
-![はねたき橋 渓谷](/spots/hanetaki-bridge/6664746d-77a1-42f7-8699-f1964198cbd4.png)
+![はねたき橋 渓谷](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hanetaki-bridge/6664746d-77a1-42f7-8699-f1964198cbd4.png)
 
 はねたき橋は、渡良瀬川の渓谷に架かる歩行者向けの橋として知られており、周辺には遊歩道や景観を楽しめる場所が整っている。四季によって表情が変わるのも特徴で、春から夏は深い緑、秋は紅葉、冬は張り詰めた空気が橋の印象を大きく変える。自然の美しさが前面に出る場所であるため、初めて訪れた人の中には「とても心霊スポットには見えない」と感じる者も多い。
 
@@ -69,7 +69,7 @@ cover: "/spots/hanetaki-bridge/815d1aad-feee-4f6c-813b-5e101306d2a8.png"
 
 ## 噂されている出来事
 
-![はねたき橋 入口](/spots/hanetaki-bridge/a66aafa1-ea92-4d3d-9f7d-a5dc6d393721.png)
+![はねたき橋 入口](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hanetaki-bridge/a66aafa1-ea92-4d3d-9f7d-a5dc6d393721.png)
 
 はねたき橋が心霊スポットとして知られる最大の理由は、この場所が自殺の名所として語られてきた点にある。高い橋と渓谷という条件は、古くから悲しい出来事を連想させやすく、実際に飛び降りがあったという話が広く語られてきた。こうした噂が広がることで、「亡くなった人の念が残っている橋」という印象が定着し、やがて心霊体験談まで結びつくようになった。
 
@@ -79,7 +79,7 @@ cover: "/spots/hanetaki-bridge/815d1aad-feee-4f6c-813b-5e101306d2a8.png"
 
 ## 報告されている心霊現象
 
-![はねたき橋 夜の入口](/spots/hanetaki-bridge/93853d9f-2f97-4f96-99e2-e10c7201dd48.png)
+![はねたき橋 夜の入口](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hanetaki-bridge/93853d9f-2f97-4f96-99e2-e10c7201dd48.png)
 
 この場所で最もよく語られるのは、橋の中央付近や欄干のそばに現れる女性の霊である。夜に橋を渡っていると、前方に白っぽい人影が立っているのが見え、近づくと急に消えてしまうという体験談は少なくない。とくに一人で訪れた人ほど、遠くに誰かがいるように感じたり、視界の端で髪の長い女性の姿を見たような気がしたりするという。
 
@@ -89,7 +89,7 @@ cover: "/spots/hanetaki-bridge/815d1aad-feee-4f6c-813b-5e101306d2a8.png"
 
 ## 現地の雰囲気
 
-![はねたき橋 深夜](/spots/hanetaki-bridge/cdeeaad0-a3e4-479c-bf32-d5cdbd12be9e.png)
+![はねたき橋 深夜](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hanetaki-bridge/cdeeaad0-a3e4-479c-bf32-d5cdbd12be9e.png)
 
 はねたき橋の怖さは、まず「開けた場所なのに逃げ場がない」と感じさせる点にある。橋の上は視界が広いはずなのに、夜になると周囲の山や川の闇が圧迫感を生み、中央まで進むほど引き返しにくいような心理状態になる。橋の両側に広がる暗い空間は、閉じ込められるような怖さとは違い、どこまでも落ちていきそうな不安を呼び起こす。
 

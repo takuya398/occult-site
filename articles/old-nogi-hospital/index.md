@@ -46,7 +46,7 @@ updatedAt: 2026-02-10
 廃病院系スポットは、建物の用途イメージ（生死・医療・夜間・静寂）と、暗い室内構造（長い廊下・個室・階段）によって、噂が“乗りやすい”と言われる。  
 旧野木病院も同様に、内部の空気感・視界の抜けの悪さ・落書きの存在が「不穏さ」の記号として機能し、語りを増幅させている。
 
-![scene1](/spots/old-nogi-hospital/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-nogi-hospital/scene1.jpg)
 
 ---
 
@@ -64,7 +64,7 @@ updatedAt: 2026-02-10
 
 結果として、「怖いから噂が集まり、噂があるからさらに怖くなる」という循環ができやすい。
 
-![scene2](/spots/old-nogi-hospital/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-nogi-hospital/scene2.jpg)
 
 ---
 
@@ -88,7 +88,7 @@ updatedAt: 2026-02-10
 - 恐怖で注意が一点集中し、周辺音が増幅される  
 ただし、それでも「説明できない違和感が残った」という語りが、この場所の“心霊性”を支えている。
 
-![scene3](/spots/old-nogi-hospital/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-nogi-hospital/scene3.jpg)
 
 ---
 
@@ -107,7 +107,7 @@ updatedAt: 2026-02-10
 廃墟探索は、暗黙のルール（入ってはいけない・見てはいけない）を伴いがちだ。  
 その禁忌感が強いほど、体験は“物語化”され、語り継がれやすい。旧野木病院が危険度5で扱われるのは、この現実のリスクの高さも大きい。
 
-![scene4](/spots/old-nogi-hospital/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-nogi-hospital/scene4.jpg)
 
 ---
 

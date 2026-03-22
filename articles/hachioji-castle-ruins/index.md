@@ -5,7 +5,7 @@ date: "2026-03-07"
 danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=cleWwWerKe0"
-cover: "/spots/hachioji-castle-ruins/262ec52b-6304-4bc8-b899-76504dc22be6.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hachioji-castle-ruins/262ec52b-6304-4bc8-b899-76504dc22be6.png"
 tags: ["廃墟","心霊スポット"]
 category: "心霊スポット"
 summary: "1590年の落城で多くの命が失われた東京都八王子市の山城跡。御主殿の滝での女性たちの悲劇的な伝承と共に、女性の泣き声・武士の霊・白い着物の霊などの怪奇現象が語られる関東有数の心霊スポット。"
@@ -33,7 +33,7 @@ summary: "1590年の落城で多くの命が失われた東京都八王子市の
 
 現在は観光地として整備されているものの、夜になると周囲は深い山に囲まれ、街灯も少ないため非常に暗く静かな場所となる。そのため関東地方でも有名な心霊スポットとして語られるようになった。
 
-![scene1](/spots/hachioji-castle-ruins/26b6e7e6-1013-4566-b6c2-035494c2368a.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hachioji-castle-ruins/26b6e7e6-1013-4566-b6c2-035494c2368a.png)
 
 ---
 
@@ -48,7 +48,7 @@ summary: "1590年の落城で多くの命が失われた東京都八王子市の
 
 この出来事は八王子城落城の悲劇として語り継がれており、その悲惨な歴史が現在の怪談の元になっていると言われている。
 
-![scene2](/spots/hachioji-castle-ruins/5e3a1463-4e79-44d6-9fdc-c9877fd131a7.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hachioji-castle-ruins/5e3a1463-4e79-44d6-9fdc-c9877fd131a7.png)
 
 ---
 
@@ -69,7 +69,7 @@ summary: "1590年の落城で多くの命が失われた東京都八王子市の
 
 また、写真を撮影すると白い影や人の形をしたものが写り込むという話もあり、心霊写真が撮れる場所として紹介されることもある。
 
-![scene3](/spots/hachioji-castle-ruins/8e12b683-a5cf-4ceb-9593-153f4bdedac9.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hachioji-castle-ruins/8e12b683-a5cf-4ceb-9593-153f4bdedac9.png)
 
 ---
 
@@ -115,7 +115,7 @@ summary: "1590年の落城で多くの命が失われた東京都八王子市の
 
 そのため、心霊スポットとして紹介される際には必ず名前が挙がる場所となっている。
 
-![scene4](/spots/hachioji-castle-ruins/d61ce6a3-2283-49d8-95b9-35419b4b4ffb.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hachioji-castle-ruins/d61ce6a3-2283-49d8-95b9-35419b4b4ffb.png)
 
 ---
 

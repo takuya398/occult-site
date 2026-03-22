@@ -5,7 +5,7 @@ date: "2026-03-07"
 danger: 4
 credibility: "B"
 youtube: "https://www.youtube.com/watch?v=s3cBkyXLhzQ"
-cover: "/spots/old-komine-tunnel/52a52ee3-5198-4741-b92e-b7a701e1f00e.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-komine-tunnel/52a52ee3-5198-4741-b92e-b7a701e1f00e.png"
 tags: ["心霊スポット","トンネル","女性の霊"]
 category: "心霊スポット"
 summary: "東京都内でも有名なトンネル系心霊スポット。女性の霊やバックミラーに映る人影、山中の閉塞感による不気味さが語られ、旧道の暗さと静けさが独特の恐怖を生み出している。"
@@ -30,7 +30,7 @@ summary: "東京都内でも有名なトンネル系心霊スポット。女性�
 
 名前の通り「旧」トンネルとして認識されていること自体が、すでに不穏な印象を与えやすい。新しい道路や整備されたトンネルと比べると、旧道や旧隧道には、それだけで人を遠ざけるような空気が宿りやすいのである。
 
-![scene1](/spots/old-komine-tunnel/845e0b80-8f08-4153-a8da-71fc8f18b76c.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-komine-tunnel/845e0b80-8f08-4153-a8da-71fc8f18b76c.png)
 
 ---
 
@@ -44,7 +44,7 @@ summary: "東京都内でも有名なトンネル系心霊スポット。女性�
 
 はっきりとした姿は見ていなくても、「誰かがいる感じがした」「後ろから見られているようだった」といった、気配に関する体験談も多い。さらに、肝試しや探索中に写真がぶれた、不可解な影が入った、音声にノイズが乗ったなどの話も語られている。
 
-![scene2](/spots/old-komine-tunnel/d59cf136-343e-4c16-a287-52b8a83eb2fc.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-komine-tunnel/d59cf136-343e-4c16-a287-52b8a83eb2fc.png)
 
 ---
 
@@ -56,7 +56,7 @@ summary: "東京都内でも有名なトンネル系心霊スポット。女性�
 
 また、この場所は心霊スポット紹介サイト、ブログ、動画、オカルト系記事などで繰り返し扱われてきた。こうしたメディア露出は、噂の真偽を強めるというより、「有名な場所である」という認識を広げる効果が大きい。有名な心霊スポットに行くと、何か起きる前提で現地を見るため、わずかな違和感でも印象に残りやすくなるのだ。
 
-![scene3](/spots/old-komine-tunnel/e8e610e8-9a8b-48ef-8b7c-d28fe66c9d04.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-komine-tunnel/e8e610e8-9a8b-48ef-8b7c-d28fe66c9d04.png)
 
 ---
 
@@ -68,7 +68,7 @@ summary: "東京都内でも有名なトンネル系心霊スポット。女性�
 
 現実的な危険も無視できない。山道は路面状況が安定しないことがあり、暗所では段差やぬかるみが見えにくい。深夜の運転では対向車や急なカーブへの対応も難しくなる。周辺環境によっては電波が弱い可能性もあり、トラブル時の対応が遅れることもある。心霊以前に、普通に危ない場所になりうるという点は強く意識しておきたい。
 
-![scene4](/spots/old-komine-tunnel/ff38db00-6e7a-45ab-a660-61a185fd9e14.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-komine-tunnel/ff38db00-6e7a-45ab-a660-61a185fd9e14.png)
 
 ---
 

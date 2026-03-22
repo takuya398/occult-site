@@ -9,7 +9,7 @@ credibility: "C"
 tags: ["心霊スポット","公園","旧病院跡地","女性の霊"]
 youtube: "https://www.youtube.com/watch?v=KwlbIiMhUC0"
 summary: "東京都中野区にある旧東京府立松沢病院分院跡地に整備された公園。元精神科病院という来歴を持ち、患者の霊や白い影、鳴き声など多様な怪談が重なる、都内屈指の心霊スポット。"
-cover: "/spots/egota-no-mori-park/0eae2278-f924-4810-88de-61b06b55f4d4.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/egota-no-mori-park/0eae2278-f924-4810-88de-61b06b55f4d4.png"
 ---
 
 # 江古田の森公園
@@ -64,7 +64,7 @@ cover: "/spots/egota-no-mori-park/0eae2278-f924-4810-88de-61b06b55f4d4.png"
 
 ## この場所の概要
 
-![江古田の森公園 公園入口と緑の遊歩道](/spots/egota-no-mori-park/0eae2278-f924-4810-88de-61b06b55f4d4.png)
+![江古田の森公園 公園入口と緑の遊歩道](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/egota-no-mori-park/0eae2278-f924-4810-88de-61b06b55f4d4.png)
 
 江古田の森公園は、かつて東京府立松沢病院の分院として使われていた施設の跡地に整備された公園である。松沢病院は明治時代から続く歴史ある精神科病院であり、江古田の地にあった関連施設もまた、長い年月にわたって多くの患者が過ごした場所であった。施設が閉鎖・整備されたのちに公園として開放されたが、地域の歴史に詳しい人々の間では、その来歴がいまも語り継がれている。
 
@@ -74,7 +74,7 @@ cover: "/spots/egota-no-mori-park/0eae2278-f924-4810-88de-61b06b55f4d4.png"
 
 ## 場所・アクセス
 
-![江古田の森公園 公園内の遊歩道と木々](/spots/egota-no-mori-park/271f83fd-512f-47b9-8ff9-be0879f58de2.png)
+![江古田の森公園 公園内の遊歩道と木々](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/egota-no-mori-park/271f83fd-512f-47b9-8ff9-be0879f58de2.png)
 
 所在地は東京都中野区江古田3丁目14-19で、西武池袋線の江古田駅から徒歩圏内に位置している。都内にありながら、公園の北側にかけては住宅地から少し距離が開き、夜間は人の往来がぐっと減る。アクセス自体は良好だが、夜間に深部まで入ると周囲の静けさが増し、都心とは思えない暗さになる場所もある。
 
@@ -84,7 +84,7 @@ cover: "/spots/egota-no-mori-park/0eae2278-f924-4810-88de-61b06b55f4d4.png"
 
 ## 心霊現象の噂
 
-![江古田の森公園 夜の公園と街灯](/spots/egota-no-mori-park/447cdccd-14de-424f-af16-19c7e95b4408.png)
+![江古田の森公園 夜の公園と街灯](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/egota-no-mori-park/447cdccd-14de-424f-af16-19c7e95b4408.png)
 
 江古田の森公園でよく語られるのは、旧病院の患者だったとされる女性の霊の目撃談である。白い服を着た女性の影が木々の間に見える、という話は複数の体験談で繰り返されており、この公園を象徴する怪談として定着している。また、深夜に人の声や泣き声が聞こえる、という報告も多く、実際に音がしたという証言が心霊サイトやSNSに残っている。
 
@@ -96,7 +96,7 @@ cover: "/spots/egota-no-mori-park/0eae2278-f924-4810-88de-61b06b55f4d4.png"
 
 ## 体験談
 
-![江古田の森公園 公園内の暗がりと樹木](/spots/egota-no-mori-park/95c065a4-fd64-4dbd-ad35-8fd67e5fc680.png)
+![江古田の森公園 公園内の暗がりと樹木](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/egota-no-mori-park/95c065a4-fd64-4dbd-ad35-8fd67e5fc680.png)
 
 江古田の森公園を夜間に訪れた人の体験談として多いのは、「誰もいないはずなのに気配を感じた」「木の陰に人影が見えた気がした」というものである。昼間の公園とは別の顔を持つ場所として、訪問者が感じた違和感や恐怖が繰り返し語られている。
 
@@ -108,7 +108,7 @@ cover: "/spots/egota-no-mori-park/0eae2278-f924-4810-88de-61b06b55f4d4.png"
 
 ## 危険性と注意点
 
-![江古田の森公園 公園の外周フェンスと周辺環境](/spots/egota-no-mori-park/ca0613ee-7ab3-465e-bc55-6737b3a42b1c.png)
+![江古田の森公園 公園の外周フェンスと周辺環境](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/egota-no-mori-park/ca0613ee-7ab3-465e-bc55-6737b3a42b1c.png)
 
 江古田の森公園の危険度を5としたのは、廃墟型のスポットとは異なる理由による。建物が崩れているわけではないが、都市部の公園でありながら夜間の暗さが際立つ場所があること、旧病院跡という心理的重圧が判断力に影響しやすいこと、そして近隣住民のいる環境での夜間行動にはトラブルのリスクが伴うことが挙げられる。
 

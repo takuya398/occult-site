@@ -9,7 +9,7 @@ credibility: "C"
 tags: ["心霊スポット","トンネル","女性の霊"]
 youtube: "https://www.youtube.com/watch?v=9WuB73GePOs"
 summary: "栃木県足利市にある明治・大正・昭和3本のトンネルが並ぶ心霊スポット。女性の霊や子どもの霊、手形の噂が幾重にも重なる、関東定番の怪談スポット。"
-cover: "/spots/suka-tunnel/216030c8-8986-460f-bde9-5bcf467b2710.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/suka-tunnel/216030c8-8986-460f-bde9-5bcf467b2710.png"
 ---
 
 # 須花トンネル
@@ -64,7 +64,7 @@ cover: "/spots/suka-tunnel/216030c8-8986-460f-bde9-5bcf467b2710.png"
 
 ## この場所の概要
 
-![須花トンネル 緑に覆われた旧トンネル入口と木柵](/spots/suka-tunnel/216030c8-8986-460f-bde9-5bcf467b2710.png)
+![須花トンネル 緑に覆われた旧トンネル入口と木柵](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/suka-tunnel/216030c8-8986-460f-bde9-5bcf467b2710.png)
 
 須花トンネルの特徴は、現在の昭和トンネルに加え、旧道側に明治トンネルと大正トンネルが残っている点にある。新しい道路と古い隧道が同時に存在しているため、現地は普通のトンネルよりもずっと印象的である。とくに古い隧道は、煉瓦造りや手掘りの痕跡など、時代の違いが見た目にも表れており、心霊の話を知らなくても不気味に感じやすい環境になっている。
 
@@ -74,7 +74,7 @@ cover: "/spots/suka-tunnel/216030c8-8986-460f-bde9-5bcf467b2710.png"
 
 ## 場所・アクセス
 
-![須花トンネル 現役の昭和トンネル入口（道路）](/spots/suka-tunnel/ef4d7cfe-120c-4bd9-9a47-15f95f19e1cd.png)
+![須花トンネル 現役の昭和トンネル入口（道路）](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/suka-tunnel/ef4d7cfe-120c-4bd9-9a47-15f95f19e1cd.png)
 
 所在地は栃木県足利市名草中町の県道208号線沿いである。田沼方面から足利市へ向かう途中に位置し、正面に現役の昭和トンネル、周辺に旧隧道が残る構造になっている。最寄り駅から徒歩で向かうにはかなり距離があるため、実際には車で訪れる人が多いスポットである。
 
@@ -84,7 +84,7 @@ cover: "/spots/suka-tunnel/216030c8-8986-460f-bde9-5bcf467b2710.png"
 
 ## 心霊現象の噂
 
-![須花トンネル 封鎖された煉瓦造りの旧トンネル入口](/spots/suka-tunnel/7085ed4b-b59e-45ef-944d-3211d7867ba2.png)
+![須花トンネル 封鎖された煉瓦造りの旧トンネル入口](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/suka-tunnel/7085ed4b-b59e-45ef-944d-3211d7867ba2.png)
 
 須花トンネルでよく語られるのは、トンネルごとに異なる霊が現れるという噂である。明治トンネルには工事中の事故で亡くなった作業員の霊が出る、大正トンネルには和服姿の女性と子どもの霊が現れる、昭和トンネルでは深夜に車で通過すると呻き声のようなものが聞こえる、といった怪談が広く知られている。特に女性の霊の話は定番で、須花トンネルを象徴する噂として語られることが多いようである。
 
@@ -96,7 +96,7 @@ cover: "/spots/suka-tunnel/216030c8-8986-460f-bde9-5bcf467b2710.png"
 
 ## 体験談
 
-![須花トンネル 煉瓦造りトンネル内部（奥に光）](/spots/suka-tunnel/94e2b979-05a5-4b16-b1b8-4b20c78e6acc.png)
+![須花トンネル 煉瓦造りトンネル内部（奥に光）](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/suka-tunnel/94e2b979-05a5-4b16-b1b8-4b20c78e6acc.png)
 
 須花トンネルの体験談としてよく目立つのは、車に関する異変である。肝試し感覚で訪れた人が、トンネルの中で誰かのすすり泣く声を聞いた、窓に手形のような跡が付いていた、降りようとした瞬間に足が動かなくなった、といった話は繰り返し語られている。とくに「通ったあとに異変が起きる」という形の話が多く、その場で何かを見るよりも、後からじわじわ怖くなるタイプの怪談が多い印象である。
 
@@ -108,7 +108,7 @@ cover: "/spots/suka-tunnel/216030c8-8986-460f-bde9-5bcf467b2710.png"
 
 ## 危険性と注意点
 
-![須花トンネル 明治トンネル入口と水流・立入禁止看板](/spots/suka-tunnel/e48e593d-d8dd-4b1f-a835-4c5556943dd9.png)
+![須花トンネル 明治トンネル入口と水流・立入禁止看板](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/suka-tunnel/e48e593d-d8dd-4b1f-a835-4c5556943dd9.png)
 
 須花トンネルの危険性は、心霊現象の噂よりも現地環境にある。夜間は視界が非常に悪く、現役トンネル周辺では車の通行に注意しなければならない。旧隧道側も、足元の悪さや湿気、ぬかるみなどがあり、不用意に奥へ入るのは危険である。さらに、管理状況によっては立ち入りが制限されている場所もあるため、心霊スポットだからという理由で無断侵入してよいわけではない。
 

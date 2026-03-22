@@ -11,7 +11,7 @@ tags: ["心霊スポット","滝・川"]
 youtube: "https://www.youtube.com/watch?v=R8Wwz-d3ugk"
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
-cover: "/spots/taki-fudo/cover.jpg"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/taki-fudo/cover.jpg"
 ---
 
 # 滝不動
@@ -29,7 +29,7 @@ cover: "/spots/taki-fudo/cover.jpg"
 「滝不動」は、山形県上山市の県道104号線沿いにあるとされ、ジャンルとしては神社・寺（不動明王信仰）に紐づく場所として紹介されることが多い。心霊文脈では「宜保愛子」「処刑場」などのキーワードと結び付けられ、心霊現象としては女性の霊、声、祟りが語られている。最寄りは「かみのやま温泉駅」から徒歩圏という案内も見られる。  
 一方で、旅行記系の記録では、末広滝（高さ12mほどの分岐瀑）と不動尊が一体で語られ、過去には鳥居や祠、奉納刀などの“見える要素”が並んでいた描写が残る。
 
-![scene1](/spots/taki-fudo/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/taki-fudo/scene1.jpg)
 
 ## 噂型分類
 
@@ -47,7 +47,7 @@ cover: "/spots/taki-fudo/cover.jpg"
 - 誰もいないのに声がする、背後の気配が濃くなる  
 滝音はホワイトノイズとして働き、脳が“意味のある音”を補完しやすい。心霊スポットとしての怖さが増幅される典型のパターン。
 
-![scene2](/spots/taki-fudo/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/taki-fudo/scene2.jpg)
 
 ### 祟り・制裁型
 
@@ -68,7 +68,7 @@ cover: "/spots/taki-fudo/cover.jpg"
 検証視点では、周辺に中世城郭（高楯城）と刑場の関連が語られる一方で、「どこにあったか証明は難しい」「事件譚は出来すぎで作り話の可能性が高い」という温度感も示されている。  
 つまり滝不動は、事実が一本化された怪談というより、複数の噂が束になって“最恐”のイメージを作っていったタイプのスポットだ。
 
-![scene3](/spots/taki-fudo/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/taki-fudo/scene3.jpg)
 
 ## 現地の変化
 
@@ -95,7 +95,7 @@ cover: "/spots/taki-fudo/cover.jpg"
 - 「肝試し」目的の騒音や荒らしは厳禁（近隣・管理者の迷惑、通報対象）  
 - 体調や気分が落ちている日は行かない（恐怖の増幅と判断低下が起きやすい）
 
-![scene4](/spots/taki-fudo/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/taki-fudo/scene4.jpg)
 
 ## まとめ
 

@@ -7,7 +7,7 @@ category: "心霊スポット"
 danger: 5
 credibility: "A"
 tags: ["心霊スポット","廃墟","ホテル","事件"]
-cover: "/spots/hotel-katsugyo/cover.jpg"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-katsugyo/cover.jpg"
 direction: "安全注意強め"
 summary: "千葉県で廃墟化したホテル活魚（油井グランドホテル跡）は、警察の注意喚起が出るほど立ち入りの危険が高い場所。噂は噂として扱い、現実のリスクと法令順守を最優先にする。"
 ---
@@ -31,7 +31,7 @@ summary: "千葉県で廃墟化したホテル活魚（油井グランドホテ�
 
 心霊スポットとして語られる一方で、まず優先すべきは安全と法令順守である。
 
-![scene1](/spots/hotel-katsugyo/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-katsugyo/scene1.jpg)
 
 ---
 
@@ -39,7 +39,7 @@ summary: "千葉県で廃墟化したホテル活魚（油井グランドホテ�
 
 警察から立ち入りへの注意喚起が出ており、危険性と違法性が強調されている。訪問や侵入を前提とした情報を拡散することは避けるべきだ。
 
-![scene2](/spots/hotel-katsugyo/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-katsugyo/scene2.jpg)
 
 ---
 
@@ -53,7 +53,7 @@ summary: "千葉県で廃墟化したホテル活魚（油井グランドホテ�
 
 噂は噂として扱い、断定しない姿勢を保つことが重要だ。
 
-![scene3](/spots/hotel-katsugyo/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-katsugyo/scene3.jpg)
 
 ---
 
@@ -66,7 +66,7 @@ summary: "千葉県で廃墟化したホテル活魚（油井グランドホテ�
 
 心霊以前に現実の危険が大きく、軽い気持ちで近づくべき場所ではない。
 
-![scene4](/spots/hotel-katsugyo/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-katsugyo/scene4.jpg)
 
 ---
 

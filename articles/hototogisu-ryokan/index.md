@@ -5,7 +5,7 @@ date: "2026-03-11"
 danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=H_WAQVsbv-M"
-cover: "/spots/hototogisu-ryokan/0df8f521-caf2-46f4-8b42-3cb0e2e5cf9e.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hototogisu-ryokan/0df8f521-caf2-46f4-8b42-3cb0e2e5cf9e.png"
 tags: ["心霊スポット","廃墟","旅館","ホテル","女性の霊"]
 category: "心霊スポット"
 summary: "ほととぎす旅館は大阪府阪南市周辺で語られる廃旅館の心霊スポットで、女性の霊や人影、館内の物音などの噂が知られている。"
@@ -58,7 +58,7 @@ summary: "ほととぎす旅館は大阪府阪南市周辺で語られる廃旅�
 
 大阪という都市圏にありながら、旅館の廃墟という非日常的な舞台を持つこともあり、ネット上ではたびたび心霊探索の対象になってきた。廃旅館らしい和風の空間と、長い年月の放置による荒廃が、この場所を特別に不気味なものとして印象づけている。
 
-![scene1](/spots/hototogisu-ryokan/15260f1d-cd5e-47ca-877a-5b691fb483f0.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hototogisu-ryokan/15260f1d-cd5e-47ca-877a-5b691fb483f0.png)
 
 ---
 
@@ -70,7 +70,7 @@ summary: "ほととぎす旅館は大阪府阪南市周辺で語られる廃旅�
 
 ほととぎす旅館も同様で、内部に足を踏み入れた人の多くが、普通の廃墟以上に生活の残り香のようなものを感じたと語る。そこに和風旅館特有の古びた内装や薄暗い通路が重なることで、この場所独自の圧迫感が生まれている。
 
-![scene2](/spots/hototogisu-ryokan/2532d71e-f0d0-41ec-9a03-bfc8c6cc1da9.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hototogisu-ryokan/2532d71e-f0d0-41ec-9a03-bfc8c6cc1da9.png)
 
 ---
 
@@ -82,7 +82,7 @@ summary: "ほととぎす旅館は大阪府阪南市周辺で語られる廃旅�
 
 また、旅館という場所は人の出会いと別れが交差する空間でもある。宿泊、旅行、休息といった本来の目的とは裏腹に、そこに怪談めいた話が重なると、一気に不穏な舞台へ変わる。ほととぎす旅館が心霊スポットとして定着した背景には、建物自体の雰囲気に加え、こうした「何かあったかもしれない」という想像を掻き立てる要素があったのだろう。
 
-![scene3](/spots/hototogisu-ryokan/49b39298-0a72-4e03-b832-484063a1d7c5.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hototogisu-ryokan/49b39298-0a72-4e03-b832-484063a1d7c5.png)
 
 ---
 
@@ -94,7 +94,7 @@ summary: "ほととぎす旅館は大阪府阪南市周辺で語られる廃旅�
 
 さらに、写真や動画に人影のようなものが映る、妙な白い光が入る、視線を感じるといった話もある。心霊スポットにありがちな現象ではあるが、和風旅館の閉ざされた空気の中で起きると、より生々しく感じられる。ほととぎす旅館の怪談は、ひとつひとつが派手というより、じわじわと神経を削るような種類の恐怖として語られている。
 
-![scene4](/spots/hototogisu-ryokan/eecdf3fb-2c86-4802-8c2f-7691a7279918.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hototogisu-ryokan/eecdf3fb-2c86-4802-8c2f-7691a7279918.png)
 
 ---
 

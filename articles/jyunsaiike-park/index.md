@@ -5,7 +5,7 @@ date: "2026-03-11"
 danger: 3
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=8_XCyww-2t0"
-cover: "/spots/jyunsaiike-park/3e33a902-99e1-491b-83bb-8a2fc6dd3d9f.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jyunsaiike-park/3e33a902-99e1-491b-83bb-8a2fc6dd3d9f.png"
 tags: ["心霊スポット","公園","女性の霊"]
 category: "心霊スポット"
 summary: "じゅんさい池公園は新潟県の静かな池畔公園として知られる一方、夜になると女性の霊や人影の噂が語られる心霊スポットとしても知られている。"
@@ -58,7 +58,7 @@ summary: "じゅんさい池公園は新潟県の静かな池畔公園として�
 
 現在では心霊サイトや体験談まとめ、動画などでも取り上げられ、新潟県内の定番スポットの一つとして知られている。何か決定的な事件記録が広く残っているわけではないが、静かな水辺と夜の暗さが、人の想像を強く刺激する場所であることは確かだ。
 
-![scene1](/spots/jyunsaiike-park/430947d3-0f8f-4836-be56-12e779cbf830.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jyunsaiike-park/430947d3-0f8f-4836-be56-12e779cbf830.png)
 
 ---
 
@@ -70,7 +70,7 @@ summary: "じゅんさい池公園は新潟県の静かな池畔公園として�
 
 じゅんさい池公園もまさにそうした条件を備えた場所であり、公園という開かれた空間でありながら、夜には孤立感が生まれやすい。人の少なさ、水辺特有の静けさ、木々の影の重なりが、不気味な雰囲気を生み出している。
 
-![scene2](/spots/jyunsaiike-park/66eee6a6-0b84-4437-93bd-dd2d05dad543.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jyunsaiike-park/66eee6a6-0b84-4437-93bd-dd2d05dad543.png)
 
 ---
 
@@ -82,7 +82,7 @@ summary: "じゅんさい池公園は新潟県の静かな池畔公園として�
 
 また、公園という性質上、昔から地元の人がさまざまな話を持ち込みやすい場所でもある。大きな事件がなくても、小さな不安や偶然の出来事が積み重なり、それが都市伝説化していく。じゅんさい池公園が心霊スポットとして定着した背景には、そうした口コミの蓄積もあるのだろう。
 
-![scene3](/spots/jyunsaiike-park/6ecd6aa8-dbd6-42d7-b948-051f15f33c99.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jyunsaiike-park/6ecd6aa8-dbd6-42d7-b948-051f15f33c99.png)
 
 ---
 
@@ -94,7 +94,7 @@ summary: "じゅんさい池公園は新潟県の静かな池畔公園として�
 
 さらに、誰もいないのに声がした、水面の近くから足音のような音が聞こえたという話もある。夜の公園では風や水音、遠くの生活音が不規則に混じり合うため、それが人の声や足音のように感じられることもあるだろう。だが、そうした説明がつくかもしれない現象であっても、心霊体験としては十分に記憶に残る。この場所の怪談は、はっきり見える幽霊よりも、何かがおかしいと感じる"空気"の不気味さに支えられている。
 
-![scene4](/spots/jyunsaiike-park/ed5e005d-05d4-4536-9ae8-2202f31c000f.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jyunsaiike-park/ed5e005d-05d4-4536-9ae8-2202f31c000f.png)
 
 ---
 

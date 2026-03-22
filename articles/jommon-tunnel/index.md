@@ -5,7 +5,7 @@ date: "2026-03-07"
 danger: 5
 credibility: "B"
 youtube: "https://m.youtube.com/watch?v=n_T2ZgQS-kw&pp=ygUS5bi457SL44OI44Oz44ON44Or"
-cover: "/spots/jommon-tunnel/329f42d8-38f7-4c22-93b2-ddae97313a0c.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jommon-tunnel/329f42d8-38f7-4c22-93b2-ddae97313a0c.png"
 tags: ["心霊スポット","トンネル","廃線"]
 category: "心霊スポット"
 summary: "北海道の山間部に存在する常紋トンネルは、明治期の鉄道工事で多くの死者が出たとされ、壁から人骨が発見されたという衝撃的な記録を持つ。実際の歴史的事件を背景に持つ、日本屈指の心霊スポット。"
@@ -48,7 +48,7 @@ summary: "北海道の山間部に存在する常紋トンネルは、明治期�
 周囲は深い森に囲まれ、人工の明かりはほとんどない。
 そのため、この場所は昔から「何かが出る」と噂され続けてきた。
 
-![scene1](/spots/jommon-tunnel/954dc87f-a50a-42c1-a68c-eeeaac355d02.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jommon-tunnel/954dc87f-a50a-42c1-a68c-eeeaac355d02.png)
 
 ---
 
@@ -66,7 +66,7 @@ summary: "北海道の山間部に存在する常紋トンネルは、明治期�
 そのため、工事中に多くの死者が出たという話が残っている。
 この出来事が、後の心霊伝説の土台となった。
 
-![scene2](/spots/jommon-tunnel/9bc701ba-9e01-4eb2-b691-35cf43b762a0.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jommon-tunnel/9bc701ba-9e01-4eb2-b691-35cf43b762a0.png)
 
 ---
 
@@ -86,7 +86,7 @@ summary: "北海道の山間部に存在する常紋トンネルは、明治期�
 この事件は多くの人に衝撃を与え、
 常紋トンネルを**日本屈指の心霊スポット**として知らしめることになった。
 
-![scene3](/spots/jommon-tunnel/e0d05889-95ac-4100-8676-4066053d91de.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jommon-tunnel/e0d05889-95ac-4100-8676-4066053d91de.png)
 
 ---
 
@@ -119,7 +119,7 @@ summary: "北海道の山間部に存在する常紋トンネルは、明治期�
 また、車で近くを通った際に
 「トンネルの入口に人が立っていた」という目撃談も存在する。
 
-![scene4](/spots/jommon-tunnel/ef5bd10a-ca42-4d1a-940c-14e57aeef26a.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jommon-tunnel/ef5bd10a-ca42-4d1a-940c-14e57aeef26a.png)
 
 ---
 

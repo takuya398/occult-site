@@ -5,7 +5,7 @@ date: "2026-03-08"
 danger: 2
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=n60bwY6ZH3E"
-cover: "/spots/minamihata-dam/023ba455-67a1-4f9d-a99f-3c45b861e7c3.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/minamihata-dam/023ba455-67a1-4f9d-a99f-3c45b861e7c3.png"
 tags: ["心霊スポット","女性の霊"]
 category: "心霊スポット"
 summary: "南畑ダムは福岡県那珂川市にあるダムで、夜の静けさや山間部の暗さから女性の霊や人影の噂が語られる心霊スポットとして知られている。"
@@ -19,7 +19,7 @@ summary: "南畑ダムは福岡県那珂川市にあるダムで、夜の静け�
 
 南畑ダムもまた、そうした"昼と夜の印象差"が大きい場所として語られてきた。福岡県内では心霊スポット紹介サイトなどにたびたび名前が挙がり、怪談好きのあいだで知られる存在になっている。
 
-![scene1](/spots/minamihata-dam/3be8829f-eeba-4158-974e-978e305370ae.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/minamihata-dam/3be8829f-eeba-4158-974e-978e305370ae.png)
 
 ## 語られる心霊現象
 
@@ -41,7 +41,7 @@ summary: "南畑ダムは福岡県那珂川市にあるダムで、夜の静け�
 
 昼間は景色を眺められる場所でも、夜になると視界の先がほとんど見えない。そこに巨大な堤体や深い水面の存在感が加わることで、ただ暗いだけではない圧迫感が生まれる。また、ダム周辺の道路は山道らしいカーブや起伏を含むことが多く、車のライトの当たり方で景色が大きく変わる。影の動きや遠近感の狂いが、人影や何かの気配に見えてしまうこともある。
 
-![scene2](/spots/minamihata-dam/63d8809f-a492-410b-9de9-0a1be13a5713.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/minamihata-dam/63d8809f-a492-410b-9de9-0a1be13a5713.png)
 
 ## なぜ心霊スポットと呼ばれるのか
 
@@ -57,7 +57,7 @@ summary: "南畑ダムは福岡県那珂川市にあるダムで、夜の静け�
 
 夜のダム周辺は想像以上に暗く、足元の状態や周辺の状況が見えづらい。特に山道では、転倒や接触事故など、心霊とは無関係の危険が現実的に存在する。車で向かう場合も、カーブや対向車、路面状況には十分注意が必要になる。
 
-![scene3](/spots/minamihata-dam/8e380726-9c39-4bc6-8162-f6e2eaa7b702.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/minamihata-dam/8e380726-9c39-4bc6-8162-f6e2eaa7b702.png)
 
 ## まとめ
 
@@ -65,6 +65,6 @@ summary: "南畑ダムは福岡県那珂川市にあるダムで、夜の静け�
 
 心霊現象の真偽を断定することはできない。しかし、現地の環境が人に不安を与えやすいこと、そしてその空気が怪談と結びつきやすいことは確かである。南畑ダムの怖さは、霊そのものよりも、何かがいても不思議ではないと思わせる夜の雰囲気にあるのかもしれない。
 
-![scene4](/spots/minamihata-dam/a123ceb8-ede9-4e4b-aa56-13384abe13e3.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/minamihata-dam/a123ceb8-ede9-4e4b-aa56-13384abe13e3.png)
 
 {{VIDEO}}

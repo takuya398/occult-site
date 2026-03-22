@@ -153,7 +153,7 @@ export function LegendBody({ slug, body }: Props) {
       } else if (isImageMarker(token)) {
         const filename = legendImageMap[slug]?.[token];
         if (filename) {
-          const src = `/legends/${slug}/${filename}`;
+          const src = filename;
           nodes.push(
             <figure key={`img-${i}`} className="my-6">
               <Image

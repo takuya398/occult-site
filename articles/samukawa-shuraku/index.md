@@ -35,7 +35,7 @@ updatedAt: 2026-02-12
 寒川集落は、宮崎県の山間部にあった集落が無人化し、廃村として語られてきた場所だと言われる。  
 そして近年は、映画やネットの影響で「最恐の廃村」「因習の残る村」といったラベルが貼られ、心霊スポットとしての物語が強化されていった。
 
-![入口外観](/spots/samukawa-shuraku/scene1.jpg)
+![入口外観](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/samukawa-shuraku/scene1.jpg)
 
 この記事では、確認できる範囲の情報と、噂として流通している話を分けて整理し、  
 「なぜ寒川集落が怖がられるのか」を読みやすくまとめる。
@@ -65,7 +65,7 @@ updatedAt: 2026-02-12
 「寒川＝怖い場所」という印象が繰り返し強化される。  
 一方で、そこで語られる話の多くは伝聞であり、出来事の一次確認が難しいものも含まれる。
 
-![廃屋内部の雰囲気](/spots/samukawa-shuraku/scene2.webp)
+![廃屋内部の雰囲気](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/samukawa-shuraku/scene2.webp)
 
 ---
 
@@ -84,7 +84,7 @@ updatedAt: 2026-02-12
 ただし、説明できる要因があっても「違和感が消えない」という語りが残り、  
 その余韻が心霊スポットとしての強度になっていく。
 
-![廃校跡象徴](/spots/samukawa-shuraku/scene3.jpg)
+![廃校跡象徴](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/samukawa-shuraku/scene3.jpg)
 
 ---
 
@@ -104,7 +104,7 @@ updatedAt: 2026-02-12
 山間部の暗さ、湿度、静寂、道の分かりにくさは不安を増幅しやすい。  
 不安が高いと、音や影が意味を持ったものに見えやすい。
 
-![森へ続く道](/spots/samukawa-shuraku/scene4.jpg)
+![森へ続く道](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/samukawa-shuraku/scene4.jpg)
 
 ---
 

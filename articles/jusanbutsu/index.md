@@ -9,7 +9,7 @@ credibility: "C"
 tags: ["心霊スポット","墓地","女性の霊","洞窟"]
 youtube: "https://www.youtube.com/watch?v=KLiUwMF9gBY"
 summary: "福岡県八女郡広川町にある墓地・慰霊碑系スポット。洞窟に石仏が並ぶ独特の構造と女性の霊の噂で知られる、福岡屈指の心霊霊場。"
-cover: "/spots/jusanbutsu/ae848b11-07d6-4488-8f22-8a5f3c3e8836.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jusanbutsu/ae848b11-07d6-4488-8f22-8a5f3c3e8836.png"
 ---
 
 # 十三佛
@@ -64,7 +64,7 @@ cover: "/spots/jusanbutsu/ae848b11-07d6-4488-8f22-8a5f3c3e8836.png"
 
 ## この場所の概要
 
-![十三佛 竹林の洞窟入口と崩れた建物](/spots/jusanbutsu/ae848b11-07d6-4488-8f22-8a5f3c3e8836.png)
+![十三佛 竹林の洞窟入口と崩れた建物](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jusanbutsu/ae848b11-07d6-4488-8f22-8a5f3c3e8836.png)
 
 全国心霊マップでは、十三佛は福岡県広川町にある墓地・慰霊碑系の心霊スポットとして整理されており、「この場所では女性の幽霊が現れるといった噂がある」と説明されている。動画が33件も集まっているのは、霊系スポットの中でもかなり高い数値であり、福岡県内での知名度の高さを反映している。
 
@@ -74,7 +74,7 @@ cover: "/spots/jusanbutsu/ae848b11-07d6-4488-8f22-8a5f3c3e8836.png"
 
 ## 場所・アクセス
 
-![十三佛 森の中の朽ちた祠と石段](/spots/jusanbutsu/0a964034-da6b-406d-92a0-04ee766ac179.png)
+![十三佛 森の中の朽ちた祠と石段](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jusanbutsu/0a964034-da6b-406d-92a0-04ee766ac179.png)
 
 所在地は福岡県八女郡広川町水原4103である。全国心霊マップでは最寄り駅を善導寺駅、徒歩104分と案内しており、公共交通で気軽に行ける場所ではない。広川町役場近くの川瀬差点を左折し、84号線を進んで「広畠」バス停付近から橋を渡り、「十三佛はこちらです」と書かれた看板を目印に進むルートが案内されている。
 
@@ -84,7 +84,7 @@ cover: "/spots/jusanbutsu/ae848b11-07d6-4488-8f22-8a5f3c3e8836.png"
 
 ## 心霊現象の噂
 
-![十三佛 洞窟内の石仏と赤い壁画](/spots/jusanbutsu/badafa4a-65d0-45f3-96eb-2bdd017ac084.png)
+![十三佛 洞窟内の石仏と赤い壁画](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jusanbutsu/badafa4a-65d0-45f3-96eb-2bdd017ac084.png)
 
 十三佛で最も有名なのは、白い服を着た女性の霊が現れるという噂である。全国心霊マップでも心霊現象は「女性の霊」と明記されており、投票欄でも女性の目撃報告が他より多く集まっている。また、「お地蔵様の首を取ったり破壊すると呪われる」「お地蔵様の位置が変わる」「霊感の強い人は憑かれる」などの話も語られている。
 
@@ -94,7 +94,7 @@ cover: "/spots/jusanbutsu/ae848b11-07d6-4488-8f22-8a5f3c3e8836.png"
 
 ## 体験談
 
-![十三佛 暗い洞窟入口と両脇の石仏](/spots/jusanbutsu/7013948f-6ae1-4282-97cf-bac02d35a105.png)
+![十三佛 暗い洞窟入口と両脇の石仏](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jusanbutsu/7013948f-6ae1-4282-97cf-bac02d35a105.png)
 
 十三佛の怖さは、はっきりと幽霊を見たという話だけではない。深夜2時に訪れた人の記録では、洞窟に入る前から「カン、カン、カン」と何かを打ち付けるような音が山中に響き、すでに恐怖を感じていたと書かれている。洞窟内に入ると、真冬の深夜にもかかわらず生ぬるく、湿気が強く、首のない地蔵が何体も並んでいたという描写があり、視覚的な怖さ以上に空気の異様さが伝わってくる。
 
@@ -104,7 +104,7 @@ cover: "/spots/jusanbutsu/ae848b11-07d6-4488-8f22-8a5f3c3e8836.png"
 
 ## 危険性と注意点
 
-![十三佛 洞窟内の石仏群と供え物](/spots/jusanbutsu/7d6c9a1b-e7d4-4ed5-b071-a0a8a4c335ec.png)
+![十三佛 洞窟内の石仏群と供え物](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jusanbutsu/7d6c9a1b-e7d4-4ed5-b071-a0a8a4c335ec.png)
 
 十三佛は廃病院や大型廃墟のような崩落危険が主ではないが、山中の細い道、暗い洞窟、湿気の強い足元、夜間の視界不良など、現地環境に由来する危険がある。全国心霊マップでも「私有地に無断で入ると不法侵入になるので注意」と明記されており、管理者が行政とは限らない場所に面白半分で踏み込むべきではない。危険度を4としたのは、霊的な噂よりも、狭い山道と洞窟環境が現実に危ないためである。
 

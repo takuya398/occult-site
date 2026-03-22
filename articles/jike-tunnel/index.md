@@ -7,7 +7,7 @@ category: "心霊スポット"
 danger: 3
 credibility: "C"
 tags: ["心霊スポット","トンネル","女性の霊"]
-cover: "/spots/jike-tunnel/4d038929-6c64-45fb-af88-061002ee77be.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jike-tunnel/4d038929-6c64-45fb-af88-061002ee77be.png"
 summary: "富山県富山市の県道67号線沿いにある古いトンネル。女性の霊や声の噂が語られるが、現在も一般道路として使われており、都市伝説的側面が強い。"
 ---
 
@@ -36,7 +36,7 @@ summary: "富山県富山市の県道67号線沿いにある古いトンネル�
 
 ## 寺家トンネルの歴史
 
-![寺家トンネル 外観](/spots/jike-tunnel/6fa7d18c-9d7c-4fc4-9bb9-db265654fe23.png)
+![寺家トンネル 外観](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jike-tunnel/6fa7d18c-9d7c-4fc4-9bb9-db265654fe23.png)
 
 寺家トンネルは、富山市郊外の山間道路を通すために建設された比較的古いトンネルです。
 周囲は山林に囲まれており、夜になると街灯も少ないため非常に暗くなります。
@@ -47,7 +47,7 @@ summary: "富山県富山市の県道67号線沿いにある古いトンネル�
 
 ## 噂されている心霊現象
 
-![トンネル内部](/spots/jike-tunnel/6ff61941-dae5-45dc-b873-738fba56ec83.png)
+![トンネル内部](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jike-tunnel/6ff61941-dae5-45dc-b873-738fba56ec83.png)
 
 寺家トンネルでは、以下のような怪談が語られています。
 
@@ -62,7 +62,7 @@ summary: "富山県富山市の県道67号線沿いにある古いトンネル�
 
 ## 現地の雰囲気
 
-![トンネル内部の様子](/spots/jike-tunnel/f3e7e134-78ff-40c3-9275-fa211896aa92.png)
+![トンネル内部の様子](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jike-tunnel/f3e7e134-78ff-40c3-9275-fa211896aa92.png)
 
 実際に訪れた人の多くは、「特別な現象は起きなかった」という意見も多い一方で、
 「とにかく雰囲気が怖い」という感想が多く見られます。
@@ -73,7 +73,7 @@ summary: "富山県富山市の県道67号線沿いにある古いトンネル�
 
 ## 夜に訪れる際の注意
 
-![トンネル周辺](/spots/jike-tunnel/96bcf3e3-d13e-4ae8-a3f9-9ada70e09af9.png)
+![トンネル周辺](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jike-tunnel/96bcf3e3-d13e-4ae8-a3f9-9ada70e09af9.png)
 
 寺家トンネルは現在も一般道路として利用されています。
 そのため、心霊スポット巡りを目的に訪れる場合は以下の点に注意が必要です。

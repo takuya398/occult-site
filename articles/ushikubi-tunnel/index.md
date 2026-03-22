@@ -9,7 +9,7 @@ credibility: "B"
 tags: ["心霊スポット","トンネル","女性の霊","事件"]
 youtube: "https://www.youtube.com/watch?v=dbSkwP7Tsag"
 summary: "牛首トンネルは石川県河北郡津幡町にある心霊スポットで、少女や女性の霊、事故の噂が語られる危険度の高い場所。"
-cover: "/spots/ushikubi-tunnel/cf6cd9f1-25c4-48f6-abc0-fd3970b2f87f.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ushikubi-tunnel/cf6cd9f1-25c4-48f6-abc0-fd3970b2f87f.png"
 ---
 
 # 牛首トンネル
@@ -64,7 +64,7 @@ cover: "/spots/ushikubi-tunnel/cf6cd9f1-25c4-48f6-abc0-fd3970b2f87f.png"
 
 ## この場所の概要
 
-![牛首トンネル 内部から出口を望む](/spots/ushikubi-tunnel/f4848646-6b6b-48a0-98c7-8f9e43cfa65b.png)
+![牛首トンネル 内部から出口を望む](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ushikubi-tunnel/f4848646-6b6b-48a0-98c7-8f9e43cfa65b.png)
 
 牛首トンネルは山間部に位置し、周囲は森林に囲まれている。昼間でも薄暗く、トンネル内部は光が届きにくいため視界が悪い。
 
@@ -74,7 +74,7 @@ cover: "/spots/ushikubi-tunnel/cf6cd9f1-25c4-48f6-abc0-fd3970b2f87f.png"
 
 ## 噂されている出来事
 
-![牛首トンネル 内部の地蔵](/spots/ushikubi-tunnel/9366b320-8e3a-475c-80a8-a72e5dcd912f.png)
+![牛首トンネル 内部の地蔵](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ushikubi-tunnel/9366b320-8e3a-475c-80a8-a72e5dcd912f.png)
 
 この場所では、過去に交通事故や不可解な出来事が多発したとされ、それが心霊スポットとして広まるきっかけとなった。
 
@@ -84,7 +84,7 @@ cover: "/spots/ushikubi-tunnel/cf6cd9f1-25c4-48f6-abc0-fd3970b2f87f.png"
 
 ## 報告されている心霊現象
 
-![牛首トンネル 内部の供物・遺留品](/spots/ushikubi-tunnel/222fcb3d-ec8c-4a2b-8392-ef6747ead22e.png)
+![牛首トンネル 内部の供物・遺留品](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ushikubi-tunnel/222fcb3d-ec8c-4a2b-8392-ef6747ead22e.png)
 
 目撃情報として多いのは「少女の霊」と「女性の霊」である。立っているだけでなく、こちらを見つめてくる、近づいてくるといった報告もある。
 
@@ -94,7 +94,7 @@ cover: "/spots/ushikubi-tunnel/cf6cd9f1-25c4-48f6-abc0-fd3970b2f87f.png"
 
 ## 現地の雰囲気
 
-![牛首トンネル 内部・落書きと照明](/spots/ushikubi-tunnel/285d526d-2b46-4a06-a008-18a6cb743e9b.png)
+![牛首トンネル 内部・落書きと照明](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ushikubi-tunnel/285d526d-2b46-4a06-a008-18a6cb743e9b.png)
 
 内部は湿気が多く、音が反響しやすい構造となっている。わずかな音でも増幅され、人の気配のように感じられることがある。
 

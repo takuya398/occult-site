@@ -36,7 +36,7 @@ coverImage: /spots/inuyama-tengu-jinja/cover.jpg
 
 人の気配が薄い山道と森の密度が、印象をより不気味にするという声もある。
 
-![入口・外観](/spots/inuyama-tengu-jinja/scene1.jpg)
+![入口・外観](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/inuyama-tengu-jinja/scene1.jpg)
 
 ## なぜ犬山天狗神社といわれているのか？
 
@@ -46,7 +46,7 @@ coverImage: /spots/inuyama-tengu-jinja/cover.jpg
 
 こうした要素が重なり、「天狗の地」という印象が強く残ったと考えられている。
 
-![注意・看板](/spots/inuyama-tengu-jinja/scene2.jpg)
+![注意・看板](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/inuyama-tengu-jinja/scene2.jpg)
 
 ## 心霊現象噂体験談
 
@@ -59,7 +59,7 @@ coverImage: /spots/inuyama-tengu-jinja/cover.jpg
 
 森の暗さや音の反響が、体験の印象を強めている可能性もある。
 
-![内部・雰囲気](/spots/inuyama-tengu-jinja/scene3.jpg)
+![内部・雰囲気](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/inuyama-tengu-jinja/scene3.jpg)
 
 ## オカルト的考察
 
@@ -74,7 +74,7 @@ coverImage: /spots/inuyama-tengu-jinja/cover.jpg
 
 断定はできないが、伝承と環境が重なり合って語り継がれているように見える。
 
-![象徴的風景](/spots/inuyama-tengu-jinja/scene4.jpg)
+![象徴的風景](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/inuyama-tengu-jinja/scene4.jpg)
 
 ## 周辺スポット
 

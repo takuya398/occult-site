@@ -9,7 +9,7 @@ credibility: "D"
 tags: ["心霊スポット","廃墟","女性の霊"]
 youtube: "https://www.youtube.com/watch?v=5ypV97vL5eE"
 summary: "奈良県奈良市大和田町の山中に残る廃宗教施設。少女の霊の噂や独特の雰囲気で知られる、危険度の高い心霊スポット。"
-cover: "/spots/shirataka-okami/6a46e8e8-b26d-4af4-87b0-cff93aa74edd.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shirataka-okami/6a46e8e8-b26d-4af4-87b0-cff93aa74edd.png"
 ---
 
 # 白高大神
@@ -63,7 +63,7 @@ cover: "/spots/shirataka-okami/6a46e8e8-b26d-4af4-87b0-cff93aa74edd.png"
 
 ## この場所の概要
 
-![白高大神 朽ちた鳥居と石灯籠](/spots/shirataka-okami/7151e039-5a59-4097-9bf4-67aa1949ca4c.png)
+![白高大神 朽ちた鳥居と石灯籠](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shirataka-okami/7151e039-5a59-4097-9bf4-67aa1949ca4c.png)
 
 白高大神は、現在は通常の参拝地というよりも、山中に痕跡を残す廃宗教施設として語られることが多い場所である。
 
@@ -73,7 +73,7 @@ cover: "/spots/shirataka-okami/6a46e8e8-b26d-4af4-87b0-cff93aa74edd.png"
 
 ## 場所・アクセス
 
-![白高大神 夜の田んぼ道](/spots/shirataka-okami/d9cd150b-56da-4d36-b4d2-fce59d1aeec8.png)
+![白高大神 夜の田んぼ道](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shirataka-okami/d9cd150b-56da-4d36-b4d2-fce59d1aeec8.png)
 
 最寄り駅は萩の台駅で、徒歩約41分とされている。車で直接近くまで入るのは難しく、奈良交通バスの「若草台バス停」付近から山側へ向かうルートが紹介されている。
 
@@ -83,7 +83,7 @@ cover: "/spots/shirataka-okami/6a46e8e8-b26d-4af4-87b0-cff93aa74edd.png"
 
 ## 心霊現象の噂
 
-![白高大神 鳥居と奥の社](/spots/shirataka-okami/d38044b7-2d56-46e7-9dc7-c732ab9f5a42.png)
+![白高大神 鳥居と奥の社](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shirataka-okami/d38044b7-2d56-46e7-9dc7-c732ab9f5a42.png)
 
 白高大神で最もよく語られているのは、少女の霊が現れるという噂である。代表的な心霊現象として「少女の霊」が明記されており、利用者の投稿では「関西でも特に恐ろしい場所」として扱われている。
 
@@ -105,7 +105,7 @@ cover: "/spots/shirataka-okami/6a46e8e8-b26d-4af4-87b0-cff93aa74edd.png"
 
 ## 危険性と注意点
 
-![白高大神 廃施設内部](/spots/shirataka-okami/972e5299-8872-4a1a-a9e0-1bb874408d7f.png)
+![白高大神 廃施設内部](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shirataka-okami/972e5299-8872-4a1a-a9e0-1bb874408d7f.png)
 
 白高大神を調べるうえで見落としてはいけないのは、心霊現象そのものよりも現地の危険性である。場所が分かりづらく険しい山道を通るとされ、私有地への無断立ち入りは不法侵入になる可能性がある。
 

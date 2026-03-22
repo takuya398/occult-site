@@ -5,7 +5,7 @@ date: "2026-03-09"
 danger: 3
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=SgSAPXv0pEI"
-cover: "/spots/heiwa-no-taki/2fc52abf-af56-4405-95ce-6eca5ec8162d.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/heiwa-no-taki/2fc52abf-af56-4405-95ce-6eca5ec8162d.png"
 tags: ["心霊スポット","滝・川","女性の霊"]
 category: "心霊スポット"
 summary: "平和の滝は札幌市西区にある滝で、修行の場として知られる一方、女性の霊や奇妙な気配が現れるという噂が語られる北海道の心霊スポットとしても知られている。"
@@ -52,7 +52,7 @@ summary: "平和の滝は札幌市西区にある滝で、修行の場として�
 
 昼間は自然の景観を楽しむ散策スポットとして訪れる人も多く、札幌市内にありながら山の静けさを感じられる場所だ。しかし夜になると状況は一変し、周囲は深い闇に包まれ、昼とはまったく違う雰囲気になる。
 
-![scene1](/spots/heiwa-no-taki/c03f96f6-3e85-42de-bb9e-6b1b32e6dc06.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/heiwa-no-taki/c03f96f6-3e85-42de-bb9e-6b1b32e6dc06.png)
 
 ---
 
@@ -70,7 +70,7 @@ summary: "平和の滝は札幌市西区にある滝で、修行の場として�
 
 滝の水音や風の音が複雑に反響することで、人の声のように聞こえることがあると言われている。こうした自然現象が、不思議な体験談として語られる原因になっている可能性もある。
 
-![scene2](/spots/heiwa-no-taki/1304fc44-90ea-4fcb-ab88-70d7263d0e41.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/heiwa-no-taki/1304fc44-90ea-4fcb-ab88-70d7263d0e41.png)
 
 ---
 
@@ -82,7 +82,7 @@ summary: "平和の滝は札幌市西区にある滝で、修行の場として�
 
 こうした自然条件が重なり、訪れた人に強い不安感を与える場所になっている。
 
-![scene3](/spots/heiwa-no-taki/8ebe4d91-87f1-464b-8fd3-6092cdab2616.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/heiwa-no-taki/8ebe4d91-87f1-464b-8fd3-6092cdab2616.png)
 
 ---
 
@@ -112,7 +112,7 @@ summary: "平和の滝は札幌市西区にある滝で、修行の場として�
 
 それでも夜の平和の滝には、何かが現れてもおかしくないような独特の雰囲気があることは確かだ。
 
-![scene4](/spots/heiwa-no-taki/91f69568-39e9-4bcc-9e8a-c04564f647cf.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/heiwa-no-taki/91f69568-39e9-4bcc-9e8a-c04564f647cf.png)
 
 {{VIDEO}}
 

@@ -9,7 +9,7 @@ credibility: "D"
 tags: ["心霊スポット","廃墟","正体不明の霊","村"]
 youtube: "https://www.youtube.com/watch?v=BCsN_mX401s"
 summary: "福岡県福岡市西区にある廃墟系心霊スポット。少年の霊や人影の噂が語られる、廃墟の静けさがじわっと怖さを生む場所。"
-cover: "/spots/ninja-village-fukuoka/4a72ea73-f743-4bc0-ae0d-3bb8548ae77a.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ninja-village-fukuoka/4a72ea73-f743-4bc0-ae0d-3bb8548ae77a.png"
 ---
 
 # 忍者村
@@ -64,7 +64,7 @@ cover: "/spots/ninja-village-fukuoka/4a72ea73-f743-4bc0-ae0d-3bb8548ae77a.png"
 
 ## この場所の概要
 
-![忍者村 封鎖された正面入口と看板](/spots/ninja-village-fukuoka/4a72ea73-f743-4bc0-ae0d-3bb8548ae77a.png)
+![忍者村 封鎖された正面入口と看板](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ninja-village-fukuoka/4a72ea73-f743-4bc0-ae0d-3bb8548ae77a.png)
 
 忍者村は、福岡市西区に存在する廃墟系スポットとして扱われているが、正式な施設の来歴や現状ははっきりしない部分も多く、噂先行で知られる側面がある。全国心霊マップでは写真や動画、投稿体験談が集まる場所として掲載されており、ネット上では福岡の定番心霊スポットの一角として語られることがある。ただし、歴史的背景や閉鎖に至った事情については、はっきり断定できる資料が多いわけではない。
 
@@ -74,7 +74,7 @@ cover: "/spots/ninja-village-fukuoka/4a72ea73-f743-4bc0-ae0d-3bb8548ae77a.png"
 
 ## 場所・アクセス
 
-![忍者村 石畳の広場と廃屋が並ぶ敷地内](/spots/ninja-village-fukuoka/5fa63108-5cbf-4a99-bc97-101791b3a8bd.png)
+![忍者村 石畳の広場と廃屋が並ぶ敷地内](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ninja-village-fukuoka/5fa63108-5cbf-4a99-bc97-101791b3a8bd.png)
 
 所在地は福岡県福岡市西区徳永439-120付近とされている。福岡市内にあるため一見するとアクセスしやすそうに思えるが、実際には山寄りの場所にあり、現地の空気は市街地の印象とはかなり異なる。住宅地から少し離れるだけで周囲は静かになり、夜は人通りも少なくなるため、現地に着いた時点で不安を覚える人も多いようである。
 
@@ -84,7 +84,7 @@ cover: "/spots/ninja-village-fukuoka/4a72ea73-f743-4bc0-ae0d-3bb8548ae77a.png"
 
 ## 心霊現象の噂
 
-![忍者村 緑に覆われた廃屋外観](/spots/ninja-village-fukuoka/61f8d4b4-a912-42d4-b689-aa65c722583d.png)
+![忍者村 緑に覆われた廃屋外観](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ninja-village-fukuoka/61f8d4b4-a912-42d4-b689-aa65c722583d.png)
 
 忍者村でよく語られるのは、少年の霊が現れるという噂である。全国心霊マップでも代表的な現象として「少年の霊」が挙げられており、廃墟の一角で子どものような気配を感じた、建物の陰に小さな人影を見た、といった話が心霊スポット文脈で紹介されている。廃墟と子どもの霊という組み合わせは怪談として非常に印象に残りやすく、忍者村のイメージを強める大きな要素になっている。
 
@@ -96,7 +96,7 @@ cover: "/spots/ninja-village-fukuoka/4a72ea73-f743-4bc0-ae0d-3bb8548ae77a.png"
 
 ## 体験談
 
-![忍者村 割れた窓越しに見える廃屋](/spots/ninja-village-fukuoka/02306c49-24ea-494d-b353-8dc40be1821b.png)
+![忍者村 割れた窓越しに見える廃屋](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ninja-village-fukuoka/02306c49-24ea-494d-b353-8dc40be1821b.png)
 
 忍者村の体験談として多いのは、建物の間や暗がりに人影を見た気がする、誰もいないのに気配を感じる、というものである。実際に訪れた人が「妙に静かすぎる」「建物の奥を見ていると嫌な感じがする」といった印象を語っており、いわゆる派手な怪奇現象より、場所そのものが持つ不安感の強さが印象に残る。
 
@@ -108,7 +108,7 @@ cover: "/spots/ninja-village-fukuoka/4a72ea73-f743-4bc0-ae0d-3bb8548ae77a.png"
 
 ## 危険性と注意点
 
-![忍者村 山を背景にした廃墟敷地の全景](/spots/ninja-village-fukuoka/e55d326e-97b2-4dc1-9ec0-5a4d2af1e582.png)
+![忍者村 山を背景にした廃墟敷地の全景](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ninja-village-fukuoka/e55d326e-97b2-4dc1-9ec0-5a4d2af1e582.png)
 
 忍者村で最も注意すべきなのは、心霊現象そのものよりも廃墟としての危険である。長く放置された建物は、床の腐食、崩れた壁、ガラス片、釘や金属片など、目に見える危険が多くある。昼間でも足元確認が必要な場所は少なくなく、夜間であればなおさら危険である。建物内に入らなくても、周囲が草木で覆われていれば足場の悪さや滑落、虫や動物との遭遇も考えなければならない。
 

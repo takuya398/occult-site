@@ -5,7 +5,7 @@ date: "2026-03-07"
 danger: 3
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=EqlBs6s4Mmw"
-cover: "/spots/naruto-skyline/09b1a8e5-475e-4b57-9867-5714125e69a6.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/naruto-skyline/09b1a8e5-475e-4b57-9867-5714125e69a6.png"
 tags: ["心霊スポット","トンネル","事件"]
 category: "心霊スポット"
 summary: "徳島県鳴門市の山岳ドライブロード。昼間は絶景の観光道路だが、夜になると道路に立つ女性の霊やバックミラーに映る人影、トンネル付近の怪声など、数多くの心霊体験が語られる場所として知られる。"
@@ -30,7 +30,7 @@ summary: "徳島県鳴門市の山岳ドライブロード。昼間は絶景の�
 
 特に深夜の時間帯には交通量もほとんどなく、静まり返った山道の中で奇妙な体験をしたという話が語られている。こうした体験談が広まることで、鳴門スカイラインは心霊スポットとして語られるようになった。
 
-![scene1](/spots/naruto-skyline/493d8403-308b-46c1-bcff-d53b6273aec9.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/naruto-skyline/493d8403-308b-46c1-bcff-d53b6273aec9.png)
 
 ---
 
@@ -44,7 +44,7 @@ summary: "徳島県鳴門市の山岳ドライブロード。昼間は絶景の�
 
 また、山中を通る道路であるため、夜になるとほとんど人がいなくなる。その静けさと暗さが、不気味な雰囲気を生み出しているのかもしれない。
 
-![scene2](/spots/naruto-skyline/b7ef01c1-6f73-4d3c-a8a7-0ed180a5e641.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/naruto-skyline/b7ef01c1-6f73-4d3c-a8a7-0ed180a5e641.png)
 
 ---
 
@@ -58,7 +58,7 @@ summary: "徳島県鳴門市の山岳ドライブロード。昼間は絶景の�
 
 さらに、トンネルやカーブ付近で誰かの声のような音を聞いたという体験談もある。山の中であるため風の音や木々の揺れる音が原因とも考えられるが、不可解な現象として語られている。
 
-![scene3](/spots/naruto-skyline/ce5bf2b2-5539-44fd-a10f-8b28d5c4c164.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/naruto-skyline/ce5bf2b2-5539-44fd-a10f-8b28d5c4c164.png)
 
 ---
 
@@ -72,7 +72,7 @@ summary: "徳島県鳴門市の山岳ドライブロード。昼間は絶景の�
 
 こうした体験談は数多く語られているが、実際に霊が存在するのかどうかは分かっていない。
 
-![scene4](/spots/naruto-skyline/d9d38390-7241-4b11-9921-d5de8ccfdb50.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/naruto-skyline/d9d38390-7241-4b11-9921-d5de8ccfdb50.png)
 
 ---
 

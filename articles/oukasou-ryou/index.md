@@ -10,7 +10,7 @@ credibility: "B"
 tags: ["心霊スポット","ホテル","旅館","廃墟","男性の霊","正体不明の霊"]
 youtube: "https://m.youtube.com/watch?v=jRCBJzZDXyg&pp=ygUM6bav6Iqx6I2Y5a-u"
 summary: "鶯花荘寮は三重県菰野町の湯の山温泉エリアに残る廃墟で、男性の霊や黒い影、立ち入ると事故に遭うという噂で知られる心霊スポット。"
-cover: "/spots/oukasou-ryou/633329b7-2d9a-4983-a92f-70901c2154a8.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oukasou-ryou/633329b7-2d9a-4983-a92f-70901c2154a8.png"
 ---
 
 # 鶯花荘寮
@@ -60,7 +60,7 @@ cover: "/spots/oukasou-ryou/633329b7-2d9a-4983-a92f-70901c2154a8.png"
 
 ## この場所の概要
 
-![鶯花荘寮 外観全景](/spots/oukasou-ryou/1eff83d6-e90f-438f-8d53-31ad2c334f81.png)
+![鶯花荘寮 外観全景](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oukasou-ryou/1eff83d6-e90f-438f-8d53-31ad2c334f81.png)
 
 鶯花荘寮は、三重県三重郡菰野町の湯の山温泉周辺に残る廃墟で、ネット上ではホテル跡や旅館関係の建物として語られることが多い。廃墟検索地図では通称を「菰野湯の山（鶯花荘寮）」としており、かつて温泉街の一角に存在していた施設の名残として記録されている。温泉地という土地柄、本来なら人が癒やしを求めて集まる場所であり、その中にこうした荒れた建物が残り続けていること自体が強い違和感を生む。
 
@@ -70,7 +70,7 @@ cover: "/spots/oukasou-ryou/633329b7-2d9a-4983-a92f-70901c2154a8.png"
 
 ## 噂されている出来事
 
-![鶯花荘寮 内部・散乱した部屋](/spots/oukasou-ryou/91e88581-27ed-4c69-840a-ebb1720b9728.png)
+![鶯花荘寮 内部・散乱した部屋](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oukasou-ryou/91e88581-27ed-4c69-840a-ebb1720b9728.png)
 
 この場所にまつわる最も有名な噂は、「建物に入ると必ず事故に遭う」というものだ。全国心霊マップや怪異系サイトでは、その根拠として平成11年から平成12年にかけて、訪問者とされる若者たちが後日交通事故や転落事故に遭ったという話が列挙されている。内容自体はネット怪談の色合いが強いが、具体的な年月や人数が書かれているため、単なる作り話以上の重みを感じる人も多い。
 
@@ -80,7 +80,7 @@ cover: "/spots/oukasou-ryou/633329b7-2d9a-4983-a92f-70901c2154a8.png"
 
 ## 報告されている心霊現象
 
-![鶯花荘寮 廊下・瓦礫](/spots/oukasou-ryou/a87582c5-d1ef-4b76-9ac7-afb1db65573d.png)
+![鶯花荘寮 廊下・瓦礫](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oukasou-ryou/a87582c5-d1ef-4b76-9ac7-afb1db65573d.png)
 
 鶯花荘寮で代表的に語られるのは、男性の霊である。全国心霊マップでも、実際に目撃された幽霊の投票では男性が特に多く、建物内で顔の崩れた男を見た、暗い部屋の奥に立っていた、などのイメージで語られることが多い。ホテルや旅館の廃墟でありながら、温泉地らしい寂しさより先に"人が死んだ場所"のような気配が先行しているのが特徴だ。
 
@@ -90,7 +90,7 @@ cover: "/spots/oukasou-ryou/633329b7-2d9a-4983-a92f-70901c2154a8.png"
 
 ## 現地の雰囲気
 
-![鶯花荘寮 外観遠景](/spots/oukasou-ryou/a24ad467-84c2-4585-822b-ef271407a5af.png)
+![鶯花荘寮 外観遠景](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oukasou-ryou/a24ad467-84c2-4585-822b-ef271407a5af.png)
 
 鶯花荘寮の雰囲気は、典型的な派手な廃ホテルとは少し違う。大きなネオンや豪華なロビーが残るタイプではなく、どこか生活感の残滓があり、それがかえって生々しい。窓の封鎖跡や壊れた部分を覗くと、建物が"朽ちた"というより"放り出された"ように見え、時間だけが一方的に経過した印象を受ける。使われなくなった温泉地の空気も重なり、観光の余韻と廃墟の冷たさが同居している。
 

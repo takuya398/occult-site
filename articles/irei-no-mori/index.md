@@ -10,7 +10,7 @@ coverImage: /spots/irei-no-mori/cover.jpg
 videoUrl: https://www.youtube.com/watch?v=8pkGp1k90ms
 ---
 
-![入口](/spots/irei-no-mori/scene1.jpg)
+![入口](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/irei-no-mori/scene1.jpg)
 
 ## 導入
 
@@ -18,7 +18,7 @@ videoUrl: https://www.youtube.com/watch?v=8pkGp1k90ms
 
 慰霊の森。そこは、ある大事故をきっかけに「霊の集まる場所」として語られるようになった、岩手県随一の心霊スポットである。
 
-![看板](/spots/irei-no-mori/scene2.jpg)
+![看板](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/irei-no-mori/scene2.jpg)
 
 ## スポット概要
 
@@ -30,7 +30,7 @@ videoUrl: https://www.youtube.com/watch?v=8pkGp1k90ms
 - 660段の階段を登った先に慰霊碑
 - 森の中には地蔵や石碑も多数あり
 
-![雰囲気](/spots/irei-no-mori/scene3.jpg)
+![雰囲気](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/irei-no-mori/scene3.jpg)
 
 ## 心霊現象・体験談
 
@@ -42,7 +42,7 @@ videoUrl: https://www.youtube.com/watch?v=8pkGp1k90ms
 
 これらは、ネット掲示板や心霊マップ、訪問者の実体験などで語られている。
 
-![象徴](/spots/irei-no-mori/scene4.jpg)
+![象徴](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/irei-no-mori/scene4.jpg)
 
 ## オカルト的考察
 

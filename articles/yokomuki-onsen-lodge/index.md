@@ -4,7 +4,7 @@ prefecture: "福島県"
 date: "2026-03-13"
 danger: 5
 credibility: "C"
-cover: "/spots/yokomuki-onsen-lodge/c7040ca0-5a07-48c2-9817-1cbe2b11c70f.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yokomuki-onsen-lodge/c7040ca0-5a07-48c2-9817-1cbe2b11c70f.png"
 tags: ["心霊スポット","廃墟","女性の霊"]
 category: "心霊スポット"
 summary: "横向温泉ロッジは福島県猪苗代町の山中に残る廃温泉施設で、女性の霊や人影、声が聞こえるなどの噂が語られる心霊スポットとして知られている。"
@@ -55,7 +55,7 @@ summary: "横向温泉ロッジは福島県猪苗代町の山中に残る廃温�
 
 その静かな環境と廃墟特有の雰囲気から、次第に心霊スポットとして知られるようになった。
 
-![scene1](/spots/yokomuki-onsen-lodge/10293d07-e9e9-4968-a5bd-d7618aa4cd67.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yokomuki-onsen-lodge/10293d07-e9e9-4968-a5bd-d7618aa4cd67.png)
 
 ---
 
@@ -67,7 +67,7 @@ summary: "横向温泉ロッジは福島県猪苗代町の山中に残る廃温�
 
 山の中に突然現れる廃ホテルの姿は、昼間でもどこか異様な雰囲気を漂わせている。周囲には草木が生い茂り、建物は自然に飲み込まれつつある状態だ。
 
-![scene2](/spots/yokomuki-onsen-lodge/d97d1fe4-11c9-4118-a456-4c62712c8115.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yokomuki-onsen-lodge/d97d1fe4-11c9-4118-a456-4c62712c8115.png)
 
 ---
 
@@ -81,7 +81,7 @@ summary: "横向温泉ロッジは福島県猪苗代町の山中に残る廃温�
 
 こうした噂が広まり、横向温泉ロッジは福島県内でも有名な心霊スポットのひとつとして知られるようになった。
 
-![scene3](/spots/yokomuki-onsen-lodge/defc9878-c489-418b-901d-5b7d0596303c.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yokomuki-onsen-lodge/defc9878-c489-418b-901d-5b7d0596303c.png)
 
 ---
 
@@ -93,7 +93,7 @@ summary: "横向温泉ロッジは福島県猪苗代町の山中に残る廃温�
 
 風の音や木々の揺れる音だけが響く環境では、ちょっとした物音でも不気味に感じてしまうことがある。
 
-![scene4](/spots/yokomuki-onsen-lodge/ec5a9353-cfc7-43d3-8e5a-e0535b0fdb57.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yokomuki-onsen-lodge/ec5a9353-cfc7-43d3-8e5a-e0535b0fdb57.png)
 
 ---
 

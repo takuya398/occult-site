@@ -5,7 +5,7 @@ date: "2026-03-11"
 danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=TJCMGirq-cU"
-cover: "/spots/hotel-suzukigaike/bd1db162-21c7-4edc-94a1-883f77d552ec.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-suzukigaike/bd1db162-21c7-4edc-94a1-883f77d552ec.png"
 tags: ["心霊スポット","廃墟","ホテル","女性の霊"]
 category: "心霊スポット"
 summary: "ホテルすずきヶ池は新潟県村上市瀬波温泉に存在すると言われる廃ホテルで、女性の霊や人影の噂が語られる心霊スポットとして知られている。"
@@ -59,7 +59,7 @@ summary: "ホテルすずきヶ池は新潟県村上市瀬波温泉に存在す�
 
 建物は長年放置されていたことで荒廃し、現在では廃墟として語られる存在となっている。窓ガラスが割れ、内部には瓦礫が散乱しているなど、典型的な廃墟の姿をしているという。
 
-![scene1](/spots/hotel-suzukigaike/88bd9136-c47d-48fb-b8a4-1d26b7e5ac32.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-suzukigaike/88bd9136-c47d-48fb-b8a4-1d26b7e5ac32.png)
 
 ---
 
@@ -71,7 +71,7 @@ summary: "ホテルすずきヶ池は新潟県村上市瀬波温泉に存在す�
 
 建物の中では奇妙な音や人影の噂があり、地元では近づかない方がよい場所として語られることもある。
 
-![scene2](/spots/hotel-suzukigaike/34560ff5-a6a6-44e1-8a7c-f14975691f7d.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-suzukigaike/34560ff5-a6a6-44e1-8a7c-f14975691f7d.png)
 
 ---
 
@@ -86,7 +86,7 @@ summary: "ホテルすずきヶ池は新潟県村上市瀬波温泉に存在す�
 
 これらの噂の多くは体験談として語られるものであり、明確な証拠があるわけではない。しかし廃墟という環境が、人々の想像力を刺激する要因になっているのかもしれない。
 
-![scene3](/spots/hotel-suzukigaike/d86c0faa-f44d-429f-b50c-67f4acc35ca2.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-suzukigaike/d86c0faa-f44d-429f-b50c-67f4acc35ca2.png)
 
 ---
 
@@ -96,7 +96,7 @@ summary: "ホテルすずきヶ池は新潟県村上市瀬波温泉に存在す�
 
 実際のところ、どこまでが事実でどこからが噂なのかははっきりしていない。しかし不気味な雰囲気を持つ廃ホテルであることは確かだろう。
 
-![scene4](/spots/hotel-suzukigaike/dab137fd-c0a3-4a68-b7e3-bfecc8f10358.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-suzukigaike/dab137fd-c0a3-4a68-b7e3-bfecc8f10358.png)
 
 ---
 

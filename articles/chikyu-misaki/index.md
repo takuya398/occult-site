@@ -7,7 +7,7 @@ category: "心霊スポット"
 danger: 4
 credibility: "C"
 tags: ["心霊スポット","自殺","女性の霊","心霊写真"]
-cover: "/spots/chikyu-misaki/2036dfae-bfb4-499c-b681-a460a15890af.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/chikyu-misaki/2036dfae-bfb4-499c-b681-a460a15890af.png"
 youtube: "https://m.youtube.com/watch?v=Py_GFWwuyXU&pp=ygUQ5Zyw55CD5bKsIOW_g-mcig%3D%3D"
 summary: "地球岬は北海道室蘭市にある展望名所でありながら、女性の霊や鐘の音、心霊写真の噂が語られる海辺の心霊スポットとしても知られている。"
 ---
@@ -51,7 +51,7 @@ summary: "地球岬は北海道室蘭市にある展望名所でありながら�
 
 ## 概要
 
-![地球岬](/spots/chikyu-misaki/ae56218a-6531-4bf9-84cc-29e3badb43b8.png)
+![地球岬](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/chikyu-misaki/ae56218a-6531-4bf9-84cc-29e3badb43b8.png)
 
 地球岬は、北海道室蘭市を代表する展望名所のひとつである。晴れた日には水平線が大きく広がり、その景色がまるで地球の丸みを感じさせることから、この名前で親しまれてきた。観光地としての知名度は高く、昼間には絶景を目当てに多くの人が訪れる場所でもある。
 
@@ -61,7 +61,7 @@ summary: "地球岬は北海道室蘭市にある展望名所でありながら�
 
 ## この場所の概要
 
-![地球岬 展望台](/spots/chikyu-misaki/2e1604f0-1d43-4321-bf79-093cacc2714f.png)
+![地球岬 展望台](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/chikyu-misaki/2e1604f0-1d43-4321-bf79-093cacc2714f.png)
 
 地球岬は室蘭半島の南端に位置し、断崖絶壁の上から太平洋を見下ろすような地形になっている。観光地としては白い灯台や展望スペース、幸福の鐘などが知られており、北海道の景勝地として紹介されることも多い。特に昼間は空と海の青さが強く、心霊とは結びつきにくいほど開放感のある場所に見える。
 
@@ -71,7 +71,7 @@ summary: "地球岬は北海道室蘭市にある展望名所でありながら�
 
 ## 噂されている出来事
 
-![地球岬 崖](/spots/chikyu-misaki/35c4a969-2f85-4424-bb7b-c259cec6ba4b.png)
+![地球岬 崖](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/chikyu-misaki/35c4a969-2f85-4424-bb7b-c259cec6ba4b.png)
 
 地球岬にまつわる怪談の中心には、「この場所が自殺の名所として知られている」というイメージがある。全国心霊マップでもその特徴が明記されており、古い官報記録として、1937年に崖下への飛び降り自殺と推定される女性の遺体が扱われたことや、1997年に岬の眼下の岩場で女性遺体が発見された記録などが紹介されている。さらに2010年には付近で身元不明遺体が見つかった記録も掲載されており、こうした実際の死亡事案が場所の印象をより重くしている。
 
@@ -81,7 +81,7 @@ summary: "地球岬は北海道室蘭市にある展望名所でありながら�
 
 ## 報告されている心霊現象
 
-![地球岬 夜景](/spots/chikyu-misaki/cf3cefbf-87ed-4e71-a997-f2374031eb46.png)
+![地球岬 夜景](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/chikyu-misaki/cf3cefbf-87ed-4e71-a997-f2374031eb46.png)
 
 この場所で最も有名なのは、女性の霊の目撃談である。全国心霊マップでは、実際に目撃されている幽霊として女性が最も多く投票されており、少女の霊の票も比較的多い。岬の展望スペースや崖沿いで白い人影を見た、夜に誰もいないはずの場所に女性が立っていた、というような話は、地球岬を語るうえで外せない定番の噂になっている。
 

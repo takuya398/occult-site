@@ -5,7 +5,7 @@ date: "2026-03-10"
 danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=JV-o532oXyc"
-cover: "/spots/white-house-niigata/68a1655c-9b51-405d-ba93-227950980f49.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/white-house-niigata/68a1655c-9b51-405d-ba93-227950980f49.png"
 tags: ["心霊スポット","廃墟","女性の霊"]
 category: "心霊スポット"
 summary: "ホワイトハウスは新潟県に存在すると噂される廃洋館で、女性の霊や奇妙な現象が語られる心霊スポットとして知られている。"
@@ -56,7 +56,7 @@ summary: "ホワイトハウスは新潟県に存在すると噂される廃洋�
 
 現在では建物が残っていないという説もあるが、心霊スポットとしての名前は今でも語り継がれている。
 
-![scene1](/spots/white-house-niigata/825c2bac-167d-487b-807d-1bdf9bb8fed8.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/white-house-niigata/825c2bac-167d-487b-807d-1bdf9bb8fed8.png)
 
 ---
 
@@ -72,7 +72,7 @@ summary: "ホワイトハウスは新潟県に存在すると噂される廃洋�
 
 これらの話が重なり、この場所は心霊スポットとして知られるようになった。
 
-![scene2](/spots/white-house-niigata/85571b90-14bb-4788-b274-6a7a26fe8314.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/white-house-niigata/85571b90-14bb-4788-b274-6a7a26fe8314.png)
 
 ---
 
@@ -86,7 +86,7 @@ summary: "ホワイトハウスは新潟県に存在すると噂される廃洋�
 
 こうした環境が、怪談や恐怖体験を生み出した要因の一つと考えられている。
 
-![scene3](/spots/white-house-niigata/8d21b478-874c-4029-b273-1132357462dd.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/white-house-niigata/8d21b478-874c-4029-b273-1132357462dd.png)
 
 ---
 
@@ -110,7 +110,7 @@ summary: "ホワイトハウスは新潟県に存在すると噂される廃洋�
 
 心霊スポットとして興味を持つ人も多いが、安全面とマナーを守ることが重要である。
 
-![scene4](/spots/white-house-niigata/defa420d-92a5-42fa-9987-2c325fe8857d.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/white-house-niigata/defa420d-92a5-42fa-9987-2c325fe8857d.png)
 
 ---
 

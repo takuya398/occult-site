@@ -9,7 +9,7 @@ credibility: "C"
 tags: ["心霊スポット","廃病院","廃墟","女性の霊"]
 youtube: "https://m.youtube.com/watch?v=yeni482OszA&pp=ygUW5bCP5bed6ISz55eF6ZmiIOW_g-mcig%3D%3D"
 summary: "小美玉小川脳病院は茨城県小美玉市倉数にある廃病院で、森に隠れるように残された建物と、女性の霊やうめき声の噂で知られる心霊スポットである。"
-cover: "/spots/omitama-ogawa-noubyouin/addd0808-12bb-4af8-91d4-830f9a3d90fa.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/omitama-ogawa-noubyouin/addd0808-12bb-4af8-91d4-830f9a3d90fa.png"
 ---
 
 # 小美玉小川脳病院
@@ -59,7 +59,7 @@ cover: "/spots/omitama-ogawa-noubyouin/addd0808-12bb-4af8-91d4-830f9a3d90fa.png"
 
 ## この場所の概要
 
-![小美玉小川脳病院 廊下](/spots/omitama-ogawa-noubyouin/c96ecab9-0e13-4bcd-8913-1b2d127d957c.png)
+![小美玉小川脳病院 廊下](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/omitama-ogawa-noubyouin/c96ecab9-0e13-4bcd-8913-1b2d127d957c.png)
 
 探索記では、この建物の正式名称を「聖仁会小川病院」として紹介している。精神科のほかにもいくつかの科があったとされるが、現在は完全に廃墟化し、一般の病院としての機能は残っていない。建物は森に囲まれており、近くまで来てもすぐには見えないほど周辺の自然に埋もれている。そのため、初めて向かう人は「本当にこんな場所に病院があるのか」と疑いたくなるような感覚を覚える。
 
@@ -69,7 +69,7 @@ cover: "/spots/omitama-ogawa-noubyouin/addd0808-12bb-4af8-91d4-830f9a3d90fa.png"
 
 ## 噂されている出来事
 
-![小美玉小川脳病院 浴槽](/spots/omitama-ogawa-noubyouin/30d6f3d6-61a0-46c7-b876-0bb61dc4c1ba.png)
+![小美玉小川脳病院 浴槽](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/omitama-ogawa-noubyouin/30d6f3d6-61a0-46c7-b876-0bb61dc4c1ba.png)
 
 この場所には、古い心霊スポットらしい強い噂がいくつもついて回る。Ghostmapでは、窓に鉄格子があり、地下にはホルマリン漬けの死体を置いていたと言われる浴槽の部屋がある、という話が掲載されている。ただし、こうした内容はあくまでネット上で広まった怪談・噂の域を出ず、裏づけが示されているわけではない。だからこそ、事実と怪談の境目が曖昧になり、余計に不気味さを増している。
 
@@ -79,7 +79,7 @@ cover: "/spots/omitama-ogawa-noubyouin/addd0808-12bb-4af8-91d4-830f9a3d90fa.png"
 
 ## 報告されている心霊現象
 
-![小美玉小川脳病院 内部](/spots/omitama-ogawa-noubyouin/9e5cb3dc-ea27-4519-ae0c-6167a6d27603.png)
+![小美玉小川脳病院 内部](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/omitama-ogawa-noubyouin/9e5cb3dc-ea27-4519-ae0c-6167a6d27603.png)
 
 この場所で最も代表的なのは、女性の霊の目撃である。全国心霊マップでも、噂としてだけでなく「実際に目撃されている幽霊」として女性への投票が多く集まっている。建物の窓付近、暗い通路、地下へ続くような場所で白っぽい気配を見たという話があり、近づくと消える、視線だけ感じる、といった証言が目立つ。病院という舞台と女性の霊の組み合わせが、場所のイメージをより重くしている。
 
@@ -89,7 +89,7 @@ cover: "/spots/omitama-ogawa-noubyouin/addd0808-12bb-4af8-91d4-830f9a3d90fa.png"
 
 ## 現地の雰囲気
 
-![小美玉小川脳病院 竹やぶの通路](/spots/omitama-ogawa-noubyouin/08ac84f5-92c4-49ff-aaef-947be96f21a2.png)
+![小美玉小川脳病院 竹やぶの通路](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/omitama-ogawa-noubyouin/08ac84f5-92c4-49ff-aaef-947be96f21a2.png)
 
 探索記で共通しているのは、「建物に着くまでの森がとにかく不安を煽る」という点である。途中には古い通路や藪、開けた場所、再び塞がれるような竹やぶが続き、周囲の景色が見えない。道として踏み跡はあっても、どれが正しいルートなのか判断しづらく、わずかな分岐でも間違えれば戻される。こうした状況は、単純な怖さよりも閉塞感を強める。
 

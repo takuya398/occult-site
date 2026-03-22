@@ -5,7 +5,7 @@ date: "2026-03-07"
 danger: 4
 credibility: "C"
 youtube: "https://www.youtube.com/watch?v=5k-MQ5j9Kqw"
-cover: "/spots/hotel-celine/3bb9c079-3cfa-4f16-86db-54c83dea98d9.png"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-celine/3bb9c079-3cfa-4f16-86db-54c83dea98d9.png"
 tags: ["廃墟","ホテル","心霊スポット"]
 category: "心霊スポット"
 summary: "長野県の山間部に存在するとされる廃墟「ホテルセリーヌ」。女性の霊の目撃談や不思議な物音など、多くの怪奇現象が語られる廃墟系心霊スポットとして、日本でも特に有名な場所の一つ。"
@@ -32,7 +32,7 @@ summary: "長野県の山間部に存在するとされる廃墟「ホテルセ�
 
 現在では建物の老朽化が進んでおり、立ち入りは危険とされているが、その不気味な外観と数々の噂から、日本屈指の心霊スポットとして語り継がれている。
 
-![scene1](/spots/hotel-celine/52aa3ef6-3454-49b3-8aa7-15e8e55ef983.png)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-celine/52aa3ef6-3454-49b3-8aa7-15e8e55ef983.png)
 
 ---
 
@@ -50,7 +50,7 @@ summary: "長野県の山間部に存在するとされる廃墟「ホテルセ�
 
 また、建物の内部では不自然な物音が聞こえるという話も多く、心霊探索に訪れた人々の間では非常に不気味な場所として知られている。
 
-![scene2](/spots/hotel-celine/89bfe8d7-9371-47de-b507-a34729dff6ff.png)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-celine/89bfe8d7-9371-47de-b507-a34729dff6ff.png)
 
 ---
 
@@ -80,7 +80,7 @@ summary: "長野県の山間部に存在するとされる廃墟「ホテルセ�
 
 これらの体験談が事実であるかどうかは定かではないが、多くの人々がこの場所で不思議な体験を語っている。
 
-![scene3](/spots/hotel-celine/92e9b47f-f9ae-48d7-a854-197a00692aaa.png)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-celine/92e9b47f-f9ae-48d7-a854-197a00692aaa.png)
 
 {{VIDEO}}
 
@@ -94,7 +94,7 @@ summary: "長野県の山間部に存在するとされる廃墟「ホテルセ�
 また、私有地である可能性もあるため、無断侵入はトラブルの原因となる可能性がある。
 心霊スポットとして有名ではあるが、訪れる際には安全面や法律面にも注意する必要がある。
 
-![scene4](/spots/hotel-celine/96716626-d1d7-417d-9315-8b5085fe73b7.png)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-celine/96716626-d1d7-417d-9315-8b5085fe73b7.png)
 
 ---
 

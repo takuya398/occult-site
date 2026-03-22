@@ -20,7 +20,7 @@
     "tone": "理不尽な恐怖・じわじわと来る絶望",
     "coverImage": {
       "type": "image",
-      "src": "/legends/hasshaku-sama/cover.jpg",
+      "src": "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/legends/hasshaku-sama/cover.jpg",
       "alt": "白いワンピース姿の異様に背の高い女が薄暗い田舎道に立つ"
     },
     "videoUrls": [
@@ -56,7 +56,7 @@
     "tone": "集団で育てた未解決の恐怖",
     "coverImage": {
       "type": "image",
-      "src": "/legends/kisaragi-station/cover.jpg",
+      "src": "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/legends/kisaragi-station/cover.jpg",
       "alt": "夜の無人駅、薄暗いホームに浮かぶ駅名標"
     },
     "videoUrls": [
@@ -89,7 +89,7 @@
     "tone": "逃げ道のない不条理な閉塞感",
     "coverImage": {
       "type": "image",
-      "src": "/legends/saru-yume/9cce5b14-8acd-4c67-819a-37c8b54de175.png",
+      "src": "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/legends/saru-yume/9cce5b14-8acd-4c67-819a-37c8b54de175.png",
       "alt": "夜の列車内、薄暗い車内に揺れる吊り革"
     },
     "videoUrls": [
@@ -124,7 +124,7 @@
     "tone": "じわりと重い絶望感",
     "coverImage": {
       "type": "image",
-      "src": "/legends/kotoribako/cover.jpg",
+      "src": "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/legends/kotoribako/cover.jpg",
       "alt": "薄暗い部屋に置かれたからくり箱"
     },
     "videoUrls": [

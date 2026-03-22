@@ -5,7 +5,7 @@ prefecture: "鹿児島県"
 danger: 4
 credibility: "D"
 youtube: "https://www.youtube.com/watch?v=HjIfMaDZ8DE"
-cover: "/spots/kaimon-tunnel/cover.jpg"
+cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kaimon-tunnel/cover.jpg"
 tags: ["心霊スポット","トンネル"]
 category: "心霊スポット"
 direction: "体験談多め"
@@ -63,7 +63,7 @@ summary: "鹿児島県指宿市にある開聞トンネルは、白い服の女�
 
 この"心理的圧迫"が怪談を生む。
 
-![scene1](/spots/kaimon-tunnel/scene1.jpg)
+![scene1](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kaimon-tunnel/scene1.jpg)
 
 ---
 
@@ -108,7 +108,7 @@ summary: "鹿児島県指宿市にある開聞トンネルは、白い服の女�
 実際の事故記録との直接的結び付きは確認できないが、
 「若者の事故死」という物語は拡散しやすい。
 
-![scene2](/spots/kaimon-tunnel/scene2.jpg)
+![scene2](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kaimon-tunnel/scene2.jpg)
 
 ---
 
@@ -159,7 +159,7 @@ summary: "鹿児島県指宿市にある開聞トンネルは、白い服の女�
 これらは想像を刺激する。
 "何かを隠している"という心理が働く。
 
-![scene3](/spots/kaimon-tunnel/scene3.jpg)
+![scene3](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kaimon-tunnel/scene3.jpg)
 
 ---
 
@@ -196,7 +196,7 @@ summary: "鹿児島県指宿市にある開聞トンネルは、白い服の女�
 危険度は4。
 現実リスクが高い。
 
-![scene4](/spots/kaimon-tunnel/scene4.jpg)
+![scene4](https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kaimon-tunnel/scene4.jpg)
 
 ---
 
