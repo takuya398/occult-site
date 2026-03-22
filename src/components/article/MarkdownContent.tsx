@@ -47,11 +47,16 @@ export default function MarkdownContent({ content }: Props) {
               (child) => child.type === "element" && child.tagName === "img"
             ) ?? false;
           if (hasImage) return <div>{children}</div>;
-          // **太字のみ**の段落（小見出し扱い）は下マージンを大きく
+          // **太字のみ**の段落（小見出し扱い）は上マージンを大きく
           const isStrongOnly =
-            node?.children?.length === 1 &&
-            node.children[0].type === "element" &&
-            node.children[0].tagName === "strong";
+            node?.children?.some(
+              (child) => child.type === "element" && child.tagName === "strong"
+            ) &&
+            node?.children?.every(
+              (child) =>
+                (child.type === "element" && child.tagName === "strong") ||
+                (child.type === "text" && String(child.value).trim() === "")
+            );
           if (isStrongOnly) {
             return (
               <p className="mt-6 mb-1 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
