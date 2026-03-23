@@ -1,7 +1,5 @@
-- 東金警察署（廃墟への立ち入り注意喚起）
-- [X（Twitter）「- 注意喚起投稿」](https://x.com/Toganepolice/status/1972494296063594507)
-- [X（Twitter）「- 注意喚起投稿」](https://x.com/Toganepolice/status/1955813023572222332)
-- [X（Twitter）「- 注意喚起投稿」](https://x.com/Toganepolice/status/2008093583229042851)
-- [Trill「警戒強化と違法性の説明」](https://trilltrill.jp/articles/4293867)
-- [livedoorニュース「背景としての報道まとめ」](https://news.livedoor.com/article/detail/29547375/)
-- [全国心霊マップ「噂の扱いは参考」](https://ghostmap.jp/spotdetail.php?spotcd=331)
+- [廃墟写真ブログ Ruin's Cat「ホテル活魚（油井グランドホテル）」](https://ruins-cat.com/blog-entry-294.html)
+- [トカナ「関東最恐クラスの心霊スポット『ホテル活魚』にまつわる凄惨な事件」](https://tocana.jp/2024/05/post_265680_entry.html)
+- [都市伝説ドットネット「油井グランドホテル（活魚）で起きた悲惨な事件とは？」](https://toshi-densetsu.net/1258/)
+- [海外の怖い話「ホテル活魚とは？衝撃の歴史や5つの心霊現象」](https://www.kaikowa.com/hotel-katsugyo/)
+- [全国心霊スポット調査「ホテル活魚」](https://shin-kichi.com/hotelkatsugyo/)

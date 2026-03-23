@@ -1,26 +1,6 @@
-- 心霊考察（オレンジハウスの概要、噂の整理）
-- [心霊考察](https://sinreikousatu.jp/orange-house-rumoured-ghost-stories/)
-- 幽現地（所在地とアクセスの注意、概要）
-- [幽現地](https://yugenchi.com/ghost-spot/chiba/orange-house-ruins/)
-- 恐怖心霊の闇底（噂と注意喚起の文脈）
-- [恐怖心霊の闇底](https://haunted-japan.com/orange-house-ghost-story/)
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Abandoned_house_in_Mikasa,_Hokkaido,_April_2023.jpg)
-  - Author: Calistemon
-  - License: CC BY-SA 4.0
-  - Credit: Photo by Calistemon, CC BY-SA 4.0
-- [Wikimedia Commons「- File page: .jpg」](https://commons.wikimedia.org/wiki/File:An_abandoned_house_(7385274366)
-  - Author: Su--May
-  - License: CC BY 2.0
-  - Credit: Photo by Su--May, CC BY 2.0
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Abandoned_House_Interior_-_panoramio.jpg)
-  - Author: Wasteland Wanderer
-  - License: CC BY 3.0
-  - Credit: Photo by Wasteland Wanderer, CC BY 3.0
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Abandoned_Sign_-_geograph.org.uk_-_4948459.jpg)
-  - Author: Anne Burgess
-  - License: CC BY-SA 2.0
-  - Credit: Photo by Anne Burgess, CC BY-SA 2.0
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Abandoned_building,_Kolmannskuppe,_Namibia.jpg)
-  - Author: James Kerwin Photographic
-  - Credit: Photo by James Kerwin Photographic, CC BY 2.0
-- [YouTube](https://youtu.be/OdwR01Cyqgc)
+- [ウワサの心霊話「オレンジハウス」](https://sinreikousatu.jp/orange-house-rumoured-ghost-stories/)
+- [廃墟サイトDeparture「オレンジハウス」](https://www.departure-ruins.com/orangehouse/)
+- [怪異資料館「千葉の心霊スポット『オレンジハウス』」](https://kaii-shiryoukan.com/post-8510/)
+- [幽現地「オレンジハウス」](https://yugenchi.com/ghost-spot/chiba/orange-house-ruins/)
+- [Theつぶろ「オレンジハウス・真相を考察」](https://thetuburo.com/2022/03/01/orange-house/)
+- [廃墟検索地図「オレンジハウス」](https://haikyo.info/s/15470.html)

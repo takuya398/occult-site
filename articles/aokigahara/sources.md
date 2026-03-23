@@ -1,3 +1,5 @@
-- [www.env.go.jp「国立公園の概要」](https://www.env.go.jp/park/fuji-hakone/)
-- [Wikipedia「地名と概要」](https://ja.wikipedia.org/wiki/%E9%9D%92%E6%9C%A8%E3%83%B6%E5%8E%9F%E6%A8%B9%E6%B5%B7)
-- 画像は提供素材を使用
+- [恐怖の泉「青木ヶ原樹海」](https://xn--u9jv84l7ea468b.com/spot/yamanashi1.html)
+- [日本の心霊スポット大全集「青木ヶ原樹海」](https://shinrei-spot.info/?p=671)
+- [心霊体験談「青木ヶ原樹海 その3」](https://stories-of-scary-spiritspot.com/archives/4815)
+- [奇々怪々「青木ヶ原樹海の心霊体験」](https://kikikaikai.kusuguru.co.jp/tags/aokigaharajukai)
+- [forRide「バイクで行ける心霊スポット 青木ヶ原樹海編」](https://forride.jp/column/haunted-places_aokigahara)

@@ -1,4 +1,5 @@
-- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=152)
-- [アメーバブログ](https://ameblo.jp/kojitukekun/entry-12895131310.html)
-- [個人ブログ](https://haradaoffice.biz/kaimon-tunnel/)
-- 動画検証情報
+- [けものたび「鹿児島最恐の心霊スポット 開聞トンネル」](https://kemonotabi.com/kaimon-tunnel/)
+- [オカルトラベル「天井の穴からこちらを覗き込む女性の霊が出る 開聞トンネル」](https://occultravel.com/archives/2215/)
+- [心霊スポット恐怖体験談「鹿児島県 開聞トンネル」](https://shinrei-spot.info/?p=105)
+- [謎めいた恐怖の心霊スポット「開聞トンネルを歩く 鹿児島」](https://tabi-and-everyday.com/archives/15967)
+- [Yahoo!知恵袋「鹿児島県の開聞トンネルの心霊体験」](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11164975136)

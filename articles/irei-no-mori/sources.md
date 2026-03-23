@@ -1,1 +1,6 @@
-
+- [Wikipedia「全日空機雫石衝突事故」](https://ja.wikipedia.org/wiki/%E5%85%A8%E6%97%A5%E7%A9%BA%E6%A9%9F%E9%9B%AB%E7%9F%B3%E8%A1%9D%E7%AA%81%E4%BA%8B%E6%95%85)
+- [日本の心霊スポット大全集「岩手県 慰霊の森」](https://shinrei-spot.info/?p=292)
+- [恐怖の泉「慰霊の森(雫石)」](https://xn--u9jv84l7ea468b.com/spot/iwate1.html)
+- [全国怪奇現象ファイル「慰霊の森(雫石)」](https://shinreispot.com/ireinomori-shizukuishi/)
+- [WONDIA「慰霊の森の心霊写真/体験と怖い話」](https://wondia.net/ireinomori)
+- [ウワサの心霊話「雫石・慰霊の森」](https://sinreikousatu.jp/shizukuishi-memorial-forest-rumored-ghost-stories/)

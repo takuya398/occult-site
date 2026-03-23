@@ -1,3 +1,5 @@
-- [www.uyouyo.com](https://www.uyouyo.com/special/tunnel/oume2/)
-- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=6)
-- [news.line.me](https://news.line.me/detail/oa-shujoprime/5s0ymjgakdv3)
+- [週刊女性PRIME「最恐心霊スポット吹上トンネルを徹底取材」](https://news.livedoor.com/article/detail/19967998/)
+- [廃墟写真ブログ Ruin's Cat「旧吹上トンネル」](https://ruins-cat.com/blog-entry-295.html)
+- [霊視検証「吹上トンネル（東京都）の真相」](https://www.gibo-kantei.com/story/c/c012/)
+- [多摩さんぽ「白い和服の幽霊が出る 旧旧吹上トンネルを歩く」](https://tamawalk.boo.jp/2023/06/27/1937/)
+- [帝都を歩く「旧吹上トンネルと旧旧吹上トンネル」](https://teitowalk.blog.jp/archives/29735837.html)

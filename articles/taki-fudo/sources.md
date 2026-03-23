@@ -1,3 +1,5 @@
-- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=257)
-- [都市伝説Japan](https://urbanlegend.jp/9737/)
-- [旅と日常](https://tabi-and-everyday.com/archives/38165)
+- [全国怪奇現象ファイル「滝不動 山形県」](https://shinreispot.com/waterfall-immovable/)
+- [ATLAS「母子の霊がさまよう 山形県最恐と呼ばれた心霊スポット滝不動」](https://mnsatlas.com/?p=50877)
+- [山形コミュニティ新聞「セピア色の風景帖第173回 滝不動」](https://www.yamacomi.com/serial_column/serial_column-3188/)
+- [実際に訪れた記録「撤去された滝不動へ 山形」](https://tabi-and-everyday.com/archives/38165)
+- [朱い塚「滝不動」](https://scary.jp/spirit-spot/yamagata-takifudo/)

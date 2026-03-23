@@ -1,21 +1,6 @@
-- 全国心霊マップ（犬山天狗神社）
-- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=1071)
-- Wikipedia（入鹿池）
-- [Wikipedia](https://ja.wikipedia.org/wiki/入鹿池)
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Torii_of_Inuyama_Shrine.JPG)
-  - Author: そらみみ
-  - License: CC BY-SA 4.0
-  - Credit: Photo by そらみみ, CC BY-SA 4.0, via Wikimedia Commons
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Torii_Gate_Entrance_of_Oagata_Shrine,_Inuyama_-_2018.jpg)
-  - Author: Bariston
-  - Credit: Photo by Bariston, CC BY-SA 4.0, via Wikimedia Commons
-- [Wikimedia Commons「- File page: .jpg」](https://commons.wikimedia.org/wiki/File:Statue_of_Tengu_(15929880465)
-  - Author: Yoshikazu TAKADA
-  - License: CC BY 2.0
-  - Credit: Photo by Yoshikazu TAKADA, CC BY 2.0, via Wikimedia Commons
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Irukaike_pond_1.JPG)
-  - Author: Junichi
-  - License: CC BY-SA 3.0
-  - Credit: Photo by Junichi, CC BY-SA 3.0, via Wikimedia Commons
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Irukaike_pond_2.JPG)
-- [YouTube](https://www.youtube.com/watch?v=xnpsO_74FBU)
+- [ウワサの心霊話「鞍馬山教会（犬山天狗神社）」](https://sinreikousatu.jp/inuyamatenguzinzya-sinrei/)
+- [心霊スポット【畏怖】「鞍馬山教会（犬山天狗神社）」](https://haunted-place.info/5990.html)
+- [全国心霊スポット調査「犬山天狗神社」](https://shin-kichi.com/inuyamatengujinja/)
+- [日本の心霊スポット大全集「犬山天狗神社」](https://shinrei-spot.info/?p=642)
+- [廃墟検索地図「鞍馬山教会」](https://haikyo.info/s/16138.html)
+- [心霊スポットスレまとめ「犬山市の怖い話」](https://psychic-spot.chobi.net/Toukai/town_Aichi/Inuyama.html)

@@ -1,7 +1,6 @@
-- [Yahoo!ニュース](https://news.yahoo.co.jp/expert/articles/1e066f4a69853eb7829a367742337d2de9419eaa)
-- [Wikipedia](https://ja.wikipedia.org/wiki/%E5%AF%92%E5%B7%9D_(%E8%A5%BF%E9%83%BD%E5%B8%82)
-- [note](https://note.com/yamaguchisun/n/nc05915dd114c)
-- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=2024)
-- [個人ブログ](https://haradaoffice.biz/sabukawa-shochu/)
-- Wikipediaの「寒川（西都市）」は同名地名の解説であり、「寒川集落（廃村として語られる場所）」と混同が起きやすい可能性があるため、地名参照用途として扱う。
-- [YouTube](https://www.youtube.com/watch?v=L5ZlUXUmdvo)
+- [ウワサの心霊話「寒川集落」](https://sinreikousatu.jp/samukawa-village-rumored-ghost-stories/)
+- [Yahoo!ニュース「消えた寒川集落」](https://news.yahoo.co.jp/expert/articles/1e066f4a69853eb7829a367742337d2de9419eaa)
+- [全国心霊スポット調査「寒川集落」](https://shin-kichi.com/samukawashuraku/)
+- [全国裏探訪「西都市寒川集落探訪」](https://uratanbou.com/2019/11/28/%E3%80%90%E5%AE%AE%E5%B4%8E%E7%9C%8C%E5%88%9D%E3%81%AE%E3%80%91%E3%80%82%E9%99%90%E7%95%8C%E9%9B%86%E8%90%BD%E3%81%A0%E3%81%A3%E3%81%9F%E8%A5%BF%E9%83%BD%E5%B8%82%E3%80%8C%E5%AF%92%E5%B7%9D%E9%9B%86-7/)
+- [コトノハナ企画室「人口減少の今、廃村となった集落寒川について考える」](https://note.com/yamaguchisun/n/nc05915dd114c)
+- [海外の怖い話「宮崎県の廃村、寒川集落」](https://www.kaikowa.com/samukawa-village/)

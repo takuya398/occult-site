@@ -1,4 +1,5 @@
-- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=48)
-- [心霊スポット動画まとめ](https://takewo.xsrv.jp/movie.php?spotcd=48)
-- [霊視検証](https://www.gibo-kantei.com/story/c/c025/)
-- 動画検証情報まとめ
+- [ウワサの心霊話「秋ヶ瀬公園」](https://sinreikousatu.jp/akigase-park-rumored-ghost-stories/)
+- [竹書房note「埼玉怪談 著者コメント＆試し読み」](https://note.com/takeshobo/n/n47f7d6be879c)
+- [アサ芸プラス「埼玉最恐心霊スポット秋ヶ瀬公園」](https://www.asagei.com/excerpt/279758)
+- [霊視検証「秋ヶ瀬公園（埼玉県）の真相」](https://www.gibo-kantei.com/story/c/c025/)
+- [大日本観光新聞「埼玉県最強危険心霊スポット10選」](https://bjtp.tokyo/saitama-sinrei-spot/)

@@ -1,31 +1,6 @@
-- THE GATE（恐山の概要、参拝情報、言い伝え）
-- [THE GATE](https://thegate12.com/jp/article/84)
-- Books&Apps（恐山にまつわる体験・印象、文化的背景）
-- [Books&Apps](https://blog.tinect.jp/?p=87051)
-- カメラスタディラボ（恐山の怖い話・環境要因などの解説）
-- [カメラスタディラボ](https://camerastudy.net/archives/4211)
-- Amazing AOMORI フォトライブラリー（恐山の写真・景観）
-- [Amazing AOMORI](https://aomori-tourism.com/photos/detail_3002.html)
-- むつ市観光協会（霊場恐山の案内、観光情報）
-- [むつ市観光協会](http://mutsu-kanko.jp/miru_01.html)
-- フォートラベル（恐山の名称や旅行記ベースの情報）
-- [4travel](https://4travel.jp/travelogue/11299581)
-- 洒落にならない怖い話（体験談・怪談の文脈）
-- [洒落にならない怖い話](https://kowaihanasi.ghostmap.jp/hanasi.php?cd=10134)
-- hirotravel（心霊体験の文脈・写真系）
-- [hirotravel](https://hirotravel.com/aomorikenn/osorezan/page_thumb5.html)
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Sacred_Mount_Osorezan_20200601a_stitching9.jpg)
-  - Author: あおもりくま
-  - License: CC BY-SA 3.0
-  - Credit: Photo by あおもりくま, CC BY-SA 3.0
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Osorezan_Bodaiji_somon_P9290037.jpg)
-  - License: Public domain
-  - Credit: Photo by あおもりくま, Public domain
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Osorezan_Bodaiji_Sanmon_P9290065.jpg)
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Pinwheels_-_Mount_Osore_-_Mutsu,_Aomori_-_DSC00653.jpg)
-  - Author: Daderot
-  - License: CC0 1.0
-  - Credit: Photo by Daderot, CC0 1.0
-- [Wikimedia Commons「- File page:」](https://commons.wikimedia.org/wiki/File:Lake_Usori_-_Mount_Osore_-_Mutsu,_Aomori_-_DSC00178.jpg)
-- [YouTube](https://www.youtube.com/watch?v=orGNtgf7iOs)
-  - チャンネル名: ユーラシア旅行社-旅動画チャンネル-
+- [むつ市観光協会「霊場恐山」](http://mutsu-kanko.jp/miru_01.html)
+- [hirotravel「恐山の心霊体験・ネット口コミ調査」](https://hirotravel.com/aomorikenn/osorezan/page_thumb5.html)
+- [ウワサの心霊話「恐山」](https://sinreikousatu.jp/mount-osore-rumoured-ghost-stories/)
+- [実話怪談「絶対に恐山には行かないバス運転手」](https://kowamushi-lily.com/kowai/shinrei-spot/osorezan/)
+- [カメラスタディラボ「恐山怖い話と最強パワースポットの真実」](https://camerastudy.net/archives/4211)
+- [THE GATE「恐山」](https://thegate12.com/jp/article/84)

@@ -1,5 +1,6 @@
-- （後で追記）今回の本文はユーザー提供情報＋動画参照を中心に構成。テキスト出典URLがある場合はここに追加してください。
-- [YouTube「YouTube:」](https://www.youtube.com/watch?v=Lx41OxcrkV0)
-- 撮影者：
-- 撮影日：
-- 参考：
+- [霊視検証「七里殺人の森（埼玉県）」](https://www.gibo-kantei.com/story/c/c049/)
+- [ウワサの心霊話「七里殺人の森」](https://sinreikousatu.jp/shichiri-murder-forest-rumored-ghost-stories/)
+- [怪異資料館「七里殺人の森」](https://kaii-shiryoukan.com/post-2974/)
+- [全国心霊スポット調査「七里殺人の森」](https://shin-kichi.com/nanasatosatsujinnomori/)
+- [日本の心霊スポット大全集「七里殺人の森」](https://shinrei-spot.info/?p=5258)
+- [埼玉県心霊スポット30ヶ所まとめ](https://tabi-and-everyday.com/archives/26216)
