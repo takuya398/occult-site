@@ -1,0 +1,5 @@
+- [怪異資料館「自殺の名所と言われる絶景の岬 足摺岬」](https://kaii-shiryoukan.com/1744/)
+- [ウワサの心霊話「足摺岬」](https://sinreikousatu.jp/cape-ashizuri-rumoured-ghost-stories/)
+- [WONDIA「足摺岬の現在！伝説や飛び込み自殺・心霊現象まとめ」](https://wondia.net/ashizurimisaki)
+- [日本の心霊スポット大全集「足摺岬：海に響く霊の声と自殺の歴史」](https://shinrei-spot.info/?p=2860)
+- [全国心霊スポット調査「足摺岬」](https://shin-kichi.com/ashizurimisaki/)

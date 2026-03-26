@@ -1,0 +1,4 @@
+- [廃墟写真ブログ Ruin's Cat「下田富士屋ホテル」](https://ruins-cat.com/blog-entry-386.html)
+- [ウワサの心霊話「下田富士屋ホテル（神子元38号室）」](https://sinreikousatu.jp/simodahuziyahotel38-sinrei/)
+- [全国心霊スポット調査「下田富士屋ホテル」](https://shin-kichi.com/shimodafujiyahotel/)
+- [心霊スポット畏怖「下田富士屋ホテル」](https://haunted-place.info/6290.html)

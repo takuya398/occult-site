@@ -1,0 +1,5 @@
+- [廃墟写真ブログ Ruin's Cat「スカイレスト ニュー室戸」](https://ruins-cat.com/blog-entry-290.html)
+- [ANIREISHA「絶景心霊廃墟 スカイレストニュー室戸」](https://ameblo.jp/prettycurer/entry-12878803940.html)
+- [オカルトラベル「室戸岬のそばに佇む奇妙な廃墟 スカイレストニュー室戸」](https://occultravel.com/archives/999)
+- [怪異資料館「廃墟に潜む恐怖 スカイレストニュー室戸」](https://kaii-shiryoukan.com/5956/)
+- [こわむし「失くしたピアス」](https://kowamushi-lily.com/kowai/shinrei-spot/nakusitapiasu/)

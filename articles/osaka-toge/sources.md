@@ -1,0 +1,5 @@
+- [全国心霊スポット調査「大坂峠」](https://shin-kichi.com/oosakatouge/)
+- [心霊スポット畏怖「大坂峠」](https://haunted-place.info/2653.html)
+- [日本の心霊スポット大全集「徳島県 大坂峠」](https://shinrei-spot.info/?p=3977)
+- [ワンジャ「徳島の心霊スポット25選」](https://wonja.jp/tokushima-shinrei/)
+- [関東心霊スポット大図鑑「大坂峠」](http://shinrei-spot.com/oosakatouge.html)

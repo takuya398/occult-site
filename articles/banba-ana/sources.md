@@ -1,0 +1,5 @@
+- [日本の心霊スポット大全集「静岡県 バンバ穴（婆々穴）」](https://shinrei-spot.info/?p=3862)
+- [ウワサの心霊話「バンバ穴（婆々穴）」](https://sinreikousatu.jp/bbanbaana-sinrei/)
+- [怪異資料館「姥捨て山伝説が残る洞窟 静岡県のバンバ穴」](https://kaii-shiryoukan.com/post-2800/)
+- [全国心霊スポット調査「婆々穴」](https://shin-kichi.com/babbaana/)
+- [朱い塚「婆々穴（バンバ穴）」](https://scary.jp/spirit-spot/sizuoka-banbaana/)

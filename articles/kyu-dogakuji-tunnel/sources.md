@@ -1,0 +1,5 @@
+- [オカルトラベル「首吊り自殺をした男性の霊が出る 旧童学寺（石井）トンネル」](https://occultravel.com/archives/959)
+- [ウワサの心霊話「旧童学寺トンネル（石井トンネル）」](https://sinreikousatu.jp/former-dogakuji-tunnel-ishii-tunnel-rumored-ghost-stories/)
+- [怪異資料館「完全封鎖された廃トンネル 旧童学寺トンネル」](https://kaii-shiryoukan.com/post-1748/)
+- [SHIORI「旧童学寺トンネル」](https://shiori-tabi.jp/spots/21502)
+- [全国心霊スポット調査「旧童学寺トンネル」](https://shin-kichi.com/kyudougakujitonneru/)
