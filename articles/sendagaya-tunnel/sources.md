@@ -1,0 +1,5 @@
+- [霊視検証「千駄ヶ谷トンネル（東京都）の真相」](https://www.gibo-kantei.com/story/c/c001/)
+- [note「雨雲模様」心霊スポット紹介 千駄ヶ谷トンネル](https://note.com/amagumomoyou/n/ndf8767715f1a)
+- [ロケットニュース24「心霊スポット検証 千駄ヶ谷トンネル」](https://rocketnews24.com/2017/01/26/854505/)
+- [心霊スポット畏怖「千駄ヶ谷トンネル」](https://haunted-place.info/)
+- [全国心霊スポット調査「千駄ヶ谷トンネル」](https://shin-kichi.com/)

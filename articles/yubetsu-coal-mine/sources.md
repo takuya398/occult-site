@@ -1,0 +1,5 @@
+- [霊視検証「雄別炭鉱跡地（北海道）の真相」](https://www.gibo-kantei.com/story/c/c061/)
+- [北海道そらマガジン「消えたマチは心霊スポット？雄別炭鉱の過去と今」](https://soramaga.com/%E6%B6%88%E3%81%88%E3%81%9F%E3%83%9E%E3%83%81%E3%81%AF%E5%BF%83%E9%9C%8A%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%EF%BC%9F%E9%9B%84%E5%88%A5%E7%82%AD%E9%89%B1%E3%81%AE%E9%81%8E%E5%8E%BB%E3%81%A8%E4%BB%8A/)
+- [恐怖の泉「心霊スポット 雄別炭鉱」](https://xn--u9jv84l7ea468b.com/spot/hokkaido2.html)
+- [H.T.Information「雄別炭鉱 病院跡」](https://touring.hokkaido.world/?p=4288)
+- [note「雄別炭鉱廃病院：北海道最恐の心霊スポット」](https://note.com/pinkcat009/n/n23662ed00b08)

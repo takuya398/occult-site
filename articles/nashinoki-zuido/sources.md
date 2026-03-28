@@ -1,0 +1,4 @@
+- [全国心霊スポット「幽現地」「梨の木隧道」](https://yugenchi.com/ghost-spot/osaka/nashinoki-zuido/)
+- [全国心霊スポット調査「梨の木隧道」](https://shin-kichi.com/nashinokizuidou/)
+- [ミトラのブログ「心霊スポット？滝畑ダムと周辺トンネルを訪問」](https://mitra.hatenablog.com/entry/2017/08/16/150000)
+- [ダム怪談 滝畑ダム（note）](https://note.com/amagumomoyou/n/nb914b715f9c1)

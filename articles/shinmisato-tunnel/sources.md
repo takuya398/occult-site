@@ -1,0 +1,5 @@
+- [ウワサの心霊話「新三郷のトンネル」](https://sinreikousatu.jp/shinmisato-tunnel-rumored-ghost-stories/)
+- [全国心霊スポット調査「新三郷トンネル」](https://shin-kichi.com/shinmisatotonneru/)
+- [心霊スポット畏怖「新三郷のトンネル」](https://haunted-place.info/2548.html)
+- [新三郷トンネルの今昔（調査記事）](https://tabi-and-everyday.com/archives/32346)
+- [ブログ「海cafe2」現場探訪 新三郷トンネル](https://umi-cafe2.seesaa.net/article/502832678.html)

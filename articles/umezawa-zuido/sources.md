@@ -1,0 +1,5 @@
+- [ウワサの心霊話「海沢隧道」](https://sinreikousatu.jp/tokyo-umezawazuidou-sinrei/)
+- [全国心霊スポット調査「海沢隧道」](https://shin-kichi.com/unazawazuidou/)
+- [note「心霊どうでしょう」海沢隧道](https://note.com/kouhei_kobuna/n/nf33814f10f4c)
+- [心霊スポット研究所「海沢トンネル」](https://ktmhp.com/hp/kyoufu/page129)
+- [日本の心霊スポット大全集「海沢隧道」](https://shinrei-spot.info/?p=12341)

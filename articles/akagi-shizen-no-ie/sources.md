@@ -1,0 +1,5 @@
+- [怪異資料館「話し声が聞こえてくる群馬県の心霊スポット 赤城少年自然の家」](https://kaii-shiryoukan.com/4460/)
+- [ウワサの心霊話「赤城少年自然の家」](https://sinreikousatu.jp/akagi-youth-nature-center-rumored-ghost-stories/)
+- [全国心霊スポット調査「国立赤城青少年交流の家」](https://shin-kichi.com/akagiseishonenkoryunoie/)
+- [日本の心霊スポット大全集「赤城少年自然の家の心霊体験」](https://shinrei-spot.info/?p=1974)
+- [心霊スポット畏怖「赤城少年自然の家」](https://haunted-place.info/11168.html)

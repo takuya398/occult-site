@@ -1,0 +1,5 @@
+- [霊視検証「奥多摩湖ロープウェイ（東京都）の真相」](https://www.gibo-kantei.com/story/c/c065/)
+- [ウワサの心霊話「奥多摩湖ロープウェイ」](https://sinreikousatu.jp/tokyo-okutamakoropuwei-sinrei/)
+- [TravelNote「奥多摩湖ロープウェイは人気の廃墟＆心霊スポット」](https://travel-noted.jp/posts/16756)
+- [心霊スポット研究所「奥多摩ロープウェイ」](https://ktmhp.com/hp/kyoufu/page134)
+- [ヤマレコ「美しき廃墟、奥多摩湖ロープウェイ」](https://www.yamareco.com/modules/yamareco/detail-5322392.html)

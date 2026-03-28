@@ -1,0 +1,4 @@
+- [ウワサの心霊話「闇の廃ホテル シャガール」](https://sinreikousatu.jp/the-dark-abandoned-hotel-chagall-rumored-ghost-stories/)
+- [廃墟検索地図「モーテル・シャガール」](https://haikyo.info/a/36.html)
+- [ワンジャ「徳島の心霊スポット25選」](https://wonja.jp/tokushima-shinrei/)
+- [全国心霊スポット調査「闇の廃ホテル シャガール」](https://ghostmap.jp/spotdetail.php?spotcd=3571)

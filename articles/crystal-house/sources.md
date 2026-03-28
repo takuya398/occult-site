@@ -1,0 +1,5 @@
+- [心霊スポット恐怖体験談「群馬県 クリスタルハウス」](https://shinrei-spot.info/?p=3405)
+- [ウワサの心霊話「クリスタルハウス」](https://sinreikousatu.jp/crystal-house-rumored-ghost-stories/)
+- [全国心霊スポット調査「クリスタルハウス」](https://shin-kichi.com/crystalhouse/)
+- [朱い塚「クリスタルハウス」](https://scary.jp/spirit-spot/gunma-crystalhouse/)
+- [廃墟検索地図「クリスタルハウス」](https://haikyo.info/s/9607.html)

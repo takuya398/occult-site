@@ -1,0 +1,6 @@
+- [全国心霊マップ「宅部池（たっちゃん池）」](https://ghostmap.jp/spotdetail.php?spotcd=78)
+- [怪異資料館「東京の心霊スポット『宅部池（たっちゃん池）』」](https://kaii-shiryoukan.com/7937/)
+- [霊視検証「宅部池（東京都）」](https://www.gibo-kantei.com/story/c/c043/)
+- [幽現地「宅部池（たっちゃん池）」](https://yugenchi.com/ghost-spot/tokyo/takube-pond/)
+- [東京都心霊スポット「たっちゃん池の由来」](https://0ccult.online/ap_27940939/)
+- [旅案内たびあん「宅部池（たっちゃん池）」](https://www.tabiinfo.net/spot/detail?id=63632)

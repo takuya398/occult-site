@@ -1,0 +1,4 @@
+- [霊視検証「井の頭恩賜公園（東京都）の真相」](https://www.gibo-kantei.com/story/c/c037/)
+- [現代ビジネス「井の頭公園バラバラ殺人が生んだ謎」](https://gendai.media/articles/-/75630)
+- [Wikipedia「井の頭公園バラバラ殺人事件」](https://ja.wikipedia.org/wiki/%E4%BA%95%E3%81%AE%E9%A0%AD%E5%85%AC%E5%9C%92%E3%83%90%E3%83%A9%E3%83%90%E3%83%A9%E6%AE%BA%E4%BA%BA%E4%BA%8B%E4%BB%B6)
+- [井の頭バラバラ殺人事件─迷宮の深淵から](https://okakuro.org/inokashira-mutilate-murder/)

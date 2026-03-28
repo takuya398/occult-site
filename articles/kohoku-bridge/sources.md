@@ -1,0 +1,5 @@
+- [霊視検証「江北橋（東京都）の真相」](https://www.gibo-kantei.com/story/c/c013/)
+- [ロケットニュース24「都内最強の心霊スポットと言われる橋に行ってみた」](https://rocketnews24.com/2017/01/17/849218/)
+- [note「散歩記録 心霊スポット？江北橋」](https://note.com/osanpoyoshida/n/n4cce728c3290)
+- [帝都を歩く「空襲の焼失区域だった南詰 江北橋」](https://teitowalk.blog.jp/archives/89818245.html)
+- [ブログ「王子のきつね」江北橋](https://blog.goo.ne.jp/kitsunekonkon/e/dd37c98607028ab9b3b42a02eef4ab3c)

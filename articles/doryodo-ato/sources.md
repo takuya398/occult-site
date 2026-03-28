@@ -1,0 +1,5 @@
+- [ウワサの心霊話「道了堂跡」](https://sinreikousatu.jp/tokyo-douryouato-sinrei/)
+- [霊視検証「道了堂跡（東京都）の真相」](https://www.gibo-kantei.com/story/c/c027/)
+- [怪異資料館「道了堂跡」](https://kaii-shiryoukan.com/2964/)
+- [さんたつ「川奈まり子と歩く、八王子怪奇譚」](https://san-tatsu.jp/articles/295149/)
+- [絹の道・道了堂へ（ブログ）](https://info-hachiouji.tokyo/kinunomichishinrei)

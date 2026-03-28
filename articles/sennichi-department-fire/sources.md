@@ -1,0 +1,5 @@
+- [全国怪奇現象ファイル「千日デパート火災跡」](https://shinreispot.com/sennichi-department-store/)
+- [怪異資料館「千日デパート火災現場跡」](https://kaii-shiryoukan.com/1937/)
+- [ウワサの心霊話「千日デパート火災現場跡」](https://sinreikousatu.jp/sennichimae-department-store-fire-site-rumored-ghost-stories/)
+- [心霊スポットの怖い話まとめ「ビックカメラなんば店の幽霊」](https://kowai.site/%E3%83%93%E3%83%83%E3%82%AF%E3%82%AB%E3%83%A1%E3%83%A9%E3%81%AA%E3%82%93%E3%81%B0%E5%BA%97%E3%81%AE%E5%A0%B4%E6%89%80%E3%81%AB%E3%81%BE%E3%81%A4%E3%82%8F%E3%82%8B%E6%80%96%E3%81%84%E6%AD%B4%E5%8F%B2/)
+- [note「不可思議探訪記録 千日前デパート跡地」](https://note.com/strange_wish/n/n7439813f054a)

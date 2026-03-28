@@ -1,0 +1,6 @@
+- [全国心霊マップ「ホテルクイン」](https://ghostmap.jp/spotdetail.php?spotcd=2737)
+- [心霊気違「ホテルクイン」](https://shin-kichi.com/hotelquin/)
+- [怪異資料館「女性の霊が出現！ホテルクイン」](https://kaii-shiryoukan.com/tamako-hotel-queen/)
+- [ウワサの心霊話「ホテルクイン」](https://sinreikousatu.jp/tokyo-hotelkuin-sinrei/)
+- [心霊スポット【畏怆】「ホテルクイン」](https://haunted-place.info/6703.html)
+- [廃墟検索地図「ホテルクイン（クイーンホテル、多摩湖）」](https://haikyo.info/s/8157.html)

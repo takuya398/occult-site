@@ -1,0 +1,4 @@
+- [全国心霊スポット調査「北区立神谷公園」](https://shin-kichi.com/kitakuritsukamiyakouen/)
+- [心霊スポット畏怖「北区立神谷公園」](https://haunted-place.info/2464.html)
+- [帝都を歩く「慰霊の公園 北区立神谷公園を歩く」](https://teitowalk.blog.jp/archives/61894742.html)
+- [心霊スポットスレまとめ「北区の怖い話」](https://psychic-spot.chobi.net/Kanto/town_Tokyo/Kita.html)
