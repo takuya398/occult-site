@@ -1,3 +1,0 @@
-- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=76)
-- [shinbeblog](https://shinbeblog.com/%E6%9D%B1%E4%BA%AC%E3%81%AE%E3%82%84%E3%81%B0%E3%81%84%E5%BF%83%E9%9C%8A%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%E3%80%8C%E6%97%A7%E5%B0%8F%E5%B3%B0%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB/)
-- [note](https://note.com/jitsuwa_knuckles/n/ned32569b29ba)

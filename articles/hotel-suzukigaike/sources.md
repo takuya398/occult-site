@@ -1,3 +1,6 @@
-- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=713)
-- [廃墟検索地図](https://haikyo.info/s/1092.html)
-- [幽現地](https://yugenchi.com/ghost-spot/niigata/hotel-suzukigaike-ruins/)
+# ホテルすずきヶ池 出典
+
+- [新潟心霊スポット探検隊「瀬波の巨大廃ホテル」](https://ameblo.jp/yuuyami73/entry-12601699832.html)
+- [PinkCat009 note「ホテルすずきヶ池の恐怖」](https://note.com/pinkcat009/n/n30fbd61bf27a)
+- [ウワサの心霊話「ホテルすずきヶ池」](https://sinreikousatu.jp/hotelsuzukigaike-sinrei/)
+- [巨大廃墟のホテルすずきヶ池では何が起こるの？（urbanlegend.jp）](https://urbanlegend.jp/10253/)

@@ -1,3 +1,0 @@
-- [全国心霊マップ](https://ghostmap.jp/spotdetail.php?spotcd=690)
-- [心霊考察](https://sinreikousatu.jp/niigata-zyunsaiikekouen-sinrei/)
-- [都市伝説Japan](https://urbanlegend.jp/10247/)

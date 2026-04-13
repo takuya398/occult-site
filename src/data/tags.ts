@@ -153,4 +153,6 @@ export const TAGS = [
   ,"火災"
   ,"商業施設"
   ,"自然"
+  ,"神奈川"
+  ,"富山"
 ] as const;
