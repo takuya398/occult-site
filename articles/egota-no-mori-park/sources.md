@@ -1,5 +1,6 @@
-- [全国心霊マップ](https://ghostmap.jp/（全国心霊マップ「江古田の森公園」)
-- [怪異資料館](https://kaiki-siryokan.com/（怪異資料館「江古田の森公園」)
-- [心霊スポット動画まとめ](https://takewo.xsrv.jp/（心霊スポット動画まとめ「江古田の森公園」)
-- [toshidensetsu-paradise.com](https://toshidensetsu-paradise.com/（都市伝説パラダイス「江古田の森公園」)
-- [YouTube](https://www.youtube.com/watch?v=KwlbIiMhUC0（YouTube「江古田の森公園」関連動画)
+# 江古田の森公園 出典
+
+- [webムー「90年代最恐の心霊スポットを再訪問！いたこ28号 中野病院跡考察／吉田悠軌」](https://web-mu.jp/history/9389/)
+- [怪異資料館「東京 心霊スポット 江古田の森公園 女性の笑い声が鳴り響く恐怖」](https://kaii-shiryoukan.com/post-2223/)
+- [ウワサの心霊話「江古田の森公園」](https://sinreikousatu.jp/tokyo-egotanomorikouen-sinrei/)
+- [霊視検証「江古田の森公園（東京都）」](https://www.gibo-kantei.com/story/c/c046/)
