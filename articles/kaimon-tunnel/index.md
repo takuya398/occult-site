@@ -1,5 +1,5 @@
 ---
-title: "開聞トンネル"
+title: "【心霊】開聞トンネル｜照明なしの鹿児島廃トンネルで撮れる心霊写真の真相"
 slug: "kaimon-tunnel"
 date: "2026-03-23"
 prefecture: "鹿児島県"

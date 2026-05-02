@@ -1,5 +1,5 @@
 ---
-title: "下田富士屋ホテル"
+title: "【心霊】下田富士屋ホテル｜廃ホテルの特定の部屋から聞こえる女の声の正体"
 slug: "shimoda-fujiya-hotel"
 date: "2026-03-24"
 prefecture: "静岡県"

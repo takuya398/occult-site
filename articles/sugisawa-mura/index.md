@@ -1,5 +1,5 @@
 ---
-title: "杉沢村"
+title: "【心霊】杉沢村｜村人が全員惨殺されたとされる青森の廃村伝説の真相"
 slug: "sugisawa-mura"
 date: "2026-03-23"
 prefecture: "青森県"

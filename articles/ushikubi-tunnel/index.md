@@ -1,5 +1,5 @@
 ---
-title: "牛首トンネル"
+title: "【心霊】牛首トンネル｜牛の首が転がるとされる石川の廃トンネルの正体"
 slug: "ushikubi-tunnel"
 date: "2026-04-19"
 prefecture: "石川県"

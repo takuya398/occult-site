@@ -1,5 +1,5 @@
 ---
-title: "海沢隧道"
+title: "【心霊】海沢隧道｜手掘り岩盤むき出しの奥多摩廃トンネルで目撃される異変"
 slug: "umezawa-zuido"
 date: "2026-03-29"
 prefecture: "東京都"

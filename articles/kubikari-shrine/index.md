@@ -1,5 +1,5 @@
 ---
-title: "首狩神社"
+title: "【心霊】首狩神社｜丑の刻参りが絶えない愛知の山奥の禁忌神社の真相"
 slug: "kubikari-shrine"
 date: "2026-04-25"
 prefecture: "愛知県"

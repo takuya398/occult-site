@@ -1,5 +1,5 @@
 ---
-title: "千日デパート火災現場跡"
+title: "【心霊】千日デパート火災跡｜118名が死亡した1972年大阪最悪の火災現場の真相"
 slug: "sennichi-department-fire"
 date: "2026-03-28"
 prefecture: "大阪府"

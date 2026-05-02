@@ -1,5 +1,5 @@
 ---
-title: "大坂峠"
+title: "【心霊】大坂峠｜義経伝説の県境峠道で目撃される武将の霊の正体"
 slug: "osaka-toge"
 date: "2026-03-25"
 prefecture: "徳島県"

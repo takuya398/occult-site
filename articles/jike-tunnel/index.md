@@ -1,5 +1,5 @@
 ---
-title: "寺家トンネル"
+title: "【心霊】寺家トンネル｜手掘り100年の廃トンネルで目撃される人影の正体"
 slug: "jike-tunnel"
 date: "2026-04-10"
 prefecture: "富山県"

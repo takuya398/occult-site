@@ -1,5 +1,5 @@
 ---
-title: "ホテル活魚"
+title: "【心霊】ホテル活魚｜殺人事件の現場となった千葉の廃ラブホテルの真相"
 slug: "hotel-katsugyo"
 date: "2026-03-23"
 prefecture: "千葉県"

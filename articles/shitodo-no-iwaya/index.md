@@ -1,5 +1,5 @@
 ---
-title: "しとどの巌"
+title: "【心霊】しとどの巌｜首なし地蔵が並ぶ洞窟で目撃される霊の正体"
 slug: "shitodo-no-iwaya"
 date: "2026-03-22"
 prefecture: "神奈川県"

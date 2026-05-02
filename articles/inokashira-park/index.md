@@ -1,5 +1,5 @@
 ---
-title: "井の頭公園"
+title: "【心霊】井の頭公園｜弁財天の呪いで次々消えるカップルと水中の異変"
 slug: "inokashira-park"
 date: "2026-03-28"
 prefecture: "東京都"

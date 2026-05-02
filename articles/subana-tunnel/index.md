@@ -1,5 +1,5 @@
 ---
-title: "須花トンネル"
+title: "【心霊】須花トンネル｜3世代並ぶ峠道で目撃される人影と心霊写真の記録"
 slug: "subana-tunnel"
 date: "2026-04-20"
 prefecture: "栃木県"

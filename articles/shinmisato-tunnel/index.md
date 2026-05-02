@@ -1,5 +1,5 @@
 ---
-title: "新三郷のトンネル（采女ガード）"
+title: "【心霊】采女ガード｜市の公報が「霊が出没する」と警告したトンネルの真相"
 slug: "shinmisato-tunnel"
 date: "2026-03-28"
 prefecture: "埼玉県"

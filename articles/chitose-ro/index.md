@@ -1,5 +1,5 @@
 ---
-title: "千歳楼"
+title: "【心霊】千歳楼｜白骨死体が発見された廃旅館と繰り返す不審火の真相"
 slug: "chitose-ro"
 date: "2026-04-25"
 prefecture: "愛知県"

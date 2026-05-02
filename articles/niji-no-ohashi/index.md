@@ -1,5 +1,5 @@
 ---
-title: "虹の大橋"
+title: "【心霊】虹の大橋｜湖面100mの高さで自殺が絶えない神奈川の橋の異変"
 slug: "niji-no-ohashi"
 date: "2026-03-22"
 prefecture: "神奈川県"

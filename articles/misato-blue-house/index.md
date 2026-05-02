@@ -1,5 +1,5 @@
 ---
-title: "三郷の青い家"
+title: "【心霊】三郷の青い家｜墓地に隣接した廃屋で消えた住人の正体と異変"
 slug: "misato-blue-house"
 date: "2026-04-05"
 prefecture: "埼玉県"

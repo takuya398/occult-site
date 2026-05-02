@@ -1,5 +1,5 @@
 ---
-title: "十三佛"
+title: "【心霊】十三佛｜福岡の山奥の洞窟で目撃される霊と聞こえる声の正体"
 slug: "jusanbutsu"
 date: "2026-04-19"
 prefecture: "福岡県"

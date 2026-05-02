@@ -1,5 +1,5 @@
 ---
-title: "旧小峰トンネル"
+title: "【心霊】旧小峰トンネル｜八王子の廃トンネルで繰り返される死亡事故の真相"
 slug: "kyu-komine-tunnel"
 date: "2026-04-05"
 prefecture: "東京都"

@@ -1,5 +1,5 @@
 ---
-title: "大山貝塚"
+title: "【心霊】大山貝塚｜命を保証しないと警告する沖縄の禁足地と目撃記録"
 slug: "oyama-kaizuka"
 date: "2026-04-19"
 prefecture: "沖縄県"

@@ -1,5 +1,5 @@
 ---
-title: "犬山天狗神社（鞍馬山教会）"
+title: "【心霊】犬山天狗神社｜山岳信仰の地で目撃される死亡事故と天狗の正体"
 slug: "inuyama-tengu-jinja"
 date: "2026-03-23"
 prefecture: "愛知県"

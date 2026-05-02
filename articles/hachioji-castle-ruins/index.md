@@ -1,5 +1,5 @@
 ---
-title: "八王子城跡"
+title: "【心霊】八王子城跡｜落城で姫君たちが消えた滝と心霊写真の異変"
 slug: "hachioji-castle-ruins"
 date: "2026-03-23"
 prefecture: "東京都"

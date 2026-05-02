@@ -1,5 +1,5 @@
 ---
-title: "東谷山"
+title: "【心霊】東谷山｜名古屋最高峰の山頂で目撃される霊と藁人形の異変"
 slug: "tougoku-yama"
 date: "2026-04-25"
 prefecture: "愛知県"

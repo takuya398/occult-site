@@ -1,5 +1,5 @@
 ---
-title: "青い屋根の家"
+title: "【心霊】青い屋根の家｜入居者が次々消えた岩見沢の廃屋の正体"
 slug: "aoi-yane-no-ie"
 date: "2026-03-23"
 prefecture: "北海道"

@@ -1,5 +1,5 @@
 ---
-title: "ほととぎす旅館"
+title: "【心霊】ほととぎす旅館｜大阪の山中で廃墟化した旅館に残る霊気と目撃記録"
 slug: "hototogisu-ryokan"
 date: "2026-04-07"
 prefecture: "大阪府"

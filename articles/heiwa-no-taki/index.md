@@ -1,5 +1,5 @@
 ---
-title: "平和の滝"
+title: "【心霊】平和の滝｜地元住民が近づかない滝から聞こえる声の真相"
 slug: "heiwa-no-taki"
 date: "2026-04-05"
 prefecture: "北海道"

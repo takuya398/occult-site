@@ -1,5 +1,5 @@
 ---
-title: "ホテルすずきヶ池"
+title: "【心霊】ホテルすずきヶ池｜迷路のような廃ホテルで消えた宿泊客の異変"
 slug: "hotel-suzukigaike"
 date: "2026-04-07"
 prefecture: "新潟県"

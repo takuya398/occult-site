@@ -1,5 +1,5 @@
 ---
-title: "大川寺遊園地"
+title: "【心霊】大川寺遊園地｜廃観覧車から聞こえる子供の声と目撃される霊の正体"
 slug: "daisenji-amusement-park"
 date: "2026-04-12"
 prefecture: "富山県"

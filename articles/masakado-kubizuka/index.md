@@ -1,5 +1,5 @@
 ---
-title: "平将門の首塚"
+title: "【心霊】平将門の首塚｜大手町で1000年以上怨念を放つ首塚の真相と異変"
 slug: "masakado-kubizuka"
 date: "2026-03-22"
 prefecture: "東京都"

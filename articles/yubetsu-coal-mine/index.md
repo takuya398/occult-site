@@ -1,5 +1,5 @@
 ---
-title: "雄別炭鉱"
+title: "【心霊】雄別炭鉱｜1万人が突然消えた北海道の廃炭鉱で相次ぐ心霊写真の真相"
 slug: "yubetsu-coal-mine"
 date: "2026-03-29"
 prefecture: "北海道"

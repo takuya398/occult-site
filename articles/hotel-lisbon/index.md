@@ -1,5 +1,5 @@
 ---
-title: "ホテルリスボン"
+title: "【心霊】ホテルリスボン｜44年間幽霊が出た三重の廃ラブホテルの正体"
 slug: "hotel-lisbon"
 date: "2026-03-23"
 prefecture: "三重県"

@@ -1,5 +1,5 @@
 ---
-title: "旧野木病院"
+title: "【心霊】旧野木病院｜廃精神科病院で目撃される白装束の集団と消えた侵入者の記録"
 slug: "old-nogi-hospital"
 date: "2026-03-23"
 prefecture: "栃木県"

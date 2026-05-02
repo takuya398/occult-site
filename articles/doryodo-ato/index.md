@@ -1,5 +1,5 @@
 ---
-title: "道了堂跡"
+title: "【心霊】道了堂跡｜廃寺跡で目撃される白装束の霊と死亡事故の記録"
 slug: "doryodo-ato"
 date: "2026-03-28"
 prefecture: "東京都"

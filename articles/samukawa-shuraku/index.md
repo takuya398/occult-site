@@ -1,5 +1,5 @@
 ---
-title: "寒川集落"
+title: "【心霊】寒川集落｜廃村から消えた住人が目撃される宮崎の山奥の異変"
 slug: "samukawa-shuraku"
 date: "2026-03-23"
 prefecture: "宮崎県"

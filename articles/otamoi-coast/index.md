@@ -1,5 +1,5 @@
 ---
-title: "オタモイ海岸"
+title: "【心霊】オタモイ海岸｜火事で消えた断崖の遊園地跡で目撃される霊の正体"
 slug: "otamoi-coast"
 date: "2026-04-01"
 prefecture: "北海道"

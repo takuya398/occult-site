@@ -1,5 +1,5 @@
 ---
-title: "旧童学寺トンネル"
+title: "【心霊】旧童学寺トンネル｜封鎖された徳島の廃トンネルで心霊写真が撮れる理由"
 slug: "kyu-dogakuji-tunnel"
 date: "2026-03-24"
 prefecture: "徳島県"

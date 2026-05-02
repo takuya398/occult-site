@@ -1,5 +1,5 @@
 ---
-title: "西岡水源池"
+title: "【心霊】西岡水源池｜昼は桜の名所で夜に目撃される女の霊と異変の真相"
 slug: "nishioka-suigenchi"
 date: "2026-04-02"
 prefecture: "北海道"

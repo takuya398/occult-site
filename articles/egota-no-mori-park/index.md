@@ -1,5 +1,5 @@
 ---
-title: "江古田の森公園"
+title: "【心霊】江古田の森公園｜防空壕跡の公園で夜に聞こえる声の正体"
 slug: "egota-no-mori-park"
 date: "2026-04-19"
 prefecture: "東京都"

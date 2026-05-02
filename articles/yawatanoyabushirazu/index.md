@@ -1,5 +1,5 @@
 ---
-title: "八幡の藪知らず"
+title: "【心霊】八幡の藪知らず｜入った者が行方不明になる千葉の禁足地の真相"
 slug: "yawatanoyabushirazu"
 date: "2026-03-23"
 prefecture: "千葉県"

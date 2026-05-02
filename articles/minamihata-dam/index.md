@@ -1,5 +1,5 @@
 ---
-title: "南畑ダム"
+title: "【心霊】南畑ダム｜深夜のトイレ窓から覗き込んだ女の霊の正体と異変"
 slug: "minamihata-dam"
 date: "2026-04-05"
 prefecture: "福岡県"

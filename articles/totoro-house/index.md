@@ -1,5 +1,5 @@
 ---
-title: "トトロの家"
+title: "【心霊】トトロの家｜田んぼの廃屋で聞こえる雄叫びと消えた少女の異変"
 slug: "totoro-house"
 date: "2026-04-25"
 prefecture: "愛知県"

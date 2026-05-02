@@ -1,5 +1,5 @@
 ---
-title: "男鹿プリンスホテル"
+title: "【心霊】男鹿プリンスホテル｜日本海の廃ホテルで撮れる心霊写真の真相"
 slug: "oga-prince-hotel"
 date: "2026-04-07"
 prefecture: "秋田県"

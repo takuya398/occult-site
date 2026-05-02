@@ -1,5 +1,5 @@
 ---
-title: "常紋トンネル"
+title: "【心霊】常紋トンネル｜タコ部屋労働で死んだ者の霊が出る北海道の廃線路"
 slug: "jomon-tunnel"
 date: "2026-04-05"
 prefecture: "北海道"

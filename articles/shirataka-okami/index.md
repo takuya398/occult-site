@@ -1,5 +1,5 @@
 ---
-title: "白高大神"
+title: "【心霊】白高大神｜廃神社に残る宗教団体の痕跡と目撃される女霊の正体"
 slug: "shirataka-okami"
 date: "2026-04-19"
 prefecture: "奈良県"

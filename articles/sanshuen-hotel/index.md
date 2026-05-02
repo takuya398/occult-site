@@ -1,5 +1,5 @@
 ---
-title: "三州園ホテル"
+title: "【心霊】三州園ホテル｜死亡事故と火災が重なる愛知の廃ホテルの呪いの真相"
 slug: "sanshuen-hotel"
 date: "2026-04-25"
 prefecture: "愛知県"

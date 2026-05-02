@@ -1,5 +1,5 @@
 ---
-title: "ホテルすかいらぶ"
+title: "【心霊】ホテルすかいらぶ｜廃ラブホテルで心霊写真に写る女の霊の真相"
 slug: "hotel-skylove"
 date: "2026-04-20"
 prefecture: "神奈川県"

@@ -1,5 +1,5 @@
 ---
-title: "小美玉小川脳病院"
+title: "【心霊】小美玉小川脳病院｜廃精神病院で目撃される患者の霊と異変の記録"
 slug: "omitama-ogawa-noubyouin"
 date: "2026-04-12"
 prefecture: "茨城県"

@@ -1,5 +1,5 @@
 ---
-title: "旧犬鳴トンネル"
+title: "【心霊】旧犬鳴トンネル｜焼殺事件現場の封鎖トンネルで消えた訪問者の真相"
 slug: "old-inunaki-tunnel"
 date: "2026-03-23"
 prefecture: "福岡県"

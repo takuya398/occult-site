@@ -1,5 +1,5 @@
 ---
-title: "ラブホテル コスモ"
+title: "【心霊】ラブホテルコスモ｜チェックアウトしないまま消えた宿泊客と子供の声の正体"
 slug: "love-hotel-cosmo"
 date: "2026-04-01"
 prefecture: "北海道"

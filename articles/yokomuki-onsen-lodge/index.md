@@ -1,5 +1,5 @@
 ---
-title: "横向温泉ロッジ"
+title: "【心霊】横向温泉ロッジ｜40年放置の福島の廃ホテルで目撃される異変の正体"
 slug: "yokomuki-onsen-lodge"
 date: "2026-04-09"
 prefecture: "福島県"

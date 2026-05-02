@@ -1,5 +1,5 @@
 ---
-title: "三井大橋"
+title: "【心霊】三井大橋｜津久井湖の橋で繰り返される投身と目撃される霊の真相"
 slug: "mitsui-bridge"
 date: "2026-04-20"
 prefecture: "神奈川県"

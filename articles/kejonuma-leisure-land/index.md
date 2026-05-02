@@ -1,5 +1,5 @@
 ---
-title: "化女沼レジャーランド"
+title: "【心霊】化女沼レジャーランド｜廃観覧車が回る遊園地跡で聞こえる声の真相"
 slug: "kejonuma-leisure-land"
 date: "2026-04-05"
 prefecture: "宮城県"

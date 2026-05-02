@@ -1,5 +1,5 @@
 ---
-title: "青木ヶ原樹海"
+title: "【心霊】青木ヶ原樹海｜行方不明者が絶えない自殺の名所と異変の真相"
 slug: "aokigahara"
 date: "2026-03-23"
 prefecture: "山梨県"

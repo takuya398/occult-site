@@ -1,5 +1,5 @@
 ---
-title: "梨の木隧道"
+title: "【心霊】梨の木隧道｜完全封鎖の大阪の廃トンネルで心霊写真が撮れる理由"
 slug: "nashinoki-zuido"
 date: "2026-03-28"
 prefecture: "大阪府"

@@ -1,5 +1,5 @@
 ---
-title: "メリーさんの館"
+title: "【心霊】メリーさんの館｜六甲山に現れる洋館で目撃される首なし霊の正体"
 slug: "mary-mansion"
 date: "2026-04-05"
 prefecture: "兵庫県"

@@ -1,5 +1,5 @@
 ---
-title: "地球岬"
+title: "【心霊】地球岬｜断崖から消えた者が目撃される室蘭の岬の異変"
 slug: "chikyu-misaki"
 date: "2026-04-12"
 prefecture: "北海道"

@@ -1,5 +1,5 @@
 ---
-title: "鶯花荘寮"
+title: "【心霊】鶯花荘寮｜廃温泉旅館の寮で繰り返す不審火と消えた従業員の真相"
 slug: "oukasou-ryou"
 date: "2026-04-12"
 prefecture: "三重県"

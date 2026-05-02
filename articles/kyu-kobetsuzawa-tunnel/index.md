@@ -1,5 +1,5 @@
 ---
-title: "旧小別沢トンネル"
+title: "【心霊】旧小別沢トンネル｜住民が手掘りした廃トンネルで消えた人の正体"
 slug: "kyu-kobetsuzawa-tunnel"
 date: "2026-04-01"
 prefecture: "北海道"

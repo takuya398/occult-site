@@ -1,5 +1,5 @@
 ---
-title: "闇の廃ホテル シャガール"
+title: "【心霊】廃ホテルシャガール｜廃業後に事件が重なった徳島のラブホテルの真相"
 slug: "yami-hotel-chagall"
 date: "2026-03-26"
 prefecture: "徳島県"

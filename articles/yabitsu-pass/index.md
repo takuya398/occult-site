@@ -1,5 +1,5 @@
 ---
-title: "ヤビツ峠"
+title: "【心霊】ヤビツ峠｜深夜に走ると助手席に乗ってくる霊がいるとされる神奈川の峠"
 slug: "yabitsu-pass"
 date: "2026-04-20"
 prefecture: "神奈川県"

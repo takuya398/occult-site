@@ -1,5 +1,5 @@
 ---
-title: "千駄ヶ谷トンネル"
+title: "【心霊】千駄ヶ谷トンネル｜墓地を壊して造った現役トンネルで今も目撃される霊の正体"
 slug: "sendagaya-tunnel"
 date: "2026-03-28"
 prefecture: "東京都"

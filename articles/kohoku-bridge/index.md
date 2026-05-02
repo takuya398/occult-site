@@ -1,5 +1,5 @@
 ---
-title: "江北橋"
+title: "【心霊】江北橋｜自殺者が絶えない東京の橋で目撃される投身者の霊の真相"
 slug: "kohoku-bridge"
 date: "2026-03-28"
 prefecture: "東京都"

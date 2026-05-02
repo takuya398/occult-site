@@ -1,5 +1,5 @@
 ---
-title: "つがね落しの滝"
+title: "【心霊】つがね落しの滝｜長崎の景勝地で目撃される人影と滝つぼの異変"
 slug: "tsugane-otoshi-falls"
 date: "2026-04-19"
 prefecture: "長崎県"

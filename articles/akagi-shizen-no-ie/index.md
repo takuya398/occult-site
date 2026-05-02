@@ -1,5 +1,5 @@
 ---
-title: "赤城少年自然の家"
+title: "【心霊】赤城少年自然の家｜林間学校で子供たちが見た影の記録と怪現象"
 slug: "akagi-shizen-no-ie"
 date: "2026-03-26"
 prefecture: "群馬県"

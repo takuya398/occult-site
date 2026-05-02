@@ -1,5 +1,5 @@
 ---
-title: "緑山峠"
+title: "【心霊】緑山峠｜TBS隣の廃道で目撃される異形の影と心霊写真の記録"
 slug: "midoriyama-pass"
 date: "2026-04-20"
 prefecture: "神奈川県"

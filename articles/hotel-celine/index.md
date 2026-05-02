@@ -1,5 +1,5 @@
 ---
-title: "ホテルセリーヌ"
+title: "【心霊】ホテルセリーヌ｜廃墟の壁に描かれた妊婦の絵と聞こえる泣き声の真相"
 slug: "hotel-celine"
 date: "2026-04-02"
 prefecture: "長野県"

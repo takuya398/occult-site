@@ -1,5 +1,5 @@
 ---
-title: "ビジネスホテルトロピカル"
+title: "【心霊】ビジネスホテルトロピカル｜「出るから泊まれ」と言われ廃業した新横浜の廃ホテルの真相"
 slug: "business-hotel-tropical"
 date: "2026-04-10"
 prefecture: "神奈川県"

@@ -1,5 +1,5 @@
 ---
-title: "神居古潭トンネル"
+title: "【心霊】神居古潭トンネル｜アイヌが禁じた霊域で目撃される異変の真相"
 slug: "kamuikotan-tunnel"
 date: "2026-04-02"
 prefecture: "北海道"

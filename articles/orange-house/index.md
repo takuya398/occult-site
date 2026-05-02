@@ -1,5 +1,5 @@
 ---
-title: "オレンジハウス"
+title: "【心霊】オレンジハウス｜解体業者が次々と怪我した千葉の廃屋の正体"
 slug: "orange-house"
 date: "2026-03-23"
 prefecture: "千葉県"

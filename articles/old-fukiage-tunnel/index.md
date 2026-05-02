@@ -1,5 +1,5 @@
 ---
-title: "旧吹上トンネル"
+title: "【心霊】旧吹上トンネル｜死亡事故が重なる青梅の廃トンネルで撮れる心霊写真の真相"
 slug: "old-fukiage-tunnel"
 date: "2026-03-23"
 prefecture: "東京都"

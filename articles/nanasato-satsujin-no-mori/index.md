@@ -1,5 +1,5 @@
 ---
-title: "七里殺人の森"
+title: "【心霊】七里殺人の森｜幕末の大量死亡の記憶が残る埼玉の雑木林の異変"
 slug: "nanasato-satsujin-no-mori"
 date: "2026-03-23"
 prefecture: "埼玉県"

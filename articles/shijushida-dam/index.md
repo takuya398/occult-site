@@ -1,5 +1,5 @@
 ---
-title: "四十四田ダム"
+title: "【心霊】四十四田ダム｜観光地のダムで警備員だけが目撃する女の霊の真相"
 slug: "shijushida-dam"
 date: "2026-04-08"
 prefecture: "岩手県"

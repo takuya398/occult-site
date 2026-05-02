@@ -1,5 +1,5 @@
 ---
-title: "じゅんさい池公園"
+title: "【心霊】じゅんさい池公園｜昼は穏やかな公園で夜に目撃される女の霊の真相"
 slug: "junsaike-park"
 date: "2026-04-07"
 prefecture: "新潟県"

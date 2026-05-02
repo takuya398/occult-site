@@ -1,5 +1,5 @@
 ---
-title: "硫黄島"
+title: "【心霊】硫黄島｜2万人が戦死した島で自衛隊員が目撃する霊の正体"
 slug: "ioto-tokyo"
 date: "2026-03-23"
 prefecture: "東京都"

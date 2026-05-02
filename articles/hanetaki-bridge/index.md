@@ -1,5 +1,5 @@
 ---
-title: "はねたき橋"
+title: "【心霊】はねたき橋｜ライトアップされた橋で目撃される人影の正体"
 slug: "hanetaki-bridge"
 date: "2026-04-12"
 prefecture: "群馬県"

@@ -1,5 +1,5 @@
 ---
-title: "打越橋"
+title: "【心霊】打越橋｜横浜の朱色アーチ橋で繰り返される投身と目撃される霊の記録"
 slug: "uchikoshi-bridge"
 date: "2026-04-20"
 prefecture: "神奈川県"

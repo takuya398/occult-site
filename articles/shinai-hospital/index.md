@@ -1,5 +1,5 @@
 ---
-title: "信愛病院"
+title: "【心霊】信愛病院｜熊本の廃病院で行方不明になった侵入者と霊の目撃記録"
 slug: "shinai-hospital"
 date: "2026-04-19"
 prefecture: "熊本県"

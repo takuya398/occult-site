@@ -1,5 +1,5 @@
 ---
-title: "奥多摩湖ロープウェイ"
+title: "【心霊】奥多摩湖ロープウェイ｜開業わずか4年で廃業したロープウェイに残る霊の記録"
 slug: "okutama-ropeway"
 date: "2026-03-28"
 prefecture: "東京都"

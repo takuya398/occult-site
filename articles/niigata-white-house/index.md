@@ -1,5 +1,5 @@
 ---
-title: "ホワイトハウス"
+title: "【心霊】ホワイトハウス｜地図に載らない新潟の山奥の廃屋で毎晩灯りが灯る理由"
 slug: "niigata-white-house"
 date: "2026-04-07"
 prefecture: "新潟県"

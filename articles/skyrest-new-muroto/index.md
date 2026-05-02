@@ -1,5 +1,5 @@
 ---
-title: "スカイレストニュー室戸"
+title: "【心霊】スカイレストニュー室戸｜廃展望レストランで撮れる心霊写真の真相"
 slug: "skyrest-new-muroto"
 date: "2026-03-25"
 prefecture: "高知県"

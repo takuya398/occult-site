@@ -1,5 +1,5 @@
 ---
-title: "院内銀山"
+title: "【心霊】院内銀山｜廃銀山で多発した死亡事故と今も現れる霊の正体"
 slug: "innai-ginzan"
 date: "2026-04-07"
 prefecture: "秋田県"

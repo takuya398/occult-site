@@ -1,5 +1,5 @@
 ---
-title: "旧善波トンネル"
+title: "【心霊】旧善波トンネル｜17歳少年の死亡事故が起きた神奈川の峠の異変"
 slug: "kyu-zenba-tunnel"
 date: "2026-04-02"
 prefecture: "神奈川県"

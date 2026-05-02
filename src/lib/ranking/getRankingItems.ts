@@ -142,13 +142,19 @@ export async function getRankingItems(
   periodStart.setDate(periodStart.getDate() - PERIOD_DAYS[period]);
 
   const supabase = createAdminClient();
-  const { data: comments } = await supabase
-    .from("comments")
-    .select("slug, article_type, good_count")
-    .eq("is_approved", true)
-    .gte("created_at", periodStart.toISOString());
+  const [{ data: comments }, { data: views }] = await Promise.all([
+    supabase
+      .from("comments")
+      .select("slug, article_type, good_count")
+      .eq("is_approved", true)
+      .gte("created_at", periodStart.toISOString()),
+    supabase
+      .from("article_views")
+      .select("article_slug, article_type")
+      .gte("viewed_at", periodStart.toISOString()),
+  ]);
 
-  // Aggregate per article
+  // Aggregate comments per article
   const statsMap = new Map<string, { commentCount: number; totalGoodCount: number }>();
   for (const row of comments ?? []) {
     const key = `${row.article_type}:${row.slug}`;
@@ -159,12 +165,20 @@ export async function getRankingItems(
     });
   }
 
+  // Aggregate view counts per article
+  const viewMap = new Map<string, number>();
+  for (const row of views ?? []) {
+    const key = `${row.article_type}:${row.article_slug}`;
+    viewMap.set(key, (viewMap.get(key) ?? 0) + 1);
+  }
+
   // Score, sort, slice
   return filtered
     .map((article) => {
       const key = `${article.articleType}:${article.slug}`;
       const stats = statsMap.get(key) ?? { commentCount: 0, totalGoodCount: 0 };
-      const score = stats.commentCount * 3 + stats.totalGoodCount;
+      const viewCount = viewMap.get(key) ?? 0;
+      const score = viewCount + stats.commentCount * 3 + stats.totalGoodCount;
       return { ...article, score, ...stats };
     })
     .sort((a, b) => {
