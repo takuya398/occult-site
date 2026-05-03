@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import ArticleImage from "@/components/ArticleImage";
 
 type ArticleCard = {
   title: string;
@@ -48,11 +48,9 @@ export default function ArticleGrid({ articles }: Props) {
           >
             <div className="relative aspect-video w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800">
               {item.cover ? (
-                <Image
+                <ArticleImage
                   src={item.cover}
                   alt={item.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(max-width: 640px) 50vw, 33vw"
                 />
               ) : (

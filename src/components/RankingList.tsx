@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import ArticleImage from "@/components/ArticleImage";
 
 type ArticleCard = {
   title: string;
@@ -26,9 +26,8 @@ export default function RankingList({ articles }: Props) {
 
   return (
     <div className="space-y-5">
-      <h2 className="text-xl font-semibold text-zinc-800 dark:text-zinc-200 flex items-center gap-3">
+      <h2 className="text-xl font-semibold text-zinc-800 dark:text-zinc-200">
         人気ランキング
-        <span className="text-xs text-zinc-500 font-normal">※暫定</span>
       </h2>
       <div className="grid gap-4 lg:grid-cols-2">
         {/* 1位 — 大きく */}
@@ -41,12 +40,11 @@ export default function RankingList({ articles }: Props) {
           </span>
           <div className="relative aspect-video w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800">
             {first.cover ? (
-              <Image
+              <ArticleImage
                 src={first.cover}
                 alt={first.title}
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                fallbackClassName="flex h-full w-full items-center justify-center text-4xl opacity-20 select-none"
               />
             ) : (
               <div className="flex h-full items-center justify-center text-4xl opacity-20 select-none">
@@ -81,12 +79,11 @@ export default function RankingList({ articles }: Props) {
               </span>
               <div className="relative aspect-video w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800">
                 {item.cover ? (
-                  <Image
+                  <ArticleImage
                     src={item.cover}
                     alt={item.title}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                     sizes="(max-width: 640px) 50vw, 25vw"
+                    fallbackClassName="flex h-full w-full items-center justify-center text-2xl opacity-20 select-none"
                   />
                 ) : (
                   <div className="flex h-full items-center justify-center text-2xl opacity-20 select-none">

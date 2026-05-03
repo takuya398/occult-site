@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import ArticleImage from "@/components/ArticleImage";
 
 type HeroArticle = {
   title: string;
@@ -32,13 +32,13 @@ export default function Hero({ article }: Props) {
       {/* 特集カード */}
       <div className="relative w-full overflow-hidden rounded-2xl h-[360px] sm:h-[420px]">
         {article?.cover ? (
-          <Image
+          <ArticleImage
             src={article.cover}
             alt=""
-            fill
-            className="object-cover object-center"
             sizes="(max-width: 1024px) 100vw, 1024px"
+            className="object-cover object-center"
             priority
+            fallbackClassName="absolute inset-0 bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900"
           />
         ) : (
           <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900" />

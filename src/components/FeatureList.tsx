@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import ArticleImage from "@/components/ArticleImage";
 
 type ArticleCard = {
   title: string;
@@ -37,12 +37,11 @@ export default function FeatureList({ articles }: Props) {
           >
             <div className="relative aspect-video w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800">
               {item.cover ? (
-                <Image
+                <ArticleImage
                   src={item.cover}
                   alt={item.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, 33vw"
+                  fallbackClassName="flex h-full w-full items-center justify-center text-4xl opacity-20 select-none"
                 />
               ) : (
                 <div className="flex h-full items-center justify-center text-4xl opacity-20 select-none">
