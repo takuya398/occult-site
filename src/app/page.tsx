@@ -3,6 +3,7 @@ import RankingList from "@/components/RankingList";
 import FeatureList from "@/components/FeatureList";
 import ArticleGrid from "@/components/ArticleGrid";
 import CategoryList from "@/components/CategoryList";
+import PopularTags from "@/components/PopularTags";
 import { getAllLatest, type LatestItem } from "@/lib/server-loaders";
 
 const CDN = "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto";
@@ -47,6 +48,11 @@ export default async function Home() {
         {/* 5. 都道府県カテゴリ */}
         <section>
           <CategoryList />
+        </section>
+
+        {/* 6. 人気タグ */}
+        <section>
+          <PopularTags />
         </section>
 
         <footer className="text-xs italic text-zinc-500 dark:text-zinc-600">
