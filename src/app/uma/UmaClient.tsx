@@ -562,7 +562,7 @@ export default function UmaClient({ commentCounts }: { commentCounts: Record<str
                 variant="uma"
                 className={`group overflow-hidden hover:shadow-md${isDanger5 ? " uma-danger5" : ""}`}
               >
-                <UmaCardCover slug={uma.slug} isNew={!!details?.isFresh} isDanger5={isDanger5} />
+                <UmaCardCover slug={uma.slug} coverSrc={uma.coverImage?.src} isNew={!!details?.isFresh} isDanger5={isDanger5} />
 
                 {/* 上段メタ */}
                 <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">

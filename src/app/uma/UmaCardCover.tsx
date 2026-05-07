@@ -5,13 +5,14 @@ import { useState } from "react";
 
 type Props = {
   slug: string;
+  coverSrc?: string;
   isNew?: boolean;
   isDanger5?: boolean;
 };
 
-export default function UmaCardCover({ slug, isNew, isDanger5 }: Props) {
+export default function UmaCardCover({ slug, coverSrc, isNew, isDanger5 }: Props) {
   const [error, setError] = useState(false);
-  const src = `/uma/${slug}/cover.jpg`;
+  const src = coverSrc ?? `/uma/${slug}/cover.jpg`;
 
   return (
     <figure className="-mx-5 -mt-5 mb-3">
