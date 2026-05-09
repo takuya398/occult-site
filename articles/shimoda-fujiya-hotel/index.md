@@ -10,6 +10,7 @@ tags: ["心霊スポット","廃ホテル","ホテル","静岡"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shimoda-fujiya-hotel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=G2t-6o05_i8"
 summary: "静岡県下田市の道の駅前に建つ廃ホテル。4階の神子元38号室で「ウフフフフ」という女の笑い声・赤いワンピースの霊・ラップ現象が報告され、複数のテレビ番組や心霊YouTube「ゾゾゾ」が訪問。2023年1月の不審火で3階以上が焼失したが、心霊スポットとしての伝説は残り続けている。"
+mapQuery: "下田富士屋ホテル 静岡県"
 ---
 
 4階の38号室。

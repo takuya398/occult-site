@@ -10,6 +10,7 @@ tags: ["禁足地","墓地","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oyama-kaizuka/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=h8A9Ynmr7tM"
 summary: "沖縄県宜野湾市に、看板がある。大山自治会が設置した「この先霊域につき、立ち入る者には命の保障はできません」という看板だ。縄文後期からの風葬の場、ユタの3大修行場、戦時中のガマ──三つの歴史が重なる国指定史跡。地元の人間は夕方以降は近づかない。"
+mapQuery: "大山貝塚 沖縄県"
 ---
 
 沖縄県宜野湾市に、看板がある。

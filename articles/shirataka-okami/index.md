@@ -10,6 +10,7 @@ tags: ["神社","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shirataka-okami/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=5ypV97vL5eE"
 summary: "奈良県奈良市の田園地帯に、廃神社がある。鳥居の裏に「宗教法人 玉姫教会」「教祖 中井シゲノ」の文字が刻まれている。稲川淳二のDVDにも登場した奈良最恐の心霊スポット。しかし訪れた人物の多くが「特に怖くなかった」「何も起きなかった」と言う。"
+mapQuery: "白高大神 奈良県"
 ---
 
 奈良県奈良市の田園地帯に、廃神社がある。

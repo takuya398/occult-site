@@ -10,6 +10,7 @@ tags: ["心霊スポット","墓地","慰霊","供養","青森","霊場"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/osorezan/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=orGNtgf7iOs"
 summary: "青森県むつ市の下北半島に位置する日本三大霊場のひとつ。「人は皆、死ねば恐山に行ぐ」という言葉が1200年以上語り継がれ、地獄と極楽が同居する荒涼とした風景の中、イタコの口寄せや車への無数の手形など数多くの怪異が伝わる死者の山。"
+mapQuery: "恐山 青森県"
 ---
 
 「人は皆、死ねば恐山に行ぐ」

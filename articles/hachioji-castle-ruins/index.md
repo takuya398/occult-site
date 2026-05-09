@@ -10,6 +10,7 @@ tags: ["心霊スポット","城跡","古戦場","東京"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hachioji-castle-ruins/262ec52b-6304-4bc8-b899-76504dc22be6.png"
 youtube: "https://www.youtube.com/watch?v=cleWwWerKe0"
 summary: "東京都八王子市の国史跡指定の山城跡。1590年の落城で婦女子たちが御主殿の滝へ次々と身を投じ、川が三日三晩血に染まったと伝えられる。すすり泣く女の声・鎧武者の霊・御主殿の芝生に転がる生首などの怪異が語られ、稲川淳二が「近づかないほうがいい」と警告したことでも知られる。"
+mapQuery: "八王子城跡 東京都"
 ---
 
 1590年6月23日。

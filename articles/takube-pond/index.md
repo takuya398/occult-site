@@ -10,6 +10,7 @@ tags: ["心霊スポット","池","東京","東村山","狭山公園","女性の
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/takube-pond/cover"
 youtube: "https://www.youtube.com/watch?v=DhGZqo2jguM"
 summary: "東京都東村山市の都立狭山公園内に位置する池。1925年に少年「たっちゃん」と助けに飛び込んだ青年二人の計三名が溺死した事故から「たっちゃん池」と呼ばれ、水面から伸びる白い手や子供のすすり泣く声など多くの怪異が語られる心霊スポット。"
+mapQuery: "宅部池 東京都"
 ---
 
 波もない。流れもない。ただ静かに水を湛える池。

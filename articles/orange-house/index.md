@@ -10,6 +10,7 @@ tags: ["心霊スポット","廃墟","千葉","住居","女性の霊"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/orange-house/cover"
 youtube: "https://www.youtube.com/watch?v=OdwR01Cyqgc"
 summary: "千葉県我孫子市の森の中に佇む木造2階建ての廃墟。解体を試みた業者が次々と怪我をして工事が中断されたという伝説と一家心中の噂が結びつき、2階窓の白い女の霊や天井から覗く顔など数多くの怪異が語られる千葉を代表する心霊スポット。"
+mapQuery: "オレンジハウス 千葉県"
 ---
 
 解体しようとした業者が、次々と怪我をした。

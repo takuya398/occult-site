@@ -10,6 +10,7 @@ tags: ["心霊スポット","城跡","公園","東京"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/doryodo-ato/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=67KHSYOhkxo"
 summary: "東京都八王子市鑓水の大塚山公園内に位置する史跡。1874年創建の道了堂跡地で、1963年に堂守の老婆が強盗に殺され、1973年には大学助教授が女子大生を殺害し遺体を遺棄した。稲川淳二が「首なし地蔵に触れたADが2日後に骨折した」怪談を繰り返し語り全国的知名度を獲得。老婆のすすり泣く声・白い人影・女子大生の霊出没などが語られる西東京屈指の心霊スポット。"
+mapQuery: "道了堂跡 東京都"
 ---
 
 稲川淳二がテレビロケで首なし地蔵を撮影した。

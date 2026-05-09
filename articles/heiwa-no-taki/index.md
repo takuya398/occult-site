@@ -10,6 +10,7 @@ tags: ["北海道","滝","自殺名所","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/heiwa-no-taki/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=SgSAPXv0pEI"
 summary: "「平和」という名前がついている。しかし地元の人は夜には絶対に近づかないという。深夜に訪れると、滝を見つめたまま動かない人影がいる。その顔を見てしまうと、自ら滝に身を投げてしまうと言われている。"
+mapQuery: "平和の滝 北海道"
 ---
 
 「平和」という名前がついている。

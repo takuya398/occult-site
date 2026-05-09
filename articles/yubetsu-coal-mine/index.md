@@ -10,6 +10,7 @@ tags: ["心霊スポット","廃病院","廃墟","北海道"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yubetsu-coal-mine/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=QBKe7c2mSYk&t=198s"
 summary: "北海道釧路市阿寒町の廃炭鉱跡地。1919年開業、1970年突然の閉山で1万人以上が暮らした企業城下町がゴーストタウン化。1980年代に霊能力者・宜保愛子がテレビ取材で「これ以上進めない」と発言し北海道最恐の心霊スポットとして確立。病院跡では白い女性の霊・炭鉱夫の霊が目撃され、訪問後の体調不良報告が多数。現在は近代化遺産として釧路市が管理し、無断立ち入り禁止。"
+mapQuery: "雄別炭鉱 北海道"
 ---
 
 1970年、閉山の知らせが届いた。

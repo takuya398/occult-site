@@ -10,6 +10,7 @@ tags: ["心霊スポット","廃墟","ホテル","廃ホテル","女性の霊","
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-queen/cover"
 youtube: "https://www.youtube.com/watch?v=kR99dc3cBW8"
 summary: "東京都武蔵村山市の多摩湖通り沿いに佇む廃ラブホテル。かつて全室レーザーカラオケを謳った施設は今や廃墟と化し、誰もいないはずの建物から呼吸音や物音が聞こえるという心霊スポットとして知られる。"
+mapQuery: "ホテルクイン 東京都"
 ---
 
 誰もいないはずの廃墟から、呼吸音が聞こえた。

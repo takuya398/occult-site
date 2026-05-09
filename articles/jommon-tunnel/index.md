@@ -9,6 +9,7 @@ cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jo
 tags: ["心霊スポット","トンネル","廃線"]
 category: "心霊スポット"
 summary: "北海道の山間部に存在する常紋トンネルは、明治期の鉄道工事で多くの死者が出たとされ、壁から人骨が発見されたという衝撃的な記録を持つ。実際の歴史的事件を背景に持つ、日本屈指の心霊スポット。"
+mapQuery: "常紋トンネル 北海道"
 ---
 
 # 常紋トンネル

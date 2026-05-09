@@ -10,6 +10,7 @@ tags: ["心霊スポット","トンネル","事件","東京"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-fukiage-tunnel/0a9521ba-63d7-4a55-b126-cf209ab7e3f2.png"
 youtube: "https://www.youtube.com/watch?v=M86SZaq14lo"
 summary: "東京都青梅市成木〜黒沢間の吹上峠にある廃トンネル。1904年竣工の旧旧吹上トンネルは崩落危険のため2009年に封鎖済み。終戦直後の強盗殺人事件を由来とする白い和服の女の霊が語られ、振り返ると複数の霊に追いかけられるという禁忌が有名。複数のメディア・書籍・地元証言で記録されている。"
+mapQuery: "旧吹上トンネル 東京都"
 ---
 
 「ピチョン、ピチョン」

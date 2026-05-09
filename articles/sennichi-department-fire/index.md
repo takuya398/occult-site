@@ -10,6 +10,7 @@ tags: ["心霊スポット","事件","火災","商業施設","大阪"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/sennichi-department-fire/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=PioRmfxHXFM"
 summary: "1972年5月13日、大阪市千日前の千日デパート7階で118名が死亡した日本最悪のビル火災跡地。現在はビックカメラなんば店が建つ。閉店後に火災発生時刻と同じ時間に「火災発生」の館内放送が流れる・7階トイレで女性のすすり泣きが聞こえる・タクシーで客が消えるなど多数の怪異が語られる。江戸時代から刑場・火葬場・墓地が集中した「千日墓地」跡でもある。"
+mapQuery: "千日デパート火災跡 大阪府"
 ---
 
 閉店後、誰もいないはずの店内で館内放送が流れた。

@@ -10,6 +10,7 @@ tags: ["群馬","橋","自殺名所","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hanetaki-bridge/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=JA8tv4obrlc"
 summary: "群馬県みどり市、高津戸峡に架かる白い三角アーチの橋。夜間もライトアップされる観光スポットだ。しかし旧橋時代、1ヶ月で2桁に及ぶ投身自殺があったと言われている。2016年9月23日、母子3人の無理心中がここで起きた。"
+mapQuery: "はねたき橋 群馬県"
 ---
 
 群馬県みどり市、高津戸峡に架かる白い三角アーチの橋。

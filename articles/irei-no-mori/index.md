@@ -10,6 +10,7 @@ tags: ["心霊スポット","森","岩手","慰霊","事故"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/irei-no-mori/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=xI-fRsOYc1w"
 summary: "岩手県雫石町の山中に位置する、1971年の全日空機雫石衝突事故の墜落跡地に整備された慰霊施設。乗客・乗員162名全員が即死したこの場所は「日本最恐」とも称される心霊スポットで、グループに1人多い人影や車への無数の手形、「熱い…」といううめき声など、数多くの怪異が語られる。"
+mapQuery: "慰霊の森 岩手県"
 ---
 
 1971年7月30日、午後2時すぎ。

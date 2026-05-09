@@ -10,6 +10,7 @@ tags: ["墓地","寺","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tosho-ji-ruins/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=nbDMmtcGS2w"
 summary: "神奈川県鎌倉市。住宅街の奥に、国指定史跡がある。1333年（元弘3年）。新田義貞に攻め込まれた鎌倉幕府14代執権・北条高時は、東勝寺に逃れた。一族郎党800人以上が後に続いた。全員がここで自決した。「腹切りやぐら」と呼ばれる横穴の墳墓が、今もある。近くを通ると気分が悪くなる人が続出する、と言われている。"
+mapQuery: "腹切りやぐら 神奈川県"
 ---
 
 神奈川県鎌倉市。住宅街の奥に、国指定史跡がある。

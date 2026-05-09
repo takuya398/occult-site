@@ -10,6 +10,7 @@ tags: ["心霊スポット","神社","愛知","立入禁止","神隠し"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/inuyama-tengu-jinja/cover"
 youtube: "https://www.youtube.com/watch?v=kmR2J0m6eok"
 summary: "愛知県犬山市の山中に位置する山岳信仰系宗教施設「鞍馬山教会」の通称。「此の山の物を無断で持ち出す者は一年の寿命なり」と警告看板が立ち並ぶ参道に強力天狗の石像が佇む。天狗像の目が赤く光ると帰れなくなるという伝説と、連れが目の前から消えたという神隠し体験談で知られる中部地方屈指の心霊スポット。"
+mapQuery: "犬山天狗神社 愛知県"
 ---
 
 「警告　此の山の物を無断で持ち出す者は一年の寿命なり」

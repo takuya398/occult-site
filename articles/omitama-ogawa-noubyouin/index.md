@@ -10,6 +10,7 @@ tags: ["茨城","廃病院","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/omitama-ogawa-noubyouin/cover.jpg"
 youtube: "https://m.youtube.com/watch?v=yeni482OszA&pp=ygUW5bCP5bed6ISz55eF6ZmiIOW_g-mcig%3D%3D"
 summary: "茨城県小美玉市の山奥に、精神病院の廃墟がある。正式名称「聖仁会小川病院」。1977年に閉院した。窓という窓は鉄格子で塞がれ、重症患者を閉じ込めるための隔離病棟が完備されていた。現在の建物は崩壊が著しく、ほぼ骨組みだけの状態だ。"
+mapQuery: "小美玉小川脳病院 茨城県"
 ---
 
 茨城県小美玉市の山奥に、精神病院の廃墟がある。

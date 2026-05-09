@@ -10,6 +10,7 @@ tags: ["大分","トンネル","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ozako-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=o-GmKiYs9pQ"
 summary: "大分県日田市に、奇妙な構造のトンネルがある。明治以前に手で掘られた全長約50メートルの隧道だ。トンネルの途中でぽっかりと穴が開き、そこから外の光が差し込んでいる。上には廃神社がある。大晦日の深夜にこのトンネルを歩くと霧が立ち込め、背後から足音が聞こえてくる。裸足のペタペタという音が聞こえたとき、その者は神隠しに遭うという。"
+mapQuery: "小迫トンネル 大分県"
 ---
 
 大分県日田市に、奇妙な構造のトンネルがある。

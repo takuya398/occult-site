@@ -10,6 +10,7 @@ tags: ["秋田","廃屋","ホテル","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oga-prince-hotel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=jY52d21uZUo"
 summary: "男鹿半島の日本海を見下ろす高台に、6階建ての廃ホテルが立っている。通称「オガプリ」。1969年に開業し、1981年に閉業した。廃業後、3階の窓から女が手を振るという目撃談が絶えない。霊能者・宜保愛子はこのホテルへの入館を拒否したとされている。"
+mapQuery: "男鹿プリンスホテル 秋田県"
 ---
 
 男鹿半島の日本海を見下ろす高台に、6階建ての廃ホテルが立っている。

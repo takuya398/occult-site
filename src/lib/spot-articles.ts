@@ -157,6 +157,26 @@ const ensureVideoToken = (content: string, videoUrl?: string) => {
   return `${content}\n\n{{VIDEO}}\n`;
 };
 
+const ensureMapToken = (content: string, hasMap: boolean): string => {
+  if (!hasMap) return content;
+  if (content.includes("{{MAP}}")) return content;
+  // Insert {{MAP}} at the end of the "場所・アクセス" section, before the next heading
+  const match = content.match(/(## 場所・アクセス[\s\S]*?)(\n## |\n# |$)/);
+  if (match && match.index !== undefined) {
+    const insertAt = match.index + match[1].length;
+    return (
+      content.slice(0, insertAt).trimEnd() +
+      "\n\n{{MAP}}\n\n" +
+      content.slice(insertAt).trimStart()
+    );
+  }
+  // Fallback: prepend before {{VIDEO}}, or append
+  if (content.includes("{{VIDEO}}")) {
+    return content.replace("{{VIDEO}}", "{{MAP}}\n\n{{VIDEO}}");
+  }
+  return `${content}\n\n{{MAP}}\n`;
+};
+
 const linkifySourcesPath = (content: string) =>
   content.replace(/\/articles\/[a-z0-9-]+\/sources\.md/g, (match, offset, full) => {
     const prevChar = full[offset - 1];
@@ -255,6 +275,15 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
 
   const contentWithVideo = ensureVideoToken(contentWithoutTitle, youtube || undefined);
   const contentWithLinks = linkifySourcesPath(contentWithVideo);
+
+  const mapQuery = normalizeString(frontmatter.mapQuery) || undefined;
+  const latRaw = frontmatter.lat;
+  const lat = typeof latRaw === "number" ? latRaw : undefined;
+  const lngRaw = frontmatter.lng;
+  const lng = typeof lngRaw === "number" ? lngRaw : undefined;
+  const hasMap = !!(mapQuery || (lat !== undefined && lng !== undefined));
+  const contentWithMap = ensureMapToken(contentWithLinks, hasMap);
+
   const tags = normalizeTags(frontmatter.tags);
   const source = await readSources(slug);
   const coverImage = cover
@@ -273,7 +302,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
     ruby,
     summary,
     body: summary,
-    content: contentWithLinks,
+    content: contentWithMap,
     tags,
     pref: pref || undefined,
     type: type || undefined,
@@ -286,6 +315,9 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
     coverImage,
     videoUrls: youtube ? [youtube] : undefined,
     source,
+    mapQuery,
+    lat,
+    lng,
   } satisfies SpotEntry;
 };
 

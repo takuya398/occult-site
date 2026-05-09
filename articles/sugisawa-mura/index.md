@@ -10,6 +10,7 @@ tags: ["心霊スポット","廃村","集落","青森","都市伝説"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/sugisawa-mura/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=Hw7FhukfwXI"
 summary: "青森県の山中にあったとされる廃村の都市伝説。昭和初期に発狂した村人が全員を惨殺した後廃村となり地図から消えたという話が語られる。1997年にウェブで全国に広まり2000年のアンビリバボー特集で社会的知名度を得た。皆殺し事件の公的記録は存在しないが、候補地の鳥居付近では今も怪異が報告される。"
+mapQuery: "杉沢村 青森県"
 ---
 
 「ここから先へ立ち入る者、命の保証はない」

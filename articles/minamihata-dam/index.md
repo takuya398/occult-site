@@ -10,6 +10,7 @@ tags: ["福岡","ダム","事件","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/minamihata-dam/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=n60bwY6ZH3E"
 summary: "夜中にダムのトイレを使っていた。ふと上を見ると、小窓から女性がこちらを覗き込んでいた。目が合った瞬間、全身が凍りついた。南畑ダムでは複数の遺体が発見されている。子供の水難事故もあった。廃寺もある。それでも人は来る。"
+mapQuery: "南畑ダム 福岡県"
 ---
 
 夜中にダムのトイレを使っていた。

@@ -10,6 +10,7 @@ tags: ["心霊スポット","峠","徳島","香川"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/osaka-toge/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=6JmJW6WqlNE"
 summary: "徳島県鳴門市と香川県東かがわ市の県境に位置する標高約270メートルの峠道。源義経が屋島の戦いへ向かった歴史ある峠で、工事犠牲者の供養地蔵が点在する。カーブミラーに老人の顔が映り追いかけてくる・血みどろのライダー・無人の車に追いかけられる怪異が語り継がれる。"
+mapQuery: "大坂峠 徳島県"
 ---
 
 夜の峠道でカーブミラーを確認した瞬間、そこに映ってはいけないものが映っていた。

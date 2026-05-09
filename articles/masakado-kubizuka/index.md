@@ -10,6 +10,7 @@ tags: ["心霊スポット","墓地","怨霊","落ち武者","大手町","千代
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/masakado-kubizuka/cover"
 youtube: "https://www.youtube.com/watch?v=wpUU78Qo9Z0"
 summary: "東京・大手町のビジネス街中心部に1000年以上眠る平将門の首塚。日本三大怨霊のひとつとして知られ、取り壊しを試みた者に相次いだ不幸やGHQのブルドーザー横転など、現代にも伝わる怨念伝説が絶えない。"
+mapQuery: "平将門の首塚 東京都"
 ---
 
 東京のど真ん中に、1000年以上眠り続けているものがある。

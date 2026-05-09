@@ -10,6 +10,7 @@ tags: ["心霊スポット","トンネル","鹿児島"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kaimon-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=jXuwy_fOirc"
 summary: "鹿児島県指宿市の開聞岳麓にある2本のトンネル（御倉本1号・2号）。照明がなく天井に採光用の四角い穴が開いた特殊構造で、逆さまに覗く女の霊・エンスト・後部座席が濡れるという怪異が語られる。戦時中の野戦病院跡・周辺の自殺の名所という背景も重なり、鹿児島最恐と呼ばれる。"
+mapQuery: "開聞トンネル 鹿児島県"
 ---
 
 天井に四角い穴が一定間隔で開いている。

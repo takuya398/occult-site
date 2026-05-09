@@ -10,6 +10,7 @@ tags: ["北海道","海辺","自殺名所","廃遊園地","心霊スポット","
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/otamoi-coast/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=FwE9g7miy6Y"
 summary: "昭和初期、断崖絶壁の上に竜宮城のような大遊園地が建っていた。火事で消えた後、残ったのは断崖と打ちつける波と、不思議な理由で命を絶ちに来る人々だった。深夜に写真を撮ると、海面に無数の手が写る。北海道小樽市の海岸に重なった複数の悲劇が、今もこの地を引き寄せている。"
+mapQuery: "オタモイ海岸 北海道"
 ---
 
 昭和初期、断崖絶壁の上に竜宮城のような大遊園地が建っていた。

@@ -9,6 +9,7 @@ credibility: "B"
 tags: ["心霊スポット","廃ホテル","ホテル","徳島"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yami-hotel-chagall/cover.jpg"
 summary: "徳島県徳島市に位置する廃ラブホテル。正式名称はモーテル・シャガール。廃業後に隣の営業中ホテルのオーナーが何人も変わり続け、従業員が廃墟から女性のすすり泣く声と光を繰り返し目撃している。2階の窓に白い服の女の霊が現れ、近づくと体調異変が起きるという体験談が語られる。"
+mapQuery: "廃ホテルシャガール 徳島県"
 ---
 
 廃墟になってから、隣の営業中のホテルでオーナーが何人も変わった。

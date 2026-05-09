@@ -10,6 +10,7 @@ tags: ["心霊スポット","禁足地","神社","千葉","伝承"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yawatanoyabushirazu/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=MVffVaeL9UY"
 summary: "千葉県市川市、国道14号線沿いの市川市役所向かいに位置する18メートル四方の禁足地。江戸時代から「入ると二度と出られない」と語られ、水戸黄門や平将門伝説が残る。広辞苑に慣用句として収録され、夏目漱石・江戸川乱歩の作品にも登場する、都市の真ん中に残り続ける謎の藪。"
+mapQuery: "八幡の藪知らず 千葉県"
 ---
 
 18メートル四方の小さな藪だ。

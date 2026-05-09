@@ -10,6 +10,7 @@ tags: ["心霊スポット","トンネル","廃道","徳島"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kyu-dogakuji-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=84tmj6rwQCM"
 summary: "徳島県名西郡石井町の廃トンネル。1920年開通、2004年にコンクリートで完全封鎖。封鎖前から首吊り自殺の男性の霊が語られ、封鎖後も壁から手が伸びてくる・帰宅後に「サッキ トンネル デ ナニシテタノ」という謎のメールが届くという怪異が続いている。"
+mapQuery: "旧童学寺トンネル 徳島県"
 ---
 
 通り過ぎただけなのに、帰宅後に見知らぬ番号からメールが届く。

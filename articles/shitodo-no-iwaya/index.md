@@ -10,6 +10,7 @@ tags: ["心霊スポット","洞窟","首なし地蔵","女性の霊","湯河原
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shitodo-no-iwaya/cover"
 youtube: "https://www.youtube.com/watch?v=uA0yPtypie8"
 summary: "源頼朝が身を潜めた洞窟として知られる湯河原町の史跡。参道に並ぶ首なし地蔵を三体見ると死ぬという言い伝えや女性の霊の目撃談から、神奈川最恐とも呼ばれる心霊スポット。"
+mapQuery: "しとどの巌 神奈川県"
 ---
 
 山道を進むほどに、石仏の数が増えていく。

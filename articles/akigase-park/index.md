@@ -10,6 +10,7 @@ tags: ["心霊スポット","公園","埼玉"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/akigase-park/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=5hVK60CbQm8"
 summary: "埼玉県さいたま市桜区の県営公園。荒川と鴨川に挟まれた100ヘクタールの広大な敷地。昼は桜の名所として家族連れで賑わうが、夜は首のない霊・赤ん坊の泣き声・ロングコートの女の霊が語られる。水門での遺体発見・駐車場での自殺・焼身自殺など複数の悲惨な事件が積み重なり、近隣には南北朝時代の羽倉古戦場もある。"
+mapQuery: "秋ヶ瀬公園 埼玉県"
 ---
 
 昼間は家族連れで賑わう広大な公園が、夜になると別の顔を見せる。

@@ -10,6 +10,7 @@ tags: ["福井","海","自殺名所","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tojinbo/cover.jpg"
 youtube: "https://m.youtube.com/watch?v=-oll27UcIuI&pp=ygUQ5p2x5bCL5Z2KIOW_g-mcig%3D%3D"
 summary: "福井県坂井市、日本海に面した断崖絶壁。崖の高さは約25メートル。この場所の名前は、かつてここで殺害された僧侶の名前をそのまま使っている。日本最大の自殺名所として知られ、年間数十人が命を絶つ。崖の先端に立つと、何かに引き寄せられる感覚があると言われている。"
+mapQuery: "東尋坊 福井県"
 ---
 
 福井県坂井市、日本海に面した断崖絶壁。

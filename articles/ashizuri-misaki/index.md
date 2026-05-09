@@ -11,6 +11,7 @@ tags: ["心霊スポット","海辺","高知"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ashizuri-misaki/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=AYc5oHIjbYg"
 summary: "高知県土佐清水市に位置する四国最南端の岬。平安時代の補陀落渡海の出発地とされ、古くから自殺の名所として知られる。崖の縁で足元を掴まれる感覚・白い服の女の霊・血まみれの男の目撃談が語られ、供養の地蔵と自殺防止看板が今も設置されている。"
+mapQuery: "足摺岬 高知県"
 ---
 
 灯台の近く、断崖の縁に立ったとき、足元を何かに掴まれた感覚があった。

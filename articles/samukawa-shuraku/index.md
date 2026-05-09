@@ -10,6 +10,7 @@ tags: ["心霊スポット","廃村","集落","宮崎","老婆の霊"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/samukawa-shuraku/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=Wa5gkNft5X0"
 summary: "宮崎県西都市の山間部に位置する1989年廃村の集落跡。400年以上の歴史を持つ集落に「帰りなさい」という囁き声、杖をついた老婆の霊、廃校に残る阿修羅像など怪異が語られ、ゾゾゾ・ダラシメンら人気心霊YouTuberも訪問した宮崎随一の廃村心霊スポット。"
+mapQuery: "寒川集落 宮崎県"
 ---
 
 廃屋の縁側から、声が聞こえた。

@@ -10,6 +10,7 @@ tags: ["心霊スポット","森","神社","事件","埼玉"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/nanasato-satsujin-no-mori/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=CuR170p7OFY"
 summary: "埼玉県さいたま市見沼区の雑木林に鎮座する三崎稲荷大明神の祠が心霊スポットの核。息子が父の首をナタで切断し発狂自殺したという噂に由来する「殺人の森」の名を持ち、首なしの父の霊の目撃や鳥居を越えた瞬間の異常な寒気など怪異が語られる埼玉の心霊スポット。"
+mapQuery: "七里殺人の森 埼玉県"
 ---
 
 稲荷神社の祠の前で、父と息子が口論になった。

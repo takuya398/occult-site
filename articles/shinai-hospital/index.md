@@ -10,6 +10,7 @@ tags: ["廃病院","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shinai-hospital/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=M3W1tKdvRMU"
 summary: "熊本県植木町の高台に、コンクリートの廃墟がある。「信愛病院」と呼ばれているが、ここは病院として一度も開業していない。患者が死んだことも、関係者が自殺したことも、確認されていない。それでも稲川淳二のDVDに登場し、「看護師の霊が出る」という噂が流布した。5人で入ったのに、映像には8人が映っていたという。"
+mapQuery: "信愛病院 熊本県"
 ---
 
 熊本県植木町の高台に、コンクリートの廃墟がある。

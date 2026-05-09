@@ -10,6 +10,7 @@ tags: ["北海道","廃墟","廃ホテル","心霊スポット","心霊写真"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/love-hotel-cosmo/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=H9V-KXPmieg"
 summary: "子供の遊び声が聞こえる住宅街の、少し高い丘の上。深い木々に囲まれた場所に、スペースシャトル型の客室を持つ廃墟がある。「一番左の窓のない部屋」では、電子機器がことごとく異常をきたすという。北海道音更町の廃ラブホテルに重なった怪異の数々。"
+mapQuery: "ラブホテルコスモ 北海道"
 ---
 
 子供の遊び声が聞こえる住宅街の、少し高い丘の上。

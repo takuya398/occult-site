@@ -10,6 +10,7 @@ tags: ["心霊スポット","廃墟","ホテル","三重"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-lisbon/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=V1QZ2Nc1xAU"
 summary: "三重県亀山市関町の廃ラブホテル。44年間の営業中から幽霊が出ると言われ続け、宿泊カップルが2人同時に「別れる夢」を見たという口コミが話題に。廃業後には従業員室から「ダメな部屋」と書かれたメモが発見され、営業時代から霊的異常が管理されていた可能性が浮上した。"
+mapQuery: "ホテルリスボン 三重県"
 ---
 
 営業中のホテルに幽霊が出る。

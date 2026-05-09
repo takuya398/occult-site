@@ -10,6 +10,7 @@ tags: ["神奈川","トンネル","峠","事故","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kyu-zenba-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=jvO1nATYAqk"
 summary: "1965年9月2日の夕方、17歳の少年が善波峠でバイクを走らせていた。カーブを曲がりきれなかった対向車のトラックと正面衝突し、亡くなった。その後、このトンネルで車に飛び込む人影の目撃が相次いだ。少年の両親は看板を建てた。「もう死なないで　準一」と。"
+mapQuery: "旧善波トンネル 神奈川県"
 ---
 
 1965年9月2日の夕方、17歳の少年が善波峠でバイクを走らせていた。

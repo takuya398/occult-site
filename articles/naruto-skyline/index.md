@@ -10,6 +10,7 @@ tags: ["廃屋","ホテル","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/naruto-skyline/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=EqlBs6s4Mmw"
 summary: "鳴門海峡を見渡す絶景の峠道に、廃ホテルが貼りついている。昼間は播磨灘・瀬戸内海の景色が開ける観光ルート。夜になると──帰ろうと駐車場に向かった者が振り返ると、階段を上ってくる赤い服の長い髪の女がいたという。"
+mapQuery: "鳴門スカイライン 徳島県"
 ---
 
 鳴門海峡を見渡す絶景の峠道に、廃ホテルが貼りついている。

@@ -10,6 +10,7 @@ tags: ["心霊スポット","森","自殺名所","樹海","山梨"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aokigahara/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=KpcJK3bkPPU"
 summary: "富士山北西麓に広がる約3,000ヘクタールの原生林。日本最大の自殺の名所として知られ、訓練中の自衛隊員が目撃した無数の白い手、後部座席に乗り込む気配、ナビが「まもなく目的地です」と語りかける怪異など多くの心霊体験が語られる。「幽霊より生きた人間の方が怖い」場所。"
+mapQuery: "青木ヶ原樹海 山梨県"
 ---
 
 自衛隊員が訓練中に見た。

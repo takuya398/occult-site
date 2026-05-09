@@ -10,6 +10,7 @@ tags: ["大阪","廃屋","旅館","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hototogisu-ryokan/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=H_WAQVsbv-M"
 summary: "山中渓駅を出ると、山に囲まれた大自然が広がっていた。ここが大阪かと思うほどの静けさだ。鬱蒼とした森の中に、蔦に覆われた廃旅館が建っている。大浴場に、白い和装の女が出ると言われている。"
+mapQuery: "ほととぎす旅館 大阪府"
 ---
 
 山中渓駅を出ると、山に囲まれた大自然が広がっていた。

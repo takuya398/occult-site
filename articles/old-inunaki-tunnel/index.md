@@ -10,6 +10,7 @@ tags: ["心霊スポット","トンネル","福岡","事件","峠"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-inunaki-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=jwMqVpzpjA8"
 summary: "福岡県宮若市と久山町の境に位置する封鎖された廃トンネル。1988年の犬鳴峠焼殺事件の現場として裁判記録に残り、映画「犬鳴村」のモデルにもなった。トンネル内で聞こえる女の異様な叫び声、首に赤い線が写り込む写真、訪問後の原因不明の事故など、日本最恐クラスの怪異が語られる。"
+mapQuery: "旧犬鳴トンネル 福岡県"
 ---
 
 「キャー」ではなかった。

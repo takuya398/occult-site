@@ -10,6 +10,7 @@ tags: ["埼玉","廃屋","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/misato-blue-house/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=8hlAuS5REUk"
 summary: "三郷市の一角に、淡い青のサイディングの普通の家があった。裏手には墓地があった。実は家が建っている土地そのものも、かつて墓地だった。若い夫婦が引っ越してきた。妻は身重だった。入居してすぐに声が聞こえ始めた。誰もいないのに、話し声が。夫も大家も耳を貸さなかった。身重の妻は、首を吊った。"
+mapQuery: "三郷の青い家 埼玉県"
 ---
 
 三郷市の一角に、淡い青のサイディングの普通の家があった。

@@ -10,6 +10,7 @@ tags: ["心霊スポット","廃墟","北海道","青い家","住居"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/aoi-yane-no-ie/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=ljOJoxtkcME"
 summary: "北海道岩見沢市の緑ヶ丘霊園正面に立つ2階建ての廃屋。格安でも入居者が全員短期間で退去し、除霊を試みた住職が精神を壊して逃げ出した。市役所の会議録音でこの家の話題になると雑音が入る現象も元職員が証言。霊道の上にあるとされ、北海道最恐クラスの廃屋として語られる。"
+mapQuery: "青い屋根の家 北海道"
 ---
 
 栗沢町の住職が、この家に何日か泊まり込んで除霊を試みた。

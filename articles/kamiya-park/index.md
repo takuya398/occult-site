@@ -10,6 +10,7 @@ tags: ["心霊スポット","公園","東京"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kamiya-park/cover.jpg"
 youtube: "https://www.youtube.com/shorts/WFrWDXDVwWQ"
 summary: "東京都北区神谷2丁目の区立公園。1945年8月10日の空爆で亡くなった300人以上の住民が仮埋葬された土地。正式な改葬まで6年かかり、その間に周辺で30人以上が連続死したという伝承が残る。慰霊塔建立後に連続死が止まった。公園の隅の目立たない通路の奥に「大東亜戦争犠牲者慰霊記念碑」が今も建つ。"
+mapQuery: "北区立神谷公園 東京都"
 ---
 
 子供たちが元気に遊んでいる。

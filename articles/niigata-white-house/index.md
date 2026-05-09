@@ -10,6 +10,7 @@ tags: ["新潟","廃屋","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/niigata-white-house/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=JV-o532oXyc"
 summary: "国道402号線から山側に入り、小さなトンネルをくぐる。出た先に、白い廃屋がある。2階に鉄格子の嵌まった小さな窓がある。その窓から、少女が覗いていると言われている。"
+mapQuery: "ホワイトハウス 新潟県"
 ---
 
 国道402号線から山側に入り、小さなトンネルをくぐる。

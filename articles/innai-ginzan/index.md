@@ -10,6 +10,7 @@ tags: ["秋田","山","鉱山","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/innai-ginzan/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=DlNjYjv29pY"
 summary: "江戸時代から昭和まで、秋田藩の財政を支えた日本最大の銀山があった。戸数4,000、人口15,000。城下町を凌駕する規模の町が山中に存在した。今は、坑夫の墓だけが残っている。坑内の火事で出口を封鎖され死んだ者、落盤で死んだ者。その霊が今も山に出る。"
+mapQuery: "院内銀山 秋田県"
 ---
 
 江戸時代から昭和まで、秋田藩の財政を支えた日本最大の銀山があった。

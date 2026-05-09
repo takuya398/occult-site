@@ -10,6 +10,7 @@ tags: ["山","神社","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tougoku-yama/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=MvYhd7a3uYE"
 summary: "愛知県名古屋市守山区と瀬戸市の境界に、標高198メートルの山がある。名古屋市内最高峰・東谷山だ。昼間は家族連れがハイキングに来る。夜は夜景目当てのカップルが来る。山頂に尾張戸神社がある。その境内の木に、五寸釘が打ち込まれた痕跡が発見された。藁人形が見つかった。カーンカーンという音が、夜の山に響く。"
+mapQuery: "東谷山 愛知県"
 ---
 
 愛知県名古屋市守山区と瀬戸市の境界に、標高198メートルの山がある。

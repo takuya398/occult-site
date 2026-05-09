@@ -10,6 +10,7 @@ tags: ["心霊スポット","トンネル","東京"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/umezawa-zuido/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=5oE9Ar_QdFw"
 summary: "東京都西多摩郡奥多摩町海沢の古隧道。1960年完成、中間部が手掘り岩盤むき出しの構造。「写真を撮ると100%心霊写真が撮れる」という噂で知られ、2019年に「最恐映像ノンストップ7」で放映。訪問者が道中の警察官から「宙にぶら下がっている人間は誰にでも見えるから気を付けて」と忠告された証言が最大の怪異として語り継がれている。"
+mapQuery: "海沢隧道 東京都"
 ---
 
 心霊スポットに向かう道で、警察官に声をかけられた。

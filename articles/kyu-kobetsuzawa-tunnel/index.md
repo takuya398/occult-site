@@ -10,6 +10,7 @@ tags: ["北海道","トンネル","廃墟","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kyu-kobetsuzawa-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=xiaycY1X2pU"
 summary: "1927年、地域住民が自らの手でノミと発破を使って掘り始めた全長100メートルのトンネル。以来70年間、人々の生活を支えた。しかし夜、このトンネルの壁から赤黒い人型が浮かび上がる、と言われるようになった。札幌三大心霊スポットに数えられた「北海道最恐トンネル」の怪異。"
+mapQuery: "旧小別沢トンネル 北海道"
 ---
 
 1927年、地域住民が自らの手でノミと発破を使って掘り始めた。

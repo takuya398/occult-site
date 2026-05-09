@@ -10,6 +10,7 @@ tags: ["心霊スポット","島","禁足地","東京","戦争遺跡"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ioto-tokyo/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=RibBQw2MVQs"
 summary: "東京から約1,250kmの太平洋上にある自衛隊基地の島。1945年の硫黄島の戦いで約2万人の日本兵が戦死し、今も約1万人分の遺骨が地下に眠る。霊感の有無にかかわらず「水をくれ」「お母ちゃんに会いたい」という声が聞こえると複数の自衛隊員が証言。島全体が墓地と称される日本最大の心霊スポット。"
+mapQuery: "硫黄島 東京都"
 ---
 
 霊感がない人間でも、聞こえる。

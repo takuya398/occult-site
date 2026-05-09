@@ -10,6 +10,7 @@ tags: ["廃屋","旅館","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/chitose-ro/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=kThGzuc_ids"
 summary: "愛知県春日井市。定光寺駅のすぐそばに、巨大な廃墟がある。かつては「名古屋の奥座敷」と呼ばれた高級旅館だった。最盛期の年商は10億円近かった。著名な政府系金融機関の総裁、事業家、文人が訪れた。2003年、6億円の負債を抱えて倒産した。その後、8度以上の不審火が起きた。2012年8月、廃墟の1階から身元不明の白骨化死体が見つかった。フロントに残された黒電話が、深夜に鳴り響く、と言われている。電気は通じていない。"
+mapQuery: "千歳楼 愛知県"
 ---
 
 愛知県春日井市。定光寺駅のすぐそばに、巨大な廃墟がある。

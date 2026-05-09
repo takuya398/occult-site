@@ -10,6 +10,7 @@ tags: ["福島","廃屋","ホテル","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yokomuki-onsen-lodge/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=Z3gbkRWDKNw"
 summary: "福島県猪苗代町、県道沿いの山中に5階建ての廃ホテルが立っている。1984年に閉業し、約40年間放置されている。稲川淳二がここの地下大広間に入って圧倒されたという。地下室の扉をふざけてノックしたら、向こうから「ドンドンドン！」と叩き返されたという話が残っている。"
+mapQuery: "横向温泉ロッジ 福島県"
 ---
 
 福島県猪苗代町、県道沿いの山中に5階建ての廃ホテルが立っている。

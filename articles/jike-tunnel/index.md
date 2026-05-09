@@ -10,6 +10,7 @@ tags: ["富山","トンネル","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jike-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=RlVDM5EXkaw"
 summary: "富山市の山中に、百年前に手で掘られたトンネルが3つ並んでいる。軽自動車しか通れない幅。照明なし。苔で濡れた壁。大量のコウモリ。ライトを消して待っていると、女性の声が聞こえてくると言われている。"
+mapQuery: "寺家トンネル 富山県"
 ---
 
 富山市の山中に、百年前に手で掘られたトンネルが3つ並んでいる。

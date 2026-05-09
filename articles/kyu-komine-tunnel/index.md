@@ -10,6 +10,7 @@ tags: ["東京","トンネル","事件","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kyu-komine-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=s3cBkyXLhzQ"
 summary: "都心から約1時間。八王子とあきる野の境、小峰峠の頂上に、レンガ造りのトンネルがある。1916年に開通した全長80メートルの古いトンネルだ。「タクシーのバックミラーに女が映り、次に見たら消えていた」「手首のない少女がこちらに手を振っていた」都内最恐と呼ばれる理由は、消えない目撃談と、消えない「事件の影」にある。"
+mapQuery: "旧小峰トンネル 東京都"
 ---
 
 都心から約1時間。八王子とあきる野の境、小峰峠の頂上に、レンガ造りのトンネルがある。

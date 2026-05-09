@@ -10,6 +10,7 @@ tags: ["心霊スポット","トンネル","埼玉"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shinmisato-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=N2PP6F5lWqY"
 summary: "埼玉県三郷市の采女ガード（アンダーパス）。市報が「霊が出没するので通らないように」と警告を出したとされる極めて稀な心霊スポット。2ちゃんねる心霊板で殿堂入りし、和服姿の女性の霊・壁から伸びる手・バイク事故の反復・エンジン停止など多様な怪異が語り継がれる。"
+mapQuery: "采女ガード 埼玉県"
 ---
 
 市報が警告した。

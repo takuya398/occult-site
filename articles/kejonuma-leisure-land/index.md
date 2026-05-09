@@ -10,6 +10,7 @@ tags: ["廃屋","廃遊園地","公園","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kejonuma-leisure-land/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=eQbY4r94d6Q"
 summary: "宮城県大崎市の沼のほとりに、朽ちた観覧車が立っている。1979年に開園し、年間20〜30万人が訪れた東北を代表するレジャー施設だった。2001年に閉園した。遊具はそのまま残された。錆びつき、草に覆われた。心霊スポットと呼ばれるようになった。しかし元運営者はこう言った。「事実無根だ。地元では心霊の話など全くない」と。"
+mapQuery: "化女沼レジャーランド 宮城県"
 ---
 
 宮城県大崎市の沼のほとりに、朽ちた観覧車が立っている。

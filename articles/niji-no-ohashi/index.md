@@ -10,6 +10,7 @@ tags: ["心霊スポット","橋","自殺名所","女性の霊","宮ヶ瀬湖"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/niji-no-ohashi/cover"
 youtube: "https://www.youtube.com/watch?v=0IwLogGo4V0"
 summary: "宮ヶ瀬湖に架かる全長330mのアーチ橋。湖面まで約100mの高さと自殺の歴史から心霊スポットとして知られ、白いワンピースの女性の霊やハンドルを取られる現象が語られる。"
+mapQuery: "虹の大橋 神奈川県"
 ---
 
 夜、橋の中央に立つと気づく。

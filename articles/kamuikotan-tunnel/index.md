@@ -10,6 +10,7 @@ tags: ["北海道","トンネル","廃線","心霊スポット","伝承"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kamuikotan-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=bEsqzOimWJo"
 summary: "アイヌの人々はここを「カムイコタン」と呼んだ。「神々の集落」──しかしアイヌ語で「カムイ」が「魔神」を意味することもある。石狩川の急流に挟まれたこの地で、トンネルに入る前に「ゴーン」という鐘の音が聞こえた者は引き返さなければならない、と言われている。"
+mapQuery: "神居古潭トンネル 北海道"
 ---
 
 アイヌの人々はここを「カムイコタン」と呼んだ。

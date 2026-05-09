@@ -10,6 +10,7 @@ tags: ["三重","廃屋","火災","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/oukasou-ryou/cover.jpg"
 youtube: "https://m.youtube.com/watch?v=jRCBJzZDXyg&pp=ygUM6bav6Iqx6I2Y5a-u"
 summary: "三重県菰野町・湯の山温泉の入口に、廃墟が立っている。元は温泉旅館「鶯花荘」の従業員寮だ。1998年、2階南側の部屋で身元不明の男性の腐乱死体が発見された。「ここを訪れた者は必ず近日中に事故に遭う」という怪談が、地元で語り継がれている。"
+mapQuery: "鶯花荘寮 三重県"
 ---
 
 三重県菰野町・湯の山温泉の入口に、廃墟が立っている。

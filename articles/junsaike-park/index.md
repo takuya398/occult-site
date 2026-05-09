@@ -10,6 +10,7 @@ tags: ["新潟","公園","池","自殺名所","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/junsaike-park/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=8_XCyww-2t0"
 summary: "春はしだれ桜、夏はホタル。新潟市東区の住宅街にある、穏やかな市民公園だ。しかし地元では「夜には絶対に行くな」と言われている。林の中で首吊り自殺が繰り返され、霊が住み着いた。女の霊はついてくる。"
+mapQuery: "じゅんさい池公園 新潟県"
 ---
 
 春はしだれ桜、夏はホタル。

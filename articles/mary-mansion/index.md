@@ -10,6 +10,7 @@ tags: ["兵庫","廃屋","山","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/mary-mansion/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=R47EPooINN8"
 summary: "六甲山の霧の夜に、洋館が現れる。羊の首のはく製が飾られていたことから「メリーさんの館」と呼ばれている。稲川淳二が語り、全国に広まった。場所は今も特定されていない。しかし館に入った10数名が、翌日全員39度の高熱を出した。"
+mapQuery: "メリーさんの館 兵庫県"
 ---
 
 六甲山の霧の夜に、洋館が現れる。

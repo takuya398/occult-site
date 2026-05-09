@@ -9,6 +9,7 @@ credibility: "S"
 tags: ["心霊スポット","廃墟","ホテル","千葉","事件"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-katsugyo/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=Ir95Z1EZL90"
+mapQuery: "ホテル活魚 千葉県東金市"
 summary: "千葉県東金市の廃ラブホテル。2004年の茂原女子高生殺人事件の現場として裁判記録に残る場所。冷凍庫に遺体が遺棄された史実を背景に、昼間でも現れる白い服の少女の霊、ドアの自動開閉、YouTuberの動画が無告知削除された謎など怪異が語られる、千葉最恐の廃墟。"
 ---
 

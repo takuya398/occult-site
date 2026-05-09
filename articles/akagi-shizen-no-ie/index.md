@@ -10,6 +10,7 @@ tags: ["心霊スポット","学校","群馬"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/akagi-shizen-no-ie/cover.jpg"
 youtube: "https://www.youtube.com/shorts/v1nSWsWN8XI"
 summary: "群馬県前橋市の赤城山頂付近、大沼湖畔に建つ青少年研修施設。林間学校の宿泊者の間で「まゆみの部屋」と呼ばれる207号室・201号室に白いワンピースの女の霊が出ると語り継がれている。消灯後の正体不明の話し声・廊下の足音・天井からの物音など、多数の利用者による独立した怪異証言が積み重なる。"
+mapQuery: "赤城少年自然の家 群馬県"
 ---
 
 消灯後、誰かが話していた。

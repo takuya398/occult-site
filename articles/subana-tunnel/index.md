@@ -10,6 +10,7 @@ tags: ["トンネル","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/subana-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=9WuB73GePOs"
 summary: "栃木県足利市と佐野市を結ぶ須花峠に、3本のトンネルが並んでいる。明治のトンネル。大正のトンネル。昭和のトンネル。明治のトンネルは手掘りで、土木学会選奨土木遺産に指定されている。大正のトンネルの入口で、和服姿の女性が小さな女の子の手を引いて立っていたという。「向こう側へ通り抜けたいの。でも邪魔されて行けないの」"
+mapQuery: "須花トンネル 栃木県"
 ---
 
 栃木県足利市と佐野市を結ぶ須花峠に、3本のトンネルが並んでいる。

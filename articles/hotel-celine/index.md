@@ -10,6 +10,7 @@ tags: ["廃屋","ホテル","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-celine/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=5k-MQ5j9Kqw"
 summary: "廃墟の壁に、妊婦の絵が描かれている。客室の壁に。ベッドのマットに。割れた窓ガラスに。全部で16か所。全て同じ筆致で。ナイフで腹を刺した絵もある。誰が、いつ、なぜ描いたのか──今も誰も知らない。"
+mapQuery: "ホテルセリーヌ 長野県"
 ---
 
 廃墟の壁に、妊婦の絵が描かれている。

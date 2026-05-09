@@ -10,6 +10,7 @@ tags: ["北海道","自殺名所","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/chikyu-misaki/cover.jpg"
 youtube: "https://m.youtube.com/watch?v=Py_GFWwuyXU&pp=ygUQ5Zyw55CD5bKsIOW_g-mcig%3D%3D"
 summary: "北海道室蘭市、絵鞆半島の最南端。「地球が丸く見える」と言われる標高120メートルの断崖絶壁だ。北海道自然100選で第1位に選ばれた絶景の観光地だ。展望台に「幸福の鐘」がある。夜中に誰も触れていないのに、その鐘が鳴った。"
+mapQuery: "地球岬 北海道"
 ---
 
 北海道室蘭市、絵鞆半島の最南端。

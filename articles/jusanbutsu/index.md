@@ -10,6 +10,7 @@ tags: ["墓地","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jusanbutsu/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=KLiUwMF9gBY"
 summary: "福岡県八女郡広川町、山間の集落の奥に洞窟がある。不動明王像が入口に立ち、その先の洞窟に首のない地蔵と赤く塗られた石仏が並んでいる。「この場所で笑うと霊障が起きる」と言われている。犬鳴峠を上回ると言われた福岡最恐の心霊スポット。しかし20人で訪れて誰も祟られなかったという体験談も残っている。"
+mapQuery: "十三佛 福岡県"
 ---
 
 福岡県八女郡広川町、山間の集落の奥に洞窟がある。

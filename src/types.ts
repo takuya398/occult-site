@@ -54,6 +54,9 @@ export type SpotEntry = BaseEntry & {
   danger?: 1 | 2 | 3 | 4 | 5;
   source?: SourceItem[];
   caution?: string[];
+  mapQuery?: string;
+  lat?: number;
+  lng?: number;
 };
 
 export type StoryEntry = BaseEntry & {

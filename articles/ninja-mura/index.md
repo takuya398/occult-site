@@ -10,6 +10,7 @@ tags: ["廃屋","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ninja-mura/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=BCsN_mX401s&t=2s"
 summary: "福岡市西区徳永に、かつて「福岡歴史の町 忍者村」というテーマパークがあった。江戸時代の街並みを再現し、からくり忍者屋敷があり、子供たちが家族連れで訪れた。2005年頃に閉園し、廃墟になった。廃墟になってから落ち武者の霊が出ると言われるようになった。現在は更地だ。"
+mapQuery: "忍者村 福岡県"
 ---
 
 福岡市西区徳永に、かつて「福岡歴史の町 忍者村」というテーマパークがあった。

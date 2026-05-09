@@ -10,6 +10,7 @@ tags: ["トンネル","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/ushikubi-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=dbSkwP7Tsag"
 summary: "石川県と富山県の県境、津幡町に1928年竣工の古いトンネルがある。正式名称「宮島隧道」、全長55メートル。トンネルの中央に置かれた地蔵の首は、3代目になっても取られている。映画「牛首村」の舞台にもなった石川県最恐の心霊スポット。老婆の霊が車に乗り込む・フロントガラスに手形がつくという体験談が語り継がれている。"
+mapQuery: "牛首トンネル 石川県"
 ---
 
 石川県と富山県の県境、津幡町に古いトンネルがある。

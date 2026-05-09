@@ -10,6 +10,7 @@ tags: ["禁足地","自然","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/sss-utaki/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=870LU90Iilk"
 summary: "沖縄県恩納村富着。ムーンビーチの向かいの山道に、S字カーブが3つ続く区間がある。かつてそのガードレールに赤いスプレーで「SSS」と書かれていた。それがこの場所の名前になった。正式名称はアフシマノ嶽（御嶽）。ユタの三大修行場のひとつだ。「ここは霊域につき、この先に立ち入る方は、命の保証が出来ません」そういう看板が、かつてここに立っていた。"
+mapQuery: "ＳＳＳ（アフシマノ嶽） 沖縄県"
 ---
 
 沖縄県恩納村富着。ムーンビーチの向かいの山道に、S字カーブが3つ続く区間がある。

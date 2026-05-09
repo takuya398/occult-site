@@ -10,6 +10,7 @@ tags: ["公園","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/egota-no-mori-park/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=KwlbIiMhUC0"
 summary: "東京都中野区に、防災公園がある。2007年に開園した江古田の森公園だ。昼間は子供が遊び、散歩する人が絶えない。しかしここはかつて「東京最強の心霊スポット」として、1990年代に肝試しの若者が殺到した場所だ。廃病棟があった時代の写真が、世の中に一枚も残っていない。"
+mapQuery: "江古田の森公園 東京都"
 ---
 
 東京都中野区に、防災公園がある。

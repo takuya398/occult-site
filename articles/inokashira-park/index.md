@@ -10,6 +10,7 @@ tags: ["心霊スポット","公園","事件","東京"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/inokashira-park/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=bt3K0oJvcyA"
 summary: "東京都武蔵野市・三鷹市の都立公園。弁財天の嫉妬によりボートに乗ったカップルは必ず別れるという伝承と、1994年に発生した未解決のバラバラ殺人事件が重なる。被害者の頭部と胴体は今も未発見のまま2009年に時効成立。白いワンピースの首なし幽霊が池から現れるという怪異が語られ、2014年のかいぼりでも遺体は見つからなかった。"
+mapQuery: "井の頭公園 東京都"
 ---
 
 1994年4月23日。

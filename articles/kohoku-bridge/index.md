@@ -10,6 +10,7 @@ tags: ["心霊スポット","橋","東京"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kohoku-bridge/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=f7mfOEinhpg"
 summary: "東京都足立区の荒川に架かる全長449メートルの現役橋。1980年代末〜1990年代初頭に直線の橋上で欄干への激突・転落事故が多発し、複数の運転手が「突然橋が曲がった」と同じ証言をした。1989年12月12日には欄干を突き破った無人の車でユーミンが流れ続けた事故をテレビ東京が報道。Wikipediaにも事故多発を受けた改修の記録が残る。白い服の女の手招き・河川敷での霊の目撃なども語られる。"
+mapQuery: "江北橋 東京都"
 ---
 
 1989年12月12日、江北橋から一台の車が欄干を突き破って河川敷に落ちた。

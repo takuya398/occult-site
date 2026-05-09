@@ -10,6 +10,7 @@ tags: ["心霊スポット","滝","神社","伝承"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/taki-fudo/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=WhT5iqElQAA"
 summary: "山形県上山市の山中に位置した滝と不動明王像の霊場。刑場の記憶と母子の悲劇の伝承を持ち、宜保愛子が「扱いきれない」と引き返した地として知られた。錆びた奉納刀が滝壺に刺さっていたが、2020年代に老朽化を理由に立入禁止となり祭祀物も撤去された。"
+mapQuery: "滝不動 山形県"
 ---
 
 宜保愛子は、奥へ進まなかった。

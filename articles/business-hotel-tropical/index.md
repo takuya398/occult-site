@@ -10,6 +10,7 @@ tags: ["神奈川","廃屋","ホテル","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/business-hotel-tropical/cover.jpg"
 youtube: "https://m.youtube.com/watch?v=S0bvWL6AKso"
 summary: "新横浜の高速道路ジャンクションのすぐそば。崎陽軒の工場の脇。蔦に覆われた廃ホテルが立っている。警察が公式Instagramで「立ち入らないでください」と動画を出した。三和タクシーが心霊スポット巡りのツアーコースに組み込んだ。かつてここに泊まったことがある人物が言う。「ここは本物です」と。"
+mapQuery: "ビジネスホテルトロピカル 神奈川県"
 ---
 
 新横浜の高速道路ジャンクションのすぐそば。崎陽軒の工場の脇。

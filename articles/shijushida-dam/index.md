@@ -10,6 +10,7 @@ tags: ["岩手","ダム","自殺名所","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/shijushida-dam/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=9Q9f9NE-TjA"
 summary: "昼間は観光地として人が集まる。県立博物館が近く、小学校も中学校もある。しかし夜になると、このダムの顔は変わる。ダム湖の湖底は泥が深く、一度沈むと二度と上がってこないと言われている。放水のたびに、仏が何体も上がってくるとも言われている。"
+mapQuery: "四十四田ダム 岩手県"
 ---
 
 昼間は観光地として人が集まる。県立博物館が近く、小学校も中学校もある。

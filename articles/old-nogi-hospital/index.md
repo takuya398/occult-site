@@ -10,6 +10,7 @@ tags: ["心霊スポット","廃病院","廃墟","栃木","女性の霊"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/old-nogi-hospital/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=uJMFLG3Nvos"
 summary: "栃木県野木町の森の中に残る3階建ての廃墟。精神科病院跡に白装束の集団が鎌を持って現れるという伝説、2階窓から見下ろすおかっぱ頭の女性の霊、秘密の地下室の噂など怪異が絶えない。かつて「栃木三大廃病院」に数えられた廃墟のうち唯一現存する物件。"
+mapQuery: "旧野木病院 栃木県"
 ---
 
 栃木三大廃病院のうち、今もただ一棟だけが残っている。

@@ -10,6 +10,7 @@ tags: ["心霊スポット","洞窟","森","静岡","伝承"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/banba-ana/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=Q_Rs82CPwbk"
 summary: "静岡県富士宮市の富士山西麓にある深さ約20メートルの縦穴。かつて飢饉の際に老婆が口減らしのために捨てられたとされる姥捨て伝承地。穴の底から人骨が発見されたとも語られ、覗き込むと底から手が伸びてくる・老婆の霊が「家に帰りたい」と訴えるという怪異が伝わる。川口浩探検隊でも紹介された。"
+mapQuery: "バンバ穴 静岡県"
 ---
 
 深さ20メートルの縦穴が、富士宮市の森の中にある。

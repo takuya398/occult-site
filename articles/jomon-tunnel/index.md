@@ -10,6 +10,7 @@ tags: ["北海道","トンネル","事件","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/jomon-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=n_T2ZgQS-kw"
 summary: "1914年、トンネルが完成した。工事中に100人以上が死んだ。タコ部屋労働と呼ばれる過酷な強制労働で。「トンネルの壁に人柱が埋まっている」と言われ続けた。しかし誰も信じなかった。1970年、修復工事中に壁からレンガの奥の玉砂利の中から、頭蓋骨に損傷のある人骨が発見された。伝説ではなかった。"
+mapQuery: "常紋トンネル 北海道"
 ---
 
 1914年、トンネルが完成した。

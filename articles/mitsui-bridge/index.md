@@ -10,6 +10,7 @@ tags: ["橋","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/mitsui-bridge/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=ADS3CRTs2eg"
 summary: "神奈川県相模原市。津久井湖のほぼ中央に、赤いアーチ橋がある。1965年、城山ダムの完成でこの場所は湖になった。水が満ちる前、ここに集落があった。塩民、荒川という集落が。田んぼがあった。鮎が釣れた。三井小学校があった。今は湖底に沈んでいる。夜、橋を渡っていると、気づかないうちに後部座席に女が乗っている。しばらくすると消える。"
+mapQuery: "三井大橋 神奈川県"
 ---
 
 神奈川県相模原市。津久井湖のほぼ中央に、赤いアーチ橋がある。

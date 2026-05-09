@@ -10,6 +10,7 @@ tags: ["心霊スポット","自然","東京"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/okutama-ropeway/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=IJpwBJgRQEI"
 summary: "東京都西多摩郡奥多摩町の廃ロープウェイ。1962年開業、わずか4年後の1966年に運行停止し、所有者の消息不明で取り壊せないまま60年近く放置。奥多摩湖の上空に取り残された2基のゴンドラの中に半裸の女が座っている・機械室で男の霊が目撃された・トイレの霊気が強いなどの怪異が語られる。廃墟マニアの間では関東の聖地とも呼ばれる。"
+mapQuery: "奥多摩湖ロープウェイ 東京都"
 ---
 
 1966年、冬季休業を理由に運行を停止した。

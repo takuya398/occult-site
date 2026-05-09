@@ -10,6 +10,7 @@ tags: ["神社","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/kubikari-shrine/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=uvYueTK2_-M"
 summary: "愛知県豊橋市の山中に、約750年前に建てられた神社がある。正式名称は「浅間（せんげん）神社」という。しかし地元では「首狩神社」と呼ばれている。江戸時代、この神社の近くを通る旅人を山賊が襲い、その首を切り落として階段に置いていた。階段の1段目と3段目に、血がしたたる生首が置かれていた。「踏むと呪われる」という言い伝えが今も残っている。"
+mapQuery: "首狩神社 愛知県"
 ---
 
 愛知県豊橋市の山中に、約750年前に建てられた神社がある。

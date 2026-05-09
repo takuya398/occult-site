@@ -10,6 +10,7 @@ tags: ["北海道","池","自殺名所","心霊スポット","心霊写真"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/nishioka-suigenchi/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=GSGO4HI8p3Q"
 summary: "春は桜が咲く。夏は蛍が飛ぶ。秋は紅葉。しかし夜になると、木々に囲まれた遊歩道の照明が消え、池は黒く淀んだ水に変わる。「死体が上がらない湖」と呼ばれるこの場所で、真夜中になると水面から白い手が伸びて引きずり込もうとする──と語られてきた。札幌三大心霊スポットのひとつ。"
+mapQuery: "西岡水源池 北海道"
 ---
 
 春は桜が咲く。夏は蛍が飛ぶ。秋は紅葉。冬は取水塔と雪のコラボが美しい。

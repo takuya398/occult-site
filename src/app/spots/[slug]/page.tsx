@@ -179,8 +179,16 @@ export default async function SpotsDetailPage({
   const { toc, body: contentBody } = extractTocSection(rawContent);
   const tocItems = parseTocMarkdown(toc);
   const videoUrl = spot.videoUrls?.[0];
+  const mapUrl = spot.mapQuery
+    ? `https://www.google.com/maps?q=${encodeURIComponent(spot.mapQuery)}&output=embed`
+    : spot.lat !== undefined && spot.lng !== undefined
+    ? `https://www.google.com/maps?q=${spot.lat},${spot.lng}&output=embed`
+    : null;
+
   const hasVideoToken = contentBody.includes("{{VIDEO}}");
-  const contentParts = contentBody.split("{{VIDEO}}");
+  const [beforeVideo, afterVideo = ""] = contentBody.split("{{VIDEO}}");
+  const hasMapToken = beforeVideo.includes("{{MAP}}");
+  const [beforeMap, afterMap = ""] = beforeVideo.split("{{MAP}}");
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
@@ -261,20 +269,43 @@ export default async function SpotsDetailPage({
                 rehypePlugins={[rehypeSlug]}
                 components={markdownComponents}
               >
-                {contentParts[0]}
+                {beforeMap}
               </ReactMarkdown>
-              {hasVideoToken && videoUrl && (
-                <div className="my-6">
-                  <EmbedMedia url={videoUrl} />
+              {hasMapToken && mapUrl && (
+                <div className="not-prose my-6 overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-700">
+                  <iframe
+                    src={mapUrl}
+                    width="100%"
+                    height="400"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title={`${spot.title}の地図`}
+                  />
                 </div>
               )}
-              {contentParts[1] && (
+              {afterMap && (
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm]}
                   rehypePlugins={[rehypeSlug]}
                   components={markdownComponents}
                 >
-                  {contentParts[1]}
+                  {afterMap}
+                </ReactMarkdown>
+              )}
+              {hasVideoToken && videoUrl && (
+                <div className="my-6">
+                  <EmbedMedia url={videoUrl} />
+                </div>
+              )}
+              {afterVideo && (
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  rehypePlugins={[rehypeSlug]}
+                  components={markdownComponents}
+                >
+                  {afterVideo}
                 </ReactMarkdown>
               )}
               {!hasVideoToken && videoUrl && (

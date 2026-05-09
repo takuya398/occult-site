@@ -10,6 +10,7 @@ tags: ["廃屋","ホテル","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/purumeria/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=7g4bxhREkmQ"
 summary: "愛知県南知多町・内海地区。海沿いの道沿いに、南欧風の廃墟がある。かつて「海風洋館プルーメリア」という名のリゾートホテルだった。スペイン製の家具で統一され、整形クリニックを併設するという珍しいホテルだった。廃墟になった。「整形手術に失敗して自殺した女性の霊が出る」という噂が広まった。前の道を通るだけで、雰囲気の違いに寒気がする。地元の人間はそう言っている。"
+mapQuery: "海風洋館プルーメリア 愛知県"
 ---
 
 愛知県南知多町・内海地区。海沿いの道沿いに、南欧風の廃墟がある。

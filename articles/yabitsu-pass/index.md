@@ -10,6 +10,7 @@ tags: ["峠","山","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/yabitsu-pass/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=uCwPI2t3Suo"
 summary: "神奈川県秦野市。丹沢山系の尾根に、峠道がある。標高761メートル。連続するカーブと狭い山道。「表ヤビツ」と「裏ヤビツ」に分かれる。昼間は菜の花展望台から相模湾が見える。夜景スポットとして人気だ。しかし夜になると、カーブミラーに女の顔が映り込む。車の後ろを老婆の霊が追いかけてくる。足を掴まれる。背中を押される。「ヤビツ」の名は、かつてここで戦った武士たちの「矢櫃（やびつ）」に由来するという。"
+mapQuery: "ヤビツ峠 神奈川県"
 ---
 
 神奈川県秦野市。丹沢山系の尾根に、峠道がある。

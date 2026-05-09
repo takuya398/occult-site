@@ -10,6 +10,7 @@ tags: ["心霊スポット","廃墟","高知"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/skyrest-new-muroto/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=jRCtIDm33lM"
 summary: "高知県室戸市の室戸スカイライン沿いに建つ廃墟の展望レストラン兼結婚式場。1972年開業・1978年廃業。テーブルに残された招待状の新郎欄に名前を書いた学生が間もなく死んだという怪談で知られ、稲川淳二のホラーDVDに取り上げられた。白いドレスの花嫁の霊・地下室の異様な空気・螺旋階段の人影が語られる。"
+mapQuery: "スカイレストニュー室戸 高知県"
 ---
 
 テーブルの上に招待状が置いてあった。

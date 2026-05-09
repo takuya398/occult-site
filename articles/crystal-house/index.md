@@ -10,6 +10,7 @@ tags: ["心霊スポット","廃屋","群馬"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/crystal-house/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=95g-LW-7X-Y"
 summary: "群馬県邑楽郡邑楽町篠塚に存在した全面ガラス張りの廃墟。用途不明のまま放置された建物内部には転がったピアノがあり、夜になると誰も弾いていないのにピアノの音が聞こえるという体験談が複数残っている。「誘拐された女の子の死体を隠す場所として使われた」という噂と女性の霊の目撃談が重なり、2017年の解体後も伝承として語り継がれている。"
+mapQuery: "クリスタルハウス 群馬県"
 ---
 
 全面ガラス張りの建物が、住宅街の外れの森の中に建っていた。

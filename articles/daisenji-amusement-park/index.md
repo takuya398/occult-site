@@ -10,6 +10,7 @@ tags: ["富山","廃遊園地","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/daisenji-amusement-park/cover.jpg"
 youtube: "https://m.youtube.com/watch?v=r9yB-qNSo5k"
 summary: "富山市の神通川沿い、立山連峰を望む場所に、かつて遊園地があった。1961年に開園し、1996年に閉じた。廃墟化した後、子供の霊の目撃が相次いだ。危険として遊具はすべて撤去された。それでも、子供の声が聞こえてくると言われている。"
+mapQuery: "大川寺遊園地 富山県"
 ---
 
 富山市の神通川沿い、立山連峰を望む場所に、かつて遊園地があった。

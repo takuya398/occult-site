@@ -10,6 +10,7 @@ tags: ["心霊スポット","トンネル","東京"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/sendagaya-tunnel/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=1C3Wkah3nXE"
 summary: "東京都渋谷区神宮前の現役トンネル。1964年東京オリンピックの工期に追われ、仙寿院の墓地を移転できないまま真下にトンネルを通した。逆さ吊りの血まみれの女がフロントガラスを睨みボンネットに落ちてくる怪異で知られ、バックミラーに女の顔が映る・手形がつくなど1970年代から怪異の報告が続く都内屈指の心霊トンネル。"
+mapQuery: "千駄ヶ谷トンネル 東京都"
 ---
 
 1964年、東京オリンピックのために道路を作った。

@@ -10,6 +10,7 @@ tags: ["新潟","廃屋","ホテル","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/hotel-suzukigaike/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=TJCMGirq-cU"
 summary: "日本海を見渡す瀬波温泉の高台に、巨大な廃ホテルがある。増築に増築を重ねた結果、複雑怪奇な構造になった。11階建て、竪坑で接続された迷宮だ。7階から6階へ降りようとしたとき、トイレの方向から「バァンバァンバァン！！」と床を叩く不可解な音が響いた。"
+mapQuery: "ホテルすずきヶ池 新潟県"
 ---
 
 日本海を見渡す瀬波温泉の高台に、巨大な廃ホテルがある。

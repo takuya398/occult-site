@@ -10,6 +10,7 @@ tags: ["心霊スポット","トンネル","大阪"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/nashinoki-zuido/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=F-kXib3ejGk&t=103s"
 summary: "大阪府河内長野市の滝畑ダム奥に存在する廃トンネル。現在はゲートで完全封鎖。クラクションを鳴らすと少女の霊が現れ家まで憑いてくるという伝承で知られ、女性と子供が焼き殺されたという噂・ゲート越しに聞こえる女性の声・車に残る赤い手形など複数の怪異が語られる。滝畑ダム一帯では最恐とされるスポット。"
+mapQuery: "梨の木隧道 大阪府"
 ---
 
 トンネルの中で車を停め、クラクションを鳴らすと──少女の霊が現れる。

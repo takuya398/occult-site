@@ -10,6 +10,7 @@ tags: ["橋","自殺名所","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/uchikoshi-bridge/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=XQrFz31WKbg"
 summary: "神奈川県横浜市中区山手町。朱色に塗られたアーチ橋が、切通しの上に架かっている。1928年（昭和3年）竣工。関東大震災の復興事業として建設された。橋脚の脇に、地蔵尊が祀られている。現在は高さ3メートルのフェンスが橋の両端に設置されている。「橋の下を車で通過すると、自殺者の霊が飛び降りてくる」と言われている。"
+mapQuery: "打越橋 神奈川県"
 ---
 
 神奈川県横浜市中区山手町。朱色に塗られたアーチ橋が、切通しの上に架かっている。

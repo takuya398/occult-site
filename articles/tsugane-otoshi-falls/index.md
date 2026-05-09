@@ -10,6 +10,7 @@ tags: ["滝","心霊スポット"]
 cover: "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/spots/tsugane-otoshi-falls/cover.jpg"
 youtube: "https://www.youtube.com/watch?v=-sOnYJ3YIxY"
 summary: "長崎県西海市大瀬戸町、長崎百景のひとつに選ばれた滝がある。落差20メートル。滝つぼがない。水は岩の上にそのまま落ちる。この地域は「オバケ川」とも呼ばれる。かつてここでキリシタン狩りが行われた。無念にも命を落とした者たちの霊が今もさまよっていると言われている。"
+mapQuery: "つがね落しの滝 長崎県"
 ---
 
 長崎県西海市大瀬戸町、長崎百景のひとつに選ばれた滝がある。
