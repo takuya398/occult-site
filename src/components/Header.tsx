@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
@@ -133,7 +134,8 @@ export default function Header() {
         {/* ── 1段目 ── */}
         <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
           {/* サイト名 */}
-          <Link href="/" className="text-base font-semibold tracking-tight sm:text-lg">
+          <Link href="/" className="flex shrink-0 items-center gap-2 whitespace-nowrap text-sm font-semibold tracking-tight sm:text-base">
+            <Image src="/logo.png" alt="Occult Encyclopedia" width={28} height={28} className="rounded-full" priority />
             Occult Encyclopedia
           </Link>
 
