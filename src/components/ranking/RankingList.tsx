@@ -20,7 +20,7 @@ export default function RankingList({ items, startRank = 4 }: Props) {
       {items.map((item, i) => {
         const rank = startRank + i;
         return (
-          <li key={item.slug}>
+          <li key={`${item.articleType}:${item.slug}`}>
             <Link
               href={item.href}
               className="group flex items-center gap-3 rounded-lg px-4 py-4 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800/50 sm:gap-4"

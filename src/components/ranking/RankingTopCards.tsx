@@ -40,7 +40,7 @@ export default function RankingTopCards({ items }: Props) {
         const style = RANK_STYLES[i];
         return (
           <Link
-            key={item.slug}
+            key={`${item.articleType}:${item.slug}`}
             href={item.href}
             className={`group relative flex flex-col overflow-hidden rounded-xl border-2 ${style.border} bg-white transition-all hover:-translate-y-0.5 hover:shadow-lg dark:bg-zinc-900`}
           >
