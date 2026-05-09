@@ -177,7 +177,27 @@ export default function Header() {
           </button>
         </div>
 
-        {/* ── 2段目（Mobile専用: 検索） ── */}
+        {/* ── 2段目（Mobile専用: ナビ） ── */}
+        <div className="sm:hidden overflow-x-auto no-scrollbar px-4 pt-1 pb-2">
+          <nav className="flex items-center gap-2 w-max">
+            {navLinks.map((link) => {
+              const isActive = pathname.startsWith(link.href);
+              const { className, style } = navPill(link.variant);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`${className} ${isActive ? "text-slate-900" : ""}`}
+                  style={style}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
+
+        {/* ── 3段目（Mobile専用: 検索） ── */}
         <div className="sm:hidden px-4 pb-3">
           {searchInput(
             "site-search-mobile",

@@ -53,6 +53,9 @@ body {
   }
 }
 
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
 /* hover可能な端末だけ、ナビを"押せるピル"に */
 @media (hover: hover) and (pointer: fine) {
   .navPill {
