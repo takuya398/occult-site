@@ -49,6 +49,8 @@ export const TAG_SLUG_MAP: Record<string, string> = {
   "水陸両生": "amphibious",
   "凶暴性高": "aggressive",
   "集団パニック": "mass-panic",
+  // 形態（追加分）
+  "翼型": "winged-type",
   // 由来・証拠
   "古代伝承": "ancient-legend",
   "民間伝承": "folklore",
@@ -62,6 +64,10 @@ export const TAG_SLUG_MAP: Record<string, string> = {
   "DNA報告あり": "dna-report",
   "複数証言": "multiple-witnesses",
   "単独証言": "single-witness",
+  "未解決": "unresolved",
+  "歴史的目撃": "historical-sighting",
+  "現在も目撃継続": "ongoing-sightings",
+  "先住民伝承": "indigenous-folklore",
   "海外": "overseas",
 };
 
