@@ -35,11 +35,11 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="オカルト図鑑"
-                width={28}
-                height={28}
+                width={40}
+                height={40}
                 className="rounded-full"
               />
-              <span className="text-sm font-semibold text-[#f9fafb]">
+              <span className="text-base font-semibold text-[#f9fafb]">
                 オカルト図鑑
               </span>
             </div>
