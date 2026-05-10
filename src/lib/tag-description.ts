@@ -1,4 +1,4 @@
-import type { UmaEntry } from "@/types";
+import type { EntityEntry } from "@/types";
 import type { CategoryKey } from "@/data/uma-tag-slugs";
 
 // 主要タグの固定説明文（tagSlug → 説明文）
@@ -47,7 +47,7 @@ export type TagStats = {
   highDangerCount: number;
 };
 
-export function getTagStats(umasInThisTag: UmaEntry[]): TagStats {
+export function getTagStats(umasInThisTag: EntityEntry[]): TagStats {
   return {
     totalCount: umasInThisTag.length,
     highExistCount: umasInThisTag.filter((u) =>
@@ -60,7 +60,7 @@ export function getTagStats(umasInThisTag: UmaEntry[]): TagStats {
   };
 }
 
-export function getTagStatSentence(umasInThisTag: UmaEntry[]): string {
+export function getTagStatSentence(umasInThisTag: EntityEntry[]): string {
   const { totalCount, highExistCount, highEvidenceCount, highDangerCount } =
     getTagStats(umasInThisTag);
   return `現在このタグに該当するUMAは${totalCount}体で、実在度A以上は${highExistCount}体、証拠強度B以上は${highEvidenceCount}体、危険度4以上は${highDangerCount}体です。`;
@@ -77,7 +77,7 @@ export function getTagDescription(
   tagSlug: string,
   tagName: string,
   categoryKey: CategoryKey | "",
-  umasInThisTag: UmaEntry[]
+  umasInThisTag: EntityEntry[]
 ): TagDescription {
   const body =
     TAG_DESCRIPTION_MAP[tagSlug] ?? getCategoryTemplate(tagName, categoryKey);

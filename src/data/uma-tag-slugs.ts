@@ -1,4 +1,4 @@
-import type { UmaEntry } from "@/types";
+import type { EntityEntry } from "@/types";
 import { UMA_TAG_CATEGORIES } from "./uma-tags";
 
 // 日本語タグ → 英語slug（永続・変更禁止）
@@ -103,7 +103,7 @@ export type RelatedTag = {
  * - count 降順、同点時は tagName 昇順
  */
 export function getRelatedTags(
-  umasInThisTag: UmaEntry[],
+  umasInThisTag: EntityEntry[],
   currentTagName: string,
   options: { maxCount?: number; minCount?: number } = {}
 ): RelatedTag[] {
@@ -155,7 +155,7 @@ export type RelatedTagsByCategory = Partial<Record<CategoryKey, RelatedTagItem[]
  * - タグが0件のカテゴリは返り値に含まれない
  */
 export function getRelatedTagsByCategory(
-  umasInThisTag: UmaEntry[],
+  umasInThisTag: EntityEntry[],
   currentTagName: string,
   options: {
     minCount?: number;

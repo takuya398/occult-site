@@ -13,7 +13,7 @@ import {
   getRecommendDetails,
   calcRecommendScore,
 } from "@/lib/uma-score";
-import UmaCardCover from "@/app/uma/UmaCardCover";
+import UmaCardCover from "./UmaCardCover";
 import { PREFECTURE_ORDER } from "@/constants/prefectures";
 
 // 都道府県フィルター用（geo.scope==="JP" のみ、地域順）

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { umas } from "@/loaders";
+import { entities } from "@/loaders";
 import { UMA_TAG_CATEGORIES } from "@/data/uma-tags";
 import { TAG_SLUG_MAP } from "@/data/uma-tag-slugs";
 
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function TagsPage() {
   // タグ別UMA件数を集計
   const tagCounts: Record<string, number> = {};
-  umas.forEach((uma) => {
+  entities.forEach((uma) => {
     uma.tags.forEach((tag) => {
       tagCounts[tag] = (tagCounts[tag] ?? 0) + 1;
     });

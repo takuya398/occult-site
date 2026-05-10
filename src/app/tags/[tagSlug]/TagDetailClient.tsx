@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { umas } from "@/loaders";
+import { entities } from "@/loaders";
 import { Badge, Card, CardLink, TagChip } from "@/components/ui";
 import {
   existenceRankScore,
@@ -67,15 +67,15 @@ export default function TagDetailClient({ tagName, tagSlug }: Props) {
   // 現在のタグに絞ったUMA一覧（ソートなし）
   // relatedTags と filteredUmas の両方で参照し、ソート変更で再計算されないよう分離
   const umasInThisTag = useMemo(
-    () => umas.filter((u) => u.tags.includes(tagName)),
+    () => entities.filter((u) => u.tags.includes(tagName)),
     [tagName]
   );
 
   // ソート適用済みリスト
   const filteredUmas = useMemo(() => {
     const byNewest = (
-      a: (typeof umas)[number],
-      b: (typeof umas)[number]
+      a: (typeof entities)[number],
+      b: (typeof entities)[number]
     ) => {
       const ca = a.createdAt ?? "";
       const cb = b.createdAt ?? "";
@@ -131,7 +131,7 @@ export default function TagDetailClient({ tagName, tagSlug }: Props) {
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
         <div className="mb-6 flex flex-wrap items-center gap-3 text-sm font-medium text-zinc-600 dark:text-zinc-300">
           <Link
-            href="/uma"
+            href="/entities"
             className="transition-colors hover:text-zinc-900 dark:hover:text-zinc-100"
           >
             ← UMA一覧へ
@@ -231,7 +231,7 @@ export default function TagDetailClient({ tagName, tagSlug }: Props) {
             return (
               <CardLink
                 key={uma.slug}
-                href={`/uma/${uma.slug}`}
+                href={`/entities/${uma.slug}`}
                 ariaLabel={`${uma.title}の詳細へ`}
               >
                 <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">

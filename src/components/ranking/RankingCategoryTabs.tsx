@@ -5,8 +5,7 @@ const TABS: { key: RankingCategory; label: string }[] = [
   { key: "all", label: "総合" },
   { key: "spots", label: "心霊スポット" },
   { key: "legends", label: "都市伝説" },
-  { key: "uma", label: "UMA" },
-  { key: "entities", label: "怪異・妖怪" },
+  { key: "entities", label: "UMA・怪異" },
 ];
 
 type Props = {

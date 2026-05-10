@@ -5,11 +5,11 @@
  */
 import { createAdminClient } from "@/lib/supabase-admin";
 import { getSpotEntriesFromArticles } from "@/lib/spot-articles";
-import { loadLegends, loadUmas, loadEntities } from "@/loaders";
+import { loadLegends, loadEntities } from "@/loaders";
 import type { Category } from "@/types";
 
 export type Period = "weekly" | "monthly" | "yearly";
-export type RankingCategory = "all" | "spots" | "legends" | "uma" | "entities";
+export type RankingCategory = "all" | "spots" | "legends" | "entities";
 
 export type RankingItem = {
   slug: string;
@@ -38,20 +38,18 @@ const PERIOD_DAYS: Record<Period, number> = {
 };
 
 const TYPE_FILTER: Record<RankingCategory, string[]> = {
-  all: ["spots", "legends", "uma", "entities"],
+  all: ["spots", "legends", "entities"],
   spots: ["spots"],
   legends: ["legends"],
-  uma: ["uma"],
   entities: ["entities"],
 };
 
 type ArticleMeta = Omit<RankingItem, "score" | "commentCount" | "totalGoodCount">;
 
 async function loadAllArticles(): Promise<ArticleMeta[]> {
-  const [spots, legends, umas, entities] = await Promise.all([
+  const [spots, legends, entities] = await Promise.all([
     getSpotEntriesFromArticles(),
     Promise.resolve(loadLegends()),
-    Promise.resolve(loadUmas()),
     Promise.resolve(loadEntities()),
   ]);
 
@@ -91,19 +89,6 @@ async function loadAllArticles(): Promise<ArticleMeta[]> {
         publishedAt: x.publishedAt,
       };
     }),
-    ...umas.map((x): ArticleMeta => ({
-      slug: x.slug,
-      articleType: "uma",
-      category: "uma",
-      title: x.title,
-      summary: x.summary,
-      cover: x.coverImage?.src,
-      href: `/uma/${x.slug}`,
-      region: x.region,
-      danger: x.danger,
-      existenceRank: x.existence_rank,
-      publishedAt: x.publishedAt,
-    })),
     ...entities.map((x): ArticleMeta => ({
       slug: x.slug,
       articleType: "entities",

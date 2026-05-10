@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { readdirSync, statSync } from "fs";
 import path from "path";
-import { loadLegends, loadUmas, loadEntities, loadMysteries } from "@/loaders";
+import { loadLegends, loadEntities, loadMysteries } from "@/loaders";
 
 const BASE_URL = "https://occultpedia.jp";
 
@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/spots`, priority: 0.9, changeFrequency: "weekly" },
     { url: `${BASE_URL}/legends`, priority: 0.9, changeFrequency: "weekly" },
     { url: `${BASE_URL}/entities`, priority: 0.9, changeFrequency: "weekly" },
-    { url: `${BASE_URL}/uma`, priority: 0.9, changeFrequency: "weekly" },
     { url: `${BASE_URL}/mysteries`, priority: 0.9, changeFrequency: "weekly" },
     { url: `${BASE_URL}/ranking`, priority: 0.8, changeFrequency: "daily" },
   ];
@@ -31,17 +30,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const legends = loadLegends();
-  const umas = loadUmas();
   const entities = loadEntities();
   const mysteries = loadMysteries();
 
   const legendPages: MetadataRoute.Sitemap = legends.map((item) => ({
     url: `${BASE_URL}/legends/${item.slug}`,
-    priority: 0.7,
-    changeFrequency: "monthly",
-  }));
-  const umaPages: MetadataRoute.Sitemap = umas.map((item) => ({
-    url: `${BASE_URL}/uma/${item.slug}`,
     priority: 0.7,
     changeFrequency: "monthly",
   }));
@@ -60,7 +53,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticPages,
     ...spotPages,
     ...legendPages,
-    ...umaPages,
     ...entityPages,
     ...mysteryPages,
   ];

@@ -69,7 +69,6 @@ export default function Header() {
     if (pathname.startsWith("/stories")) return "/legends";
     if (pathname.startsWith("/entities")) return "/entities";
     if (pathname.startsWith("/mysteries")) return "/mysteries";
-    if (pathname.startsWith("/uma")) return "/uma";
     if (pathname.startsWith("/spots")) return "/spots";
     return "/spots";
   }, [pathname]);

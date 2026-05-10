@@ -7,7 +7,7 @@ import RankingList from "@/components/ranking/RankingList";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const VALID_PERIODS: Period[] = ["weekly", "monthly", "yearly"];
-const VALID_CATEGORIES: RankingCategory[] = ["all", "spots", "legends", "uma", "entities"];
+const VALID_CATEGORIES: RankingCategory[] = ["all", "spots", "legends", "entities"];
 
 const PERIOD_LABEL: Record<Period, string> = {
   weekly: "週間",
@@ -19,8 +19,7 @@ const CATEGORY_LABEL: Record<RankingCategory, string> = {
   all: "総合",
   spots: "心霊スポット",
   legends: "都市伝説",
-  uma: "UMA",
-  entities: "怪異・妖怪",
+  entities: "UMA・怪異",
 };
 
 function parsePeriod(raw: string | undefined): Period {
