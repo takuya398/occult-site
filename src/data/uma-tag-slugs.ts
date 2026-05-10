@@ -48,6 +48,7 @@ export const TAG_SLUG_MAP: Record<string, string> = {
   "夜行性": "nocturnal",
   "水陸両生": "amphibious",
   "凶暴性高": "aggressive",
+  "集団パニック": "mass-panic",
   // 由来・証拠
   "古代伝承": "ancient-legend",
   "民間伝承": "folklore",
@@ -61,6 +62,7 @@ export const TAG_SLUG_MAP: Record<string, string> = {
   "DNA報告あり": "dna-report",
   "複数証言": "multiple-witnesses",
   "単独証言": "single-witness",
+  "海外": "overseas",
 };
 
 // 逆引き: slug → tagName
