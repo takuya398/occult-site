@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 
 const geistSans = Geist({
@@ -116,6 +117,7 @@ export default function RootLayout({
             <Header />
           </Suspense>
           <main className="pt-[145px] sm:pt-[61px]">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
