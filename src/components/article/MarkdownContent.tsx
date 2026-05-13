@@ -42,6 +42,30 @@ export default function MarkdownContent({ content }: Props) {
           </h3>
         ),
         p: ({ node, children }) => {
+          // YouTube URL embed
+          if (node?.children?.length === 1) {
+            const child = node.children[0];
+            if (child.type === "element" && child.tagName === "a") {
+              const href = (child as { tagName: string; properties?: Record<string, unknown> }).properties?.href;
+              if (typeof href === "string") {
+                const ytMatch = href.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+                if (ytMatch) {
+                  return (
+                    <div className="my-8 aspect-video overflow-hidden rounded-xl">
+                      <iframe
+                        src={`https://www.youtube.com/embed/${ytMatch[1]}`}
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        className="h-full w-full"
+                      />
+                    </div>
+                  );
+                }
+              }
+            }
+          }
+
           const hasImage =
             node?.children?.some(
               (child) => child.type === "element" && child.tagName === "img"
