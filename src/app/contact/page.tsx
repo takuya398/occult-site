@@ -27,7 +27,7 @@ export default function ContactPage() {
         </header>
 
         <form
-          action="https://formspree.io/f/placeholder"
+          action="https://formspree.io/f/xeedjrrw"
           method="POST"
           className="space-y-6"
         >
