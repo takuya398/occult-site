@@ -158,4 +158,5 @@ export const TAGS = [
   ,"茨城"
   ,"大分"
   ,"福井"
+  ,"岸"
 ] as const;
