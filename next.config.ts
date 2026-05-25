@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    turbopackUseSystemTlsCerts: true,
+  },
   images: {
     // 外部画像を使う場合はここにドメインを追加してください
     remotePatterns: [
