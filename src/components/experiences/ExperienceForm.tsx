@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/navigation";
 import { GENRES } from "@/lib/experiences/types";
 import { PREFECTURE_ORDER } from "@/constants/prefectures";
 import { getUserKey } from "@/lib/userKey";
@@ -69,9 +68,10 @@ function SelectDown({ value, onChange, options, placeholder = "選択してく�
 type Props = { presetSpot?: string };
 
 export default function ExperienceForm({ presetSpot = "" }: Props) {
-  const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const [slowWarning, setSlowWarning] = useState(false);
   const [agreed, setAgreed] = useState(false);
 
   const [form, setForm] = useState({
@@ -94,29 +94,59 @@ export default function ExperienceForm({ presetSpot = "" }: Props) {
     if (!agreed) { setError("利用規約に同意してください。"); return; }
     setSubmitting(true);
     setError("");
+    setSlowWarning(false);
 
-    const res = await fetch("/api/experiences", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...form, scare_level: Number(form.scare_level), guest_key: getUserKey() }),
-    });
+    const controller = new AbortController();
+    let done = false;
 
-    const data = await res.json();
-    if (data.ok) {
-      router.push("/experiences/new?submitted=1");
-    } else {
-      setError(data.error ?? "投稿に失敗しました。");
-      setSubmitting(false);
+    const slowTimer = window.setTimeout(() => {
+      if (!done) setSlowWarning(true);
+    }, 10000);
+
+    const timeoutTimer = window.setTimeout(() => {
+      if (!done) {
+        done = true;
+        controller.abort();
+        setError("投稿に失敗しました。もう一度お試しください。");
+        setSubmitting(false);
+        setSlowWarning(false);
+      }
+    }, 30000);
+
+    try {
+      const res = await fetch("/api/experiences", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, scare_level: Number(form.scare_level), guest_key: getUserKey() }),
+        signal: controller.signal,
+      });
+
+      done = true;
+      clearTimeout(slowTimer);
+      clearTimeout(timeoutTimer);
+
+      const data = await res.json();
+      if (data.ok) {
+        setSubmitted(true);
+      } else {
+        setError(data.error ?? "投稿に失敗しました。");
+        setSubmitting(false);
+        setSlowWarning(false);
+      }
+    } catch {
+      done = true;
+      clearTimeout(slowTimer);
+      clearTimeout(timeoutTimer);
+      if (!controller.signal.aborted) {
+        setError("投稿に失敗しました。もう一度お試しください。");
+        setSubmitting(false);
+        setSlowWarning(false);
+      }
     }
   }
 
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  useEffect(() => {
-    setIsSubmitted(new URLSearchParams(window.location.search).get("submitted") === "1");
-  }, []);
-
   // 投稿完了画面
-  if (isSubmitted) {
+  if (submitted) {
     return (
       <div className="rounded-xl border border-zinc-700 bg-zinc-900 p-8 text-center">
         <p className="text-lg font-semibold text-zinc-100">投稿ありがとうございます。</p>
@@ -237,6 +267,9 @@ export default function ExperienceForm({ presetSpot = "" }: Props) {
       {/* Honeypot */}
       <input name="website" type="text" className="hidden" tabIndex={-1} autoComplete="off" />
 
+      {slowWarning && !error && (
+        <p className="text-sm text-amber-400">投稿に時間がかかっています。しばらくお待ちください。</p>
+      )}
       {error && <p className="text-sm text-red-400">{error}</p>}
 
       <button
