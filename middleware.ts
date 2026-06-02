@@ -10,7 +10,7 @@ export function middleware(req: NextRequest) {
   const authHeader = req.headers.get("authorization");
   const expectedUser = process.env.ADMIN_BASIC_USER ?? "admin";
   const expectedPass = process.env.ADMIN_PASSWORD ?? "";
-  const expected = `Basic ${Buffer.from(`${expectedUser}:${expectedPass}`).toString("base64")}`;
+  const expected = `Basic ${btoa(`${expectedUser}:${expectedPass}`)}`;
 
   if (authHeader !== expected) {
     return new NextResponse("Unauthorized", {
