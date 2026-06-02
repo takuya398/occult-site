@@ -11,9 +11,10 @@ type HeroArticle = {
 
 type Props = {
   article?: HeroArticle;
+  children?: React.ReactNode;
 };
 
-export default function Hero({ article }: Props) {
+export default function Hero({ article, children }: Props) {
   return (
     <div className="space-y-5 sm:space-y-7">
 
@@ -48,6 +49,8 @@ export default function Hero({ article }: Props) {
           </p>
         </div>
       </header>
+
+      {children}
 
       {/* ── 特集カード ── */}
       <div>

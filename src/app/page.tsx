@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import NoticeBoard from "@/components/NoticeBoard";
 import RankingList from "@/components/RankingList";
 import FeatureList from "@/components/FeatureList";
 import ArticleGrid from "@/components/ArticleGrid";
@@ -27,10 +28,12 @@ export default async function Home() {
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-[#07000a] dark:text-[#e8ddd0] dark:[background-image:radial-gradient(ellipse_at_50%_0%,rgba(74,14,107,0.18)_0%,transparent_55%)]">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-12 px-6 py-14">
 
-        {/* 1. ヒーロー */}
-        <Hero article={articles[0]} />
+        {/* 1. ヒーロー（お知らせはヘッダーと今夜の怪異カードの間） */}
+        <Hero article={articles[0]}>
+          <NoticeBoard />
+        </Hero>
 
-        {/* 2. 人気ランキング */}
+        {/* 3. 人気ランキング */}
         <section>
           <RankingList articles={rankingArticles} />
         </section>
