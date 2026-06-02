@@ -191,9 +191,9 @@ export default function ExperienceForm({ presetSpot = "" }: Props) {
       {/* 怖さレベル */}
       <div>
         <label className="mb-1 block text-sm font-medium text-zinc-400">怖さレベル <span className="text-red-400">*</span></label>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {[1, 2, 3, 4, 5].map((n) => (
-            <label key={n} className={`flex cursor-pointer items-center gap-1 rounded-full border px-3 py-1 text-sm transition-colors ${Number(form.scare_level) === n ? "border-amber-500 bg-amber-900/30 text-amber-300" : "border-zinc-700 text-zinc-400 hover:border-zinc-500"}`}>
+            <label key={n} className={`flex cursor-pointer items-center gap-1 rounded-full border px-2 py-1 text-xs transition-colors sm:px-3 sm:text-sm ${Number(form.scare_level) === n ? "border-amber-500 bg-amber-900/30 text-amber-300" : "border-zinc-700 text-zinc-400 hover:border-zinc-500"}`}>
               <input type="radio" name="scare_level" value={n} checked={Number(form.scare_level) === n} onChange={() => set("scare_level", String(n))} className="sr-only" />
               {"★".repeat(n)}
             </label>
