@@ -14,6 +14,7 @@ import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
 import CommentSection from "@/components/comments/CommentSection";
 import ViewTracker from "@/components/ViewTracker";
+import SpotExperienceSection from "@/components/experiences/SpotExperienceSection";
 
 function parseTocMarkdown(tocMd: string): { text: string; id: string }[] {
   const items: { text: string; id: string }[] = [];
@@ -356,6 +357,7 @@ export default async function SpotsDetailPage({
               {sourceBody}
             </div>
           </Card>
+          <SpotExperienceSection spotSlug={spot.slug} />
           <CommentSection slug={spot.slug} articleType="spots" />
         </div>
       </div>

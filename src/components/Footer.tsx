@@ -14,6 +14,7 @@ const genreLinks = [
   { label: "都市伝説", href: "/legends" },
   { label: "怪談", href: "/legends" },
   { label: "禁足地", href: "/restricted-areas" },
+  { label: "心霊体験談", href: "/experiences" },
 ];
 
 export default function Footer() {

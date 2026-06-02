@@ -46,6 +46,7 @@ export default function AboutPage() {
                 { label: "怪談・都市伝説", desc: "口承で語り継がれてきた怪談から現代の都市伝説まで幅広く掲載" },
                 { label: "UMA・異形", desc: "世界各地で目撃報告がある未確認生物（UMA）を実在度とともに解説" },
                 { label: "怪事件・ミステリー", desc: "未解決事件・不可解な失踪・謎の文書など歴史的ミステリーを収録" },
+                { label: "心霊体験談", desc: "読者から寄せられた実際の心霊・不思議体験を掲載。あなたの体験も投稿できます。" },
               ].map(({ label, desc }) => (
                 <li key={label} className="flex gap-3">
                   <span className="shrink-0 font-medium text-zinc-900 dark:text-zinc-100">{label}</span>
