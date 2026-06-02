@@ -1,9 +1,18 @@
 import { type NextRequest, NextResponse } from "next/server";
+import { cookies } from "next/headers";
 import { createAdminClient } from "@/lib/supabase-admin";
 import type { ExperienceStatus } from "@/lib/experiences/types";
 
+async function isAdmin(): Promise<boolean> {
+  const cookieStore = await cookies();
+  return cookieStore.get("admin_token")?.value === process.env.ADMIN_PASSWORD;
+}
+
 // 管理操作（ステータス変更）
 export async function PATCH(req: NextRequest) {
+  if (!(await isAdmin())) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   let body: Record<string, unknown>;
   try {
     body = await req.json();
