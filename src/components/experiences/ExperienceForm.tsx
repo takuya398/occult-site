@@ -164,8 +164,6 @@ export default function ExperienceForm({ presetSpot = "" }: Props) {
           value={form.title}
           onChange={(e) => set("title", e.target.value)}
           required
-          minLength={8}
-          maxLength={80}
           placeholder="例：旧吹上トンネルで見た白い女性"
           className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-zinc-100 placeholder:text-zinc-500 focus:border-violet-500 focus:outline-none"
         />

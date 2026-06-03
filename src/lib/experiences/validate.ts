@@ -35,8 +35,6 @@ export function validateExperienceTitle(title: string): ValidationResult {
   const t = stripHtml(title.trim());
   if (!t) return { ok: false, message: "タイトルを入力してください。" };
   if (HTML_PATTERN.test(title)) return { ok: false, message: "HTMLタグは使用できません。" };
-  if (t.length < 8) return { ok: false, message: "タイトルは8文字以上で入力してください。" };
-  if (t.length > 80) return { ok: false, message: "タイトルは80文字以内で入力してください。" };
   return { ok: true, status: "pending" };
 }
 
