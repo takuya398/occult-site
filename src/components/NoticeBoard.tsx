@@ -1,3 +1,4 @@
+import Link from "next/link";
 import notices from "@/data/notices";
 
 export default function NoticeBoard() {
@@ -15,7 +16,13 @@ export default function NoticeBoard() {
               <time className="shrink-0 font-mono text-xs text-zinc-400 dark:text-zinc-500">
                 {n.date}
               </time>
-              <span className="text-zinc-700 dark:text-zinc-300">{n.text}</span>
+              {n.url ? (
+                <Link href={n.url} className="text-violet-600 hover:underline dark:text-violet-400">
+                  {n.text}
+                </Link>
+              ) : (
+                <span className="text-zinc-700 dark:text-zinc-300">{n.text}</span>
+              )}
             </li>
           ))}
         </ul>
