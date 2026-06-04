@@ -232,8 +232,65 @@ export default async function SpotsDetailPage({
   const hasMapToken = beforeVideo.includes("{{MAP}}");
   const [beforeMap, afterMap = ""] = beforeVideo.split("{{MAP}}");
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: spot.title,
+    description: spot.summary.slice(0, 160),
+    image: spot.coverImage?.src
+      ? [spot.coverImage.src]
+      : ["https://occultpedia.jp/og-image.jpg"],
+    datePublished: spot.publishedAt,
+    dateModified: spot.updatedAt ?? spot.publishedAt,
+    author: {
+      "@type": "Organization",
+      name: "オカルト図鑑",
+      url: "https://occultpedia.jp",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "オカルト図鑑",
+      url: "https://occultpedia.jp",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://occultpedia.jp/logo.png",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://occultpedia.jp/spots/${slug}`,
+    },
+  };
+
+  const faqJsonLd =
+    spot.faq && spot.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: spot.faq.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null;
+
   return (
-    <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+      <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <ViewTracker slug={slug} articleType="spots" />
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
         <Breadcrumbs
@@ -403,5 +460,6 @@ export default async function SpotsDetailPage({
         </div>
       </div>
     </div>
+    </>
   );
 }

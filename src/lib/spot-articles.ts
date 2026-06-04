@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
-import type { SpotEntry } from "@/types";
+import type { SpotEntry, FaqItem } from "@/types";
 
 type Frontmatter = Record<string, unknown>;
 
@@ -125,6 +125,32 @@ const stripMarkdown = (text: string) =>
     .replace(/\r?\n+/g, " ")
     .replace(/\s{2,}/g, " ")
     .trim();
+
+const parseFaqSection = (content: string): FaqItem[] | undefined => {
+  // ## FAQ から次の ## か # または末尾までを取得
+  const match = content.match(/(?:^|\n)## FAQ\s*\n([\s\S]*?)(?=\n## |\n# |$)/);
+  if (!match) return undefined;
+
+  const items: FaqItem[] = [];
+  // ### Q. で始まるブロックに分割
+  const blocks = match[1].split(/\n(?=### Q\.)/);
+
+  for (const block of blocks) {
+    const trimmed = block.trim();
+    if (!trimmed.startsWith("### Q.")) continue;
+
+    const newlineIndex = trimmed.indexOf("\n");
+    if (newlineIndex === -1) continue;
+
+    const question = trimmed.slice("### Q.".length, newlineIndex).trim();
+    const answerRaw = trimmed.slice(newlineIndex).trim();
+    const answer = stripMarkdown(answerRaw);
+
+    if (question && answer) items.push({ question, answer });
+  }
+
+  return items.length > 0 ? items : undefined;
+};
 
 const truncateText = (text: string, maxLength: number) => {
   if (text.length <= maxLength) return text;
@@ -286,6 +312,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
 
   const tags = normalizeTags(frontmatter.tags);
   const source = await readSources(slug);
+  const faq = parseFaqSection(contentWithoutTitle);
   const coverImage = cover
     ? {
         type: "image" as const,
@@ -315,6 +342,7 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
     coverImage,
     videoUrls: youtube ? [youtube] : undefined,
     source,
+    faq,
     mapQuery,
     lat,
     lng,

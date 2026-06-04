@@ -39,6 +39,11 @@ export type SourceItem = {
   url?: string;
 };
 
+export type FaqItem = {
+  question: string;
+  answer: string;
+};
+
 export type GeoInfo = {
   scope: "JP" | "INTL";
   prefectures?: string[];
@@ -54,6 +59,7 @@ export type SpotEntry = BaseEntry & {
   danger?: 1 | 2 | 3 | 4 | 5;
   source?: SourceItem[];
   caution?: string[];
+  faq?: FaqItem[];
   mapQuery?: string;
   lat?: number;
   lng?: number;
@@ -95,6 +101,7 @@ export type EntityEntry = BaseEntry & {
   views: number;
   source?: SourceItem[];
   caution?: string[];
+  faq?: FaqItem[];
   createdAt?: string;
   contentMd?: string;
 };
