@@ -1,3 +1,4 @@
+import { type Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { mysteries } from "@/loaders";
@@ -7,6 +8,45 @@ import { Card } from "@/components/ui";
 
 export function generateStaticParams() {
   return mysteries.map((m) => ({ slug: m.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const mystery = mysteries.find((item) => item.slug === slug);
+
+  if (!mystery) {
+    return {
+      title: "ページが見つかりません",
+      description: "お探しのページは見つかりませんでした。",
+    };
+  }
+
+  const description = mystery.summary.slice(0, 120);
+  const ogImage = mystery.coverImage?.src
+    ? [{ url: mystery.coverImage.src, width: 1200, height: 630, alt: mystery.title }]
+    : undefined;
+
+  return {
+    title: mystery.title,
+    description,
+    openGraph: {
+      title: mystery.title,
+      description,
+      url: `https://occultpedia.jp/mysteries/${slug}`,
+      type: "article",
+      images: ogImage,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: mystery.title,
+      description,
+      images: mystery.coverImage?.src ? [mystery.coverImage.src] : undefined,
+    },
+  };
 }
 
 type MysteryDetailPageProps = {

@@ -1,3 +1,4 @@
+import { type Metadata } from "next";
 import { notFound } from "next/navigation";
 import { entities } from "@/loaders";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -16,6 +17,45 @@ import CommentSection from "@/components/comments/CommentSection";
 
 export function generateStaticParams() {
   return entities.map((uma) => ({ slug: uma.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const uma = entities.find((item) => item.slug === slug);
+
+  if (!uma) {
+    return {
+      title: "ページが見つかりません",
+      description: "お探しのページは見つかりませんでした。",
+    };
+  }
+
+  const description = uma.summary.slice(0, 120);
+  const ogImage = uma.coverImage?.src
+    ? [{ url: uma.coverImage.src, width: 1200, height: 630, alt: uma.title }]
+    : undefined;
+
+  return {
+    title: uma.title,
+    description,
+    openGraph: {
+      title: uma.title,
+      description,
+      url: `https://occultpedia.jp/entities/${slug}`,
+      type: "article",
+      images: ogImage,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: uma.title,
+      description,
+      images: uma.coverImage?.src ? [uma.coverImage.src] : undefined,
+    },
+  };
 }
 
 type EntityDetailPageProps = {

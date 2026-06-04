@@ -1,3 +1,4 @@
+import { type Metadata } from "next";
 import Image from "next/image";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -73,6 +74,46 @@ const markdownComponents: Components = {
 export async function generateStaticParams() {
   const spots = await getSpotEntriesFromArticles();
   return spots.map((spot) => ({ slug: spot.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const spots = await getSpotEntriesFromArticles();
+  const spot = spots.find((item) => item.slug === slug);
+
+  if (!spot) {
+    return {
+      title: "ページが見つかりません",
+      description: "お探しのページは見つかりませんでした。",
+    };
+  }
+
+  const description = spot.summary.slice(0, 120);
+  const ogImage = spot.coverImage?.src
+    ? [{ url: spot.coverImage.src, width: 1200, height: 630, alt: spot.title }]
+    : undefined;
+
+  return {
+    title: spot.title,
+    description,
+    openGraph: {
+      title: spot.title,
+      description,
+      url: `https://occultpedia.jp/spots/${slug}`,
+      type: "article",
+      images: ogImage,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: spot.title,
+      description,
+      images: spot.coverImage?.src ? [spot.coverImage.src] : undefined,
+    },
+  };
 }
 
 type SpotsDetailPageProps = {
