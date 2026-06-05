@@ -1,0 +1,6 @@
+[昭和オカルト奇譚 note「ホラーゲーム『SIREN』の羽生蛇村のモデルになった埼玉県の『岳集落』現地リポート編」](https://note.com/showaoccult/n/n59420cc5c4dc)
+[お写んぽ「実録！ゾッとする羽生蛇村の怪！SIRENのモデル秩父の廃村『岳集落』に行ってきた」](https://oshanpo.com/saitama-hanyuda/)
+[ゾゾゾ「シリーズ・心霊スポット 岳集落」](https://zozozo.jp/spot/spot-3)
+[一人旅研究会「秩父山奥の廃村、嶽集落跡を散歩！」](https://hitoritabikenkyu.com/takesyuraku/)
+[廃墟検索地図「岳集落（嶽集落、秩父市）」](https://haikyo.info/s/1901.html)
+[ジャンクブログ ガブガブ「SIREN_羽生蛇村のモデル 廃村『岳集落』埼玉県秩父市」](https://www.gabgab.site/)
