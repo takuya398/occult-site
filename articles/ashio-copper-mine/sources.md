@@ -1,0 +1,5 @@
+[wonja.jp「【22選】栃木県の心霊スポット。怖すぎる最恐スポット」](https://wonja.jp/tochigi-shinrei/)
+[きもだめす「栃木県の心霊スポット一覧」](https://kimodamesu.com/prefecture/%E6%A0%83%E6%9C%A8%E7%9C%8C)
+[tabigo-media「足尾銅山は栃木の心霊スポット！赤い池や廃墟など怖い話を紹介」](https://tabigo-media.net/ashiocoppermini-spirit/)
+[日本の心霊スポット大全集「栃木県の心霊スポット特集：日光の山々に潜む怪奇の影」](https://shinrei-spot.info/?page_id=7389)
+[コジツケ君がゆく「栃木県心霊スポット？足尾銅山」](https://ameblo.jp/kojitukekun/entry-12680343491.html)
