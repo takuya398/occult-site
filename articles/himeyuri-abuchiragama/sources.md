@@ -1,0 +1,5 @@
+[沖縄ツアーズ「ひめゆりの塔を訪れる前に。ガマの構造から最期の瞬間までを詳しく解説」](https://okinawatour.world-tours.jp/column/himeyuri)
+[いえらぶ沖縄不動産「糸数アブチラガマ」](https://www.ielove.co.jp/okinawa/ijyunavi/spot/mystery/abuchiragama/)
+[おきなわさんぽ「ひめゆりの塔の心霊体験は本当？噂の背景と訪問マナーを解説」](https://kouri-run.jp/himeyuri-tower-ghost/)
+[思い出の日「沖縄の心霊スポットのガマの歴史と見学ルールを初心者向け解説」](https://www.omoidenohi.jp/%E6%B2%96%E7%B8%84-%E3%81%AE%E5%BF%83%E9%9C%8A%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%E3%81%AE%E3%82%AC%E3%83%9E%E3%81%AE%E6%AD%B4%E5%8F%B2%E3%81%A8%E8%A6%8B%E5%AD%A6%E3%83%AB%E3%83%BC%E3%83%AB%E3%82%92/)
+[note「沖縄戦慰霊の旅③ 糸数アブチラガマ編」](https://note.com/samoramo/n/neba2ba462eda)
