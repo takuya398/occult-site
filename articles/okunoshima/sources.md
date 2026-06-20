@@ -1,0 +1,6 @@
+[怪異資料館「うさぎの出迎えと怪しい噂の島⁉広島県の心霊スポット『大久野島』」](https://kaii-shiryoukan.com/1119/)
+[landclife「大久野島は毒ガスのせいで心霊現象が起こるようになった？」](https://landclife.com/okunoshima-is-a-psychic-phenomenon-because-of-poison-gas-5374)
+[traveroom.jp「大久野島には怖い毒ガスの歴史が？現在の廃墟には心霊スポットの噂も？」](https://traveroom.jp/ookunoshima-sinrei)
+[心霊スポット恐怖体験談「広島県 大久野島（うさぎの楽園）」](https://shinrei-spot.info/?p=232)
+[ANIREISHA「毒ガス島での怪異・後編」](https://ameblo.jp/prettycurer/entry-12815846114.html)
+[TravelBook「広島で身の毛もよだつおすすめ心霊スポット9選」](https://www.travelbook.co.jp/topic/18814)
