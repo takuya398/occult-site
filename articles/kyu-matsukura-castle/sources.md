@@ -1,0 +1,6 @@
+[Yahoo!知恵袋「松倉城址は富山県の心霊スポットに分類されないのでしょうか？」](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1295560542)
+[心霊スポット【畏怪】「富山県の心霊スポット」](https://haunted-place.info/category/hokuriku/toyama)
+[Wikipedia「松倉城（越中国）」](https://ja.wikipedia.org/wiki/%E6%9D%BE%E5%80%89%E5%9F%8E_(%E8%B6%8A%E4%B8%AD%E5%9B%BD))
+[ニッポン城めぐり「松倉城（富山県魚津市）」](https://cmeg.jp/w/castles/3713)
+[攻城団「松倉城の見所と写真」](https://kojodan.jp/castle/426/)
+[sirotabi「越中・松倉城 山の奥にある椎名氏の本城」](https://sirotabi.com/8514/)
