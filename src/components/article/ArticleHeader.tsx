@@ -3,6 +3,7 @@ import { Badge, TagChip } from "@/components/ui";
 export type MetaBadge = {
   label: string;
   tone?: "neutral" | "good" | "warn";
+  title?: string;
 };
 
 type ArticleHeaderProps = {
@@ -42,12 +43,13 @@ export default function ArticleHeader({
       {metaBadges.length > 0 && (
         <div className="flex flex-wrap gap-2 text-xs">
           {metaBadges.map((badge) => (
-            <Badge
-              key={`${badge.label}-${badge.tone ?? "neutral"}`}
-              tone={badge.tone === "good" ? "emerald" : badge.tone === "warn" ? "rose" : "neutral"}
-            >
-              {badge.label}
-            </Badge>
+            <span key={`${badge.label}-${badge.tone ?? "neutral"}`} title={badge.title}>
+              <Badge
+                tone={badge.tone === "good" ? "emerald" : badge.tone === "warn" ? "rose" : "neutral"}
+              >
+                {badge.label}
+              </Badge>
+            </span>
           ))}
         </div>
       )}

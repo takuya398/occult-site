@@ -64,12 +64,19 @@ export default async function MysteryDetailPage({
   }
 
   const metaBadges = [
-    ...(mystery.era ? [{ label: mystery.era, tone: "neutral" as const }] : []),
-    ...(mystery.location
-      ? [{ label: mystery.location, tone: "neutral" as const }]
+    ...(mystery.eraDisplay ? [{ label: mystery.eraDisplay, tone: "neutral" as const }] : []),
+    ...(mystery.placeDisplay
+      ? [{ label: mystery.placeDisplay, tone: "neutral" as const }]
       : []),
     ...(mystery.credibility
-      ? [{ label: `信憑性 ${mystery.credibility}`, tone: "good" as const }]
+      ? [
+          {
+            label: `信憑性 ${mystery.credibility}`,
+            tone: "good" as const,
+            title:
+              "信憑性＝謎の堅牢度（通常の説明への耐性／未解明度）。S: あらゆる検証を退け解消されていない／A: 不可解な要素が複数記録で確認でき決定打がない／B: 不可解だが有力な通常説明も併存／C: 通常の説明でおおむね説明可能／D: 創作・誤伝の可能性が高い",
+          },
+        ]
       : []),
   ];
 
@@ -130,8 +137,8 @@ export default async function MysteryDetailPage({
               <div className="space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
                 <p>{mystery.body}</p>
                 <ul className="list-disc space-y-1 pl-5">
-                  {mystery.era && <li>時代・年代: {mystery.era}</li>}
-                  {mystery.location && <li>場所: {mystery.location}</li>}
+                  {mystery.eraDisplay && <li>時代・年代: {mystery.eraDisplay}</li>}
+                  {mystery.placeDisplay && <li>場所: {mystery.placeDisplay}</li>}
                   <li>主なタグ: {mystery.tags.slice(0, 3).join(" / ")}</li>
                 </ul>
               </div>

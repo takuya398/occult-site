@@ -74,10 +74,33 @@ export type StoryEntry = BaseEntry & {
   caution?: string[];
 };
 
+export type MysteryEra =
+  | "ancient"
+  | "medieval"
+  | "earlyModern"
+  | "modern"
+  | "contemporary"
+  | "unknown";
+
+export type MysteryRegionType = "domestic" | "overseas" | "unknown";
+
+export type MysteryWorldRegion =
+  | "asia"
+  | "europe"
+  | "northAmerica"
+  | "southAmerica"
+  | "africa"
+  | "oceania";
+
 export type MysteryEntry = BaseEntry & {
   category: "mysteries";
-  era?: string;
-  location?: string;
+  era?: MysteryEra;
+  occurredYear?: number | null;
+  eraDisplay?: string;
+  regionType?: MysteryRegionType;
+  worldRegion?: MysteryWorldRegion;
+  prefecture?: string;
+  placeDisplay?: string;
   credibility?: "S" | "A" | "B" | "C" | "D";
   source?: SourceItem[];
   caution?: string[];

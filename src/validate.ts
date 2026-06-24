@@ -192,11 +192,43 @@ const validateUmaEntry = (entry: Record<string, unknown>, context: string, regio
 };
 
 const CREDIBILITY_RANKS = new Set(["S", "A", "B", "C", "D"]);
+const MYSTERY_ERAS = new Set([
+  "ancient",
+  "medieval",
+  "earlyModern",
+  "modern",
+  "contemporary",
+  "unknown",
+]);
+const MYSTERY_REGION_TYPES = new Set(["domestic", "overseas", "unknown"]);
+const MYSTERY_WORLD_REGIONS = new Set([
+  "asia",
+  "europe",
+  "northAmerica",
+  "southAmerica",
+  "africa",
+  "oceania",
+]);
 
 const validateMysteryEntry = (entry: Record<string, unknown>, context: string) => {
   if (entry.credibility !== undefined) {
     if (!isNonEmptyString(entry.credibility) || !CREDIBILITY_RANKS.has(entry.credibility as string)) {
       errors.push(`${context} credibility が不正です（S/A/B/C/D）`);
+    }
+  }
+  if (entry.era !== undefined) {
+    if (!isNonEmptyString(entry.era) || !MYSTERY_ERAS.has(entry.era as string)) {
+      errors.push(`${context} era が不正です`);
+    }
+  }
+  if (entry.regionType !== undefined) {
+    if (!isNonEmptyString(entry.regionType) || !MYSTERY_REGION_TYPES.has(entry.regionType as string)) {
+      errors.push(`${context} regionType が不正です`);
+    }
+  }
+  if (entry.worldRegion !== undefined) {
+    if (!isNonEmptyString(entry.worldRegion) || !MYSTERY_WORLD_REGIONS.has(entry.worldRegion as string)) {
+      errors.push(`${context} worldRegion が不正です`);
     }
   }
 };
