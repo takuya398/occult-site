@@ -38,6 +38,7 @@ export default function EntitiesClient({ commentCounts }: { commentCounts: Recor
   const router = useRouter();
   const searchParams = useSearchParams();
   const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
+  const [debouncedQuery, setDebouncedQuery] = useState(() => searchParams.get("q") ?? "");
   const [sortKey, setSortKey] = useState("recommend");
   const [existenceRankFilter, setExistenceRankFilter] = useState("all");
   const [dangerFilter, setDangerFilter] = useState("all");
@@ -51,12 +52,24 @@ export default function EntitiesClient({ commentCounts }: { commentCounts: Recor
   const today = useMemo(() => new Date(), []);
 
   useEffect(() => {
-    setQuery(searchParams.get("q") ?? "");
-  }, [searchParams]);
+    const handler = setTimeout(() => {
+      setDebouncedQuery(query);
+    }, 300);
+
+    return () => clearTimeout(handler);
+  }, [query]);
+
+  useEffect(() => {
+    const urlQuery = searchParams.get("q") ?? "";
+    if (urlQuery !== debouncedQuery) {
+      setQuery(urlQuery);
+      setDebouncedQuery(urlQuery);
+    }
+  }, [searchParams, debouncedQuery]);
 
   useEffect(() => {
     const params = new URLSearchParams(searchParams.toString());
-    const normalizedQuery = query.trim();
+    const normalizedQuery = debouncedQuery.trim();
 
     if (normalizedQuery) {
       params.set("q", normalizedQuery);
@@ -72,7 +85,7 @@ export default function EntitiesClient({ commentCounts }: { commentCounts: Recor
         scroll: false,
       });
     }
-  }, [query, router, searchParams]);
+  }, [debouncedQuery, router, searchParams]);
 
   const filteredUmas = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();

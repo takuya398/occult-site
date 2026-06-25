@@ -1,10 +1,25 @@
 import { type Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { mysteries } from "@/loaders";
 import ArticleHeader from "@/components/article/ArticleHeader";
 import MarkdownContent from "@/components/article/MarkdownContent";
+import SpotToc from "@/components/article/SpotToc";
 import { Card } from "@/components/ui";
+import { slugify } from "@/lib/slugify";
+
+function extractTocItems(contentMd: string): { text: string; id: string }[] {
+  const items: { text: string; id: string }[] = [];
+  for (const line of contentMd.split("\n")) {
+    const match = line.match(/^##\s+(.+)$/);
+    if (match) {
+      const text = match[1].trim();
+      items.push({ text, id: slugify(text) });
+    }
+  }
+  return items;
+}
 
 export function generateStaticParams() {
   return mysteries.map((m) => ({ slug: m.slug }));
@@ -80,6 +95,8 @@ export default async function MysteryDetailPage({
       : []),
   ];
 
+  const tocItems = mystery.contentMd ? extractTocItems(mystery.contentMd) : [];
+
   const sourceBody = mystery.source?.length ? (
     <ul className="space-y-2">
       {mystery.source.map((item) => (
@@ -128,6 +145,22 @@ export default async function MysteryDetailPage({
         />
 
         <div className="mt-6 grid gap-6">
+          {mystery.coverImage && (
+            <figure className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
+              <Image
+                src={mystery.coverImage.src}
+                alt={mystery.coverImage.alt}
+                width={mystery.coverImage.width ?? 1200}
+                height={mystery.coverImage.height ?? 800}
+                className="h-auto w-full object-cover"
+                sizes="(max-width: 768px) 100vw, 960px"
+                priority
+              />
+            </figure>
+          )}
+          {mystery.contentMd && tocItems.length >= 2 && (
+            <SpotToc items={tocItems} />
+          )}
           {mystery.contentMd ? (
             <div className="rounded-xl border border-zinc-200 bg-white px-6 py-4 dark:border-zinc-800 dark:bg-zinc-900/50">
               <MarkdownContent content={mystery.contentMd} />

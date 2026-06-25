@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -546,6 +547,18 @@ export default function MysteriesClient() {
               variant="mystery"
               className="group"
             >
+              {mystery.coverImage && (
+                <div className="overflow-hidden rounded-xl border border-zinc-200 bg-white dark:border-zinc-700">
+                  <Image
+                    src={mystery.coverImage.src}
+                    alt={mystery.coverImage.alt}
+                    width={mystery.coverImage.width ?? 1200}
+                    height={mystery.coverImage.height ?? 800}
+                    className="h-40 w-full object-cover"
+                    sizes="(max-width: 768px) 100vw, 480px"
+                  />
+                </div>
+              )}
               {mystery.eraDisplay && (
                 <p className="text-xs text-zinc-500">{mystery.eraDisplay}</p>
               )}

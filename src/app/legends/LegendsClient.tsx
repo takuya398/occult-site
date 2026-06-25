@@ -40,22 +40,19 @@ export default function LegendsClient({ commentCounts }: { commentCounts: Record
   const searchParams = useSearchParams();
   const today = useMemo(() => new Date(), []);
 
-  // All filter state derived from URL (single source of truth)
-  const query = searchParams.get("q") ?? "";
+  // All filter state derived from URL (single source of truth) — except free-text query
   const typeFilter = searchParams.get("type") ?? "all";
   const dangerFilter = searchParams.get("danger") ?? "all";
   const credibilityFilter = searchParams.get("credibility") ?? "all";
   const sortKey = searchParams.get("sort") ?? "recommended";
 
-  // Local state: controlled input value (synced from URL on back/forward)
+  // Local state: controlled input value（即時反映）。debouncedQueryは確定後にURLへ同期する
   const [inputValue, setInputValue] = useState(() => searchParams.get("q") ?? "");
+  const [debouncedQuery, setDebouncedQuery] = useState(() => searchParams.get("q") ?? "");
+  const query = inputValue;
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [filterOpen, setFilterOpen] = useState(false);
   const [visibleCount, setVisibleCount] = useState(12);
-
-  useEffect(() => {
-    setInputValue(searchParams.get("q") ?? "");
-  }, [searchParams]);
 
   // Central URL updater: sets params and deletes defaults to keep URLs clean
   const updateParams = useCallback(
@@ -76,9 +73,35 @@ export default function LegendsClient({ commentCounts }: { commentCounts: Record
     [searchParams, router]
   );
 
+  // URL -> ローカルstate（戻る/進む・チップ削除・リセット時のみ反映）
+  useEffect(() => {
+    const urlQuery = searchParams.get("q") ?? "";
+    if (urlQuery !== debouncedQuery) {
+      setInputValue(urlQuery);
+      setDebouncedQuery(urlQuery);
+    }
+  }, [searchParams, debouncedQuery]);
+
+  // 入力確定を待ってからURLに反映（300ms debounce）
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedQuery(inputValue);
+    }, 300);
+
+    return () => clearTimeout(handler);
+  }, [inputValue]);
+
+  useEffect(() => {
+    const current = searchParams.get("q") ?? "";
+    if (debouncedQuery.trim() !== current) {
+      updateParams({ q: debouncedQuery });
+    }
+  }, [debouncedQuery, searchParams, updateParams]);
+
   const handleReset = useCallback(() => {
     setSelectedTags([]);
     setInputValue("");
+    setDebouncedQuery("");
     router.replace("/legends", { scroll: false });
   }, [router]);
 
@@ -213,6 +236,7 @@ export default function LegendsClient({ commentCounts }: { commentCounts: Record
       label: `キーワード: ${query.trim()}`,
       onRemove: () => {
         setInputValue("");
+        setDebouncedQuery("");
         updateParams({ q: "" });
       },
     });
@@ -243,10 +267,7 @@ export default function LegendsClient({ commentCounts }: { commentCounts: Record
           フリーワード
           <input
             value={inputValue}
-            onChange={(e) => {
-              setInputValue(e.target.value);
-              updateParams({ q: e.target.value });
-            }}
+            onChange={(e) => setInputValue(e.target.value)}
             placeholder="例: 学校 / 鏡 / 電車"
             className="mt-2 w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm text-zinc-800 outline-none focus:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
           />
