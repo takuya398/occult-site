@@ -3,7 +3,7 @@
  * Do NOT import this from client components.
  */
 import { getSpotEntriesFromArticles } from "@/lib/spot-articles";
-import { loadLegends, loadEntities } from "@/loaders";
+import { loadLegends, loadEntities, loadMysteries } from "@/loaders";
 import type { Category } from "@/types";
 
 export type LatestItem = {
@@ -27,11 +27,13 @@ export const getAllLatest = async (limit = 6): Promise<LatestItem[]> => {
   const spots = await getSpotEntriesFromArticles();
   const legendList = loadLegends();
   const entityList = loadEntities();
+  const mysteryList = loadMysteries();
 
   const all: LatestItem[] = [
     ...spots.map((x) => ({ ...x, href: `/spots/${x.slug}`, cover: x.coverImage?.src })),
     ...legendList.map((x) => ({ ...x, href: `/legends/${x.slug}`, cover: x.coverImage })),
     ...entityList.map((x) => ({ ...x, href: `/entities/${x.slug}`, cover: x.coverImage?.src })),
+    ...mysteryList.map((x) => ({ ...x, href: `/mysteries/${x.slug}`, cover: x.coverImage?.src })),
   ];
 
   return all
