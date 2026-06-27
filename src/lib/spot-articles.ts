@@ -1,4 +1,5 @@
 import { promises as fs } from "fs";
+import { execSync } from "child_process";
 import path from "path";
 import type { SpotEntry, FaqItem } from "@/types";
 
@@ -12,6 +13,40 @@ type ParsedArticle = {
 const ARTICLES_DIR = path.join(process.cwd(), "articles");
 
 const formatDate = (date: Date) => date.toISOString().slice(0, 10);
+
+// ファイルのmtimeはVercelのビルド時チェックアウトで常に「今」になり当てにならないため、
+// frontmatterに日付が無い記事はgitの追加日（最古コミット日時）を代わりに使う。
+let gitAddedDateCache: Map<string, string> | null = null;
+
+const getGitAddedDateMap = (): Map<string, string> => {
+  if (gitAddedDateCache) return gitAddedDateCache;
+  const map = new Map<string, string>();
+  try {
+    const output = execSync(
+      'git log --diff-filter=A --name-only --format="COMMIT:%aI" -- articles',
+      { cwd: process.cwd(), encoding: "utf8", maxBuffer: 1024 * 1024 * 50 }
+    );
+    let currentDate = "";
+    for (const line of output.split("\n")) {
+      if (line.startsWith("COMMIT:")) {
+        currentDate = line.slice("COMMIT:".length);
+      } else if (line.trim() && currentDate) {
+        // git logは新しい順なので、同じパスは最後(=最古)の代入が残る
+        map.set(line.trim(), currentDate);
+      }
+    }
+  } catch {
+    // git が使えない環境では無視してmtimeにフォールバック
+  }
+  gitAddedDateCache = map;
+  return map;
+};
+
+const getGitAddedDate = (slug: string): Date | null => {
+  const relPath = `articles/${slug}/index.md`;
+  const iso = getGitAddedDateMap().get(relPath);
+  return iso ? new Date(iso) : null;
+};
 
 const SUMMARY_MAX_LENGTH = 140;
 
@@ -291,12 +326,15 @@ const buildSpotEntry = async (slug: string): Promise<SpotEntry | null> => {
   const cover = normalizeString(frontmatter.cover) || normalizeString(frontmatter.coverImage) || normalizeString(frontmatter.heroImage);
   const ruby = normalizeString(frontmatter.ruby) || undefined;
   const youtube = normalizeString(frontmatter.youtube);
+  const gitAddedDate = getGitAddedDate(slug);
   const publishedAt =
     normalizeDatetime(frontmatter.publishedAt) ||
     normalizeDate(frontmatter.date) ||
+    (gitAddedDate ? formatDate(gitAddedDate) : null) ||
     (stats ? formatDate(stats.mtime) : "1970-01-01");
   const updatedAt =
     normalizeDate(frontmatter.updatedAt) ||
+    (gitAddedDate ? formatDate(gitAddedDate) : null) ||
     (stats ? formatDate(stats.mtime) : undefined);
 
   const contentWithVideo = ensureVideoToken(contentWithoutTitle, youtube || undefined);
