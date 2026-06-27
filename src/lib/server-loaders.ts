@@ -38,8 +38,8 @@ export const getAllLatest = async (limit = 6): Promise<LatestItem[]> => {
 
   return all
     .sort((a, b) => {
-      const dateA = a.publishedAt || a.updatedAt || "1970-01-01";
-      const dateB = b.publishedAt || b.updatedAt || "1970-01-01";
+      const dateA = [a.publishedAt, a.updatedAt].filter(Boolean).sort().pop() || "1970-01-01";
+      const dateB = [b.publishedAt, b.updatedAt].filter(Boolean).sort().pop() || "1970-01-01";
       const diff = Date.parse(dateB) - Date.parse(dateA);
       if (diff !== 0) return diff;
       // Same date: curated categories (UMA, stories) before mtime-based spots
