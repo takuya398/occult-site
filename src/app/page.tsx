@@ -2,10 +2,10 @@ import Hero from "@/components/Hero";
 import NoticeBoard from "@/components/NoticeBoard";
 import RankingList from "@/components/RankingList";
 import FeatureList from "@/components/FeatureList";
-import ArticleGrid from "@/components/ArticleGrid";
+import ArticleGridWithFilter from "@/components/ArticleGridWithFilter";
 import CategoryList from "@/components/CategoryList";
 import PopularTags from "@/components/PopularTags";
-import { getAllLatest, type LatestItem } from "@/lib/server-loaders";
+import { getAllLatest, getLatestGrouped, type LatestItem } from "@/lib/server-loaders";
 
 const CDN = "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto";
 
@@ -19,8 +19,8 @@ function withCoverFallback(item: LatestItem): LatestItem {
 
 export default async function Home() {
   const articles = (await getAllLatest(20)).map(withCoverFallback);
+  const grouped = await getLatestGrouped(12);
 
-  const latestArticles = articles.slice(0, 12);
   const rankingArticles = articles.slice(0, 5);
   const featureArticles = articles.slice(0, 3);
 
@@ -28,12 +28,12 @@ export default async function Home() {
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-[#07000a] dark:text-[#e8ddd0] dark:[background-image:radial-gradient(ellipse_at_50%_0%,rgba(74,14,107,0.18)_0%,transparent_55%)]">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-12 px-6 py-14">
 
-        {/* 1. ヒーロー（お知らせはヘッダーと今夜の怪異カードの間） */}
+        {/* 1. ヒーロー */}
         <Hero article={articles[0]}>
           <NoticeBoard />
         </Hero>
 
-        {/* 3. 人気ランキング */}
+        {/* 2. 人気ランキング */}
         <section>
           <RankingList articles={rankingArticles} />
         </section>
@@ -43,9 +43,9 @@ export default async function Home() {
           <FeatureList articles={featureArticles} />
         </section>
 
-        {/* 4. 新着記事 */}
+        {/* 4. 新着記事（ジャンルフィルタ付き） */}
         <section>
-          <ArticleGrid articles={latestArticles} />
+          <ArticleGridWithFilter grouped={grouped} />
         </section>
 
         {/* 5. 都道府県カテゴリ */}
