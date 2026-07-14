@@ -44,8 +44,8 @@ export default function Hero({ article, children }: Props) {
             オカルト図鑑
           </h1>
           <div className="gothic-divider">✦</div>
-          <p className={`${styles.heroSubtitle} text-sm sm:text-base italic text-zinc-300`}>
-            「深淵の向こうに──何がある」
+          <p className={`${styles.heroSubtitle} text-sm sm:text-base text-zinc-300`}>
+            心霊スポット、UMA、都市伝説、怪事件などを記録・考察するオカルト専門データベース
           </p>
         </div>
       </header>
