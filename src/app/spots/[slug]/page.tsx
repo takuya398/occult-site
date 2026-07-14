@@ -16,6 +16,7 @@ import EmbedMedia from "@/components/EmbedMedia";
 import CommentSection from "@/components/comments/CommentSection";
 import ViewTracker from "@/components/ViewTracker";
 import SpotExperienceSection from "@/components/experiences/SpotExperienceSection";
+import SpotLikeButton from "@/components/spots/SpotLikeButton";
 
 function parseTocMarkdown(tocMd: string): { text: string; id: string }[] {
   const items: { text: string; id: string }[] = [];
@@ -313,7 +314,10 @@ export default async function SpotsDetailPage({
         />
 
         <div className="mt-6 grid gap-6">
-          <ShareBar />
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <ShareBar />
+            <SpotLikeButton slug={slug} />
+          </div>
           {heroImage && (
             <figure className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
               <Image
