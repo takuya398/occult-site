@@ -1382,7 +1382,11 @@
     ],
     "status": "published",
     "category": "怪事件・ミステリー",
-    "coverImage": "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/mysteries/pied-piper-of-hamelin/cover",
+    "coverImage": {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto/mysteries/pied-piper-of-hamelin/cover",
+      "alt": "ハーメルンの笛吹き男──中世ドイツに伝わる130人の子どもが消えた謎"
+    },
     "era": "medieval",
     "occurredYear": 1284,
     "eraDisplay": "1284年（中世・神聖ローマ帝国）",
