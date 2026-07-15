@@ -9,14 +9,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ArticleHeader from "@/components/article/ArticleHeader";
 import PrevNext from "@/components/article/PrevNext";
 import Related from "@/components/article/Related";
-import ShareBar from "@/components/article/ShareBar";
 import SpotToc from "@/components/article/SpotToc";
 import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
 import CommentSection from "@/components/comments/CommentSection";
 import ViewTracker from "@/components/ViewTracker";
 import SpotExperienceSection from "@/components/experiences/SpotExperienceSection";
-import SpotLikeButton from "@/components/spots/SpotLikeButton";
+import SpotActionsWrapper from "@/components/spots/SpotActionsWrapper";
 
 function parseTocMarkdown(tocMd: string): { text: string; id: string }[] {
   const items: { text: string; id: string }[] = [];
@@ -314,10 +313,7 @@ export default async function SpotsDetailPage({
         />
 
         <div className="mt-6 grid gap-6">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <ShareBar />
-            <SpotLikeButton slug={slug} />
-          </div>
+          <SpotActionsWrapper slug={slug} />
           {heroImage && (
             <figure className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
               <Image
@@ -459,6 +455,7 @@ export default async function SpotsDetailPage({
               {sourceBody}
             </div>
           </Card>
+          <SpotActionsWrapper slug={slug} />
           <SpotExperienceSection spotSlug={spot.slug} />
           <CommentSection slug={spot.slug} articleType="spots" />
         </div>
