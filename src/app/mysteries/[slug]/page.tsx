@@ -7,6 +7,7 @@ import ArticleHeader from "@/components/article/ArticleHeader";
 import MarkdownContent from "@/components/article/MarkdownContent";
 import SpotToc from "@/components/article/SpotToc";
 import { Card } from "@/components/ui";
+import EmbedMedia from "@/components/EmbedMedia";
 import { slugify } from "@/lib/slugify";
 
 function extractTocItems(contentMd: string): { text: string; id: string }[] {
@@ -175,6 +176,14 @@ export default async function MysteryDetailPage({
                   <li>主なタグ: {mystery.tags.slice(0, 3).join(" / ")}</li>
                 </ul>
               </div>
+            </Card>
+          )}
+          {mystery.videoUrls && mystery.videoUrls.length > 0 && (
+            <Card>
+              <p className="mb-3 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                関連動画
+              </p>
+              <EmbedMedia url={mystery.videoUrls[0]} />
             </Card>
           )}
           <Card>
