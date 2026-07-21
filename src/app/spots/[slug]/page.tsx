@@ -16,6 +16,7 @@ import CommentSection from "@/components/comments/CommentSection";
 import ViewTracker from "@/components/ViewTracker";
 import SpotExperienceSection from "@/components/experiences/SpotExperienceSection";
 import SpotActionsWrapper from "@/components/spots/SpotActionsWrapper";
+import { JsonLd } from "@/components/JsonLd";
 
 function parseTocMarkdown(tocMd: string): { text: string; id: string }[] {
   const items: { text: string; id: string }[] = [];
@@ -280,16 +281,8 @@ export default async function SpotsDetailPage({
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-      />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
+      <JsonLd data={articleJsonLd} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
       <ViewTracker slug={slug} articleType="spots" />
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
         <Breadcrumbs
