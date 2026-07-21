@@ -279,7 +279,7 @@ export default async function SpotsDetailPage({
       : null;
 
   return (
-    <>
+    <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
@@ -290,7 +290,6 @@ export default async function SpotsDetailPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
-      <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <ViewTracker slug={slug} articleType="spots" />
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
         <Breadcrumbs
@@ -461,6 +460,5 @@ export default async function SpotsDetailPage({
         </div>
       </div>
     </div>
-    </>
   );
 }
