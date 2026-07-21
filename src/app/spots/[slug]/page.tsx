@@ -279,9 +279,20 @@ export default async function SpotsDetailPage({
         }
       : null;
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "トップ", item: "https://occultpedia.jp/" },
+      { "@type": "ListItem", position: 2, name: "心霊スポット", item: "https://occultpedia.jp/spots" },
+      { "@type": "ListItem", position: 3, name: spot.title },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <JsonLd data={articleJsonLd} />
+      <JsonLd data={breadcrumbJsonLd} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
       <ViewTracker slug={slug} articleType="spots" />
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
