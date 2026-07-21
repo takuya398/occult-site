@@ -3,3 +3,6 @@
 - [全国心霊スポット調査「国立赤城青少年交流の家」](https://shin-kichi.com/akagiseishonenkoryunoie/)
 - [日本の心霊スポット大全集「赤城少年自然の家の心霊体験」](https://shinrei-spot.info/?p=1974)
 - [心霊スポット畏怖「赤城少年自然の家」](https://haunted-place.info/11168.html)
+- [ARC404「赤城少年自然の家『まゆみの部屋』の真実！」](https://arc404.tokyo/akagi-nature-house-mayumi/)
+- [じゃらんnet「国立赤城青少年交流の家アクセス情報」](https://www.jalan.net/kankou/spt_10303cc3360049351/)
+- [国立赤城青少年交流の家公式アクセスページ](https://akagi.niye.go.jp/access/)
