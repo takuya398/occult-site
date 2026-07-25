@@ -85,8 +85,18 @@ export const getLatestGrouped = async (limitEach = 12): Promise<GroupedArticles>
     category: x.category,
   });
 
+  // "すべて"タブは各カテゴリから均等に枠を確保してから日付順に並べる
+  // （spots記事が日付上位を独占するとミステリー等が全く出なくなるため）
+  const perCat = Math.ceil(limitEach / 4);
+  const allMixed = [
+    ...sorted.filter((x) => x.category === "spots").slice(0, perCat),
+    ...sorted.filter((x) => x.category === "stories" || x.category === "legends").slice(0, perCat),
+    ...sorted.filter((x) => x.category === "entities").slice(0, perCat),
+    ...sorted.filter((x) => x.category === "mysteries").slice(0, perCat),
+  ].sort(sortByDate).slice(0, limitEach);
+
   return {
-    all: sorted.slice(0, limitEach).map(toCard),
+    all: allMixed.map(toCard),
     spots: sorted.filter((x) => x.category === "spots").slice(0, limitEach).map(toCard),
     stories: sorted.filter((x) => x.category === "stories" || x.category === "legends").slice(0, limitEach).map(toCard),
     entities: sorted.filter((x) => x.category === "entities").slice(0, limitEach).map(toCard),
