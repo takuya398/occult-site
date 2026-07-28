@@ -60,7 +60,7 @@ const loadAllItems = cache(async (): Promise<LatestItem[]> => {
 
   const all: LatestItem[] = [
     ...spots.map((x) => ({ ...x, href: `/spots/${x.slug}`, cover: x.coverImage?.src })),
-    ...legendList.map((x) => ({ ...x, href: `/legends/${x.slug}`, cover: x.coverImage })),
+    ...legendList.map((x) => ({ ...x, href: `/legends/${x.slug}`, cover: typeof x.coverImage === "string" ? x.coverImage : x.coverImage?.src })),
     ...entityList.map((x) => ({ ...x, href: `/entities/${x.slug}`, cover: x.coverImage?.src })),
     ...mysteryList.map((x) => ({ ...x, href: `/mysteries/${x.slug}`, cover: x.coverImage?.src })),
   ];

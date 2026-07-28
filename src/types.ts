@@ -141,7 +141,7 @@ export type LegendEntry = Omit<BaseEntry, "category" | "coverImage"> & {
   stage?: string;
   motif?: string;
   tone?: string;
-  coverImage?: string;
+  coverImage?: string | ImageMedia;
   sceneImages?: string[];
   sources?: string[];
   source?: SourceItem[];
