@@ -10,10 +10,10 @@ type NavVariant = "spot" | "story" | "uma" | "mystery" | "ranking" | "experience
 
 const navLinks: { href: string; label: string; variant: NavVariant }[] = [
   { href: "/spots", label: "心霊スポット", variant: "spot" },
-  { href: "/legends", label: "怪談・都市伝説", variant: "story" },
-  { href: "/entities", label: "UMA・異形", variant: "uma" },
   { href: "/mysteries", label: "怪事件・ミステリー", variant: "mystery" },
   { href: "/experiences", label: "心霊体験談", variant: "experience" },
+  { href: "/entities", label: "UMA・異形", variant: "uma" },
+  { href: "/legends", label: "怪談・都市伝説", variant: "story" },
   { href: "/ranking", label: "ランキング", variant: "ranking" },
 ];
 
