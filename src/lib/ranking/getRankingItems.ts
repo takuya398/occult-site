@@ -5,11 +5,11 @@
  */
 import { createAdminClient } from "@/lib/supabase-admin";
 import { getSpotEntriesFromArticles } from "@/lib/spot-articles";
-import { loadLegends, loadEntities } from "@/loaders";
+import { loadLegends, loadEntities, loadMysteries } from "@/loaders";
 import type { Category } from "@/types";
 
 export type Period = "weekly" | "monthly" | "yearly";
-export type RankingCategory = "all" | "spots" | "legends" | "entities";
+export type RankingCategory = "all" | "spots" | "legends" | "entities" | "mysteries";
 
 export type RankingItem = {
   slug: string;
@@ -38,10 +38,11 @@ const PERIOD_DAYS: Record<Period, number> = {
 };
 
 const TYPE_FILTER: Record<RankingCategory, string[]> = {
-  all: ["spots", "legends", "entities"],
+  all: ["spots", "legends", "entities", "mysteries"],
   spots: ["spots"],
   legends: ["legends"],
   entities: ["entities"],
+  mysteries: ["mysteries"],
 };
 
 type ArticleMeta = Omit<RankingItem, "score" | "commentCount" | "totalGoodCount">;
@@ -52,6 +53,7 @@ async function loadAllArticles(): Promise<ArticleMeta[]> {
     Promise.resolve(loadLegends()),
     Promise.resolve(loadEntities()),
   ]);
+  const mysteriesEntries = loadMysteries();
 
   return [
     ...spots.map((x): ArticleMeta => ({
@@ -100,6 +102,17 @@ async function loadAllArticles(): Promise<ArticleMeta[]> {
       region: x.region,
       danger: x.danger,
       existenceRank: x.existence_rank,
+      publishedAt: x.publishedAt,
+    })),
+    ...mysteriesEntries.map((x): ArticleMeta => ({
+      slug: x.slug,
+      articleType: "mysteries",
+      category: "mysteries",
+      title: x.title,
+      summary: x.summary,
+      cover: x.coverImage?.src,
+      href: `/mysteries/${x.slug}`,
+      credibility: x.credibility,
       publishedAt: x.publishedAt,
     })),
   ];

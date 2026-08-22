@@ -9,6 +9,7 @@ import SpotToc from "@/components/article/SpotToc";
 import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
 import { slugify } from "@/lib/slugify";
+import ViewTracker from "@/components/ViewTracker";
 
 function extractTocItems(contentMd: string): { text: string; id: string }[] {
   const items: { text: string; id: string }[] = [];
@@ -125,6 +126,7 @@ export default async function MysteryDetailPage({
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+      <ViewTracker slug={mystery.slug} articleType="mysteries" />
       <div className="mx-auto w-full max-w-5xl px-6 py-12">
         <div className="mb-6">
           <Link

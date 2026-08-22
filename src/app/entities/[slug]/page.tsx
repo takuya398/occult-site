@@ -14,6 +14,7 @@ import ShareBar from "@/components/article/ShareBar";
 import { Card } from "@/components/ui";
 import EmbedMedia from "@/components/EmbedMedia";
 import CommentSection from "@/components/comments/CommentSection";
+import ViewTracker from "@/components/ViewTracker";
 
 export function generateStaticParams() {
   return entities.map((uma) => ({ slug: uma.slug }));
@@ -202,6 +203,7 @@ export default async function EntityDetailPage({
 
   return (
     <>
+      <ViewTracker slug={uma.slug} articleType="entities" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}

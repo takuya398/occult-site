@@ -14,6 +14,7 @@ import EmbedMedia from "@/components/EmbedMedia";
 import LegendArticleShell from "@/components/legends/LegendArticleShell";
 import { legendImageMap } from "@/lib/legends/imageMap";
 import CommentSection from "@/components/comments/CommentSection";
+import ViewTracker from "@/components/ViewTracker";
 
 const TYPE_LABELS: Record<string, string> = {
   kaidan: "怪談",
@@ -184,6 +185,7 @@ export default async function LegendsDetailPage({
 
   return (
     <LegendArticleShell>
+      <ViewTracker slug={item.slug} articleType="legends" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
