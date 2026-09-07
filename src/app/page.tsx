@@ -6,13 +6,12 @@ import ArticleGridWithFilter from "@/components/ArticleGridWithFilter";
 import CategoryList from "@/components/CategoryList";
 import PopularTags from "@/components/PopularTags";
 import SidebarRankingWidget from "@/components/SidebarRankingWidget";
-import { getAllLatest, getLatestGrouped, type LatestItem } from "@/lib/server-loaders";
-import { getSpotEntryBySlug } from "@/lib/spot-articles";
+import { getAllLatest, getLatestGrouped, getDailyHeroArticle, type LatestItem } from "@/lib/server-loaders";
 import { getRankingItems } from "@/lib/ranking/getRankingItems";
 
-const CDN = "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto";
+export const revalidate = 86400;
 
-const HERO_SLUG = "hotel-katsugyo";
+const CDN = "https://res.cloudinary.com/dgl4jmgvo/image/upload/f_auto,q_auto";
 
 function withCoverFallback(item: LatestItem): LatestItem {
   if (item.cover) return item;
@@ -29,15 +28,7 @@ export default async function Home() {
   const rankingArticles = articles.slice(0, 5);
   const featureArticles = articles.slice(0, 3);
 
-  const heroSpot = await getSpotEntryBySlug(HERO_SLUG);
-  const heroArticle = heroSpot
-    ? {
-        title: heroSpot.title,
-        href: `/spots/${heroSpot.slug}`,
-        cover: heroSpot.coverImage?.src,
-        summary: heroSpot.summary,
-      }
-    : articles[0];
+  const heroArticle = await getDailyHeroArticle();
 
   const [weeklyRanking, monthlyRanking, yearlyRanking] = await Promise.all([
     getRankingItems("weekly", "all", 10).catch(() => []),

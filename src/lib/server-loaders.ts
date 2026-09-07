@@ -73,6 +73,29 @@ export const getAllLatest = async (limit = 6): Promise<LatestItem[]> => {
   return [...all].sort(sortByDate).slice(0, limit);
 };
 
+export type HeroArticle = {
+  title: string;
+  href: string;
+  cover?: string;
+  summary?: string;
+};
+
+export const getDailyHeroArticle = async (): Promise<HeroArticle> => {
+  const all = await loadAllItems();
+  const pool = all.filter((x) => x.category === "spots" || x.category === "mysteries");
+
+  if (pool.length === 0) return pool[0] as never;
+
+  const epochDays = Math.floor(Date.now() / 86_400_000);
+  const item = pool[epochDays % pool.length];
+
+  const cover =
+    item.cover ??
+    (item.category === "spots" ? `${CDN}/spots/${item.slug}/cover.jpg` : undefined);
+
+  return { title: item.title, href: item.href, cover, summary: item.summary };
+};
+
 export const getLatestGrouped = async (limitEach = 12): Promise<GroupedArticles> => {
   const all = await loadAllItems();
   const sorted = [...all].sort(sortByDate);
